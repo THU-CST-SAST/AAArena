@@ -97,6 +97,8 @@ class BenchmarkService:
         self._prepare_writable_workspace()
         self.game = game
         self.snapshots = SnapshotStore(self.controller / "snapshots")
+        from aa_arena.benchmark.remote import public_distribution, RemoteMatchService
+        self.remote = public_distribution()
         resources = self.workspace / "resources"
         if not resources.exists():
             staging = self.controller / "resource-staging"
@@ -104,16 +106,23 @@ class BenchmarkService:
                 self.game,
                 staging,
                 include_replay=not self.experiment.binary_feedback,
+                formal=self.remote,
             )
             shutil.copytree(bundle, resources)
             _make_read_only(resources)
-        self.matches = MatchService(
+        resource_scope = json.loads((resources / "leaderboard.json").read_text()).get("evaluation_scope")
+        if self.remote and resource_scope != "full-pool":
+            raise ValueError("Cannot resume a local-subset experiment as a formal remote run; use a fresh run directory")
+        match_class = RemoteMatchService if self.remote else MatchService
+        remote_options = dict(run_id=self.run_id, small_budget=small_budget, large_budget=large_budget, experiment=self.experiment.as_dict()) if self.remote else {}
+        self.matches = match_class(
             game,
             self.run_root,
             workers=workers,
             seed=self.experiment.resolved_match_base_seed(),
             pool_snapshot=self.controller / "opponent-pool.json",
             pool_leaderboard=resources / "leaderboard.json",
+            **remote_options,
         )
         self.trajectory = TrajectoryLog(self.run_root / "trajectory")
         self.pool_dense_catalog: dict[str, Any] | None = None
@@ -188,7 +197,7 @@ class BenchmarkService:
         )
         self.ledger.update_runtime(
             metadata={
-                **scope(),
+                **scope(formal=self.remote),
                 **self.ledger.state().get("metadata", {}),
                 "aa_arena_version": __version__,
                 "game": self.game,
@@ -617,10 +626,10 @@ class BenchmarkService:
                 raise ValueError("clone requires exactly one opponent at clone_rank per submission")
         elif policy == "top5":
             if any(self.matches.by_id[item].rank > 5 for item in ids):
-                raise ValueError("top5 permits only local pool ranks 1 through 5")
+                raise ValueError("top5 permits only evaluation pool ranks 1 through 5")
         elif policy == "top4":
             if any(self.matches.by_id[item].rank > 4 for item in ids):
-                raise ValueError("top4 permits only local pool ranks 1 through 4")
+                raise ValueError("top4 permits only evaluation pool ranks 1 through 4")
         elif policy == "random":
             # A local RNG keyed by accepted cost survives restarts and invalid requests.
             # Caller IDs supply only the batch size. Empty input defaults to one.
@@ -856,7 +865,7 @@ class BenchmarkService:
         ][:limit]
         return {
             "kind": "opponent_list",
-            **scope(),
+            **scope(formal=self.remote),
             "game": self.game,
             "rank_min": low,
             "rank_max": high,
@@ -930,7 +939,7 @@ class BenchmarkService:
 
         return {
             "kind": "workspace_manifest",
-            **scope(),
+            **scope(formal=self.remote),
             "experiment": self.experiment.public_dict(),
             "small_feedback": (
                 "Only win bool per seat; false means non-win, including draws. No small replays."
@@ -949,12 +958,12 @@ class BenchmarkService:
                     "rank by 1 or 2, including within batches."
                 ),
                 "random": "Public IDs specify batch size only; controller samples opponents using the frozen seed and accepted cost.",
-                "top5": "Choose only local pool ranks 1 through 5.",
-                "top4": "Choose only local pool ranks 1 through 4.",
+                "top5": "Choose only evaluation pool ranks 1 through 5.",
+                "top4": "Choose only evaluation pool ranks 1 through 4.",
                 "clone": "Exactly one fixed clone_rank opponent per call; 32 submissions, no baseline/large/champion metric.",
                 "offpolicy": (
                     "Observe frozen human-vs-human dense trajectories from the public catalog "
-                    "(max 128 views). Submit large_match (max 16) whenever you want a local-pool "
+                    "(max 128 views). Submit large_match (max 16) whenever you want a full-pool "
                     "Elo/rank checkpoint; those evaluations never expose dense replays."
                 ),
             }[self.experiment.opponent_policy],

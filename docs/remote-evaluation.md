@@ -1,9 +1,13 @@
-# Evaluation scope
+# Evaluation access and scope
 
-Local small and large evaluations execute against the published subset. Each game includes human strategies whose frozen experiment Elo rank is greater than eight and even. No private opponent download is required or provided.
+Formal benchmark runs use `https://101.42.12.204` with a personal Bearer token in `AA_ARENA_EVAL_TOKEN`. `AA_ARENA_EVAL_URL` can select another compatible HTTPS deployment. Ask the repository maintainers for access; tokens have per-user run quotas and are never included in the repository. Model API credentials are configured independently.
 
-The local leaderboard numbers published opponents consecutively from one. `reference_rank` records each opponent’s rank in the complete frozen reference table. Local large evaluations fit the candidate against the available Elo anchors and report subset rank and Elo, not complete-pool paper results. Rank-targeted ablations operate on local positions. Ladder starts at min(30, pool size); cloning includes only available target positions from 5, 15, 25 and 35.
+The controller uploads only the frozen candidate policy. The service retains all human strategies and executes AI9 or Saiblo matches. The client verifies the complete ranking metadata, pool identity, request/result hashes and replay checksums. A network failure leaves the accepted submission recoverable under its original ID; there is no automatic fallback to local subset scores.
 
-Complete-pool small and large evaluation requires a hosted service. **The service and its public API are not implemented or available in this release.** The intended service accepts candidate strategies and returns match feedback while keeping withheld opponent programs server-side. No service URL, token or complete-pool reproduction command is offered here.
+Small-match feedback is fixed per experiment: binary win/non-win outcomes, or detailed public trajectories. Full-pool large evaluations return Elo, rank and per-opponent statistics without dense trajectories. The 128/16 main budget and one additional 256/32 continuation are enforced on the service. See [API specification](evaluation-api.md).
+
+`practice.py` and the local evaluator operate on the published subset without a service token. The local leaderboard numbers published opponents consecutively; `reference_rank` preserves their complete-pool rank. Resource bundles for formal agents use complete ranking metadata while containing only the permitted public example code. Existing local-subset runs cannot resume as formal runs.
 
 我们只公布未进入决赛圈的偶数人类选手的代码。
+
+Only frozen measured Elo ranks greater than eight and even are distributed. Full ranking metadata does not grant access to withheld programs. Off-policy catalog download is supported by the protocol, but the hosted catalog is not provisioned. Use an explicitly supplied frozen replay-only catalog and report its population.

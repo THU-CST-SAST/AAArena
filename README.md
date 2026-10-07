@@ -44,9 +44,9 @@ Models, games and experiment suites are independently selectable. Supply your ow
 
 Player-code publication follows the experiment's **frozen measured Elo ranking**: only ranks **10, 12, 14, …** are included. Ranks 1–8 and all odd ranks are withheld. The 12 game packs contain **909 published human-player packages**. Full ranking metadata is available in `results/elo`; each game's `players/publication.json` identifies the released players and their original reference ranks.
 
-**Local small and large evaluations work with the published subset.** Models, tool calls, game simulation, replay inspection, budget accounting and agent iteration run on your own machine. Local opponent ranks are positions within that subset; `reference_rank` identifies the corresponding frozen paper rank. A local large evaluation plays against all published opponents for that game and reports a subset Elo estimate and subset rank. These scores are **not the paper's complete-pool results**.
+**Formal small and large evaluations use the authenticated HTTPS service at `https://101.42.12.204`.** The complete frozen opponent pool stays on the evaluation server. Coding-agent inference, policy editing and replay inspection run locally; the controller uploads a frozen candidate policy and receives feedback. Small evaluations return binary outcomes or dense public trajectories according to the experiment arm. Large evaluations return full-pool Elo, rank and aggregate statistics without dense trajectories.
 
-**Complete-pool small and large evaluations require a hosted evaluation service. That service is not implemented or available in this release.** Its intended interface will accept candidate strategies and return evaluation feedback without exposing withheld opponent programs. This repository cannot reproduce complete-pool paper scores until that service is available. See [evaluation scope](docs/remote-evaluation.md).
+**Local practice works without an evaluation-service token** against the published subset. Local ranks refer to positions within that subset; `reference_rank` identifies the frozen paper rank. Subset scores must not be reported as complete-pool paper results. See [evaluation access and scope](docs/remote-evaluation.md).
 
 ## Installation
 
@@ -70,7 +70,7 @@ cp environment/player-environment-owner.json \
 python scripts/install_assets.py --verify-only
 ```
 
-Keep the editable source directory available: the evaluators resolve bundled assets relative to it. Asset installation is offline and verifies archive and per-file SHA-256 digests. Installing language runtimes and dependencies requires network access. For Python 3.14 Linux, add `-c environment/controller-constraints-py314-linux.txt` to the controller dependency installation to use the validated versions. A virtualenv-based player setup is also available through `scripts/install_player_env.py --python /path/to/python3.10`.
+Keep the editable source directory available: the evaluators resolve bundled assets relative to it. Asset installation is offline and verifies archive and per-file SHA-256 digests. Installing language runtimes and dependencies requires network access. The hosted evaluator compiles policies with GCC/G++ 11.5; use GCC 11 locally for compiler parity. For Python 3.14 Linux, add `-c environment/controller-constraints-py314-linux.txt` to the controller dependency installation to use the validated versions. A virtualenv-based player setup is also available through `scripts/install_player_env.py --python /path/to/python3.10`.
 
 Configure the runtime in each shell:
 
@@ -123,6 +123,29 @@ Use the API base expected by the selected harness: a Responses base commonly end
 
 Profiles and experiment plans default to `max` reasoning effort. Claude Code profiles use `x-api-key` authentication by default; select `--claude-auth-mode bearer` for an endpoint requiring Bearer authentication. Codex transport retries can be configured with `--stream-max-retries`; this setting is independent of model identity.
 
+## Local evaluation
+
+Local practice needs no evaluation-service credential or model API. To inspect the installed public opponent pool or run a standalone practice match:
+
+```bash
+python scripts/practice.py --game pacman --list
+python scripts/practice.py --game pacman --rank 1 \
+  --strategy games/pacman/public_sdk --output runs/practice-pacman
+```
+
+## Evaluation API access
+
+Request a personal evaluation token from the maintainers through a GitHub issue; never post tokens in an issue or commit them. Model-provider credentials and evaluation-service credentials are separate. Export the evaluation token only in the controller shell:
+
+```bash
+export AA_ARENA_EVAL_URL="https://101.42.12.204"
+read -r -s -p 'Evaluation token: ' AA_ARENA_EVAL_TOKEN
+export AA_ARENA_EVAL_TOKEN
+printf '\n'
+```
+
+The endpoint has a trusted IP-address TLS certificate; no domain or disabled certificate verification is required. Each token has a run quota. There is no anonymous evaluation access. The main and ablation commands below route evaluations to the service automatically and fail explicitly if it is unavailable. They never download withheld strategy code. See [API requests, retries and errors](docs/evaluation-api.md).
+
 Check API/harness compatibility before a full experiment. These checks make model API calls:
 
 ```bash
@@ -137,21 +160,25 @@ aa-arena-claude --acceptance --game pacman --model-profile default \
   --run-dir runs/claude-acceptance --max-budget-usd "$MAX_BUDGET_USD"
 ```
 
-Acceptance checks use low effort to test interfaces; formal experiment plans use `max`. The acceptance spending ceiling above is not a recommended budget for a full experiment.
+Acceptance checks use low effort to test interfaces; formal experiment plans use `max`. The acceptance spending threshold above is not a recommended budget for a full experiment. Claude Code checks its estimated cost between requests; one request, including compaction, can exceed that threshold. Use a provider-side spending cap when a hard limit is required.
 
 For Claude Code experiments, pass `--harness claude` to the experiment runner.
 
-## Local evaluation
 
-No evaluation-service credential is needed for this release. Model API credentials are needed only for model-driven agent iteration. To inspect the installed public opponent pool or run a standalone practice match:
+## Native harness acceptance
+
+After configuring both the model API and evaluation token, run the chosen harness against real remote matches:
 
 ```bash
-python scripts/practice.py --game pacman --list
-python scripts/practice.py --game pacman --rank 1 \
-  --strategy games/pacman/public_sdk --output runs/practice-pacman
+python scripts/validate_harness.py --harness codex --game pacman \
+  --model-profile default --codex-binary "$CODEX_BINARY" \
+  --run-dir runs/native-codex-acceptance
+python scripts/validate_harness.py --harness claude --game pacman \
+  --model-profile default --max-budget-usd 2 \
+  --run-dir runs/native-claude-acceptance
 ```
 
-The main and ablation commands below execute budgeted small and large evaluations locally against the same published subset. They never retrieve withheld strategy code.
+These are paid interface tests, not paper experiments. They exercise native **automatic** compaction, session resume, workspace I/O, one real small match and one complete-pool large evaluation, followed by a frozen final snapshot. Each needs a fresh directory. Test thresholds are 20K for Codex and a 100K window for Claude; formal defaults remain 200K. Provider compatibility and sufficient test credit are required. A passing manual `/compact` check alone does not establish automatic-compaction acceptance.
 
 ## Running experiments
 
@@ -179,11 +206,11 @@ run_plan() {
 }
 ```
 
-Choose concurrency to fit CPU, memory and API capacity. All launchers and off-policy catalog builders on a host should share one admission root. Give each experiment its own run directory. The launcher rejects incompatible configuration changes when resuming an existing run.
+Choose coding-agent concurrency (`JOBS`) to fit local CPU, memory and model API capacity. Hosted match workers and seat capacity are controlled by the service; `WORKERS` and `SEAT_CAPACITY` apply to local evaluation and catalog generation. All launchers and off-policy catalog builders on a host should share one admission root. Give each experiment its own run directory. The launcher rejects incompatible configuration changes when resuming an existing run.
 
 ### Main experiments
 
-Each game starts from the public SDK with **128 small-match units and 16 large evaluations over the published subset**. A small-match request may consume multiple units. The initial baseline is uncharged. The agent may edit its writable strategy and inspect the feedback allowed by its experiment arm.
+Each game starts from the public SDK with **128 small-match units and 16 large evaluations over the complete frozen pool**. A small-match request may consume multiple units. The initial baseline is uncharged. The agent may edit its writable strategy and inspect the feedback allowed by its experiment arm.
 
 ```bash
 python scripts/run_experiments.py plan --suite main \
@@ -208,7 +235,7 @@ Continuations are available for every bundled game. The paper's continuation sub
 
 ### Opponent-order ablation
 
-Compare model choice, ladder selection starting from local rank min(30, pool size), random selection and the top four published opponents. Each arm uses small-match batch size 4 and match seed 43.
+Compare model choice, ladder selection starting from frozen pool rank 30, random selection and frozen pool ranks 1–4. Each arm uses small-match batch size 4 and match seed 43.
 
 ```bash
 python scripts/run_experiments.py plan --suite order \
@@ -240,7 +267,7 @@ Order, feedback and batch ablations default to Pacman, AntWar and Miracle. Every
 
 ### Active-match behavior cloning
 
-The agent interacts with a target at local rank 5, 15, 25 or 35 (only ranks present in the published subset generate jobs), with **32 small-match units and zero large evaluations**. The default plan covers all 12 games.
+The agent interacts with a target at frozen full-pool rank 5, 15, 25 or 35, with **32 small-match units and zero large evaluations**. The default plan covers all 12 games.
 
 ```bash
 python scripts/run_experiments.py plan --suite active-clone \
@@ -250,7 +277,7 @@ run_plan plans/active-clone.json
 
 ### Off-policy learning
 
-Generate a frozen human-versus-human replay catalog locally from the published players; see [catalog generation](docs/offline.md). This stage needs no model API. The controller exposes budgeted observations to the learner, without granting it access to human source programs.
+Generate a frozen human-versus-human replay catalog locally from the published players; see [catalog generation](docs/offline.md). This stage needs no model API. The controller exposes budgeted observations to the learner, without granting it access to human source programs. The hosted off-policy catalog is not provisioned; supply `--catalog-root` with a frozen replay-only catalog. A catalog generated from the public subset is a subset-data experiment, even when large evaluations use the full pool.
 
 ```bash
 python scripts/run_experiments.py plan --suite offpolicy \
@@ -259,11 +286,13 @@ python scripts/run_experiments.py plan --suite offpolicy \
 run_plan plans/offpolicy.json --catalog-root catalogs
 ```
 
-The learner receives **128 trajectory views and 16 local large evaluations** and cannot initiate its own small matches. `catalogs/GAME/manifest.json` and the referenced replay files must exist for each selected game.
+The learner receives **128 trajectory views and 16 remote full-pool large evaluations** and cannot initiate its own small matches. `catalogs/GAME/manifest.json` and the referenced replay files must exist for each selected game.
 
 ## Results and validation
 
-Local large evaluations fit the candidate against the released opponents' frozen Elo anchors. The neutral prior and comparison pool are subset-specific, so local Elo and rank must be labelled as published-subset results. Game mechanics and budgeted experiment workflows are executable locally; access to the complete evaluation population is pending the hosted service.
+**Release gate:** the 12-game remote small-match matrix and both live native-harness acceptance tests pass. The cross-game complete-pool large-evaluation matrix is pending. See [acceptance status](validation/release-verification.json) before publishing full-matrix validation claims.
+
+Formal large evaluations fit the candidate against the complete frozen Elo anchors and report full-pool rank. Local practice uses only published opponents and is a separate result scope. Match randomness, candidate bugs and historical opponent forfeits can affect a score; an infrastructure failure is not a valid model-performance result.
 
 ```bash
 # Inspect one experiment's Elo, rank, usage and budget state.
@@ -271,6 +300,10 @@ aa-arena benchmark report runs/EXISTING_RUN
 
 # Verify game resources and public starter matches without model calls.
 python scripts/validate_games.py --jobs 2
+
+# Validate real remote detailed/binary small matches and full-pool large matches.
+# Consumes evaluation quota; makes no model API calls.
+python scripts/validate_remote.py --output runs/remote-validation --large --jobs 4
 
 # Run component tests.
 pytest -q tests/test_public_player_policy.py tests/test_local_subset.py

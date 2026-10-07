@@ -94,9 +94,9 @@ class Gate:
 
 
 @contextmanager
-def admission(pool,kind='large',detail=''):
+def admission(pool,kind='large',detail='',group=None):
     root=os.environ.get('AA_ARENA_ADMISSION_ROOT')
     if not root:
         yield None;return
-    group=os.environ.get('AA_ARENA_JOB_ID','validation')
+    group=group or os.environ.get('AA_ARENA_JOB_ID','validation')
     with Gate(root).lease(pool,group,kind,str(detail)) as token:yield token

@@ -14,7 +14,7 @@ def main():
     version=json.loads(subprocess.check_output([a.python,'-I','-c','import sys,json;print(json.dumps(list(sys.version_info[:3])))'],text=True))
     if version[:2]!=[3,10]:p.error('Players require Python 3.10; the environment specification pins 3.10.14')
     if dest.exists():p.error('Destination already exists; choose a new empty directory')
-    subprocess.run([a.python,'-m','venv','--copies',str(dest)],check=True)
+    subprocess.run([a.python,'-m','venv','--symlinks',str(dest)],check=True)
     python=dest/'bin/python'
     subprocess.run([str(python),'-m','pip','install','pip==24.3.1'],check=True)
     subprocess.run([str(python),'-m','pip','install','-r',str(ROOT/'environment/player-requirements.txt')],check=True)

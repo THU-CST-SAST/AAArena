@@ -78,8 +78,13 @@ class ClaudeArenaRuntime:
                 row = json.loads(line)
                 if row['type'] == 'arena_tool':
                     self.calls.append(row['name'])
-                if row['type'] == 'compaction_verified':
-                    self.compactions.append(row['boundary'])
+                boundary = None
+                if row['type'] == 'sdk_event' and row.get('event', {}).get('subtype') == 'compact_boundary':
+                    boundary = row['event']['data']
+                elif row['type'] == 'compaction_verified':
+                    boundary = row['boundary']
+                if boundary is not None and boundary not in self.compactions:
+                    self.compactions.append(boundary)
 
     async def on_service(self, function, *args, **kwargs):
         if self.owner is None:
@@ -88,6 +93,17 @@ class ClaudeArenaRuntime:
         return await self.owner.call(function, *args, **kwargs)
 
     def objective(self):
+        if self.smoke or self.acceptance:
+            return (
+                "You are validating the AA-Arena official harness, not optimizing a strategy. "
+                "Execute only the steps explicitly requested in each user message and then stop. "
+                "Use the provided Arena tools and public workspace only; no network, credentials "
+                "or hidden opponent source. Preserve notes and authoritative match budgets across "
+                "native compaction and session resume. Do not submit any match until requested; "
+                "recover an interrupted submission with the same tool arguments, never repeat a "
+                "completed match. Keep the SDK strategy unchanged unless a probe explicitly asks "
+                "for a temporary write/read/delete test."
+            )
         context = object.__new__(CodexArenaRuntime)
         context.service = self.service
         return context._objective().replace(

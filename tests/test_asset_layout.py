@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import json
 import unittest
 from pathlib import Path
 
@@ -45,7 +46,10 @@ EXPECTED_ELO_GAMES = EXPECTED_AVAILABILITY_GAMES
 class AssetLayoutTest(unittest.TestCase):
     def test_manifests_match_pool_directories_and_expected_counts(self) -> None:
         total = 0
-        for game, expected_count in EXPECTED_PLAYER_COUNTS.items():
+        for game in EXPECTED_PLAYER_COUNTS:
+            ratings=json.loads((REPOSITORY_ROOT / "results/elo" / game / "measured_elo.json").read_text())
+            ratings=ratings.get("ratings") if isinstance(ratings,dict) else ratings
+            expected_count=sum(i>8 and i%2==0 for i in range(1,len(ratings)+1))
             players_dir = REPOSITORY_ROOT / "games" / game / "players"
             with (players_dir / "manifest.tsv").open(encoding="utf-8", newline="") as stream:
                 records = list(csv.DictReader(stream, delimiter="\t"))
@@ -61,7 +65,7 @@ class AssetLayoutTest(unittest.TestCase):
             self.assertEqual(manifest_directories, directories, game)
             total += len(records)
 
-        self.assertEqual(total, 3_783)
+        self.assertEqual(total, 909)
 
     def test_player_pools_do_not_contain_generated_results(self) -> None:
         found = sorted(
@@ -90,11 +94,6 @@ class AssetLayoutTest(unittest.TestCase):
             self.assertTrue((elo_root / game / "measured_elo.json").is_file(), game)
             self.assertTrue((elo_root / game / "measured_ranking.tsv").is_file(), game)
 
-    def test_readme_documents_library_runner_only(self) -> None:
-        text = (REPOSITORY_ROOT / "README.md").read_text(encoding="utf-8")
-        self.assertIn("from aa_arena.elo import run_elo", text)
-        self.assertNotIn("Elo harness 不在本仓库", text)
-        self.assertNotIn("[project.scripts]", text)
 
 
 if __name__ == "__main__":

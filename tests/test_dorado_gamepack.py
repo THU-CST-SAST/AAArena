@@ -32,8 +32,7 @@ def test_dorado_layout_contains_legacy_backend_and_sample_pool() -> None:
         "backend/resources.res",
         "backend/logic/src/mapNEW.txt",
         "players/manifest.tsv",
-        "players/pool/sample_ai/ai.cpp",
-        "players/pool/monster_ai/ai.cpp",
+        "players/publication.json",
     ):
         path = game_dir / relative
         assert path.is_file(), path
@@ -41,6 +40,8 @@ def test_dorado_layout_contains_legacy_backend_and_sample_pool() -> None:
 
 @pytest.mark.game_smoke
 def test_dorado_sample_file_write_is_reported_as_official_forfeit(tmp_path: Path) -> None:
+    if not (REPOSITORY_ROOT/"games/dorado/players/pool/sample_ai").is_dir():
+        pytest.skip("Archived sample is outside the published Elo-rank subset")
     plugin = get_plugin("dorado")
     evaluator = plugin.evaluator_factory(
         REPOSITORY_ROOT / "games" / "dorado",

@@ -417,6 +417,7 @@ def build_bundle(
     *,
     repository_root: Path | None = None,
     include_replay: bool = True,
+    formal: bool = False,
 ) -> Path:
     if game not in ARENA_GAMES:
         raise ValueError(f"unsupported arena game: {game}")
@@ -440,7 +441,7 @@ def build_bundle(
     _copy_rank40_example(game, root, destination / "examples")
     from aa_arena.benchmark.distribution import local_subset, scope
     rows = _rating_rows(game, root)
-    if local_subset(root):
+    if local_subset(root) and not formal:
         pool = root / "games" / game / "players" / "pool"
         rows = [row for row in rows if (pool / str(row["opponent_id"])).is_dir()]
         rows = [{**row, "reference_rank": row["rank"], "rank": i}
@@ -448,7 +449,7 @@ def build_bundle(
         if not rows:
             raise ValueError("No published opponents installed; run scripts/install_assets.py")
     leaderboard = {
-        **scope(root),
+        **scope(root, formal=formal),
         "schema_version": 1,
         "game": game,
         "source": "verified measured Elo snapshot",

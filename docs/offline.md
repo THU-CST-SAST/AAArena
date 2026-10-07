@@ -19,4 +19,4 @@ python scripts/run_experiments.py run --plan plans/offpolicy.json \
   --catalog-root catalogs --jobs 1 --workers 8 --seat-capacity 16
 ```
 
-Use the corresponding game identifier and directory for any of the 12 games. The controller verifies catalog hashes and exposes 128 trajectory views to the learner. The learner cannot initiate small matches; its 16 large evaluations run against the local published subset. The coding agent has no access to catalog-generation source programs through its resource bundle. Complete-pool catalogs and evaluation require the hosted service, which is not available in this release.
+Use the corresponding game identifier and directory for any of the 12 games. The controller verifies catalog hashes and exposes 128 trajectory views to the learner. The learner cannot initiate small matches; its 16 large evaluations run remotely against the complete frozen pool. The coding agent has no access to catalog-generation source programs through its resource bundle. The hosted replay catalog is not provisioned. Supply a frozen catalog explicitly; report whether its human trajectories come from the published subset or complete pool.

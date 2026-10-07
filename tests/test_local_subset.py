@@ -26,17 +26,18 @@ def test_subset_identity_and_freeze(game, tmp_path):
     assert frozen == opponents
     assert freeze_opponents(game,ROOT,tmp_path/"pool.json") == opponents
 
-def test_every_local_ablation_has_available_targets(tmp_path):
+def test_every_formal_ablation_has_full_pool_targets(tmp_path):
     spec = importlib.util.spec_from_file_location("experiments",ROOT/"scripts/run_experiments.py")
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)
     for suite in mod.SUITES:
         plan = mod.plan(suite,["example"],GAMES,[42],tmp_path,"codex")
-        assert plan["evaluation_scope"] == "published-subset"
+        assert plan["evaluation_scope"] == "full-pool"
         for job in plan["jobs"]:
             config = ExperimentConfig(**job["config"])
             config.validate_budgets(job["small_budget"],job["large_budget"])
-            pool = load_opponents(job["game"],ROOT)
+            from aa_arena.resources import _rating_rows
+            pool = _rating_rows(job["game"], ROOT)
             if config.opponent_policy == "ladder":
                 assert config.initial_rank <= len(pool)
             if config.is_clone:

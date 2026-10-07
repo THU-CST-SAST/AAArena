@@ -993,6 +993,12 @@ class CodexArenaRuntime:
             if method == "thread/tokenUsage/updated":
                 self._usage(message)
                 continue
+            item = (message.get("params") or {}).get("item") or {}
+            if method == "thread/compacted" or (
+                method == "item/completed" and item.get("type") in {"contextCompaction", "compaction"}
+            ):
+                self._diagnostic(f"runtime automatic_compaction_completed thread={self.thread_id}")
+                continue
             if method == "item/tool/call" and "id" in message:
                 self._pause_active()
                 tool_started = time.monotonic()

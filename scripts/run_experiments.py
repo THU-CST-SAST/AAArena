@@ -29,7 +29,8 @@ def plan(suite,profiles,games,seeds,run_root,harness,reasoning_effort='max'):
     games=games or (PAPER['games'] if suite in {'main','active-clone'} else PAPER['ablation_games'])
     if set(games)-set(PAPER['games']):raise ValueError('Unknown paper game')
     from aa_arena.benchmark.distribution import local_subset
-    subset = local_subset(ROOT)
+    from aa_arena.benchmark.remote import public_distribution
+    subset = local_subset(ROOT) and not public_distribution(ROOT)
     jobs=[]
     for profile in profiles:
         if Path(profile).name!=profile or profile in {'.','..'}:raise ValueError('Invalid profile name')
@@ -126,7 +127,8 @@ def run_job(job,a):
             return {'id':job['id'],'status':'already_complete'}
         if config.is_offpolicy:
             if not a.catalog_root:
-                raise ValueError('Local off-policy runs require --catalog-root; see docs/offline.md')
+                from aa_arena.benchmark.remote import download_catalog
+                source=download_catalog(job['game'], run/'catalog-download')
             else:
                 source=a.catalog_root/job['game']/'manifest.json'
             if json.loads(source.read_text()).get('game')!=job['game']:raise ValueError('Catalog game mismatch')

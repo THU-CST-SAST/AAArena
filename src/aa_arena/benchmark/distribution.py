@@ -9,7 +9,10 @@ def local_subset(root: Path | None = None) -> bool:
     return path.is_file() and json.loads(path.read_text()).get("local_evaluation") == "published-subset"
 
 
-def scope(root: Path | None = None) -> dict:
+def scope(root: Path | None = None, *, formal: bool = False) -> dict:
+    if formal:
+        return {"evaluation_scope": "full-pool", "official_full_pool": True,
+                "rank_basis": "frozen complete reference pool"}
     if not local_subset(root):
         return {}
     return {"evaluation_scope": "published-subset", "official_full_pool": False,

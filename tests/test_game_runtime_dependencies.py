@@ -77,4 +77,4 @@ def test_optional_extras_cover_each_runtime() -> None:
         "numpy==2.1.2; python_version < '3.14'",
         "numpy==2.3.5; python_version >= '3.14'",
     }
-    assert set(extras["four-games"]) == set(extras["lostspace"] + extras["rollman"])
+    assert set(extras["games"]) == set(extras["lostspace"] + extras["rollman"])

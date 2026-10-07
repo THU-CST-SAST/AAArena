@@ -34,3 +34,10 @@ def isolate_fake_systemd_environment(request,monkeypatch):
     if request.path.name in {'test_rootless_policy.py','test_systemd_scope_launcher.py'}:
         monkeypatch.delenv('AA_ARENA_SYSTEMD_MODE',raising=False)
         monkeypatch.delenv('AA_ARENA_CPU_POLICY',raising=False)
+
+@pytest.fixture(autouse=True)
+def isolated_evaluation_transport(request, monkeypatch):
+    # Legacy controller/unit tests exercise the local service with synthetic match
+    # results. Remote tests explicitly exercise an authenticated loopback server.
+    if request.path.name not in {"test_remote_evaluation.py", "test_remote_benchmark.py", "test_local_subset.py", "test_release_tools.py"}:
+        monkeypatch.setattr("aa_arena.benchmark.remote.public_distribution", lambda *a: False)

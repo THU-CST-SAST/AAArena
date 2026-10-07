@@ -109,16 +109,11 @@ def test_known_and_unknown_upstream_revisions_are_honest() -> None:
     assert miracle["source"]["commit"] is None
 
 
-def test_antwar_clean_ladder_preserves_original_rank_gaps(tmp_path: Path) -> None:
-    game_dir = ROOT / "games" / "antwar"
-    evaluator = get_plugin("antwar", ROOT / "games").evaluator_factory(game_dir)
-    package = evaluator.__class__.__module__.rsplit(".", 1)[0]
-    runtime = importlib.import_module(f"{package}.runtime")
-    layout = runtime.AntWarLayout.from_game_dir(game_dir, tmp_path)
-
-    pool = runtime.audit_human_pool(layout)
-
-    assert [opponent.rank for opponent in pool[:4]] == [1, 2, 3, 5]
+def test_antwar_public_ladder_preserves_reference_rank_gaps() -> None:
+    from aa_arena.benchmark.matches import load_opponents
+    pool = load_opponents("antwar", ROOT)
+    assert [opponent.reference_rank for opponent in pool[:4]] == [10, 12, 14, 16]
+    assert [opponent.rank for opponent in pool[:4]] == [1, 2, 3, 4]
 
 
 def test_antwar_plugin_loads_without_any_sibling_gamepack(tmp_path: Path) -> None:

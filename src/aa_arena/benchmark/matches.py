@@ -309,7 +309,8 @@ class MatchService:
 
     def _evaluate_seat(self, strategy_root, opponent, candidate_roles, assignment_index, submission_id):
         from aa_arena.benchmark.admission import admission
-        with admission("seat", detail=f"{self.game}:{submission_id}"):
+        with admission("seat", kind=getattr(self, "_admission_kind", "large"),
+                       group=str(getattr(self, "run_root", self.game)), detail=f"{self.game}:{submission_id}"):
             return self._evaluate_seat_unadmitted(
                 strategy_root, opponent, candidate_roles, assignment_index, submission_id)
 
@@ -469,9 +470,9 @@ class MatchService:
         if feedback not in {"detailed", "binary"}:
             raise ValueError("feedback must be detailed or binary")
         opponents = self.validate_opponents(opponent_ids, allow_repeats=allow_repeats)
-        runner = self
+        runner = copy(self)
+        runner._admission_kind = "small"
         if seed is not None:
-            runner = copy(self)
             runner.seed = seed
         try:
             results = runner._run(Path(strategy_root), opponents, submission_id)

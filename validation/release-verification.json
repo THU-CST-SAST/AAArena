@@ -1,121 +1,284 @@
 {
-  "version": "0.3.0",
-  "evaluation_scope": "published-subset",
-  "complete_pool_service": "not implemented or available",
-  "component_tests_passed": 124,
+  "version": "0.4.0",
+  "evaluation_scope": "full-pool via authenticated HTTPS",
   "published_players": 909,
-  "game_resource_live_checks": [
-    {
-      "game": "pacman",
-      "passed": true
-    },
-    {
-      "game": "antwar",
-      "passed": true
-    },
-    {
-      "game": "generals",
-      "passed": true
-    },
-    {
-      "game": "lostspace",
-      "passed": true
-    },
-    {
-      "game": "miracle",
-      "passed": true
-    },
-    {
-      "game": "aquawar",
-      "passed": true
-    },
-    {
-      "game": "monecraft",
-      "passed": true
-    },
-    {
-      "game": "dorado",
-      "passed": true
-    },
-    {
-      "game": "snakego",
-      "passed": true
-    },
-    {
-      "game": "lota",
-      "passed": true
-    },
-    {
-      "game": "rollman",
-      "passed": true
-    },
-    {
-      "game": "antwar2",
-      "passed": true
-    }
-  ],
-  "native_harness_checks": {
-    "codex-native-fixture": {
-      "passed": true,
-      "official_cli": "0.147.0",
-      "provider": "deterministic-local-fixture",
-      "paid_model_calls": 0,
-      "checks": {
-        "thread_start": true,
-        "goal": true,
-        "dynamic_tool": true,
-        "first_turn_shell": true,
-        "token_usage": true,
-        "shell_network_blocked": true,
-        "control_plane_hidden": true,
-        "credential_environment_hidden": true,
-        "compact": true,
-        "resume": true
+  "component_suite": {
+    "passed": 737,
+    "skipped": 1,
+    "deselected": 32
+  },
+  "targeted_suite": {
+    "passed": 70,
+    "skipped": 12
+  },
+  "remote_small": {
+    "games": [
+      {
+        "checks": [
+          {
+            "feedback": "detailed",
+            "kind": "small",
+            "passed": true
+          },
+          {
+            "feedback": "binary",
+            "kind": "small",
+            "passed": true
+          }
+        ],
+        "game": "antwar",
+        "passed": true,
+        "pool_count": 114,
+        "seconds": 1.38
       },
-      "model_capability_tested": false
-    },
-    "codex-native-matches": {
-      "passed": true,
-      "official_cli": "0.147.0",
-      "provider": "deterministic-local-fixture",
-      "paid_model_calls": 0,
-      "checks": {
-        "small_match": true,
-        "published_pool_match": true,
-        "max_effort_sent": true,
-        "frozen_final_snapshot": true,
-        "exact_budget": true
+      {
+        "checks": [
+          {
+            "feedback": "detailed",
+            "kind": "small",
+            "passed": true
+          },
+          {
+            "feedback": "binary",
+            "kind": "small",
+            "passed": true
+          }
+        ],
+        "game": "antwar2",
+        "passed": true,
+        "pool_count": 191,
+        "seconds": 6.79
       },
-      "model_capability_tested": false
-    },
-    "claude-native-max-matches": {
+      {
+        "checks": [
+          {
+            "feedback": "detailed",
+            "kind": "small",
+            "passed": true
+          },
+          {
+            "feedback": "binary",
+            "kind": "small",
+            "passed": true
+          }
+        ],
+        "game": "aquawar",
+        "passed": true,
+        "pool_count": 170,
+        "seconds": 6.44
+      },
+      {
+        "checks": [
+          {
+            "feedback": "detailed",
+            "kind": "small",
+            "passed": true
+          },
+          {
+            "feedback": "binary",
+            "kind": "small",
+            "passed": true
+          }
+        ],
+        "game": "dorado",
+        "passed": true,
+        "pool_count": 323,
+        "seconds": 6.14
+      },
+      {
+        "checks": [
+          {
+            "feedback": "detailed",
+            "kind": "small",
+            "passed": true
+          },
+          {
+            "feedback": "binary",
+            "kind": "small",
+            "passed": true
+          }
+        ],
+        "game": "generals",
+        "passed": true,
+        "pool_count": 197,
+        "seconds": 2.06
+      },
+      {
+        "checks": [
+          {
+            "feedback": "detailed",
+            "kind": "small",
+            "passed": true
+          },
+          {
+            "feedback": "binary",
+            "kind": "small",
+            "passed": true
+          }
+        ],
+        "game": "lostspace",
+        "passed": true,
+        "pool_count": 111,
+        "seconds": 1.44
+      },
+      {
+        "checks": [
+          {
+            "feedback": "detailed",
+            "kind": "small",
+            "passed": true
+          },
+          {
+            "feedback": "binary",
+            "kind": "small",
+            "passed": true
+          }
+        ],
+        "game": "lota",
+        "passed": true,
+        "pool_count": 200,
+        "seconds": 1.36
+      },
+      {
+        "checks": [
+          {
+            "feedback": "detailed",
+            "kind": "small",
+            "passed": true
+          },
+          {
+            "feedback": "binary",
+            "kind": "small",
+            "passed": true
+          }
+        ],
+        "game": "miracle",
+        "passed": true,
+        "pool_count": 253,
+        "seconds": 108.04
+      },
+      {
+        "checks": [
+          {
+            "feedback": "detailed",
+            "kind": "small",
+            "passed": true
+          },
+          {
+            "feedback": "binary",
+            "kind": "small",
+            "passed": true
+          }
+        ],
+        "game": "monecraft",
+        "passed": true,
+        "pool_count": 112,
+        "seconds": 174.62
+      },
+      {
+        "checks": [
+          {
+            "feedback": "detailed",
+            "kind": "small",
+            "passed": true
+          },
+          {
+            "feedback": "binary",
+            "kind": "small",
+            "passed": true
+          }
+        ],
+        "game": "pacman",
+        "passed": true,
+        "pool_count": 44,
+        "seconds": 198.86
+      },
+      {
+        "checks": [
+          {
+            "feedback": "detailed",
+            "kind": "small",
+            "passed": true
+          },
+          {
+            "feedback": "binary",
+            "kind": "small",
+            "passed": true
+          }
+        ],
+        "game": "rollman",
+        "passed": true,
+        "pool_count": 64,
+        "seconds": 245.31
+      },
+      {
+        "checks": [
+          {
+            "feedback": "detailed",
+            "kind": "small",
+            "passed": true
+          },
+          {
+            "feedback": "binary",
+            "kind": "small",
+            "passed": true
+          }
+        ],
+        "game": "snakego",
+        "passed": true,
+        "pool_count": 141,
+        "seconds": 257.08
+      }
+    ],
+    "model_calls": 0,
+    "passed": true
+  },
+  "native_harness_acceptance": {
+    "codex": {
       "passed": true,
-      "official_cli": "2.1.231",
-      "provider": "deterministic-local-fixture",
-      "paid_model_calls": 0,
-      "tool_calls": [
-        "workspace_manifest",
-        "list_opponents",
-        "workspace_shell",
-        "small_match",
-        "workspace_shell",
-        "large_match"
-      ],
-      "session_resume": true,
-      "native_compactions": 1,
-      "compaction_preserved_budget": true,
+      "complete": true,
+      "live_provider": true,
+      "automatic_compaction": true,
+      "manual_compact_called": false,
+      "resume_same_session": true,
+      "notes_preserved": true,
       "small_used": 1,
       "large_used": 1,
-      "published_pool_opponents": 18,
-      "frozen_final_snapshot": true,
-      "max_effort_sent": true,
-      "model_capability_tested": false
+      "frozen_final_snapshot": "8a20023815396b6ea020bac8a9d3bc044cc1247efb078ebca40c126dfad9ea75",
+      "official_cli": "0.147.0",
+      "production_context_setting": 200000,
+      "test_context_setting": 20000
+    },
+    "claude": {
+      "passed": true,
+      "complete": true,
+      "live_provider": true,
+      "automatic_compaction": true,
+      "manual_compact_called": false,
+      "resume_same_session": true,
+      "notes_preserved": true,
+      "small_used": 1,
+      "large_used": 1,
+      "frozen_final_snapshot": "dac674430b73afe2002fbe3f93144fa71464e8b4b9eb808efef57b73a400cb3d",
+      "official_cli": "2.1.231",
+      "production_context_setting": 200000,
+      "test_context_setting": 100000,
+      "compaction_tokens": [
+        {
+          "trigger": "auto",
+          "before": 88620,
+          "after": 411
+        }
+      ]
     }
   },
-  "local_offpolicy_catalog": {
-    "game": "pacman",
-    "published_opponents": 2,
-    "verified_trajectories": 2
+  "offpolicy_hosted_catalog": "not provisioned",
+  "api_suite": {
+    "passed": 37
   },
-  "paid_model_calls": 0
+  "complete_pool_matrix": {
+    "status": "running",
+    "release_acceptance_complete": false,
+    "note": "Cross-game full-pool sweeps must complete before a full-matrix acceptance claim."
+  }
 }

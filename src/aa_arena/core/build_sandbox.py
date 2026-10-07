@@ -115,7 +115,7 @@ def run_isolated_build(
             arguments += ["--ro-bind", str(path), str(path)]
     # Debian compiler and awk aliases go through /etc/alternatives. Expose only
     # links whose final targets are system executables, not the alternatives tree.
-    for name in ("cc", "c++", "cpp", "awk", "nawk"):
+    for name in ("cc", "c++", "gcc", "g++", "cpp", "awk", "nawk"):
         alias = Path("/etc/alternatives") / name
         if alias.is_symlink() and alias.resolve().is_relative_to("/usr/bin"):
             arguments += ["--symlink", str(alias.resolve()), str(alias)]

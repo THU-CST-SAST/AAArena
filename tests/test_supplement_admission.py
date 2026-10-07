@@ -24,3 +24,18 @@ def test_match_workers_share_host_capacity(tmp_path, monkeypatch):
         results=[f.result(timeout=10) for f in futures]
     assert results==list(map(str,range(8)))
     assert 1<=counts['peak']<=2 and counts['active']==0
+
+def test_small_match_marks_its_own_admission_kind(tmp_path, monkeypatch):
+    from aa_arena.benchmark.matches import MatchService, Opponent
+    service=object.__new__(MatchService)
+    service.game='pacman'; service.run_root=tmp_path; service.public_practice=False
+    opponent=Opponent('example',1000,1,tmp_path)
+    service.validate_opponents=lambda *a,**k:[opponent]
+    observed=[]
+    def run(self,*args):
+        observed.append(getattr(self,'_admission_kind','large'))
+        return []
+    monkeypatch.setattr(MatchService,'_run',run)
+    service.small_match(tmp_path,['example'],'small',tmp_path/'replays',feedback='binary')
+    assert observed==['small']
+    assert not hasattr(service,'_admission_kind')

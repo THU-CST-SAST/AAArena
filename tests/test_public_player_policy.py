@@ -57,7 +57,7 @@ def test_archive_contains_exactly_permitted_players(game):
 def test_no_runtime_secrets_or_full_pool_unpacking_in_release():
     assert (
         json.loads((ROOT / "configs/distribution.json").read_text())["formal_evaluation"]
-        == "not-available"
+        == "remote-required"
     )
     assert "我们只公布未进入决赛圈的偶数人类选手的代码" in (ROOT / "README.md").read_text()
 
