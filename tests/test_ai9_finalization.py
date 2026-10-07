@@ -5,7 +5,14 @@ import pytest
 
 
 @pytest.mark.parametrize('output_bytes', [0, 100000])
-def test_match_waits_for_backend_replay_finalization(tmp_path, output_bytes):
+def test_match_waits_for_backend_replay_finalization(tmp_path, output_bytes, monkeypatch):
+    class ReadyPlayer:
+        port = 12345
+        def __init__(self, loader, library, directory, index, **kwargs):
+            (directory / 'ready').touch()
+        def close(self):
+            pass
+    monkeypatch.setattr('aa_arena.legacy.ai9_isolation.IsolatedAI9Player', ReadyPlayer)
     loader = tmp_path / 'loader'
     loader.write_text('#!/usr/bin/env python3\nimport time\nfrom pathlib import Path\nprint(12345, flush=True)\nprint("x" * '+str(output_bytes)+', flush=True)\nPath("ready").touch()\ntime.sleep(20)\n')
     loader.chmod(0o755)

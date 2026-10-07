@@ -17,6 +17,7 @@ import subprocess
 import tempfile
 import time
 import uuid
+from functools import lru_cache
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -70,6 +71,7 @@ class Ai9PreparedPlayer:
 
 def _digest(paths: tuple[Path, ...]) -> str:
     digest = hashlib.sha256()
+    digest.update(_compiler_identity())
     for root in paths:
         for path in sorted(root.rglob("*")):
             if not path.is_file() or path.suffix in {".o", ".d", ".pyc"}:
@@ -82,9 +84,28 @@ def _digest(paths: tuple[Path, ...]) -> str:
     return digest.hexdigest()
 
 
+def _compiler_command() -> str:
+    return os.environ.get("AA_ARENA_CXX", "g++-14")
+
+
+@lru_cache(maxsize=16)
+def _read_compiler_identity(command: str) -> bytes:
+    executable = shutil.which(command, path=os.defpath)
+    if executable is None:
+        raise Ai9Error(f"required AI9 compiler unavailable: {command}")
+    completed = subprocess.run([executable, "--version"], capture_output=True,
+                               check=True, timeout=10, env={"PATH": os.defpath})
+    return str(Path(executable).resolve()).encode() + b"\0" + completed.stdout
+
+
+def _compiler_identity() -> bytes:
+    return _read_compiler_identity(_compiler_command())
+
+
 def _runtime_environment() -> dict[str, str]:
     # Match players and compilers must not inherit host model credentials.
     values = {"PATH": os.defpath, "LANG": os.environ.get("LANG", "C.UTF-8")}
+    values["CXX"] = _compiler_command()
     values.update({name: os.environ[name] for name in ("LC_ALL", "LC_CTYPE", "TZ")
                    if name in os.environ})
     return values
@@ -139,6 +160,9 @@ def _inspect_player_library(arguments: list[str], library: Path) -> subprocess.C
 def _run_player_build(
     arguments: list[str], *, cwd: Path, readonly_paths: tuple[Path, ...],
 ) -> None:
+    arguments = list(arguments)
+    if arguments and arguments[0] == "g++":
+        arguments[0] = _compiler_command()
     try:
         completed = run_isolated_build(
             arguments, cwd=cwd, readonly_paths=readonly_paths, timeout=600.0,
@@ -244,48 +268,18 @@ def run_ai9_match(
         for player in players
         for _ in range(config.processes_per_player)
     ]
-    player_processes: list[subprocess.Popen[bytes]] = []
-    stderr_files = []
-    stdout_files = []
+    from aa_arena.legacy.ai9_isolation import IsolatedAI9Player
+    from aa_arena.sandbox.model import SandboxInfrastructureError
+    player_processes = []
     ports: list[str] = []
     try:
         for index, player in enumerate(expanded_players):
-            stderr_path = match_dir / f"ailoader-{index}.stderr"
-            stderr_file = stderr_path.open("w+b")
-            stderr_files.append(stderr_file)
-            stdout_file = (match_dir / f"ailoader-{index}.stdout").open("w+b")
-            stdout_files.append(stdout_file)
-            process = subprocess.Popen(
-                [str(backend.ailoader), str(player.library_path)],
-                cwd=match_dir, stdout=stdout_file, stderr=stderr_file,
-                text=True,
-                start_new_session=True,
-                env={
-                    **_runtime_environment(),
-                    "AI9_AILOADER_NOCLOSESTDIO": "1",
-                    **({} if config.supervised else {"AI9_AILOADER_NOSUPERVISOR": "1"}),
-                },
+            process = IsolatedAI9Player(
+                backend.ailoader, player.library_path, match_dir, index,
+                supervised=config.supervised, timeout=min(30.0, timeout_s),
             )
             player_processes.append(process)
-        for index, process in enumerate(player_processes):
-            output = stdout_files[index]
-            startup_deadline = time.monotonic() + min(30.0, timeout_s)
-            while True:
-                output.seek(0)
-                line = output.readline()
-                if line.endswith(b'\n'):
-                    break
-                if process.poll() is not None or time.monotonic() >= startup_deadline:
-                    raise Ai9Error(f"ailoader {index} did not publish a port")
-                time.sleep(0.01)
-            line = line.strip()
-            try:
-                port = int(line)
-                if not 0 < port < 65536:
-                    raise ValueError
-            except ValueError as exc:
-                raise Ai9Error(f"ailoader {index} bad port: {line!r}") from exc
-            ports.append(str(port))
+            ports.append(str(process.port))
 
         argv = [str(backend.logic)]
         for port in ports:
@@ -313,16 +307,17 @@ def run_ai9_match(
                 time.sleep(0.1)
             _kill_group(proc)
         return _parse_result(config, match_dir, returncode)
+    except SandboxInfrastructureError as exc:
+        raise Ai9Error(f"AI9 isolation failed: {exc}") from exc
     finally:
-        for proc in player_processes:
-            _kill_group(proc)
-        for proc in player_processes:
-            if proc.stdout:
-                proc.stdout.close()
-        for handle in stderr_files:
-            handle.close()
-        for handle in stdout_files:
-            handle.close()
+        cleanup_errors = []
+        for player in player_processes:
+            try:
+                player.close()
+            except SandboxInfrastructureError as exc:
+                cleanup_errors.append(str(exc))
+        if cleanup_errors:
+            raise Ai9Error("; ".join(cleanup_errors))
 
 
 def _parse_result(

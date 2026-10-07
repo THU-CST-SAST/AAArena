@@ -50,7 +50,7 @@ Player-code publication follows the experiment's **frozen measured Elo ranking**
 
 ## Installation
 
-The validated evaluation platform is **x86-64 Linux** with cgroup v2, a working systemd user manager, unprivileged user namespaces, Bubblewrap, GCC/G++, Make, CMake and Ruby. Python 3.11 or newer runs the controller; a separate Python 3.10.14 environment runs game participants. Conda is used below to create that environment. Experiments run without root on a configured host. See [`docs/runtime.md`](docs/runtime.md) for sandbox requirements.
+The validated evaluation platform is **x86-64 Linux** with cgroup v2, a working systemd user manager, unprivileged user namespaces, Bubblewrap, GCC/G++ 14.2, Make, CMake and Ruby. Python 3.11 or newer runs the controller; a separate Python 3.10.14 environment runs game participants. Conda is used below to create that environment. Experiments run without root on a configured host. See [`docs/runtime.md`](docs/runtime.md) for sandbox requirements.
 
 ```bash
 git clone https://github.com/THU-CST-SAST/AAArena.git
@@ -70,7 +70,9 @@ cp environment/player-environment-owner.json \
 python scripts/install_assets.py --verify-only
 ```
 
-Keep the editable source directory available: the evaluators resolve bundled assets relative to it. Asset installation is offline and verifies archive and per-file SHA-256 digests. Installing language runtimes and dependencies requires network access. The hosted evaluator compiles policies with GCC/G++ 11.5; use GCC 11 locally for compiler parity. For Python 3.14 Linux, add `-c environment/controller-constraints-py314-linux.txt` to the controller dependency installation to use the validated versions. A virtualenv-based player setup is also available through `scripts/install_player_env.py --python /path/to/python3.10`.
+Keep the editable source directory available: the evaluators resolve bundled assets relative to it. Asset installation is offline and verifies archive and per-file SHA-256 digests. Installing language runtimes and dependencies requires network access. AI9 players execute in separate filesystem and network namespaces, including library initialization. A trusted byte relay connects each isolated loader to the judge.
+
+AI9 policy and backend builds require GCC/G++ 14.2 (`g++-14`); compiler identity is part of the build-cache key. Use the same compiler across compared runs. For Python 3.14 Linux, add `-c environment/controller-constraints-py314-linux.txt` to the controller dependency installation to use the validated versions. A virtualenv-based player setup is also available through `scripts/install_player_env.py --python /path/to/python3.10`.
 
 Configure the runtime in each shell:
 
@@ -82,6 +84,7 @@ export PYTHONDONTWRITEBYTECODE=1
 export OPENBLAS_NUM_THREADS=1
 export OMP_NUM_THREADS=1
 export AA_ARENA_CPU_POLICY=unlimited
+export AA_ARENA_CXX=g++-14
 systemctl --user is-system-running
 ```
 
@@ -290,7 +293,7 @@ The learner receives **128 trajectory views and 16 remote full-pool large evalua
 
 ## Results and validation
 
-**Release gate:** the 12-game remote small-match matrix and both live native-harness acceptance tests pass. The cross-game complete-pool large-evaluation matrix is pending. See [acceptance status](validation/release-verification.json) before publishing full-matrix validation claims.
+**Release gate:** the 12-game remote small-match matrix and both live native-harness acceptance tests pass. Deployment of the validated AI9 isolation/compiler configuration and the cross-game complete-pool large-evaluation matrix are pending. See [acceptance status](validation/release-verification.json) before publishing full-matrix validation claims.
 
 Formal large evaluations fit the candidate against the complete frozen Elo anchors and report full-pool rank. Local practice uses only published opponents and is a separate result scope. Match randomness, candidate bugs and historical opponent forfeits can affect a score; an infrastructure failure is not a valid model-performance result.
 

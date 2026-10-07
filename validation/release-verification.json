@@ -280,5 +280,68 @@
     "status": "running",
     "release_acceptance_complete": false,
     "note": "Cross-game full-pool sweeps must complete before a full-matrix acceptance claim."
+  },
+  "ai9_isolation_and_compiler": {
+    "compiler": "GCC 14.2.0",
+    "isolated_player_transport": true,
+    "elf_constructor_isolation_passed": true,
+    "targeted_tests_passed": 5,
+    "reference_player_regression": {
+      "game": "pacman",
+      "rank": 12,
+      "source_sha256": "dd035a26f307a94ca5e08d76a6d6856045d3bd3007eae9be40777c8a596f2a1b",
+      "rounds": [
+        601,
+        601
+      ],
+      "candidate_errors": 0,
+      "opponent_errors": 0,
+      "game_errors": 0
+    },
+    "small_match_matrix": {
+      "pacman": {
+        "candidate_errors": 0,
+        "opponent_errors": 0,
+        "game_errors": 0,
+        "rounds": [
+          553,
+          601
+        ],
+        "passed": true
+      },
+      "lota": {
+        "candidate_errors": 0,
+        "opponent_errors": 0,
+        "game_errors": 0,
+        "rounds": [
+          472,
+          481
+        ],
+        "passed": true
+      },
+      "dorado": {
+        "candidate_errors": 0,
+        "opponent_errors": 0,
+        "game_errors": 0,
+        "rounds": [
+          793,
+          490
+        ],
+        "passed": true
+      },
+      "monecraft": {
+        "candidate_errors": 0,
+        "opponent_errors": 0,
+        "game_errors": 0,
+        "rounds": [
+          999,
+          999
+        ],
+        "passed": true
+      }
+    },
+    "hosted_deployment": "pending",
+    "full_pool_matrix": "required",
+    "result_regression_tests_passed": 39
   }
 }

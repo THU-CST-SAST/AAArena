@@ -55,7 +55,7 @@ def test_legacy_sdk_candidate_build_and_cached_elf_checks_are_isolated(
     assert _build(game, source, tmp_path / "cache") == library
     assert hashlib.sha256(library.read_bytes()).hexdigest() == digest
     assert (source / "ai.cpp").read_bytes() == before
-    assert [command[0] for command, _, _ in calls] == ["g++", "ldd", "nm", "ldd", "nm"]
+    assert [command[0] for command, _, _ in calls] == [ai9._compiler_command(), "ldd", "nm", "ldd", "nm"]
     for command, options, returncode in calls:
         assert returncode == 0
         if command[0] in {"ldd", "nm"}:

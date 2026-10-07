@@ -4,6 +4,7 @@ import tempfile
 from pathlib import Path
 from aa_arena.core.player_environment import player_python
 from aa_arena.core.build_sandbox import run_isolated_build
+from aa_arena.legacy.ai9 import _compiler_command, _compiler_identity
 from aa_arena.sandbox.model import ProcessSpec
 from aa_arena.sandbox.systemd import SystemdScopeLauncher
 with tempfile.TemporaryDirectory(prefix='arena-host-check-') as directory:
@@ -30,9 +31,11 @@ with tempfile.TemporaryDirectory(prefix='arena-host-check-') as directory:
 with tempfile.TemporaryDirectory(prefix="arena-compiler-check-") as directory:
     root=Path(directory)
     (root/"probe.cpp").write_text("#include <iostream>\nint main(){std::cout << 42;return 0;}\n")
-    result=run_isolated_build(("g++","-std=c++14","probe.cpp","-o","probe"),cwd=root,timeout=30)
+    identity = _compiler_identity()
+    assert b"14.2.0" in identity, "Hosted reference evaluation requires GCC 14.2.0"
+    result=run_isolated_build((_compiler_command(),"-std=c++14","probe.cpp","-o","probe"),cwd=root,timeout=30)
     assert result.returncode==0, result.stderr
-    print("Isolated C++ compiler verified")
+    print("Isolated GCC 14.2.0 compiler verified")
 
 # Dedicated evaluator-user startup only: a terminated controller can leave
 # fail-closed admission leases. Reclaim them only after verifying that no live
