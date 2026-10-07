@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "games": [
+    {
+      "game": "rollman",
+      "archive": "rollman.tar.gz",
+      "sha256": "3fb68c012edb3d088a49e69aafffd8e97b22dc91e894e9ec561fc41b03042791",
+      "compressed_bytes": 491520,
+      "uncompressed_bytes": 2176425,
+      "files": 4162
+    },
+    {
+      "game": "pacman",
+      "archive": "pacman.tar.gz",
+      "sha256": "970f371c47341a0ed59791b0e695d206bc3e01ea310b300284fa112e94774086",
+      "compressed_bytes": 143402,
+      "uncompressed_bytes": 573475,
+      "files": 238
+    },
+    {
+      "game": "antwar",
+      "archive": "antwar.tar.gz",
+      "sha256": "aadd3e37a52f1a71c185a1d11985e3d06adb36d53c582c40d7f8d44666ff2659",
+      "compressed_bytes": 1309014,
+      "uncompressed_bytes": 6579677,
+      "files": 6061
+    },
+    {
+      "game": "aquawar",
+      "archive": "aquawar.tar.gz",
+      "sha256": "77b38c39feac77ec6dadfd2fbd0b8a8915d385161e9f6996c63bbf964e1e362a",
+      "compressed_bytes": 5558301,
+      "uncompressed_bytes": 29005535,
+      "files": 3682
+    },
+    {
+      "game": "generals",
+      "archive": "generals.tar.gz",
+      "sha256": "11d4bde9745975f533b65ac669880daefd8271015d51a39493b033bd110d7e6b",
+      "compressed_bytes": 9116850,
+      "uncompressed_bytes": 63983277,
+      "files": 8952
+    },
+    {
+      "game": "lostspace",
+      "archive": "lostspace.tar.gz",
+      "sha256": "8da64c5cd9d39b3a76c9b223cefcb70f4e3ebfb747adf522c930048c2eadc0c9",
+      "compressed_bytes": 2309952,
+      "uncompressed_bytes": 11982961,
+      "files": 1226
+    },
+    {
+      "game": "miracle",
+      "archive": "miracle.tar.gz",
+      "sha256": "34ee9002764d697a1ce6e9a603915298a865c81278e9d9a7919d2e0a6e6d5a09",
+      "compressed_bytes": 14036340,
+      "uncompressed_bytes": 82893863,
+      "files": 3589
+    },
+    {
+      "game": "dorado",
+      "archive": "dorado.tar.gz",
+      "sha256": "b13ebafcab6755ee9a1d1d0757c768d1749f5cf024b2ca9c61b3b19bd993de90",
+      "compressed_bytes": 723345,
+      "uncompressed_bytes": 3645523,
+      "files": 853
+    },
+    {
+      "game": "monecraft",
+      "archive": "monecraft.tar.gz",
+      "sha256": "69fffd4d77f7da743e22a4251ef9920cd0f082ef110647a0db815a44657a287a",
+      "compressed_bytes": 168480,
+      "uncompressed_bytes": 732803,
+      "files": 358
+    },
+    {
+      "game": "lota",
+      "archive": "lota.tar.gz",
+      "sha256": "caedc485e709f8645508280244bd3461067aa855f0508e06bb4cbd17c1c576ab",
+      "compressed_bytes": 951991,
+      "uncompressed_bytes": 12774624,
+      "files": 608
+    },
+    {
+      "game": "snakego",
+      "archive": "snakego.tar.gz",
+      "sha256": "6327ac7a25c9460e0191e155b3f3c440e80b7727363ad883e957efb74ca2664f",
+      "compressed_bytes": 841409,
+      "uncompressed_bytes": 4377468,
+      "files": 2426
+    },
+    {
+      "game": "antwar2",
+      "archive": "antwar2.tar.gz",
+      "sha256": "53c60836f51d921855d94bd8d57615957d0b0020f1c963cc5adbd4c8a27d098b",
+      "compressed_bytes": 7838476,
+      "uncompressed_bytes": 48109652,
+      "files": 16518
+    }
+  ]
+}

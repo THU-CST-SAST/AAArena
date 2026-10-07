@@ -1,0 +1,77 @@
+{
+  "policy": "rank > 8 and rank % 2 == 0",
+  "games": [
+    {
+      "game": "rollman",
+      "official_pool": 64,
+      "published_players": 28,
+      "withheld_players": 36
+    },
+    {
+      "game": "pacman",
+      "official_pool": 44,
+      "published_players": 18,
+      "withheld_players": 26
+    },
+    {
+      "game": "antwar",
+      "official_pool": 114,
+      "published_players": 53,
+      "withheld_players": 61
+    },
+    {
+      "game": "aquawar",
+      "official_pool": 170,
+      "published_players": 81,
+      "withheld_players": 89
+    },
+    {
+      "game": "generals",
+      "official_pool": 197,
+      "published_players": 94,
+      "withheld_players": 103
+    },
+    {
+      "game": "lostspace",
+      "official_pool": 111,
+      "published_players": 51,
+      "withheld_players": 60
+    },
+    {
+      "game": "miracle",
+      "official_pool": 253,
+      "published_players": 122,
+      "withheld_players": 131
+    },
+    {
+      "game": "dorado",
+      "official_pool": 323,
+      "published_players": 157,
+      "withheld_players": 166
+    },
+    {
+      "game": "monecraft",
+      "official_pool": 112,
+      "published_players": 52,
+      "withheld_players": 60
+    },
+    {
+      "game": "lota",
+      "official_pool": 200,
+      "published_players": 96,
+      "withheld_players": 104
+    },
+    {
+      "game": "snakego",
+      "official_pool": 141,
+      "published_players": 66,
+      "withheld_players": 75
+    },
+    {
+      "game": "antwar2",
+      "official_pool": 191,
+      "published_players": 91,
+      "withheld_players": 100
+    }
+  ]
+}

@@ -1,0 +1,591 @@
+{
+  "complete": true,
+  "degree": 24,
+  "game": "rollman",
+  "game_errors": 0,
+  "generated_at": "2026-08-31T16:23:32.219278+00:00",
+  "infra_errors": 0,
+  "method": "Bradley-Terry MLE with one neutral-anchor prior per player",
+  "pending_matches": 0,
+  "planned_matches": 1360,
+  "players": 64,
+  "ratings": [
+    {
+      "anchor_elo": 66.1,
+      "matches": 39,
+      "measured_elo": 527.076254,
+      "player_id": "anon__8bcfa3828b3cb3d3__139474fd6bc799b2__v14",
+      "points": 39.0,
+      "track": "rollman",
+      "winrate": 1.0
+    },
+    {
+      "anchor_elo": 71.6,
+      "matches": 37,
+      "measured_elo": 517.537646,
+      "player_id": "anon__ee2b9e3e44d3e93b__6958430e8e9aa798__v3",
+      "points": 37.0,
+      "track": "rollman",
+      "winrate": 1.0
+    },
+    {
+      "anchor_elo": 246.2,
+      "matches": 29,
+      "measured_elo": 493.121616,
+      "player_id": "rank04__Sesamexxx__TestPacman__v11",
+      "points": 29.0,
+      "track": "rollman",
+      "winrate": 1.0
+    },
+    {
+      "anchor_elo": 314.2,
+      "matches": 25,
+      "measured_elo": 470.098712,
+      "player_id": "rank08__wangxintong__Pacman__v2",
+      "points": 25.0,
+      "track": "rollman",
+      "winrate": 1.0
+    },
+    {
+      "anchor_elo": 130.4,
+      "matches": 26,
+      "measured_elo": 429.102823,
+      "player_id": "PotatoSG__ent_21145d81ed5194c0__v5",
+      "points": 26.0,
+      "track": "rollman",
+      "winrate": 1.0
+    },
+    {
+      "anchor_elo": 52.3,
+      "matches": 24,
+      "measured_elo": 418.290437,
+      "player_id": "Genshin__ent_bed7fd042932708e__v8",
+      "points": 24.0,
+      "track": "rollman",
+      "winrate": 1.0
+    },
+    {
+      "anchor_elo": 255.2,
+      "matches": 23,
+      "measured_elo": 408.104267,
+      "player_id": "rank11__alan_zhao__俺を捨てたところ__v13",
+      "points": 23.0,
+      "track": "rollman",
+      "winrate": 1.0
+    },
+    {
+      "anchor_elo": 224.2,
+      "matches": 21,
+      "measured_elo": 395.446581,
+      "player_id": "rank13__PotatoSG__终曲合声__v9",
+      "points": 21.0,
+      "track": "rollman",
+      "winrate": 1.0
+    },
+    {
+      "anchor_elo": 261.1,
+      "matches": 38,
+      "measured_elo": 297.034037,
+      "player_id": "anon__75a1c205c19acb52__5cecdd45cddeeda0__v1",
+      "points": 37.0,
+      "track": "rollman",
+      "winrate": 0.9736842105263158
+    },
+    {
+      "anchor_elo": 64.8,
+      "matches": 38,
+      "measured_elo": 295.660499,
+      "player_id": "anon__bb189cbc93595134__5422c2c232925651__v16",
+      "points": 37.0,
+      "track": "rollman",
+      "winrate": 0.9736842105263158
+    },
+    {
+      "anchor_elo": 95.5,
+      "matches": 27,
+      "measured_elo": 255.112633,
+      "player_id": "rank06__Genshin__pac-state__v1",
+      "points": 26.0,
+      "track": "rollman",
+      "winrate": 0.9629629629629629
+    },
+    {
+      "anchor_elo": 244.7,
+      "matches": 35,
+      "measured_elo": 250.998971,
+      "player_id": "anon__62ad01d7ce8ebbe8__7339b812d38a7e78__v14",
+      "points": 34.0,
+      "track": "rollman",
+      "winrate": 0.9714285714285714
+    },
+    {
+      "anchor_elo": 241.1,
+      "matches": 34,
+      "measured_elo": 240.075135,
+      "player_id": "anon__62ad01d7ce8ebbe8__03ee84d90857b59e__v1",
+      "points": 33.0,
+      "track": "rollman",
+      "winrate": 0.9705882352941176
+    },
+    {
+      "anchor_elo": 256.0,
+      "matches": 40,
+      "measured_elo": 195.147688,
+      "player_id": "anon__b5c8f97baee5ace1__d5f38308eb1b02f7__v12",
+      "points": 38.0,
+      "track": "rollman",
+      "winrate": 0.95
+    },
+    {
+      "anchor_elo": 168.7,
+      "matches": 35,
+      "measured_elo": 176.402532,
+      "player_id": "anon__efaf5513646f45ec__f0cd4b9764851f7f__v4",
+      "points": 33.0,
+      "track": "rollman",
+      "winrate": 0.9428571428571428
+    },
+    {
+      "anchor_elo": 103.8,
+      "matches": 26,
+      "measured_elo": 136.3507,
+      "player_id": "rank07__xyliu23__Vince1__v1",
+      "points": 24.0,
+      "track": "rollman",
+      "winrate": 0.9230769230769231
+    },
+    {
+      "anchor_elo": -30.0,
+      "matches": 68,
+      "measured_elo": 131.246161,
+      "player_id": "rank12__Lywer__GGbomb__v74",
+      "points": 39.0,
+      "track": "ghost",
+      "winrate": 0.5735294117647058
+    },
+    {
+      "anchor_elo": 273.7,
+      "matches": 39,
+      "measured_elo": 114.218491,
+      "player_id": "anon__b9b569097305d11e__c2154437fb92b23d__v1",
+      "points": 36.0,
+      "track": "rollman",
+      "winrate": 0.9230769230769231
+    },
+    {
+      "anchor_elo": 149.2,
+      "matches": 27,
+      "measured_elo": 98.522316,
+      "player_id": "PotatoSG__ent_9e6e5ecb63f9d9e1__v1",
+      "points": 25.0,
+      "track": "rollman",
+      "winrate": 0.9259259259259259
+    },
+    {
+      "anchor_elo": -70.6,
+      "matches": 33,
+      "measured_elo": 90.387461,
+      "player_id": "anon__fb0888eef00e8f80__129a4c54f9aab32d__v1",
+      "points": 30.0,
+      "track": "rollman",
+      "winrate": 0.9090909090909091
+    },
+    {
+      "anchor_elo": -156.5,
+      "matches": 31,
+      "measured_elo": 80.560625,
+      "player_id": "oyly__ent_b524927739b86429__v6",
+      "points": 28.0,
+      "track": "rollman",
+      "winrate": 0.9032258064516129
+    },
+    {
+      "anchor_elo": 275.6,
+      "matches": 24,
+      "measured_elo": 71.124832,
+      "player_id": "rank10__oyly__rollER__v17",
+      "points": 22.0,
+      "track": "rollman",
+      "winrate": 0.9166666666666666
+    },
+    {
+      "anchor_elo": 129.0,
+      "matches": 36,
+      "measured_elo": 50.616679,
+      "player_id": "anon__62ad01d7ce8ebbe8__afffd2ae12e660e8__v1",
+      "points": 32.0,
+      "track": "rollman",
+      "winrate": 0.8888888888888888
+    },
+    {
+      "anchor_elo": -53.8,
+      "matches": 36,
+      "measured_elo": 43.522962,
+      "player_id": "anon__ee2b9e3e44d3e93b__fe10c49d0ff498cb__v1",
+      "points": 32.0,
+      "track": "rollman",
+      "winrate": 0.8888888888888888
+    },
+    {
+      "anchor_elo": 211.3,
+      "matches": 31,
+      "measured_elo": 41.901608,
+      "player_id": "anon__41db0b161328d3dc__0c0eb1d4014f6f4d__v2",
+      "points": 28.0,
+      "track": "rollman",
+      "winrate": 0.9032258064516129
+    },
+    {
+      "anchor_elo": 66.2,
+      "matches": 34,
+      "measured_elo": 33.000697,
+      "player_id": "anon__f9c34c627207d2fd__47faf15b88a231bb__v1",
+      "points": 30.0,
+      "track": "rollman",
+      "winrate": 0.8823529411764706
+    },
+    {
+      "anchor_elo": 183.5,
+      "matches": 28,
+      "measured_elo": 28.7194,
+      "player_id": "anon__15cdfd302fd1f309__55d27714d51424f2__v1",
+      "points": 25.0,
+      "track": "rollman",
+      "winrate": 0.8928571428571429
+    },
+    {
+      "anchor_elo": 107.9,
+      "matches": 30,
+      "measured_elo": 19.070625,
+      "player_id": "rank02__peop1e__pucman__v1",
+      "points": 26.0,
+      "track": "rollman",
+      "winrate": 0.8666666666666667
+    },
+    {
+      "anchor_elo": 141.5,
+      "matches": 40,
+      "measured_elo": 15.984558,
+      "player_id": "anon__90f771326647ea5c__e534e4899a0b3c66__v1",
+      "points": 35.0,
+      "track": "rollman",
+      "winrate": 0.875
+    },
+    {
+      "anchor_elo": 122.0,
+      "matches": 37,
+      "measured_elo": 4.543533,
+      "player_id": "anon__6cd161290729f39f__120b21396a0afbcb__v27",
+      "points": 32.0,
+      "track": "rollman",
+      "winrate": 0.8648648648648649
+    },
+    {
+      "anchor_elo": -310.9,
+      "matches": 23,
+      "measured_elo": -4.016895,
+      "player_id": "Genshin__ent_b607a96ab807c21c__v5",
+      "points": 20.0,
+      "track": "rollman",
+      "winrate": 0.8695652173913043
+    },
+    {
+      "anchor_elo": -222.6,
+      "matches": 28,
+      "measured_elo": -45.771308,
+      "player_id": "rank05__zenith__パックマン__v1",
+      "points": 23.0,
+      "track": "rollman",
+      "winrate": 0.8214285714285714
+    },
+    {
+      "anchor_elo": 110.0,
+      "matches": 25,
+      "measured_elo": -51.599314,
+      "player_id": "Lywer__ent_6512bb4465150c90__v7",
+      "points": 21.0,
+      "track": "rollman",
+      "winrate": 0.84
+    },
+    {
+      "anchor_elo": -222.8,
+      "matches": 68,
+      "measured_elo": -181.199356,
+      "player_id": "rank09__wangxintong__Ghost__v2",
+      "points": 22.0,
+      "track": "ghost",
+      "winrate": 0.3235294117647059
+    },
+    {
+      "anchor_elo": -92.3,
+      "matches": 68,
+      "measured_elo": -255.453432,
+      "player_id": "rank06__Genshin__itzy__v11",
+      "points": 20.0,
+      "track": "ghost",
+      "winrate": 0.29411764705882354
+    },
+    {
+      "anchor_elo": -265.5,
+      "matches": 68,
+      "measured_elo": -259.638692,
+      "player_id": "Genshin__ent_0348f656316f66c9__v27",
+      "points": 23.0,
+      "track": "ghost",
+      "winrate": 0.3382352941176471
+    },
+    {
+      "anchor_elo": -224.0,
+      "matches": 68,
+      "measured_elo": -270.892709,
+      "player_id": "xiaolong23__ent_2a2c3eed0ea809e8__v9",
+      "points": 19.0,
+      "track": "ghost",
+      "winrate": 0.27941176470588236
+    },
+    {
+      "anchor_elo": -199.4,
+      "matches": 68,
+      "measured_elo": -272.773452,
+      "player_id": "anon__b5c8f97baee5ace1__991a80370ddba51d__v4",
+      "points": 21.0,
+      "track": "ghost",
+      "winrate": 0.3088235294117647
+    },
+    {
+      "anchor_elo": -541.0,
+      "matches": 22,
+      "measured_elo": -298.961921,
+      "player_id": "rank12__Lywer__bing__v62",
+      "points": 13.0,
+      "track": "rollman",
+      "winrate": 0.5909090909090909
+    },
+    {
+      "anchor_elo": -158.2,
+      "matches": 21,
+      "measured_elo": -303.096263,
+      "player_id": "Genshin__ent_494062caf9646acf__v1",
+      "points": 12.0,
+      "track": "rollman",
+      "winrate": 0.5714285714285714
+    },
+    {
+      "anchor_elo": -409.6,
+      "matches": 68,
+      "measured_elo": -340.715027,
+      "player_id": "anon__ce40a2257f119fec__bc45f1a7fd96e494__v1",
+      "points": 20.0,
+      "track": "ghost",
+      "winrate": 0.29411764705882354
+    },
+    {
+      "anchor_elo": -234.9,
+      "matches": 68,
+      "measured_elo": -342.555623,
+      "player_id": "anon__62ad01d7ce8ebbe8__ce2b03176c10e2de__v1",
+      "points": 19.0,
+      "track": "ghost",
+      "winrate": 0.27941176470588236
+    },
+    {
+      "anchor_elo": -277.2,
+      "matches": 68,
+      "measured_elo": -346.830967,
+      "player_id": "anon__1d5aa6d09d0c4af2__78e27342067fe2e8__v2",
+      "points": 19.0,
+      "track": "ghost",
+      "winrate": 0.27941176470588236
+    },
+    {
+      "anchor_elo": -466.5,
+      "matches": 68,
+      "measured_elo": -348.79846,
+      "player_id": "rank03__xiaolong23__haaaa__v23",
+      "points": 18.0,
+      "track": "ghost",
+      "winrate": 0.2647058823529412
+    },
+    {
+      "anchor_elo": -239.1,
+      "matches": 68,
+      "measured_elo": -352.071744,
+      "player_id": "omegafantasy__ent_c53c0e0d5bfe14c8__v9",
+      "points": 18.0,
+      "track": "ghost",
+      "winrate": 0.2647058823529412
+    },
+    {
+      "anchor_elo": 43.1,
+      "matches": 40,
+      "measured_elo": -370.567299,
+      "player_id": "anon__a80054be31f742a9__8fca4cf101c04719__v7",
+      "points": 20.0,
+      "track": "rollman",
+      "winrate": 0.5
+    },
+    {
+      "anchor_elo": null,
+      "matches": 68,
+      "measured_elo": -383.831211,
+      "player_id": "anon__be8ba9f19d401871__748e143fb2c50dd2__v1",
+      "points": 18.0,
+      "track": "ghost",
+      "winrate": 0.2647058823529412
+    },
+    {
+      "anchor_elo": -245.4,
+      "matches": 68,
+      "measured_elo": -405.481685,
+      "player_id": "rank07__ertuoren__Ghost__v19",
+      "points": 15.0,
+      "track": "ghost",
+      "winrate": 0.22058823529411764
+    },
+    {
+      "anchor_elo": -651.1,
+      "matches": 68,
+      "measured_elo": -449.214552,
+      "player_id": "xiaolong23__ent_285cfa08968b7cfa__v1",
+      "points": 14.0,
+      "track": "ghost",
+      "winrate": 0.20588235294117646
+    },
+    {
+      "anchor_elo": -301.0,
+      "matches": 68,
+      "measured_elo": -467.041366,
+      "player_id": "anon__11d3660b6a01bfa6__73b3aa86b8be8975__v1",
+      "points": 17.0,
+      "track": "ghost",
+      "winrate": 0.25
+    },
+    {
+      "anchor_elo": -386.2,
+      "matches": 68,
+      "measured_elo": -471.352654,
+      "player_id": "anon__bb189cbc93595134__d586eb0385aefb3b__v4",
+      "points": 16.0,
+      "track": "ghost",
+      "winrate": 0.23529411764705882
+    },
+    {
+      "anchor_elo": -277.1,
+      "matches": 68,
+      "measured_elo": -471.883561,
+      "player_id": "anon__a80054be31f742a9__7281d21891333ec1__v1",
+      "points": 16.0,
+      "track": "ghost",
+      "winrate": 0.23529411764705882
+    },
+    {
+      "anchor_elo": -488.0,
+      "matches": 68,
+      "measured_elo": -504.849753,
+      "player_id": "rank16__peop1e__ghust__v1",
+      "points": 13.0,
+      "track": "ghost",
+      "winrate": 0.19117647058823528
+    },
+    {
+      "anchor_elo": -820.1,
+      "matches": 33,
+      "measured_elo": -609.099047,
+      "player_id": "anon__568aa5f845f21820__f0dc84ba18dad344__v1",
+      "points": 8.0,
+      "track": "rollman",
+      "winrate": 0.24242424242424243
+    },
+    {
+      "anchor_elo": -629.9,
+      "matches": 68,
+      "measured_elo": -633.714529,
+      "player_id": "xiaolong23__ent_477d1fcf1a0ac36d__v7",
+      "points": 11.0,
+      "track": "ghost",
+      "winrate": 0.16176470588235295
+    },
+    {
+      "anchor_elo": -827.2,
+      "matches": 30,
+      "measured_elo": -794.633186,
+      "player_id": "anon__15cdfd302fd1f309__e4b5bbe8838e9cd9__v14",
+      "points": 4.0,
+      "track": "rollman",
+      "winrate": 0.13333333333333333
+    },
+    {
+      "anchor_elo": -884.8,
+      "matches": 20,
+      "measured_elo": -822.242222,
+      "player_id": "zenith__ent_20c06f26b1604ea6__v5",
+      "points": 2.0,
+      "track": "rollman",
+      "winrate": 0.1
+    },
+    {
+      "anchor_elo": -909.4,
+      "matches": 22,
+      "measured_elo": -840.49251,
+      "player_id": "Genshin__ent_49dc44a9cac202f7__v4",
+      "points": 2.0,
+      "track": "rollman",
+      "winrate": 0.09090909090909091
+    },
+    {
+      "anchor_elo": -813.7,
+      "matches": 29,
+      "measured_elo": -892.218638,
+      "player_id": "anon__15cdfd302fd1f309__7371b036340ee385__v2",
+      "points": 2.0,
+      "track": "rollman",
+      "winrate": 0.06896551724137931
+    },
+    {
+      "anchor_elo": -806.9,
+      "matches": 32,
+      "measured_elo": -1072.491487,
+      "player_id": "anon__568aa5f845f21820__d9b8b415d7967086__v1",
+      "points": 2.0,
+      "track": "rollman",
+      "winrate": 0.0625
+    },
+    {
+      "anchor_elo": -908.1,
+      "matches": 32,
+      "measured_elo": -1079.183298,
+      "player_id": "child6__ent_6eda0da822bb7541__v5",
+      "points": 2.0,
+      "track": "rollman",
+      "winrate": 0.0625
+    },
+    {
+      "anchor_elo": -641.5,
+      "matches": 40,
+      "measured_elo": -1113.652116,
+      "player_id": "anon__8d75e9de8d3c769c__460cfbb2e1289c58__v1",
+      "points": 2.0,
+      "track": "rollman",
+      "winrate": 0.05
+    },
+    {
+      "anchor_elo": -806.9,
+      "matches": 40,
+      "measured_elo": -1113.652116,
+      "player_id": "anon__8d75e9de8d3c769c__6d3698ad995c3464__v1",
+      "points": 2.0,
+      "track": "rollman",
+      "winrate": 0.05
+    },
+    {
+      "anchor_elo": -1089.3,
+      "matches": 68,
+      "measured_elo": -1595.435297,
+      "player_id": "child6__ent_033ed89da2f7e6bb__v1",
+      "points": 0.0,
+      "track": "ghost",
+      "winrate": 0.0
+    }
+  ],
+  "valid_matches": 1360
+}

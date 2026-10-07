@@ -1,0 +1,1788 @@
+{
+  "complete": true,
+  "degree": 24,
+  "game": "generals",
+  "game_errors": 0,
+  "generated_at": "2026-08-31T16:23:22.491019+00:00",
+  "infra_errors": 0,
+  "method": "Bradley-Terry MLE with one neutral-anchor prior per player",
+  "pending_matches": 0,
+  "planned_matches": 4728,
+  "players": 197,
+  "ratings": [
+    {
+      "anchor_elo": 1641.2,
+      "matches": 48,
+      "measured_elo": 2134.051145,
+      "player_id": "anon__f3df10cb5fce4010__8e79e6bb67955caf__v32",
+      "points": 48.0,
+      "track": null,
+      "winrate": 1.0
+    },
+    {
+      "anchor_elo": 1942.6,
+      "matches": 48,
+      "measured_elo": 2120.282841,
+      "player_id": "anon__4efd0ca181070eb6__4a4560195d7b7f31__v53",
+      "points": 48.0,
+      "track": null,
+      "winrate": 1.0
+    },
+    {
+      "anchor_elo": 1555.7,
+      "matches": 48,
+      "measured_elo": 1794.227309,
+      "player_id": "rank06__gary318__yard__v122",
+      "points": 46.0,
+      "track": null,
+      "winrate": 0.9583333333333334
+    },
+    {
+      "anchor_elo": 1437.8,
+      "matches": 48,
+      "measured_elo": 1780.93886,
+      "player_id": "gary318__ent_66c598c4db9728bc__v123",
+      "points": 45.0,
+      "track": null,
+      "winrate": 0.9375
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1762.244043,
+      "player_id": "anon__22da734296c64133__96df34d91ce21f68__v5",
+      "points": 45.0,
+      "track": null,
+      "winrate": 0.9375
+    },
+    {
+      "anchor_elo": 1648.3,
+      "matches": 48,
+      "measured_elo": 1754.998924,
+      "player_id": "anon__4efd0ca181070eb6__cd8a2ec22bb2c3a5__v66",
+      "points": 45.0,
+      "track": null,
+      "winrate": 0.9375
+    },
+    {
+      "anchor_elo": 1475.3,
+      "matches": 48,
+      "measured_elo": 1729.950829,
+      "player_id": "rank01__omegafantasy__碧之仲裁者__v4",
+      "points": 45.0,
+      "track": null,
+      "winrate": 0.9375
+    },
+    {
+      "anchor_elo": 1386.6,
+      "matches": 48,
+      "measured_elo": 1726.767035,
+      "player_id": "anon__c3b73bd70f2bd0d1__5528af27386439ac__v2",
+      "points": 45.0,
+      "track": null,
+      "winrate": 0.9375
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1721.532508,
+      "player_id": "jkCreeper__ent_a4407c34aa3941b0__v8",
+      "points": 46.0,
+      "track": null,
+      "winrate": 0.9583333333333334
+    },
+    {
+      "anchor_elo": 1483.2,
+      "matches": 48,
+      "measured_elo": 1622.788625,
+      "player_id": "omegafantasy__ent_217e96cb1fef9a74__v1",
+      "points": 43.0,
+      "track": null,
+      "winrate": 0.8958333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1600.738677,
+      "player_id": "yks_thu_cs_31__ent_cecf4f7c48c53697__v30",
+      "points": 47.0,
+      "track": null,
+      "winrate": 0.9791666666666666
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1575.060153,
+      "player_id": "anon__cc1664ce00865b88__46d3ce07ef216ba2__v150",
+      "points": 43.0,
+      "track": null,
+      "winrate": 0.8958333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1518.742527,
+      "player_id": "anon__22da734296c64133__6b39fcf763e5da39__v15",
+      "points": 42.0,
+      "track": null,
+      "winrate": 0.875
+    },
+    {
+      "anchor_elo": 1235.6,
+      "matches": 48,
+      "measured_elo": 1496.158955,
+      "player_id": "omegafantasy__ent_d1ec9e97d229b90e__v58",
+      "points": 40.0,
+      "track": null,
+      "winrate": 0.8333333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1459.093633,
+      "player_id": "anon__cc1664ce00865b88__fe803232519756bb__v13",
+      "points": 39.0,
+      "track": null,
+      "winrate": 0.8125
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1442.272376,
+      "player_id": "minzh23__ent_0e9f176921eb62aa__v12",
+      "points": 41.0,
+      "track": null,
+      "winrate": 0.8541666666666666
+    },
+    {
+      "anchor_elo": 1592.358892,
+      "matches": 48,
+      "measured_elo": 1431.791606,
+      "player_id": "rank02__robinliu__エアリアル_改修型__v18",
+      "points": 38.0,
+      "track": null,
+      "winrate": 0.7916666666666666
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1400.480755,
+      "player_id": "jkCreeper__ent_9297eb69cf8e2146__v1",
+      "points": 40.0,
+      "track": null,
+      "winrate": 0.8333333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1398.764257,
+      "player_id": "yks_thu_cs_31__ent_4464e995b1c9f6dc__v52",
+      "points": 45.0,
+      "track": null,
+      "winrate": 0.9375
+    },
+    {
+      "anchor_elo": 1149.6,
+      "matches": 48,
+      "measured_elo": 1379.214721,
+      "player_id": "anon__c2d510d22511bc3f__0c9be9b38c856345__v1",
+      "points": 41.0,
+      "track": null,
+      "winrate": 0.8541666666666666
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1373.849216,
+      "player_id": "anon__c2d510d22511bc3f__22e2f07c0a167ce1__v1",
+      "points": 41.0,
+      "track": null,
+      "winrate": 0.8541666666666666
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1354.371178,
+      "player_id": "anon__4077298146c1b90c__cea53c0051048d82__v1",
+      "points": 40.0,
+      "track": null,
+      "winrate": 0.8333333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1326.043902,
+      "player_id": "robinliu__ent_42a4aa674969a5de__v166",
+      "points": 46.0,
+      "track": null,
+      "winrate": 0.9583333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1323.035378,
+      "player_id": "minzh23__ent_921fcc357b8f4bba__v1",
+      "points": 39.0,
+      "track": null,
+      "winrate": 0.8125
+    },
+    {
+      "anchor_elo": 1319.301804,
+      "matches": 48,
+      "measured_elo": 1318.310574,
+      "player_id": "rank03__minzh23__假期快乐__v3",
+      "points": 34.0,
+      "track": null,
+      "winrate": 0.7083333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1312.112198,
+      "player_id": "zhoufangyuanPT__ent_1b6cdb9b3738859e__v6",
+      "points": 42.0,
+      "track": null,
+      "winrate": 0.875
+    },
+    {
+      "anchor_elo": 1356.738037,
+      "matches": 48,
+      "measured_elo": 1268.241678,
+      "player_id": "rank04__jkCreeper__test__v226",
+      "points": 32.0,
+      "track": null,
+      "winrate": 0.6666666666666666
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1261.852947,
+      "player_id": "Jacky__ent_bb91e70ebe36d228__v21",
+      "points": 43.0,
+      "track": null,
+      "winrate": 0.8958333333333334
+    },
+    {
+      "anchor_elo": 1247.96269,
+      "matches": 48,
+      "measured_elo": 1244.257777,
+      "player_id": "rank05__yks_thu_cs_31__Final__v10",
+      "points": 31.0,
+      "track": null,
+      "winrate": 0.6458333333333334
+    },
+    {
+      "anchor_elo": 1191.116853,
+      "matches": 48,
+      "measured_elo": 1241.176937,
+      "player_id": "rank02__sinwooo__动次打次__v107",
+      "points": 31.0,
+      "track": null,
+      "winrate": 0.6458333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1229.293484,
+      "player_id": "nashjunheng__ent_0409a49a65c0ea10__v1",
+      "points": 36.0,
+      "track": null,
+      "winrate": 0.75
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1227.54479,
+      "player_id": "minzh23__ent_f822e9842a0525ad__v166",
+      "points": 36.0,
+      "track": null,
+      "winrate": 0.75
+    },
+    {
+      "anchor_elo": 1278.9,
+      "matches": 48,
+      "measured_elo": 1209.2178,
+      "player_id": "Daucloud__ent_278635ecd114024d__v271",
+      "points": 40.0,
+      "track": null,
+      "winrate": 0.8333333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1204.746916,
+      "player_id": "nashjunheng__ent_5540e90a49d444d3__v1",
+      "points": 40.0,
+      "track": null,
+      "winrate": 0.8333333333333334
+    },
+    {
+      "anchor_elo": 1089.8,
+      "matches": 48,
+      "measured_elo": 1200.703668,
+      "player_id": "omegafantasy__ent_9e180fd4ad7280c5__v58",
+      "points": 31.0,
+      "track": null,
+      "winrate": 0.6458333333333334
+    },
+    {
+      "anchor_elo": 957.5,
+      "matches": 48,
+      "measured_elo": 1193.228833,
+      "player_id": "anon__c2d510d22511bc3f__1fb7847180c81fe3__v4",
+      "points": 37.0,
+      "track": null,
+      "winrate": 0.7708333333333334
+    },
+    {
+      "anchor_elo": 1168.832261,
+      "matches": 48,
+      "measured_elo": 1177.232086,
+      "player_id": "rank08__zuz__zuz__v148",
+      "points": 29.0,
+      "track": null,
+      "winrate": 0.6041666666666666
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1176.946213,
+      "player_id": "yks_thu_cs_31__ent_68d8919ad0d10a7e__v82",
+      "points": 41.0,
+      "track": null,
+      "winrate": 0.8541666666666666
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1173.328865,
+      "player_id": "nashjunheng__ent_876bb748629d7bd4__v1",
+      "points": 39.0,
+      "track": null,
+      "winrate": 0.8125
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1151.532566,
+      "player_id": "minzh23__ent_5b78214cc4123b7e__v73",
+      "points": 34.0,
+      "track": null,
+      "winrate": 0.7083333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1145.250552,
+      "player_id": "minzh23__ent_12fa66c49fca2e6f__v36",
+      "points": 33.0,
+      "track": null,
+      "winrate": 0.6875
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1143.34515,
+      "player_id": "anon__9151e4a44e4b2cc3__7836fa3fd2245a66__v18",
+      "points": 39.0,
+      "track": null,
+      "winrate": 0.8125
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1141.309701,
+      "player_id": "chestnut__ent_ca5def463d36dac2__v2",
+      "points": 34.0,
+      "track": null,
+      "winrate": 0.7083333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1131.621491,
+      "player_id": "nashjunheng__ent_f573be0f287291e1__v1",
+      "points": 30.0,
+      "track": null,
+      "winrate": 0.625
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1122.71603,
+      "player_id": "anon__cc1664ce00865b88__f24069ca17d87e59__v5",
+      "points": 31.0,
+      "track": null,
+      "winrate": 0.6458333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1118.244884,
+      "player_id": "anon__9151e4a44e4b2cc3__1e1221ece44f9b45__v76",
+      "points": 44.0,
+      "track": null,
+      "winrate": 0.9166666666666666
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1115.848736,
+      "player_id": "minzh23__ent_79e98556d4613f24__v6",
+      "points": 33.0,
+      "track": null,
+      "winrate": 0.6875
+    },
+    {
+      "anchor_elo": 1048.8,
+      "matches": 48,
+      "measured_elo": 1109.185687,
+      "player_id": "anon__01a96c7c57e7f72c__7c8e3e5df5e67ec3__v7",
+      "points": 36.0,
+      "track": null,
+      "winrate": 0.75
+    },
+    {
+      "anchor_elo": 953.0,
+      "matches": 48,
+      "measured_elo": 1107.72636,
+      "player_id": "anon__0b7bd3a74ce7157e__57581144f23ea2f9__v10",
+      "points": 36.0,
+      "track": null,
+      "winrate": 0.75
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1096.907175,
+      "player_id": "yks_thu_cs_31__ent_1e8ad2ac47a6b2fe__v105",
+      "points": 41.0,
+      "track": null,
+      "winrate": 0.8541666666666666
+    },
+    {
+      "anchor_elo": 1048.129566,
+      "matches": 48,
+      "measured_elo": 1075.669806,
+      "player_id": "rank10__wwwww__SAFE__v1",
+      "points": 27.0,
+      "track": null,
+      "winrate": 0.5625
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1058.399822,
+      "player_id": "anon__858ae3fe345bce57__38b8a980c04954f5__v1",
+      "points": 38.0,
+      "track": null,
+      "winrate": 0.7916666666666666
+    },
+    {
+      "anchor_elo": 1072.9,
+      "matches": 48,
+      "measured_elo": 1049.397061,
+      "player_id": "Daucloud__ent_6c3ae50933c91999__v53",
+      "points": 35.0,
+      "track": null,
+      "winrate": 0.7291666666666666
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 1039.059381,
+      "player_id": "anon__3b0c0d08d6f63e75__0b7df813a2eae633__v6",
+      "points": 32.0,
+      "track": null,
+      "winrate": 0.6666666666666666
+    },
+    {
+      "anchor_elo": 970.119334,
+      "matches": 48,
+      "measured_elo": 1033.853198,
+      "player_id": "rank12__chestnut__Thunder__v3",
+      "points": 31.0,
+      "track": null,
+      "winrate": 0.6458333333333334
+    },
+    {
+      "anchor_elo": 922.9,
+      "matches": 48,
+      "measured_elo": 1014.563248,
+      "player_id": "omegafantasy__ent_39e199d4fba40e34__v10",
+      "points": 25.0,
+      "track": null,
+      "winrate": 0.5208333333333334
+    },
+    {
+      "anchor_elo": 1267.7,
+      "matches": 48,
+      "measured_elo": 1012.647714,
+      "player_id": "wendz23__ent_f0b0d58cb8add361__v27",
+      "points": 42.0,
+      "track": null,
+      "winrate": 0.875
+    },
+    {
+      "anchor_elo": 1060.2,
+      "matches": 48,
+      "measured_elo": 1009.500433,
+      "player_id": "Daucloud__ent_03e1a7a2dc688b91__v18",
+      "points": 35.0,
+      "track": null,
+      "winrate": 0.7291666666666666
+    },
+    {
+      "anchor_elo": 1064.2,
+      "matches": 48,
+      "measured_elo": 1001.706391,
+      "player_id": "rank11__Daucloud__BT__v2",
+      "points": 26.0,
+      "track": null,
+      "winrate": 0.5416666666666666
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 990.063622,
+      "player_id": "anon__9151e4a44e4b2cc3__4d0eee548e6dc02d__v58",
+      "points": 39.0,
+      "track": null,
+      "winrate": 0.8125
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 976.3009,
+      "player_id": "wwwww__ent_9b41c4a4e8381209__v1",
+      "points": 39.0,
+      "track": null,
+      "winrate": 0.8125
+    },
+    {
+      "anchor_elo": 885.0,
+      "matches": 48,
+      "measured_elo": 959.163376,
+      "player_id": "rank10__Jacky__AI__v10",
+      "points": 21.0,
+      "track": null,
+      "winrate": 0.4375
+    },
+    {
+      "anchor_elo": 779.7,
+      "matches": 48,
+      "measured_elo": 952.30824,
+      "player_id": "initiator__ent_d22949b28003bbb2__v1",
+      "points": 26.0,
+      "track": null,
+      "winrate": 0.5416666666666666
+    },
+    {
+      "anchor_elo": 1135.729889,
+      "matches": 48,
+      "measured_elo": 950.122575,
+      "player_id": "rank11__zhoufangyuanPT__Checkmate__v23",
+      "points": 26.0,
+      "track": null,
+      "winrate": 0.5416666666666666
+    },
+    {
+      "anchor_elo": 941.6,
+      "matches": 48,
+      "measured_elo": 919.508533,
+      "player_id": "rank09__zou__test__v28",
+      "points": 20.0,
+      "track": null,
+      "winrate": 0.4166666666666667
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 916.697701,
+      "player_id": "anon__4077298146c1b90c__2e56bb49560885a0__v1",
+      "points": 29.0,
+      "track": null,
+      "winrate": 0.6041666666666666
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 915.794883,
+      "player_id": "yks_thu_cs_31__ent_9905d5068cc6b2d6__v16",
+      "points": 33.0,
+      "track": null,
+      "winrate": 0.6875
+    },
+    {
+      "anchor_elo": 1092.6,
+      "matches": 48,
+      "measured_elo": 905.515805,
+      "player_id": "wendz23__ent_e6e36c02cbbb7109__v105",
+      "points": 39.0,
+      "track": null,
+      "winrate": 0.8125
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 899.749798,
+      "player_id": "anon__ddb9a6c4f95f3967__fa9550db8b2ef927__v1",
+      "points": 25.0,
+      "track": null,
+      "winrate": 0.5208333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 898.930329,
+      "player_id": "anon__ddb9a6c4f95f3967__95a22cd7c578eb3b__v1",
+      "points": 25.0,
+      "track": null,
+      "winrate": 0.5208333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 879.039242,
+      "player_id": "minzh23__ent_d33fe879811b9ccf__v3",
+      "points": 22.0,
+      "track": null,
+      "winrate": 0.4583333333333333
+    },
+    {
+      "anchor_elo": 1023.4,
+      "matches": 48,
+      "measured_elo": 868.229323,
+      "player_id": "wendz23__ent_02ffbb3a3efbfdeb__v60",
+      "points": 38.0,
+      "track": null,
+      "winrate": 0.7916666666666666
+    },
+    {
+      "anchor_elo": 691.0,
+      "matches": 48,
+      "measured_elo": 864.685825,
+      "player_id": "anon__71e2e72f68e2dc68__ba22dca43216ff1f__v26",
+      "points": 28.0,
+      "track": null,
+      "winrate": 0.5833333333333334
+    },
+    {
+      "anchor_elo": 766.8,
+      "matches": 48,
+      "measured_elo": 864.455988,
+      "player_id": "anon__df6c970cf65ab40d__d802ed2cade1786e__v4",
+      "points": 26.0,
+      "track": null,
+      "winrate": 0.5416666666666666
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 863.706809,
+      "player_id": "zuz__ent_5bf92072029967ad__v34",
+      "points": 28.0,
+      "track": null,
+      "winrate": 0.5833333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 861.327033,
+      "player_id": "yks_thu_cs_31__ent_4a4ced6d478961b8__v2",
+      "points": 34.0,
+      "track": null,
+      "winrate": 0.7083333333333334
+    },
+    {
+      "anchor_elo": 652.770872,
+      "matches": 48,
+      "measured_elo": 857.995822,
+      "player_id": "rank14__PotatoSG__sentinel__v1",
+      "points": 28.0,
+      "track": null,
+      "winrate": 0.5833333333333334
+    },
+    {
+      "anchor_elo": 687.0,
+      "matches": 48,
+      "measured_elo": 848.806708,
+      "player_id": "guofj23__ent_0c1cf1f0a76295a5__v4",
+      "points": 24.0,
+      "track": null,
+      "winrate": 0.5
+    },
+    {
+      "anchor_elo": 735.0,
+      "matches": 48,
+      "measured_elo": 833.385318,
+      "player_id": "anon__af93c5cc86698e88__fec5a6cde0f6e112__v4",
+      "points": 26.0,
+      "track": null,
+      "winrate": 0.5416666666666666
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 823.134588,
+      "player_id": "Xiaoaojianghu__ent_413285f31d688013__v2",
+      "points": 27.0,
+      "track": null,
+      "winrate": 0.5625
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 822.94751,
+      "player_id": "anon__1459dd0ae63303f3__75b4dbaddbe08bd2__v1",
+      "points": 25.0,
+      "track": null,
+      "winrate": 0.5208333333333334
+    },
+    {
+      "anchor_elo": 729.2,
+      "matches": 48,
+      "measured_elo": 822.709674,
+      "player_id": "anon__af93c5cc86698e88__89278b998c34f2ec__v11",
+      "points": 25.0,
+      "track": null,
+      "winrate": 0.5208333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 822.158704,
+      "player_id": "PotatoSG__ent_9dfffcee754725c8__v4",
+      "points": 27.0,
+      "track": null,
+      "winrate": 0.5625
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 820.572672,
+      "player_id": "minzh23__ent_6f977f133286d55c__v15",
+      "points": 22.0,
+      "track": null,
+      "winrate": 0.4583333333333333
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 819.719863,
+      "player_id": "anon__9151e4a44e4b2cc3__11e59ff31dc5a8d3__v108",
+      "points": 34.0,
+      "track": null,
+      "winrate": 0.7083333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 818.022243,
+      "player_id": "anon__1459dd0ae63303f3__bedb6ff0971aefd9__v2",
+      "points": 23.0,
+      "track": null,
+      "winrate": 0.4791666666666667
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 814.804251,
+      "player_id": "anon__1459dd0ae63303f3__92b4f038d5aa70a8__v3",
+      "points": 23.0,
+      "track": null,
+      "winrate": 0.4791666666666667
+    },
+    {
+      "anchor_elo": 776.1,
+      "matches": 48,
+      "measured_elo": 812.645668,
+      "player_id": "anon__0b7bd3a74ce7157e__6f538525b182041c__v1",
+      "points": 24.0,
+      "track": null,
+      "winrate": 0.5
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 808.15721,
+      "player_id": "anon__1459dd0ae63303f3__79e8f18527de617f__v2",
+      "points": 24.0,
+      "track": null,
+      "winrate": 0.5
+    },
+    {
+      "anchor_elo": 781.0,
+      "matches": 48,
+      "measured_elo": 801.731898,
+      "player_id": "anon__231f452b3e2bdb5d__6c1df17685511333__v6",
+      "points": 24.0,
+      "track": null,
+      "winrate": 0.5
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 795.727822,
+      "player_id": "anon__01a96c7c57e7f72c__91a3875930ea4e71__v4",
+      "points": 22.0,
+      "track": null,
+      "winrate": 0.4583333333333333
+    },
+    {
+      "anchor_elo": 901.8,
+      "matches": 48,
+      "measured_elo": 778.776167,
+      "player_id": "wendz23__ent_615319f9653e3f09__v72",
+      "points": 35.0,
+      "track": null,
+      "winrate": 0.7291666666666666
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 774.458432,
+      "player_id": "anon__858ae3fe345bce57__01c7306ee4f961d5__v1",
+      "points": 26.0,
+      "track": null,
+      "winrate": 0.5416666666666666
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 766.21736,
+      "player_id": "wendz23__ent_7bfcb8b4af3f2b01__v8",
+      "points": 34.0,
+      "track": null,
+      "winrate": 0.7083333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 763.89615,
+      "player_id": "anon__858ae3fe345bce57__82bff59b2c6371fa__v1",
+      "points": 29.0,
+      "track": null,
+      "winrate": 0.6041666666666666
+    },
+    {
+      "anchor_elo": 816.4,
+      "matches": 48,
+      "measured_elo": 760.731627,
+      "player_id": "rank15__qcyyy__test__v43",
+      "points": 27.0,
+      "track": null,
+      "winrate": 0.5625
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 758.777281,
+      "player_id": "nashjunheng__ent_9498805ea516a752__v2",
+      "points": 21.0,
+      "track": null,
+      "winrate": 0.4375
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 737.011678,
+      "player_id": "anon__858ae3fe345bce57__8b001f0d42b5aeb2__v1",
+      "points": 29.0,
+      "track": null,
+      "winrate": 0.6041666666666666
+    },
+    {
+      "anchor_elo": 865.1,
+      "matches": 48,
+      "measured_elo": 736.698349,
+      "player_id": "wenjie2002__ent_85f005c362412260__v15",
+      "points": 33.0,
+      "track": null,
+      "winrate": 0.6875
+    },
+    {
+      "anchor_elo": 832.1,
+      "matches": 48,
+      "measured_elo": 726.804202,
+      "player_id": "rank16__Xiaoaojianghu__痔取松弛肛__v1",
+      "points": 27.0,
+      "track": null,
+      "winrate": 0.5625
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 712.620845,
+      "player_id": "anon__858ae3fe345bce57__a95783eb3242ddfb__v1",
+      "points": 28.0,
+      "track": null,
+      "winrate": 0.5833333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 708.293225,
+      "player_id": "Jacky__ent_1415f0bb0f5dfd3c__v1",
+      "points": 20.0,
+      "track": null,
+      "winrate": 0.4166666666666667
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 697.519268,
+      "player_id": "anon__858ae3fe345bce57__5669504e15c03c1d__v1",
+      "points": 24.0,
+      "track": null,
+      "winrate": 0.5
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 689.263916,
+      "player_id": "nashjunheng__ent_fcfc6b672a1b0c36__v1",
+      "points": 14.0,
+      "track": null,
+      "winrate": 0.2916666666666667
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 687.826826,
+      "player_id": "anon__858ae3fe345bce57__593593d7586b21d3__v1",
+      "points": 22.0,
+      "track": null,
+      "winrate": 0.4583333333333333
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 685.381428,
+      "player_id": "nashjunheng__ent_e34f6401326abc21__v1",
+      "points": 16.0,
+      "track": null,
+      "winrate": 0.3333333333333333
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 684.201183,
+      "player_id": "nashjunheng__ent_c9189f1aca88dc93__v1",
+      "points": 17.0,
+      "track": null,
+      "winrate": 0.3541666666666667
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 684.06988,
+      "player_id": "nashjunheng__ent_bc6ba8e376f0b910__v1",
+      "points": 17.0,
+      "track": null,
+      "winrate": 0.3541666666666667
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 683.543333,
+      "player_id": "initiator__ent_36c7a73a00d56642__v4",
+      "points": 19.0,
+      "track": null,
+      "winrate": 0.3958333333333333
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 682.750008,
+      "player_id": "nashjunheng__ent_976d52f19c3a0d42__v1",
+      "points": 17.0,
+      "track": null,
+      "winrate": 0.3541666666666667
+    },
+    {
+      "anchor_elo": 754.5,
+      "matches": 48,
+      "measured_elo": 680.12615,
+      "player_id": "initiator__ent_5489b1e0b72230a5__v5",
+      "points": 18.0,
+      "track": null,
+      "winrate": 0.375
+    },
+    {
+      "anchor_elo": 790.5,
+      "matches": 48,
+      "measured_elo": 679.625101,
+      "player_id": "wfollowm__ent_68146750cc17e458__v84",
+      "points": 28.0,
+      "track": null,
+      "winrate": 0.5833333333333334
+    },
+    {
+      "anchor_elo": 782.8,
+      "matches": 48,
+      "measured_elo": 677.617888,
+      "player_id": "wenjie2002__ent_3326ac8467f2d181__v17",
+      "points": 31.0,
+      "track": null,
+      "winrate": 0.6458333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 670.783721,
+      "player_id": "nashjunheng__ent_8f50cca67675c0f9__v1",
+      "points": 18.0,
+      "track": null,
+      "winrate": 0.375
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 669.865771,
+      "player_id": "nashjunheng__ent_90563474054f0f0e__v1",
+      "points": 18.0,
+      "track": null,
+      "winrate": 0.375
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 668.02437,
+      "player_id": "nashjunheng__ent_603198a4a88c7a7d__v1",
+      "points": 17.0,
+      "track": null,
+      "winrate": 0.3541666666666667
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 658.594107,
+      "player_id": "anon__858ae3fe345bce57__d923db8da0fbe54c__v1",
+      "points": 26.0,
+      "track": null,
+      "winrate": 0.5416666666666666
+    },
+    {
+      "anchor_elo": 585.9,
+      "matches": 48,
+      "measured_elo": 657.625231,
+      "player_id": "anon__a6c0e2e73896d0c6__e35804598e47693a__v1",
+      "points": 21.0,
+      "track": null,
+      "winrate": 0.4375
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 652.962624,
+      "player_id": "nashjunheng__ent_49c39b605c72c718__v1",
+      "points": 16.0,
+      "track": null,
+      "winrate": 0.3333333333333333
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 652.23751,
+      "player_id": "nashjunheng__ent_45af400f10762e8d__v1",
+      "points": 14.0,
+      "track": null,
+      "winrate": 0.2916666666666667
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 650.107235,
+      "player_id": "nashjunheng__ent_2118ae4454ec0353__v1",
+      "points": 13.0,
+      "track": null,
+      "winrate": 0.2708333333333333
+    },
+    {
+      "anchor_elo": 759.5,
+      "matches": 48,
+      "measured_elo": 634.298777,
+      "player_id": "zou__ent_5b98d8d0f39c1544__v1",
+      "points": 19.0,
+      "track": null,
+      "winrate": 0.3958333333333333
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 628.05506,
+      "player_id": "minzh23__ent_c02089ccbcd5db84__v1",
+      "points": 12.0,
+      "track": null,
+      "winrate": 0.25
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 622.281504,
+      "player_id": "anon__858ae3fe345bce57__c21513f51e74b56a__v1",
+      "points": 24.0,
+      "track": null,
+      "winrate": 0.5
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 618.783892,
+      "player_id": "anon__858ae3fe345bce57__68fed194c5d9efb4__v1",
+      "points": 20.0,
+      "track": null,
+      "winrate": 0.4166666666666667
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 617.561928,
+      "player_id": "nashjunheng__ent_5c008b51d551c5fb__v1",
+      "points": 15.0,
+      "track": null,
+      "winrate": 0.3125
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 617.027499,
+      "player_id": "anon__f9e5e7d717aa764c__9abb2aab3d40a5ad__v3",
+      "points": 19.0,
+      "track": null,
+      "winrate": 0.3958333333333333
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 612.245755,
+      "player_id": "minzh23__ent_7fd5edfc622053e4__v69",
+      "points": 12.0,
+      "track": null,
+      "winrate": 0.25
+    },
+    {
+      "anchor_elo": 764.0,
+      "matches": 48,
+      "measured_elo": 607.684289,
+      "player_id": "zou__ent_7014e45917605994__v1",
+      "points": 19.0,
+      "track": null,
+      "winrate": 0.3958333333333333
+    },
+    {
+      "anchor_elo": 525.2,
+      "matches": 48,
+      "measured_elo": 605.124373,
+      "player_id": "anon__c6f9cfca9a165546__512018a7fb4c7e60__v2",
+      "points": 18.0,
+      "track": null,
+      "winrate": 0.375
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 603.258,
+      "player_id": "anon__c0420709274633f9__0fc39c8d5534616a__v3",
+      "points": 17.0,
+      "track": null,
+      "winrate": 0.3541666666666667
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 597.915154,
+      "player_id": "anon__9151e4a44e4b2cc3__3606159f53f89394__v1",
+      "points": 23.0,
+      "track": null,
+      "winrate": 0.4791666666666667
+    },
+    {
+      "anchor_elo": 830.0,
+      "matches": 48,
+      "measured_elo": 593.833935,
+      "player_id": "Xiaoaojianghu__ent_ce06eecc2cf6c995__v1",
+      "points": 15.0,
+      "track": null,
+      "winrate": 0.3125
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 592.500739,
+      "player_id": "anon__9151e4a44e4b2cc3__6a4d9659860be927__v2",
+      "points": 21.0,
+      "track": null,
+      "winrate": 0.4375
+    },
+    {
+      "anchor_elo": 847.0,
+      "matches": 48,
+      "measured_elo": 591.718083,
+      "player_id": "wenjie2002__ent_91bdebec512d6b64__v1",
+      "points": 25.0,
+      "track": null,
+      "winrate": 0.5208333333333334
+    },
+    {
+      "anchor_elo": 815.2,
+      "matches": 48,
+      "measured_elo": 584.843882,
+      "player_id": "rank14__Viridian__x__v7",
+      "points": 19.0,
+      "track": null,
+      "winrate": 0.3958333333333333
+    },
+    {
+      "anchor_elo": 733.2,
+      "matches": 48,
+      "measured_elo": 582.328737,
+      "player_id": "Daucloud__ent_0d60278f0a77fb9a__v1",
+      "points": 17.0,
+      "track": null,
+      "winrate": 0.3541666666666667
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 581.474606,
+      "player_id": "anon__858ae3fe345bce57__e7ba1b137af824eb__v1",
+      "points": 22.0,
+      "track": null,
+      "winrate": 0.4583333333333333
+    },
+    {
+      "anchor_elo": 666.7,
+      "matches": 48,
+      "measured_elo": 552.849749,
+      "player_id": "rank13__wenjie2002__游走模型1__v13",
+      "points": 16.0,
+      "track": null,
+      "winrate": 0.3333333333333333
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 539.315698,
+      "player_id": "anon__d6c2524423e8dc52__1ae08a8cc32d79e6__v1",
+      "points": 13.0,
+      "track": null,
+      "winrate": 0.2708333333333333
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 513.840048,
+      "player_id": "wendz23__ent_7e0b2e6b888bc0a1__v7",
+      "points": 23.0,
+      "track": null,
+      "winrate": 0.4791666666666667
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 511.921587,
+      "player_id": "robinliu__ent_4c9e354caedf3191__v27",
+      "points": 18.0,
+      "track": null,
+      "winrate": 0.375
+    },
+    {
+      "anchor_elo": 830.5,
+      "matches": 48,
+      "measured_elo": 510.019204,
+      "player_id": "wenjie2002__ent_2160d6b6fe60615f__v1",
+      "points": 25.0,
+      "track": null,
+      "winrate": 0.5208333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 502.512617,
+      "player_id": "anon__858ae3fe345bce57__71b95d4db74e33f2__v1",
+      "points": 15.0,
+      "track": null,
+      "winrate": 0.3125
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 494.85264,
+      "player_id": "anon__858ae3fe345bce57__bf85029146019468__v1",
+      "points": 16.0,
+      "track": null,
+      "winrate": 0.3333333333333333
+    },
+    {
+      "anchor_elo": 562.0,
+      "matches": 48,
+      "measured_elo": 490.968516,
+      "player_id": "anon__71e2e72f68e2dc68__0eefdfe1cc707543__v28",
+      "points": 13.0,
+      "track": null,
+      "winrate": 0.2708333333333333
+    },
+    {
+      "anchor_elo": 731.5,
+      "matches": 48,
+      "measured_elo": 487.679932,
+      "player_id": "zou__ent_71052ea7baf45bb4__v5",
+      "points": 14.0,
+      "track": null,
+      "winrate": 0.2916666666666667
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 465.15707,
+      "player_id": "initiator__ent_75bb079e1386812c__v1",
+      "points": 10.0,
+      "track": null,
+      "winrate": 0.20833333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 460.584627,
+      "player_id": "initiator__ent_e6fd1c1a998844aa__v1",
+      "points": 8.0,
+      "track": null,
+      "winrate": 0.16666666666666666
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 450.328099,
+      "player_id": "anon__858ae3fe345bce57__0e677144e7fb54aa__v1",
+      "points": 12.0,
+      "track": null,
+      "winrate": 0.25
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 436.900022,
+      "player_id": "initiator__ent_392ab6b38347dbc4__v1",
+      "points": 10.0,
+      "track": null,
+      "winrate": 0.20833333333333334
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 432.521567,
+      "player_id": "anon__858ae3fe345bce57__eacb71bd2426d90b__v1",
+      "points": 15.0,
+      "track": null,
+      "winrate": 0.3125
+    },
+    {
+      "anchor_elo": 361.545501,
+      "matches": 48,
+      "measured_elo": 428.848934,
+      "player_id": "rank09__initiator__Initial_AI__v54",
+      "points": 5.0,
+      "track": null,
+      "winrate": 0.10416666666666667
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 422.982854,
+      "player_id": "initiator__ent_3aa7a49d14788463__v1",
+      "points": 10.0,
+      "track": null,
+      "winrate": 0.20833333333333334
+    },
+    {
+      "anchor_elo": 182.02247,
+      "matches": 48,
+      "measured_elo": 422.300368,
+      "player_id": "rank15__misharo9__公主殿下__v48",
+      "points": 14.0,
+      "track": null,
+      "winrate": 0.2916666666666667
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 421.857496,
+      "player_id": "anon__858ae3fe345bce57__285f90d5a30257a1__v1",
+      "points": 11.0,
+      "track": null,
+      "winrate": 0.22916666666666666
+    },
+    {
+      "anchor_elo": 362.7,
+      "matches": 48,
+      "measured_elo": 419.77912,
+      "player_id": "anon__3b0c0d08d6f63e75__5d822ce7e3bcdd51__v1",
+      "points": 9.0,
+      "track": null,
+      "winrate": 0.1875
+    },
+    {
+      "anchor_elo": 364.2,
+      "matches": 48,
+      "measured_elo": 416.413107,
+      "player_id": "anon__a6c0e2e73896d0c6__bcebc94761a1333e__v1",
+      "points": 13.0,
+      "track": null,
+      "winrate": 0.2708333333333333
+    },
+    {
+      "anchor_elo": 497.1,
+      "matches": 48,
+      "measured_elo": 404.070228,
+      "player_id": "anon__38acf57837e117ac__c996936918080cba__v2",
+      "points": 9.0,
+      "track": null,
+      "winrate": 0.1875
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 401.042621,
+      "player_id": "anon__1df9121a02b8c59f__e630477ce21fb889__v1",
+      "points": 9.0,
+      "track": null,
+      "winrate": 0.1875
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 396.789547,
+      "player_id": "anon__858ae3fe345bce57__54fe0db7f9e0adaf__v1",
+      "points": 9.0,
+      "track": null,
+      "winrate": 0.1875
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 396.520318,
+      "player_id": "anon__9151e4a44e4b2cc3__b44bfef96fe36b27__v4",
+      "points": 11.0,
+      "track": null,
+      "winrate": 0.22916666666666666
+    },
+    {
+      "anchor_elo": 354.7,
+      "matches": 48,
+      "measured_elo": 382.47651,
+      "player_id": "anon__bd4390549dd868a8__3926c769a1087939__v1",
+      "points": 11.0,
+      "track": null,
+      "winrate": 0.22916666666666666
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 347.328966,
+      "player_id": "yks_thu_cs_31__ent_11bcb968f241a553__v1",
+      "points": 15.0,
+      "track": null,
+      "winrate": 0.3125
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 347.223266,
+      "player_id": "yks_thu_cs_31__ent_0d59a9cc1aa73208__v1",
+      "points": 15.0,
+      "track": null,
+      "winrate": 0.3125
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 346.457492,
+      "player_id": "yks_thu_cs_31__ent_1dc1a313aa6e07d1__v1",
+      "points": 16.0,
+      "track": null,
+      "winrate": 0.3333333333333333
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 342.735832,
+      "player_id": "zuz__ent_d5a4ef222b318ead__v4",
+      "points": 9.0,
+      "track": null,
+      "winrate": 0.1875
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 342.120524,
+      "player_id": "yks_thu_cs_31__ent_37a0a2caef276984__v1",
+      "points": 15.0,
+      "track": null,
+      "winrate": 0.3125
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 341.369102,
+      "player_id": "yks_thu_cs_31__ent_442822dc8d403773__v4",
+      "points": 14.0,
+      "track": null,
+      "winrate": 0.2916666666666667
+    },
+    {
+      "anchor_elo": 578.3,
+      "matches": 48,
+      "measured_elo": 335.151932,
+      "player_id": "zou__ent_5ade00e4db663ef7__v1",
+      "points": 9.0,
+      "track": null,
+      "winrate": 0.1875
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 330.740769,
+      "player_id": "yks_thu_cs_31__ent_7167bfcb957f7222__v99",
+      "points": 12.0,
+      "track": null,
+      "winrate": 0.25
+    },
+    {
+      "anchor_elo": 579.2,
+      "matches": 48,
+      "measured_elo": 329.639928,
+      "player_id": "wfollowm__ent_1f2eae5dec38cb27__v2",
+      "points": 12.0,
+      "track": null,
+      "winrate": 0.25
+    },
+    {
+      "anchor_elo": 598.7,
+      "matches": 48,
+      "measured_elo": 327.819846,
+      "player_id": "wenjie2002__ent_cd3887732200a880__v1",
+      "points": 12.0,
+      "track": null,
+      "winrate": 0.25
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 327.346264,
+      "player_id": "yks_thu_cs_31__ent_587d744d824e8244__v1",
+      "points": 13.0,
+      "track": null,
+      "winrate": 0.2708333333333333
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 326.180124,
+      "player_id": "yks_thu_cs_31__ent_6bc97ac3a7d0beb8__v11",
+      "points": 12.0,
+      "track": null,
+      "winrate": 0.25
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 323.152012,
+      "player_id": "yks_thu_cs_31__ent_7764149c814ede07__v1",
+      "points": 12.0,
+      "track": null,
+      "winrate": 0.25
+    },
+    {
+      "anchor_elo": 584.5,
+      "matches": 48,
+      "measured_elo": 321.837686,
+      "player_id": "wenjie2002__ent_b39f92d7644bdeb2__v1",
+      "points": 12.0,
+      "track": null,
+      "winrate": 0.25
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 318.438704,
+      "player_id": "yks_thu_cs_31__ent_c7a1d3579c6f370f__v1",
+      "points": 10.0,
+      "track": null,
+      "winrate": 0.20833333333333334
+    },
+    {
+      "anchor_elo": 430.9,
+      "matches": 48,
+      "measured_elo": 256.61223,
+      "player_id": "anon__01a96c7c57e7f72c__9cf68ad4a8a07dd4__v1",
+      "points": 5.0,
+      "track": null,
+      "winrate": 0.10416666666666667
+    },
+    {
+      "anchor_elo": 233.1,
+      "matches": 48,
+      "measured_elo": 251.52145,
+      "player_id": "anon__38acf57837e117ac__20234999a91e75e8__v1",
+      "points": 6.0,
+      "track": null,
+      "winrate": 0.125
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 244.965286,
+      "player_id": "robinliu__ent_c3ef6964c3484a3e__v1",
+      "points": 12.0,
+      "track": null,
+      "winrate": 0.25
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 227.855385,
+      "player_id": "robinliu__ent_b9f3a9644ffbe089__v1",
+      "points": 11.0,
+      "track": null,
+      "winrate": 0.22916666666666666
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 213.272632,
+      "player_id": "robinliu__ent_31057a11eec3221e__v7",
+      "points": 8.0,
+      "track": null,
+      "winrate": 0.16666666666666666
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 198.833837,
+      "player_id": "robinliu__ent_a83cc45ec3d0bad0__v1",
+      "points": 10.0,
+      "track": null,
+      "winrate": 0.20833333333333334
+    },
+    {
+      "anchor_elo": -103.0,
+      "matches": 48,
+      "measured_elo": 184.495121,
+      "player_id": "anon__df6c970cf65ab40d__17b86ed3bbec9703__v1",
+      "points": 5.0,
+      "track": null,
+      "winrate": 0.10416666666666667
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 179.817428,
+      "player_id": "anon__9151e4a44e4b2cc3__6ac3a16b8d826b7a__v20",
+      "points": 5.0,
+      "track": null,
+      "winrate": 0.10416666666666667
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 165.023175,
+      "player_id": "anon__9151e4a44e4b2cc3__25638a9126719e26__v3",
+      "points": 5.0,
+      "track": null,
+      "winrate": 0.10416666666666667
+    },
+    {
+      "anchor_elo": -67.9,
+      "matches": 48,
+      "measured_elo": 160.217069,
+      "player_id": "anon__fa4d97c04e6d0564__55bd19f43402232d__v1",
+      "points": 5.0,
+      "track": null,
+      "winrate": 0.10416666666666667
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 145.472802,
+      "player_id": "anon__9151e4a44e4b2cc3__b341755ff3b8983f__v2",
+      "points": 4.0,
+      "track": null,
+      "winrate": 0.08333333333333333
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": 120.925661,
+      "player_id": "anon__cc1664ce00865b88__8884a94af019e998__v1",
+      "points": 4.0,
+      "track": null,
+      "winrate": 0.08333333333333333
+    },
+    {
+      "anchor_elo": 273.9,
+      "matches": 48,
+      "measured_elo": 97.678542,
+      "player_id": "omegafantasy__ent_2b48cf6a7ddb449a__v1",
+      "points": 2.0,
+      "track": null,
+      "winrate": 0.041666666666666664
+    },
+    {
+      "anchor_elo": 303.7,
+      "matches": 48,
+      "measured_elo": 3.50112,
+      "player_id": "anon__01a96c7c57e7f72c__e5351e1103582a62__v19",
+      "points": 1.0,
+      "track": null,
+      "winrate": 0.020833333333333332
+    },
+    {
+      "anchor_elo": -463.2,
+      "matches": 48,
+      "measured_elo": -3.430308,
+      "player_id": "anon__df6c970cf65ab40d__471ed59adfc7f956__v2",
+      "points": 2.0,
+      "track": null,
+      "winrate": 0.041666666666666664
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": -37.444324,
+      "player_id": "robinliu__ent_796b84d91bf0d20e__v17",
+      "points": 3.0,
+      "track": null,
+      "winrate": 0.0625
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": -164.9291,
+      "player_id": "robinliu__ent_94b9fd5e65d328f1__v20",
+      "points": 3.0,
+      "track": null,
+      "winrate": 0.0625
+    },
+    {
+      "anchor_elo": null,
+      "matches": 48,
+      "measured_elo": -182.395827,
+      "player_id": "nashjunheng__ent_f3b774c0eec99551__v1",
+      "points": 0.0,
+      "track": null,
+      "winrate": 0.0
+    },
+    {
+      "anchor_elo": -24.7,
+      "matches": 48,
+      "measured_elo": -494.413759,
+      "player_id": "wenjie2002__ent_5d03a361dc7b220c__v1",
+      "points": 0.0,
+      "track": null,
+      "winrate": 0.0
+    }
+  ],
+  "valid_matches": 4728
+}

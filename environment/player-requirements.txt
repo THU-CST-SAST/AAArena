@@ -1,0 +1,16 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+antlr4-python3-runtime==4.9.1
+cloudpickle==3.1.0
+gym==0.26.2
+gym-notices==0.0.8
+numba==0.59.1
+numpy==1.26.4
+opencv-python-headless==4.9.0.80
+python-dotenv==1.0.1
+requests==2.32.3
+scikit-learn==1.4.2
+scipy==1.12.0
+tensorflow-cpu==2.15.1
+torch==2.2.2+cpu
+tqdm==4.66.5
+websockets==12.0

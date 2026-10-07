@@ -1,0 +1,1802 @@
+[
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2558.366581,
+    "player_id": "lota__p1452__ai16551",
+    "points": 47.0,
+    "track": null,
+    "winrate": 0.9791666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2536.711037,
+    "player_id": "lota__p1473__ai17902",
+    "points": 47.0,
+    "track": null,
+    "winrate": 0.9791666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2512.775973,
+    "player_id": "lota__p1208__ai18547",
+    "points": 47.0,
+    "track": null,
+    "winrate": 0.9791666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2491.855363,
+    "player_id": "lota__p1446__ai17796",
+    "points": 46.0,
+    "track": null,
+    "winrate": 0.9583333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2414.912759,
+    "player_id": "lota__p1378__ai18022",
+    "points": 47.0,
+    "track": null,
+    "winrate": 0.9791666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2403.689465,
+    "player_id": "lota__p1486__ai17407",
+    "points": 46.0,
+    "track": null,
+    "winrate": 0.9583333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2347.819023,
+    "player_id": "lota__p1472__ai18150",
+    "points": 46.0,
+    "track": null,
+    "winrate": 0.9583333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2343.757193,
+    "player_id": "lota__p1214__ai18567",
+    "points": 45.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2320.330671,
+    "player_id": "lota__p1377__ai15095",
+    "points": 46.0,
+    "track": null,
+    "winrate": 0.9583333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2310.544995,
+    "player_id": "lota__p1233__ai18532",
+    "points": 48.0,
+    "track": null,
+    "winrate": 1.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2276.664226,
+    "player_id": "lota__p1173__ai18137",
+    "points": 45.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2271.173879,
+    "player_id": "lota__p1314__ai17683",
+    "points": 45.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2258.209745,
+    "player_id": "lota__p1401__ai17502",
+    "points": 46.0,
+    "track": null,
+    "winrate": 0.9583333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2257.490676,
+    "player_id": "lota__p1457__ai17921",
+    "points": 43.0,
+    "track": null,
+    "winrate": 0.8958333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2220.158576,
+    "player_id": "lota__p1205__ai18559",
+    "points": 43.0,
+    "track": null,
+    "winrate": 0.8958333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2213.185847,
+    "player_id": "lota__p1431__ai17930",
+    "points": 46.0,
+    "track": null,
+    "winrate": 0.9583333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2209.375376,
+    "player_id": "lota__p1216__ai18546",
+    "points": 43.0,
+    "track": null,
+    "winrate": 0.8958333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2204.501433,
+    "player_id": "lota__p1409__ai16859",
+    "points": 46.0,
+    "track": null,
+    "winrate": 0.9583333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2188.080364,
+    "player_id": "lota__p1165__ai18540",
+    "points": 43.0,
+    "track": null,
+    "winrate": 0.8958333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2183.579934,
+    "player_id": "lota__p1329__ai18536",
+    "points": 44.0,
+    "track": null,
+    "winrate": 0.9166666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2160.891776,
+    "player_id": "lota__p1169__ai18519",
+    "points": 41.0,
+    "track": null,
+    "winrate": 0.8541666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2112.784421,
+    "player_id": "lota__p1212__ai18539",
+    "points": 41.0,
+    "track": null,
+    "winrate": 0.8541666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2109.765813,
+    "player_id": "lota__p1456__ai18003",
+    "points": 41.0,
+    "track": null,
+    "winrate": 0.8541666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2105.0886,
+    "player_id": "lota__p1182__ai18034",
+    "points": 42.0,
+    "track": null,
+    "winrate": 0.875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2090.974556,
+    "player_id": "lota__p1332__ai17880",
+    "points": 42.0,
+    "track": null,
+    "winrate": 0.875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2081.320529,
+    "player_id": "lota__p1392__ai17990",
+    "points": 41.0,
+    "track": null,
+    "winrate": 0.8541666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2074.790434,
+    "player_id": "lota__p1352__ai18028",
+    "points": 42.0,
+    "track": null,
+    "winrate": 0.875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2062.46816,
+    "player_id": "lota__p1178__ai16003",
+    "points": 41.0,
+    "track": null,
+    "winrate": 0.8541666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 2036.624385,
+    "player_id": "lota__p1470__ai17135",
+    "points": 40.0,
+    "track": null,
+    "winrate": 0.8333333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1998.176469,
+    "player_id": "lota__p1462__ai16874",
+    "points": 34.0,
+    "track": null,
+    "winrate": 0.7083333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1990.519224,
+    "player_id": "lota__p1307__ai17078",
+    "points": 39.0,
+    "track": null,
+    "winrate": 0.8125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1981.473607,
+    "player_id": "lota__p1175__ai17478",
+    "points": 38.0,
+    "track": null,
+    "winrate": 0.7916666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1977.201133,
+    "player_id": "lota__p1286__ai16966",
+    "points": 41.0,
+    "track": null,
+    "winrate": 0.8541666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1976.120155,
+    "player_id": "lota__p1172__ai14790",
+    "points": 38.0,
+    "track": null,
+    "winrate": 0.7916666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1965.154833,
+    "player_id": "lota__p1451__ai16930",
+    "points": 38.0,
+    "track": null,
+    "winrate": 0.7916666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1963.553171,
+    "player_id": "lota__p1396__ai15575",
+    "points": 37.0,
+    "track": null,
+    "winrate": 0.7708333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1936.949169,
+    "player_id": "lota__p1280__ai16902",
+    "points": 40.0,
+    "track": null,
+    "winrate": 0.8333333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1922.711384,
+    "player_id": "lota__p1386__ai18533",
+    "points": 37.0,
+    "track": null,
+    "winrate": 0.7708333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1888.56969,
+    "player_id": "lota__p1312__ai17099",
+    "points": 34.0,
+    "track": null,
+    "winrate": 0.7083333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1881.982472,
+    "player_id": "lota__p1313__ai14511",
+    "points": 34.0,
+    "track": null,
+    "winrate": 0.7083333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1880.84577,
+    "player_id": "lota__p1176__ai15410",
+    "points": 35.0,
+    "track": null,
+    "winrate": 0.7291666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1872.45577,
+    "player_id": "lota__p1260__ai18542",
+    "points": 42.0,
+    "track": null,
+    "winrate": 0.875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1857.259722,
+    "player_id": "lota__p1394__ai15572",
+    "points": 34.0,
+    "track": null,
+    "winrate": 0.7083333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1850.175227,
+    "player_id": "lota__p1277__ai16765",
+    "points": 40.0,
+    "track": null,
+    "winrate": 0.8333333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1841.268749,
+    "player_id": "lota__p1194__ai18041",
+    "points": 35.0,
+    "track": null,
+    "winrate": 0.7291666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1836.078253,
+    "player_id": "lota__p1460__ai16843",
+    "points": 30.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1815.845226,
+    "player_id": "lota__p1245__ai18047",
+    "points": 41.0,
+    "track": null,
+    "winrate": 0.8541666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1784.685561,
+    "player_id": "lota__p1425__ai16905",
+    "points": 39.0,
+    "track": null,
+    "winrate": 0.8125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1770.200905,
+    "player_id": "lota__p1370__ai15465",
+    "points": 35.0,
+    "track": null,
+    "winrate": 0.7291666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1765.601406,
+    "player_id": "lota__p1354__ai15144",
+    "points": 34.0,
+    "track": null,
+    "winrate": 0.7083333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1760.328001,
+    "player_id": "lota__p1185__ai17123",
+    "points": 31.0,
+    "track": null,
+    "winrate": 0.6458333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1748.263755,
+    "player_id": "lota__p1347__ai17115",
+    "points": 31.0,
+    "track": null,
+    "winrate": 0.6458333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1738.270321,
+    "player_id": "lota__p1225__ai14741",
+    "points": 36.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1710.455806,
+    "player_id": "lota__p1200__ai13252",
+    "points": 30.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1708.924217,
+    "player_id": "lota__p1258__ai12795",
+    "points": 37.0,
+    "track": null,
+    "winrate": 0.7708333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1703.179371,
+    "player_id": "lota__p1246__ai12916",
+    "points": 38.0,
+    "track": null,
+    "winrate": 0.7916666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1676.449847,
+    "player_id": "lota__p1236__ai18551",
+    "points": 37.0,
+    "track": null,
+    "winrate": 0.7708333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1675.157699,
+    "player_id": "lota__p1351__ai14804",
+    "points": 30.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1663.70619,
+    "player_id": "lota__p1476__ai17366",
+    "points": 28.0,
+    "track": null,
+    "winrate": 0.5833333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1663.060896,
+    "player_id": "lota__p1479__ai17372",
+    "points": 30.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1660.032407,
+    "player_id": "lota__p1380__ai16107",
+    "points": 29.0,
+    "track": null,
+    "winrate": 0.6041666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1643.831185,
+    "player_id": "lota__p1251__ai13673",
+    "points": 36.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1624.412264,
+    "player_id": "lota__p1483__ai17378",
+    "points": 26.0,
+    "track": null,
+    "winrate": 0.5416666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1620.475512,
+    "player_id": "lota__p1423__ai15937",
+    "points": 32.0,
+    "track": null,
+    "winrate": 0.6666666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1620.218698,
+    "player_id": "lota__p1461__ai16870",
+    "points": 23.0,
+    "track": null,
+    "winrate": 0.4791666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1613.332848,
+    "player_id": "lota__p1299__ai17035",
+    "points": 29.0,
+    "track": null,
+    "winrate": 0.6041666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1613.196703,
+    "player_id": "lota__p1489__ai17748",
+    "points": 30.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1602.889364,
+    "player_id": "lota__p1468__ai16990",
+    "points": 24.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1595.442094,
+    "player_id": "lota__p1192__ai13503",
+    "points": 24.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1589.104476,
+    "player_id": "lota__p1475__ai17365",
+    "points": 24.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1587.515383,
+    "player_id": "lota__p1207__ai13873",
+    "points": 26.0,
+    "track": null,
+    "winrate": 0.5416666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1587.467006,
+    "player_id": "lota__p1485__ai17381",
+    "points": 26.0,
+    "track": null,
+    "winrate": 0.5416666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1585.223546,
+    "player_id": "lota__p1484__ai17380",
+    "points": 25.0,
+    "track": null,
+    "winrate": 0.5208333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1578.915231,
+    "player_id": "lota__p1403__ai17042",
+    "points": 27.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1575.945216,
+    "player_id": "lota__p1364__ai14088",
+    "points": 29.0,
+    "track": null,
+    "winrate": 0.6041666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1574.129639,
+    "player_id": "lota__p1168__ai17112",
+    "points": 25.0,
+    "track": null,
+    "winrate": 0.5208333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1568.171623,
+    "player_id": "lota__p1221__ai17052",
+    "points": 26.0,
+    "track": null,
+    "winrate": 0.5416666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1565.75234,
+    "player_id": "lota__p1436__ai16954",
+    "points": 25.0,
+    "track": null,
+    "winrate": 0.5208333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1561.043168,
+    "player_id": "lota__p1482__ai17377",
+    "points": 23.0,
+    "track": null,
+    "winrate": 0.4791666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1556.857813,
+    "player_id": "lota__p1450__ai16466",
+    "points": 23.0,
+    "track": null,
+    "winrate": 0.4791666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1554.648718,
+    "player_id": "lota__p1478__ai17369",
+    "points": 25.0,
+    "track": null,
+    "winrate": 0.5208333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1552.982924,
+    "player_id": "lota__p1406__ai15548",
+    "points": 26.0,
+    "track": null,
+    "winrate": 0.5416666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1550.183977,
+    "player_id": "lota__p1449__ai16463",
+    "points": 22.0,
+    "track": null,
+    "winrate": 0.4583333333333333
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1550.127468,
+    "player_id": "lota__p1477__ai17367",
+    "points": 23.0,
+    "track": null,
+    "winrate": 0.4791666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1550.127123,
+    "player_id": "lota__p1480__ai17373",
+    "points": 25.0,
+    "track": null,
+    "winrate": 0.5208333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1544.251178,
+    "player_id": "lota__p1481__ai17376",
+    "points": 24.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1539.515062,
+    "player_id": "lota__p1203__ai18352",
+    "points": 24.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1538.290982,
+    "player_id": "lota__p1336__ai13943",
+    "points": 24.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1537.18813,
+    "player_id": "lota__p1429__ai15964",
+    "points": 27.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1536.393754,
+    "player_id": "lota__p1204__ai12725",
+    "points": 23.0,
+    "track": null,
+    "winrate": 0.4791666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1535.083985,
+    "player_id": "lota__p1438__ai16280",
+    "points": 24.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1520.988078,
+    "player_id": "lota__p1163__ai12680",
+    "points": 24.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1518.740751,
+    "player_id": "lota__p1400__ai18068",
+    "points": 24.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1517.20741,
+    "player_id": "lota__p1197__ai12972",
+    "points": 22.0,
+    "track": null,
+    "winrate": 0.4583333333333333
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1515.006541,
+    "player_id": "lota__p1492__ai18109",
+    "points": 25.0,
+    "track": null,
+    "winrate": 0.5208333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1514.691488,
+    "player_id": "lota__p1405__ai15495",
+    "points": 24.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1514.569268,
+    "player_id": "lota__p1177__ai12722",
+    "points": 22.0,
+    "track": null,
+    "winrate": 0.4583333333333333
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1511.149002,
+    "player_id": "lota__p1193__ai12793",
+    "points": 20.0,
+    "track": null,
+    "winrate": 0.4166666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1508.855384,
+    "player_id": "lota__p1420__ai16985",
+    "points": 25.0,
+    "track": null,
+    "winrate": 0.5208333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1501.381213,
+    "player_id": "lota__p1346__ai17180",
+    "points": 22.5,
+    "track": null,
+    "winrate": 0.46875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1499.384465,
+    "player_id": "lota__p1195__ai18548",
+    "points": 20.0,
+    "track": null,
+    "winrate": 0.4166666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1496.014285,
+    "player_id": "lota__p1199__ai12876",
+    "points": 21.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1493.888966,
+    "player_id": "lota__p1371__ai14377",
+    "points": 23.0,
+    "track": null,
+    "winrate": 0.4791666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1491.109602,
+    "player_id": "lota__p1217__ai13407",
+    "points": 23.0,
+    "track": null,
+    "winrate": 0.4791666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1489.269048,
+    "player_id": "lota__p1421__ai15863",
+    "points": 25.0,
+    "track": null,
+    "winrate": 0.5208333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1487.976746,
+    "player_id": "lota__p1235__ai12766",
+    "points": 30.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1487.250631,
+    "player_id": "lota__p1441__ai16287",
+    "points": 20.0,
+    "track": null,
+    "winrate": 0.4166666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1485.444729,
+    "player_id": "lota__p1443__ai16290",
+    "points": 20.0,
+    "track": null,
+    "winrate": 0.4166666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1485.210865,
+    "player_id": "lota__p1189__ai12782",
+    "points": 18.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1483.995418,
+    "player_id": "lota__p1442__ai17041",
+    "points": 20.0,
+    "track": null,
+    "winrate": 0.4166666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1483.631145,
+    "player_id": "lota__p1284__ai12966",
+    "points": 27.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1483.089843,
+    "player_id": "lota__p1374__ai14514",
+    "points": 23.0,
+    "track": null,
+    "winrate": 0.4791666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1481.773747,
+    "player_id": "lota__p1428__ai15963",
+    "points": 25.0,
+    "track": null,
+    "winrate": 0.5208333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1478.022001,
+    "player_id": "lota__p1458__ai16743",
+    "points": 20.0,
+    "track": null,
+    "winrate": 0.4166666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1477.832812,
+    "player_id": "lota__p1417__ai15930",
+    "points": 24.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1476.349392,
+    "player_id": "lota__p1391__ai17998",
+    "points": 20.0,
+    "track": null,
+    "winrate": 0.4166666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1475.750537,
+    "player_id": "lota__p1439__ai16284",
+    "points": 20.0,
+    "track": null,
+    "winrate": 0.4166666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1469.340789,
+    "player_id": "lota__p1232__ai18090",
+    "points": 28.0,
+    "track": null,
+    "winrate": 0.5833333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1463.079911,
+    "player_id": "lota__p1402__ai16279",
+    "points": 23.0,
+    "track": null,
+    "winrate": 0.4791666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1459.554381,
+    "player_id": "lota__p1426__ai15961",
+    "points": 24.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1458.13079,
+    "player_id": "lota__p1230__ai12762",
+    "points": 27.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1451.679876,
+    "player_id": "lota__p1444__ai17043",
+    "points": 18.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1450.995687,
+    "player_id": "lota__p1190__ai12740",
+    "points": 17.0,
+    "track": null,
+    "winrate": 0.3541666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1450.960625,
+    "player_id": "lota__p1395__ai16493",
+    "points": 19.0,
+    "track": null,
+    "winrate": 0.3958333333333333
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1447.473125,
+    "player_id": "lota__p1228__ai16674",
+    "points": 24.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1440.602382,
+    "player_id": "lota__p1227__ai12861",
+    "points": 23.5,
+    "track": null,
+    "winrate": 0.4895833333333333
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1433.725039,
+    "player_id": "lota__p1375__ai14539",
+    "points": 21.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1433.01591,
+    "player_id": "lota__p1224__ai12744",
+    "points": 23.0,
+    "track": null,
+    "winrate": 0.4791666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1431.620093,
+    "player_id": "lota__p1440__ai16286",
+    "points": 17.0,
+    "track": null,
+    "winrate": 0.3541666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1430.228318,
+    "player_id": "lota__p1419__ai15935",
+    "points": 21.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1426.36596,
+    "player_id": "lota__p1427__ai15962",
+    "points": 22.0,
+    "track": null,
+    "winrate": 0.4583333333333333
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1425.348871,
+    "player_id": "lota__p1226__ai17193",
+    "points": 22.5,
+    "track": null,
+    "winrate": 0.46875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1416.125963,
+    "player_id": "lota__p1376__ai14563",
+    "points": 22.0,
+    "track": null,
+    "winrate": 0.4583333333333333
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1408.364626,
+    "player_id": "lota__p1215__ai12825",
+    "points": 19.0,
+    "track": null,
+    "winrate": 0.3958333333333333
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1382.305987,
+    "player_id": "lota__p1408__ai15566",
+    "points": 18.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1381.093867,
+    "player_id": "lota__p1362__ai14330",
+    "points": 17.0,
+    "track": null,
+    "winrate": 0.3541666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1365.0973,
+    "player_id": "lota__p1399__ai18552",
+    "points": 17.0,
+    "track": null,
+    "winrate": 0.3541666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1363.379386,
+    "player_id": "lota__p1293__ai12960",
+    "points": 21.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1359.64173,
+    "player_id": "lota__p1266__ai14033",
+    "points": 27.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1345.059899,
+    "player_id": "lota__p1287__ai12931",
+    "points": 22.0,
+    "track": null,
+    "winrate": 0.4583333333333333
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1341.023553,
+    "player_id": "lota__p1321__ai13282",
+    "points": 17.0,
+    "track": null,
+    "winrate": 0.3541666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1336.303045,
+    "player_id": "lota__p1415__ai17542",
+    "points": 17.0,
+    "track": null,
+    "winrate": 0.3541666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1331.909059,
+    "player_id": "lota__p1184__ai12839",
+    "points": 14.0,
+    "track": null,
+    "winrate": 0.2916666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1324.901582,
+    "player_id": "lota__p1356__ai13794",
+    "points": 17.0,
+    "track": null,
+    "winrate": 0.3541666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1291.862207,
+    "player_id": "lota__p1270__ai14323",
+    "points": 24.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1276.216242,
+    "player_id": "lota__p1187__ai14615",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.22916666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1275.92095,
+    "player_id": "lota__p1359__ai13857",
+    "points": 15.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1248.543409,
+    "player_id": "lota__p1363__ai16390",
+    "points": 14.0,
+    "track": null,
+    "winrate": 0.2916666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1244.584741,
+    "player_id": "lota__p1367__ai14789",
+    "points": 15.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1225.799871,
+    "player_id": "lota__p1223__ai12742",
+    "points": 13.0,
+    "track": null,
+    "winrate": 0.2708333333333333
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1221.230854,
+    "player_id": "lota__p1243__ai13211",
+    "points": 19.0,
+    "track": null,
+    "winrate": 0.3958333333333333
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1218.707036,
+    "player_id": "lota__p1174__ai12694",
+    "points": 14.0,
+    "track": null,
+    "winrate": 0.2916666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1217.298246,
+    "player_id": "lota__p1167__ai12832",
+    "points": 13.0,
+    "track": null,
+    "winrate": 0.2708333333333333
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1208.987691,
+    "player_id": "lota__p1213__ai12702",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1203.089839,
+    "player_id": "lota__p1464__ai16943",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.20833333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1183.588222,
+    "player_id": "lota__p1186__ai12684",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1164.670254,
+    "player_id": "lota__p1465__ai16944",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1161.527593,
+    "player_id": "lota__p1463__ai16941",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1159.581423,
+    "player_id": "lota__p1249__ai12779",
+    "points": 20.0,
+    "track": null,
+    "winrate": 0.4166666666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1158.541415,
+    "player_id": "lota__p1308__ai13100",
+    "points": 12.5,
+    "track": null,
+    "winrate": 0.2604166666666667
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1145.683173,
+    "player_id": "lota__p1222__ai15857",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1122.420269,
+    "player_id": "lota__p1317__ai13290",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1118.793783,
+    "player_id": "lota__p1466__ai16942",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.16666666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1113.131828,
+    "player_id": "lota__p1467__ai16945",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.16666666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1109.091465,
+    "player_id": "lota__p1218__ai12756",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.16666666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1105.497399,
+    "player_id": "lota__p1424__ai16680",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1094.059953,
+    "player_id": "lota__p1171__ai12678",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1088.792548,
+    "player_id": "lota__p1385__ai14858",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.16666666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1084.954474,
+    "player_id": "lota__p1170__ai12682",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.20833333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1084.505177,
+    "player_id": "lota__p1247__ai18553",
+    "points": 18.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1080.103899,
+    "player_id": "lota__p1166__ai17904",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1071.71457,
+    "player_id": "lota__p1495__ai18130",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1065.138042,
+    "player_id": "lota__p1240__ai12776",
+    "points": 13.0,
+    "track": null,
+    "winrate": 0.2708333333333333
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1038.997748,
+    "player_id": "lota__p1496__ai18131",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.16666666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 1003.854909,
+    "player_id": "lota__p1272__ai12989",
+    "points": 18.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 975.619397,
+    "player_id": "lota__p1493__ai18118",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 973.463278,
+    "player_id": "lota__p1338__ai13489",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 926.424354,
+    "player_id": "lota__p1210__ai16951",
+    "points": 2.0,
+    "track": null,
+    "winrate": 0.041666666666666664
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 836.859707,
+    "player_id": "lota__p1459__ai17931",
+    "points": 2.5,
+    "track": null,
+    "winrate": 0.052083333333333336
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 823.75743,
+    "player_id": "lota__p1255__ai18557",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 792.129607,
+    "player_id": "lota__p1373__ai14828",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.08333333333333333
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 767.392756,
+    "player_id": "lota__p1278__ai12877",
+    "points": 10.5,
+    "track": null,
+    "winrate": 0.21875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 758.157989,
+    "player_id": "lota__p1302__ai13054",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.14583333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 752.200269,
+    "player_id": "lota__p1453__ai18310",
+    "points": 1.5,
+    "track": null,
+    "winrate": 0.03125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 719.450515,
+    "player_id": "lota__p1398__ai15580",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.08333333333333333
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 711.785534,
+    "player_id": "lota__p1242__ai13404",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.14583333333333334
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 707.870844,
+    "player_id": "lota__p1253__ai14187",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 703.988186,
+    "player_id": "lota__p1273__ai13021",
+    "points": 10.5,
+    "track": null,
+    "winrate": 0.21875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 700.133385,
+    "player_id": "lota__p1488__ai17703",
+    "points": 1.0,
+    "track": null,
+    "winrate": 0.020833333333333332
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 691.529135,
+    "player_id": "lota__p1414__ai15800",
+    "points": 2.0,
+    "track": null,
+    "winrate": 0.041666666666666664
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 690.723694,
+    "player_id": "lota__p1410__ai15574",
+    "points": 2.0,
+    "track": null,
+    "winrate": 0.041666666666666664
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 683.618674,
+    "player_id": "lota__p1248__ai12951",
+    "points": 9.5,
+    "track": null,
+    "winrate": 0.19791666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 679.687237,
+    "player_id": "lota__p1191__ai12819",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 670.788277,
+    "player_id": "lota__p1435__ai16796",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 595.116552,
+    "player_id": "lota__p1361__ai16736",
+    "points": 0.5,
+    "track": null,
+    "winrate": 0.010416666666666666
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 371.194175,
+    "player_id": "lota__p1382__ai14841",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 325.574127,
+    "player_id": "lota__p1276__ai13060",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.08333333333333333
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 301.177775,
+    "player_id": "lota__p1229__ai18541",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 43.842964,
+    "player_id": "lota__p1289__ai13255",
+    "points": 1.0,
+    "track": null,
+    "winrate": 0.020833333333333332
+  },
+  {
+    "anchor_elo": null,
+    "matches": 48,
+    "measured_elo": 29.44818,
+    "player_id": "lota__p1261__ai12853",
+    "points": 1.0,
+    "track": null,
+    "winrate": 0.020833333333333332
+  }
+]

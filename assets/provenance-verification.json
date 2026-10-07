@@ -1,0 +1,14 @@
+[
+  {
+    "game": "miracle",
+    "recorded_backend_sha256": "c8a32a41c3f166292349c42ea1d00e71eb480692374f0a6878c4b044b2cc8a55",
+    "bundled_backend_sha256": "151f737dcde4ffac4cc90cc33e7b99e2b1db335c3aa36e6e65d25f2e993f1835",
+    "backend_files_changed": false
+  },
+  {
+    "game": "rollman",
+    "recorded_backend_sha256": "04088160c85e67d3e71a2b6fdaf0bb072fadeee3fbbcedcb51361d7df1db9b17",
+    "bundled_backend_sha256": "807e5753ef407173149805b2751b4a6eddc07adf851ad69867135b6d5fb506b8",
+    "backend_files_changed": false
+  }
+]

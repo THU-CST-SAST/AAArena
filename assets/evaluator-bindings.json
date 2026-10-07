@@ -1,0 +1,14 @@
+[
+  {
+    "file": "games/aquawar/evaluator/__init__.py",
+    "input_sha256": "8d477fd861bd82f638e7c1dfca4ee51e99cf2c37c2b2b117b740aeda2fcd7e1b",
+    "sha256": "0bd9e9940afbcad2342af727b9fe1ab6c8ca6f66bf2da3b69deab20ca1e45807",
+    "purpose": "Use the paper AquaWar official-end-info adjudication adapter"
+  },
+  {
+    "file": "games/aquawar/evaluator/arena.py",
+    "input_sha256": "29dc29cd4bba6eee548db4e62cd72195761155d5069255f663d3e807566bfa96",
+    "sha256": "da83f771397b5a6e0070198ce219786dbbb386f8a5f8e09ea4b6861a6c04601f",
+    "purpose": "Use the paper AquaWar official-end-info adjudication adapter"
+  }
+]

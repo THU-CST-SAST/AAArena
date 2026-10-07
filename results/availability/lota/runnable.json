@@ -1,0 +1,1492 @@
+{
+  "attempts": 210,
+  "candidates": 210,
+  "checked": 210,
+  "cpus_per_match": 1,
+  "game": "lota",
+  "generated_at": 1788841021.694001,
+  "method": "legacy_ai9_db_import_build_probe",
+  "partial": false,
+  "rows": [
+    {
+      "player_id": "lota__p1163__ai12680",
+      "verified": true,
+      "track": null,
+      "elo": "1382",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1165__ai18540",
+      "verified": true,
+      "track": null,
+      "elo": "2562",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1166__ai17904",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1167__ai12832",
+      "verified": true,
+      "track": null,
+      "elo": "1295",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1168__ai17112",
+      "verified": true,
+      "track": null,
+      "elo": "1374",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1169__ai18519",
+      "verified": true,
+      "track": null,
+      "elo": "2663",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1170__ai12682",
+      "verified": true,
+      "track": null,
+      "elo": "1312",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1171__ai12678",
+      "verified": true,
+      "track": null,
+      "elo": "1317",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1172__ai14790",
+      "verified": true,
+      "track": null,
+      "elo": "1704",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1173__ai18137",
+      "verified": true,
+      "track": null,
+      "elo": "2202",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1174__ai12694",
+      "verified": true,
+      "track": null,
+      "elo": "1294",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1175__ai17478",
+      "verified": true,
+      "track": null,
+      "elo": "2203",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1176__ai15410",
+      "verified": true,
+      "track": null,
+      "elo": "1506",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1177__ai12722",
+      "verified": true,
+      "track": null,
+      "elo": "1338",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1178__ai16003",
+      "verified": true,
+      "track": null,
+      "elo": "1809",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1179__ai18219",
+      "verified": false,
+      "track": null,
+      "elo": "3358",
+      "diagnostic": "build failed"
+    },
+    {
+      "player_id": "lota__p1180__ai18468",
+      "verified": false,
+      "track": null,
+      "elo": "3072",
+      "diagnostic": "build failed"
+    },
+    {
+      "player_id": "lota__p1182__ai18034",
+      "verified": true,
+      "track": null,
+      "elo": "2383",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1184__ai12839",
+      "verified": true,
+      "track": null,
+      "elo": "1285",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1185__ai17123",
+      "verified": true,
+      "track": null,
+      "elo": "1750",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1186__ai12684",
+      "verified": true,
+      "track": null,
+      "elo": "1208",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1187__ai14615",
+      "verified": true,
+      "track": null,
+      "elo": "1341",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1189__ai12782",
+      "verified": true,
+      "track": null,
+      "elo": "1289",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1190__ai12740",
+      "verified": true,
+      "track": null,
+      "elo": "1363",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1191__ai12819",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1192__ai13503",
+      "verified": true,
+      "track": null,
+      "elo": "1444",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1193__ai12793",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1194__ai18041",
+      "verified": true,
+      "track": null,
+      "elo": "2104",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1195__ai18548",
+      "verified": true,
+      "track": null,
+      "elo": "1315",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1197__ai12972",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1199__ai12876",
+      "verified": true,
+      "track": null,
+      "elo": "1275",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1200__ai13252",
+      "verified": true,
+      "track": null,
+      "elo": "1281",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1202__ai12709",
+      "verified": false,
+      "track": null,
+      "elo": "1250",
+      "diagnostic": "Native callback absent: archived source is incompatible with current game SDK"
+    },
+    {
+      "player_id": "lota__p1203__ai18352",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1204__ai12725",
+      "verified": true,
+      "track": null,
+      "elo": "1272",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1205__ai18559",
+      "verified": true,
+      "track": null,
+      "elo": "2988",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1207__ai13873",
+      "verified": true,
+      "track": null,
+      "elo": "1617",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1208__ai18547",
+      "verified": true,
+      "track": null,
+      "elo": "3201",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1209__ai12716",
+      "verified": false,
+      "track": null,
+      "elo": "1282",
+      "diagnostic": "Native callback absent: archived source is incompatible with current game SDK"
+    },
+    {
+      "player_id": "lota__p1210__ai16951",
+      "verified": true,
+      "track": null,
+      "elo": "2019",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1212__ai18539",
+      "verified": true,
+      "track": null,
+      "elo": "2718",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1213__ai12702",
+      "verified": true,
+      "track": null,
+      "elo": "1274",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1214__ai18567",
+      "verified": true,
+      "track": null,
+      "elo": "3005",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1215__ai12825",
+      "verified": true,
+      "track": null,
+      "elo": "1304",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1216__ai18546",
+      "verified": true,
+      "track": null,
+      "elo": "2881",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1217__ai13407",
+      "verified": true,
+      "track": null,
+      "elo": "1245",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1218__ai12756",
+      "verified": true,
+      "track": null,
+      "elo": "1288",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1221__ai17052",
+      "verified": true,
+      "track": null,
+      "elo": "1559",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1222__ai15857",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1223__ai12742",
+      "verified": true,
+      "track": null,
+      "elo": "1277",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1224__ai12744",
+      "verified": true,
+      "track": null,
+      "elo": "1283",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1225__ai14741",
+      "verified": true,
+      "track": null,
+      "elo": "1389",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1226__ai17193",
+      "verified": true,
+      "track": null,
+      "elo": "1767",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1227__ai12861",
+      "verified": true,
+      "track": null,
+      "elo": "1295",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1228__ai16674",
+      "verified": true,
+      "track": null,
+      "elo": "1813",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1229__ai18541",
+      "verified": true,
+      "track": null,
+      "elo": "3118",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1230__ai12762",
+      "verified": true,
+      "track": null,
+      "elo": "1269",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1232__ai18090",
+      "verified": true,
+      "track": null,
+      "elo": "1285",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1233__ai18532",
+      "verified": true,
+      "track": null,
+      "elo": "2874",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1235__ai12766",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1236__ai18551",
+      "verified": true,
+      "track": null,
+      "elo": "2200",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1240__ai12776",
+      "verified": true,
+      "track": null,
+      "elo": "1244",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1242__ai13404",
+      "verified": true,
+      "track": null,
+      "elo": "1317",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1243__ai13211",
+      "verified": true,
+      "track": null,
+      "elo": "1265",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1245__ai18047",
+      "verified": true,
+      "track": null,
+      "elo": "2006",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1246__ai12916",
+      "verified": true,
+      "track": null,
+      "elo": "1316",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1247__ai18553",
+      "verified": true,
+      "track": null,
+      "elo": "1868",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1248__ai12951",
+      "verified": true,
+      "track": null,
+      "elo": "1235",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1249__ai12779",
+      "verified": true,
+      "track": null,
+      "elo": "1297",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1251__ai13673",
+      "verified": true,
+      "track": null,
+      "elo": "1246",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1253__ai14187",
+      "verified": true,
+      "track": null,
+      "elo": "1285",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1255__ai18557",
+      "verified": true,
+      "track": null,
+      "elo": "2631",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1258__ai12795",
+      "verified": true,
+      "track": null,
+      "elo": "1357",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1260__ai18542",
+      "verified": true,
+      "track": null,
+      "elo": "2828",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1261__ai12853",
+      "verified": true,
+      "track": null,
+      "elo": "1216",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1266__ai14033",
+      "verified": true,
+      "track": null,
+      "elo": "1295",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1270__ai14323",
+      "verified": true,
+      "track": null,
+      "elo": "1266",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1272__ai12989",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1273__ai13021",
+      "verified": true,
+      "track": null,
+      "elo": "1278",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1276__ai13060",
+      "verified": true,
+      "track": null,
+      "elo": "1238",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1277__ai16765",
+      "verified": true,
+      "track": null,
+      "elo": "1335",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1278__ai12877",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1280__ai16902",
+      "verified": true,
+      "track": null,
+      "elo": "2103",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1284__ai12966",
+      "verified": true,
+      "track": null,
+      "elo": "1308",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1286__ai16966",
+      "verified": true,
+      "track": null,
+      "elo": "1880",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1287__ai12931",
+      "verified": true,
+      "track": null,
+      "elo": "1284",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1289__ai13255",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1293__ai12960",
+      "verified": true,
+      "track": null,
+      "elo": "1327",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1299__ai17035",
+      "verified": true,
+      "track": null,
+      "elo": "1602",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1302__ai13054",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1307__ai17078",
+      "verified": true,
+      "track": null,
+      "elo": "2150",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1308__ai13100",
+      "verified": true,
+      "track": null,
+      "elo": "1265",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1312__ai17099",
+      "verified": true,
+      "track": null,
+      "elo": "1885",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1313__ai14511",
+      "verified": true,
+      "track": null,
+      "elo": "1878",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1314__ai17683",
+      "verified": true,
+      "track": null,
+      "elo": "1332",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1317__ai13290",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1321__ai13282",
+      "verified": true,
+      "track": null,
+      "elo": "1293",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1329__ai18536",
+      "verified": true,
+      "track": null,
+      "elo": "2858",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1332__ai17880",
+      "verified": true,
+      "track": null,
+      "elo": "2423",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1336__ai13943",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1338__ai13489",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1346__ai17180",
+      "verified": true,
+      "track": null,
+      "elo": "2009",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1347__ai17115",
+      "verified": true,
+      "track": null,
+      "elo": "1630",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1351__ai14804",
+      "verified": true,
+      "track": null,
+      "elo": "1547",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1352__ai18028",
+      "verified": true,
+      "track": null,
+      "elo": "2579",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1354__ai15144",
+      "verified": true,
+      "track": null,
+      "elo": "2030",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1356__ai13794",
+      "verified": true,
+      "track": null,
+      "elo": "1246",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1359__ai13857",
+      "verified": true,
+      "track": null,
+      "elo": "1346",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1361__ai16736",
+      "verified": true,
+      "track": null,
+      "elo": "1279",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1362__ai14330",
+      "verified": true,
+      "track": null,
+      "elo": "1281",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1363__ai16390",
+      "verified": true,
+      "track": null,
+      "elo": "1481",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1364__ai14088",
+      "verified": true,
+      "track": null,
+      "elo": "1330",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1367__ai14789",
+      "verified": true,
+      "track": null,
+      "elo": "1350",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1370__ai15465",
+      "verified": true,
+      "track": null,
+      "elo": "1386",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1371__ai14377",
+      "verified": true,
+      "track": null,
+      "elo": "1278",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1373__ai14828",
+      "verified": true,
+      "track": null,
+      "elo": "1278",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1374__ai14514",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1375__ai14539",
+      "verified": true,
+      "track": null,
+      "elo": "1274",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1376__ai14563",
+      "verified": true,
+      "track": null,
+      "elo": "1273",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1377__ai15095",
+      "verified": true,
+      "track": null,
+      "elo": "1780",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1378__ai18022",
+      "verified": true,
+      "track": null,
+      "elo": "2774",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1380__ai16107",
+      "verified": true,
+      "track": null,
+      "elo": "1277",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1382__ai14841",
+      "verified": true,
+      "track": null,
+      "elo": "1318",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1385__ai14858",
+      "verified": true,
+      "track": null,
+      "elo": "1284",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1386__ai18533",
+      "verified": true,
+      "track": null,
+      "elo": "2722",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1388__ai15222",
+      "verified": false,
+      "track": null,
+      "elo": "1573",
+      "diagnostic": "build failed"
+    },
+    {
+      "player_id": "lota__p1391__ai17998",
+      "verified": true,
+      "track": null,
+      "elo": "1682",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1392__ai17990",
+      "verified": true,
+      "track": null,
+      "elo": "1778",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1394__ai15572",
+      "verified": true,
+      "track": null,
+      "elo": "1580",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1395__ai16493",
+      "verified": true,
+      "track": null,
+      "elo": "1853",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1396__ai15575",
+      "verified": true,
+      "track": null,
+      "elo": "1548",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1398__ai15580",
+      "verified": true,
+      "track": null,
+      "elo": "1297",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1399__ai18552",
+      "verified": true,
+      "track": null,
+      "elo": "1461",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1400__ai18068",
+      "verified": true,
+      "track": null,
+      "elo": "1580",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1401__ai17502",
+      "verified": true,
+      "track": null,
+      "elo": "1836",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1402__ai16279",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1403__ai17042",
+      "verified": true,
+      "track": null,
+      "elo": "1238",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1405__ai15495",
+      "verified": true,
+      "track": null,
+      "elo": "1281",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1406__ai15548",
+      "verified": true,
+      "track": null,
+      "elo": "1281",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1408__ai15566",
+      "verified": true,
+      "track": null,
+      "elo": "1295",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1409__ai16859",
+      "verified": true,
+      "track": null,
+      "elo": "1332",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1410__ai15574",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1414__ai15800",
+      "verified": true,
+      "track": null,
+      "elo": "1307",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1415__ai17542",
+      "verified": true,
+      "track": null,
+      "elo": "1452",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1417__ai15930",
+      "verified": true,
+      "track": null,
+      "elo": "1660",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1419__ai15935",
+      "verified": true,
+      "track": null,
+      "elo": "1313",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1420__ai16985",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1421__ai15863",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1423__ai15937",
+      "verified": true,
+      "track": null,
+      "elo": "1653",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1424__ai16680",
+      "verified": true,
+      "track": null,
+      "elo": "1528",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1425__ai16905",
+      "verified": true,
+      "track": null,
+      "elo": "1631",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1426__ai15961",
+      "verified": true,
+      "track": null,
+      "elo": "1310",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1427__ai15962",
+      "verified": true,
+      "track": null,
+      "elo": "1299",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1428__ai15963",
+      "verified": true,
+      "track": null,
+      "elo": "1826",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1429__ai15964",
+      "verified": true,
+      "track": null,
+      "elo": "1314",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1431__ai17930",
+      "verified": true,
+      "track": null,
+      "elo": "2013",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1433__ai16018",
+      "verified": false,
+      "track": null,
+      "elo": "1254",
+      "diagnostic": "build failed"
+    },
+    {
+      "player_id": "lota__p1434__ai16074",
+      "verified": false,
+      "track": null,
+      "elo": "1277",
+      "diagnostic": "build failed"
+    },
+    {
+      "player_id": "lota__p1435__ai16796",
+      "verified": true,
+      "track": null,
+      "elo": "1274",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1436__ai16954",
+      "verified": true,
+      "track": null,
+      "elo": "1469",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1437__ai16423",
+      "verified": false,
+      "track": null,
+      "elo": "1650",
+      "diagnostic": "build failed"
+    },
+    {
+      "player_id": "lota__p1438__ai16280",
+      "verified": true,
+      "track": null,
+      "elo": "1251",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1439__ai16284",
+      "verified": true,
+      "track": null,
+      "elo": "1284",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1440__ai16286",
+      "verified": true,
+      "track": null,
+      "elo": "1279",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1441__ai16287",
+      "verified": true,
+      "track": null,
+      "elo": "1277",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1442__ai17041",
+      "verified": true,
+      "track": null,
+      "elo": "1284",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1443__ai16290",
+      "verified": true,
+      "track": null,
+      "elo": "1272",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1444__ai17043",
+      "verified": true,
+      "track": null,
+      "elo": "1297",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1446__ai17796",
+      "verified": true,
+      "track": null,
+      "elo": "2497",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1449__ai16463",
+      "verified": true,
+      "track": null,
+      "elo": "1288",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1450__ai16466",
+      "verified": true,
+      "track": null,
+      "elo": "1288",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1451__ai16930",
+      "verified": true,
+      "track": null,
+      "elo": "1722",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1452__ai16551",
+      "verified": true,
+      "track": null,
+      "elo": "1737",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1453__ai18310",
+      "verified": true,
+      "track": null,
+      "elo": "1577",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1456__ai18003",
+      "verified": true,
+      "track": null,
+      "elo": "2308",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1457__ai17921",
+      "verified": true,
+      "track": null,
+      "elo": "1666",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1458__ai16743",
+      "verified": true,
+      "track": null,
+      "elo": "1283",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1459__ai17931",
+      "verified": true,
+      "track": null,
+      "elo": "1613",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1460__ai16843",
+      "verified": true,
+      "track": null,
+      "elo": "1361",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1461__ai16870",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1462__ai16874",
+      "verified": true,
+      "track": null,
+      "elo": "1311",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1463__ai16941",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1464__ai16943",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1465__ai16944",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1466__ai16942",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1467__ai16945",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1468__ai16990",
+      "verified": true,
+      "track": null,
+      "elo": "1297",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1470__ai17135",
+      "verified": true,
+      "track": null,
+      "elo": "1443",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1472__ai18150",
+      "verified": true,
+      "track": null,
+      "elo": "2031",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1473__ai17902",
+      "verified": true,
+      "track": null,
+      "elo": "2437",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1475__ai17365",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1476__ai17366",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1477__ai17367",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1478__ai17369",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1479__ai17372",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1480__ai17373",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1481__ai17376",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1482__ai17377",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1483__ai17378",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1484__ai17380",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1485__ai17381",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1486__ai17407",
+      "verified": true,
+      "track": null,
+      "elo": "1427",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1488__ai17703",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1489__ai17748",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1492__ai18109",
+      "verified": true,
+      "track": null,
+      "elo": "1327",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1493__ai18118",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1494__ai18120",
+      "verified": false,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": "Native callback absent: archived source is incompatible with current game SDK"
+    },
+    {
+      "player_id": "lota__p1495__ai18130",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1496__ai18131",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "lota__p1982__ai22651",
+      "verified": false,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": "build failed"
+    }
+  ],
+  "native_callback_audit": {
+    "valid_players": 200,
+    "excluded_players": [
+      "lota__p1202__ai12709",
+      "lota__p1209__ai12716",
+      "lota__p1494__ai18120"
+    ],
+    "required_symbol": "player_ai",
+    "checked_at": "2026-09-09T23:52:23.965191+00:00"
+  }
+}

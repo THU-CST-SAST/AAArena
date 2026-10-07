@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "generated_at": 1788178550.363,
+  "source_commit": "1b3635fb2211f786c8d672755e4108d7d05fa13f",
+  "targeted_prior_failures": 709,
+  "newly_buildable": 511,
+  "runtime_verified": 511,
+  "runtime_error": 0,
+  "game_error": 0,
+  "build_error": 0,
+  "infrastructure_error": 0,
+  "residual_build_failures": 198,
+  "total_candidates": 3044,
+  "total_verified": 1757,
+  "verified_percent": 57.7,
+  "games": [
+    {
+      "game": "antwar",
+      "candidates": 499,
+      "verified": 362,
+      "verified_percent": 72.5,
+      "native_recovery_added": 248
+    },
+    {
+      "game": "antwar2",
+      "candidates": 481,
+      "verified": 191,
+      "verified_percent": 39.7,
+      "native_recovery_added": 0
+    },
+    {
+      "game": "aquawar",
+      "candidates": 386,
+      "verified": 185,
+      "verified_percent": 47.9,
+      "native_recovery_added": 15
+    },
+    {
+      "game": "generals",
+      "candidates": 509,
+      "verified": 382,
+      "verified_percent": 75.0,
+      "native_recovery_added": 185
+    },
+    {
+      "game": "lostspace",
+      "candidates": 150,
+      "verified": 120,
+      "verified_percent": 80.0,
+      "native_recovery_added": 9
+    },
+    {
+      "game": "miracle",
+      "candidates": 355,
+      "verified": 277,
+      "verified_percent": 78.0,
+      "native_recovery_added": 24
+    },
+    {
+      "game": "rollman",
+      "candidates": 228,
+      "verified": 69,
+      "verified_percent": 30.3,
+      "native_recovery_added": 0
+    },
+    {
+      "game": "snakego",
+      "candidates": 436,
+      "verified": 171,
+      "verified_percent": 39.2,
+      "native_recovery_added": 30
+    }
+  ]
+}

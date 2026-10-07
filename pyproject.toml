@@ -1,0 +1,79 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aa-arena"
+version = "0.3.0"
+description = "Agents for Agents Arena: game resources, evaluators, and coding-agent experiments"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "Qingle" }]
+dependencies = [
+  "cmake>=3.31",
+  "cloudpickle>=3.1",
+  "gym==0.26.2",
+  "gym-notices>=0.0.8",
+  "numpy>=2.1",
+  "python-dotenv>=1.0",
+  "requests>=2.31",
+  "tqdm>=4.66",
+  "websockets>=12",
+]
+
+[project.optional-dependencies]
+measure = ["pyyaml>=6"]
+dev = ["pytest>=8", "ruff>=0.6", "pyyaml>=6"]
+benchmark = ["matplotlib>=3.9"]
+claude = ["claude-agent-sdk==0.2.162"]
+lostspace = ["antlr4-python3-runtime==4.9.1"]
+rollman = [
+  "cloudpickle==3.1.0",
+  "gym==0.26.2",
+  "gym-notices==0.0.8",
+  "numpy==2.1.2; python_version < '3.14'",
+  "numpy==2.3.5; python_version >= '3.14'",
+]
+games = [
+  "antlr4-python3-runtime==4.9.1",
+  "cloudpickle==3.1.0",
+  "gym==0.26.2",
+  "gym-notices==0.0.8",
+  "numpy==2.1.2; python_version < '3.14'",
+  "numpy==2.3.5; python_version >= '3.14'",
+]
+
+[project.scripts]
+aa-arena = "aa_arena.cli:main"
+aa-arena-claude = "aa_arena.benchmark.claude_runtime:cli_main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"aa_arena.core" = ["cpp_compat_shim.h"]
+"aa_arena.saiblo" = ["UPSTREAM.md"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [
+  "games/*/backend",
+  "games/*/players",
+  "games/*/public_sdk*",
+]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+  "backend: builds or imports bundled referee backends",
+  "game_smoke: runs complete referee/player matches",
+  "sandbox_integration: requires a writable systemd cgroup v2 host",
+]

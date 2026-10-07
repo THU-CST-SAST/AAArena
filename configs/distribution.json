@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "edition": "public-local",
+  "formal_evaluation": "not-available",
+  "player_code_policy": "rank > 8 and rank % 2 == 0",
+  "ranking": "frozen measured Elo row order",
+  "statement": "我们只公布未进入决赛圈的偶数人类选手的代码",
+  "local_evaluation": "published-subset"
+}

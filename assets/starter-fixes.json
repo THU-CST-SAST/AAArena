@@ -1,0 +1,8 @@
+[
+  {
+    "file": "games/aquawar/public_sdk_python/main.py",
+    "input_sha256": "489858a9bcb646466eeb0f4d981ee79f1aa5661f9726768f04b1df5f9cda7b59",
+    "sha256": "2bd8045ec927c80894ff0012218e2f92ae27a34b754a18308abdd642f9219d49",
+    "purpose": "Python alternative emits required ImitateFish target when selecting fish 12, matching the C++ starter encoding"
+  }
+]

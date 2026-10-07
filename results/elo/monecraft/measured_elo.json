@@ -1,0 +1,1010 @@
+[
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2341.77665,
+    "player_id": "monecraft__p672__ai6935",
+    "points": 16.0,
+    "track": null,
+    "winrate": 1.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2296.602076,
+    "player_id": "monecraft__p654__ai6591",
+    "points": 16.0,
+    "track": null,
+    "winrate": 1.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2266.3727,
+    "player_id": "monecraft__p716__ai6910",
+    "points": 16.0,
+    "track": null,
+    "winrate": 1.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2223.073336,
+    "player_id": "monecraft__p626__ai6866",
+    "points": 15.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2209.306123,
+    "player_id": "monecraft__p695__ai6392",
+    "points": 16.0,
+    "track": null,
+    "winrate": 1.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2174.907582,
+    "player_id": "monecraft__p577__ai6737",
+    "points": 16.0,
+    "track": null,
+    "winrate": 1.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2174.776218,
+    "player_id": "monecraft__p623__ai6791",
+    "points": 14.0,
+    "track": null,
+    "winrate": 0.875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2070.301114,
+    "player_id": "monecraft__p674__ai5578",
+    "points": 14.0,
+    "track": null,
+    "winrate": 0.875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2025.187012,
+    "player_id": "monecraft__p621__ai6957",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2020.455662,
+    "player_id": "monecraft__p653__ai5731",
+    "points": 14.0,
+    "track": null,
+    "winrate": 0.875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2010.149339,
+    "player_id": "monecraft__p594__ai6372",
+    "points": 16.0,
+    "track": null,
+    "winrate": 1.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1993.300284,
+    "player_id": "monecraft__p570__ai6829",
+    "points": 15.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1972.586849,
+    "player_id": "monecraft__p614__ai5887",
+    "points": 15.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1957.875722,
+    "player_id": "monecraft__p729__ai6467",
+    "points": 15.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1957.055839,
+    "player_id": "monecraft__p617__ai5043",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1903.075091,
+    "player_id": "monecraft__p720__ai6477",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1901.179215,
+    "player_id": "monecraft__p714__ai6927",
+    "points": 13.0,
+    "track": null,
+    "winrate": 0.8125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1893.891264,
+    "player_id": "monecraft__p579__ai4292",
+    "points": 14.0,
+    "track": null,
+    "winrate": 0.875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1869.902256,
+    "player_id": "monecraft__p675__ai5675",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1842.623261,
+    "player_id": "monecraft__p571__ai6881",
+    "points": 14.0,
+    "track": null,
+    "winrate": 0.875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1838.433629,
+    "player_id": "monecraft__p656__ai5415",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1823.204394,
+    "player_id": "monecraft__p565__ai3936",
+    "points": 14.0,
+    "track": null,
+    "winrate": 0.875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1775.379351,
+    "player_id": "monecraft__p702__ai5475",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1760.599415,
+    "player_id": "monecraft__p665__ai6824",
+    "points": 14.0,
+    "track": null,
+    "winrate": 0.875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1751.423371,
+    "player_id": "monecraft__p701__ai5450",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.6875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1744.903995,
+    "player_id": "monecraft__p645__ai4814",
+    "points": 14.0,
+    "track": null,
+    "winrate": 0.875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1698.568128,
+    "player_id": "monecraft__p591__ai6958",
+    "points": 13.0,
+    "track": null,
+    "winrate": 0.8125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1689.78834,
+    "player_id": "monecraft__p624__ai5042",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1664.470036,
+    "player_id": "monecraft__p694__ai6380",
+    "points": 9.5,
+    "track": null,
+    "winrate": 0.59375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1640.059902,
+    "player_id": "monecraft__p693__ai6400",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1628.223941,
+    "player_id": "monecraft__p682__ai6743",
+    "points": 13.5,
+    "track": null,
+    "winrate": 0.84375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1623.274629,
+    "player_id": "monecraft__p618__ai6465",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1618.391028,
+    "player_id": "monecraft__p619__ai4230",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1603.740111,
+    "player_id": "monecraft__p732__ai6686",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1556.829774,
+    "player_id": "monecraft__p710__ai6903",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1554.66638,
+    "player_id": "monecraft__p711__ai5655",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1551.810058,
+    "player_id": "monecraft__p583__ai6351",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1549.711501,
+    "player_id": "monecraft__p673__ai5165",
+    "points": 7.5,
+    "track": null,
+    "winrate": 0.46875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1548.3499,
+    "player_id": "monecraft__p642__ai5511",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1539.439093,
+    "player_id": "monecraft__p689__ai5625",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1537.88197,
+    "player_id": "monecraft__p707__ai6857",
+    "points": 9.5,
+    "track": null,
+    "winrate": 0.59375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1534.1422,
+    "player_id": "monecraft__p647__ai4686",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1528.765779,
+    "player_id": "monecraft__p679__ai6786",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1525.739733,
+    "player_id": "monecraft__p699__ai5743",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1523.607632,
+    "player_id": "monecraft__p639__ai5613",
+    "points": 9.5,
+    "track": null,
+    "winrate": 0.59375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1519.60507,
+    "player_id": "monecraft__p671__ai4692",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1511.927758,
+    "player_id": "monecraft__p634__ai6795",
+    "points": 10.5,
+    "track": null,
+    "winrate": 0.65625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1506.058738,
+    "player_id": "monecraft__p625__ai5314",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1497.850939,
+    "player_id": "monecraft__p650__ai6382",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1495.871986,
+    "player_id": "monecraft__p733__ai6801",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1475.971667,
+    "player_id": "monecraft__p576__ai4101",
+    "points": 6.5,
+    "track": null,
+    "winrate": 0.40625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1458.75886,
+    "player_id": "monecraft__p636__ai5002",
+    "points": 9.5,
+    "track": null,
+    "winrate": 0.59375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1457.468302,
+    "player_id": "monecraft__p575__ai5435",
+    "points": 5.5,
+    "track": null,
+    "winrate": 0.34375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1446.379156,
+    "player_id": "monecraft__p684__ai6213",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.6875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1446.326344,
+    "player_id": "monecraft__p667__ai5030",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1442.390587,
+    "player_id": "monecraft__p638__ai4277",
+    "points": 7.5,
+    "track": null,
+    "winrate": 0.46875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1439.110186,
+    "player_id": "monecraft__p723__ai6396",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1439.015524,
+    "player_id": "monecraft__p632__ai4261",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1426.395184,
+    "player_id": "monecraft__p567__ai3910",
+    "points": 6.5,
+    "track": null,
+    "winrate": 0.40625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1425.49275,
+    "player_id": "monecraft__p678__ai6669",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1418.876267,
+    "player_id": "monecraft__p666__ai4599",
+    "points": 9.5,
+    "track": null,
+    "winrate": 0.59375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1418.449904,
+    "player_id": "monecraft__p587__ai5070",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1415.418503,
+    "player_id": "monecraft__p685__ai5401",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1404.660417,
+    "player_id": "monecraft__p635__ai5509",
+    "points": 7.5,
+    "track": null,
+    "winrate": 0.46875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1401.927505,
+    "player_id": "monecraft__p681__ai5088",
+    "points": 8.5,
+    "track": null,
+    "winrate": 0.53125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1400.354651,
+    "player_id": "monecraft__p627__ai4838",
+    "points": 5.5,
+    "track": null,
+    "winrate": 0.34375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1398.803969,
+    "player_id": "monecraft__p609__ai5583",
+    "points": 9.5,
+    "track": null,
+    "winrate": 0.59375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1395.728242,
+    "player_id": "monecraft__p646__ai4324",
+    "points": 6.5,
+    "track": null,
+    "winrate": 0.40625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1395.487666,
+    "player_id": "monecraft__p616__ai6942",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1393.303026,
+    "player_id": "monecraft__p677__ai5293",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1388.811328,
+    "player_id": "monecraft__p573__ai5896",
+    "points": 5.5,
+    "track": null,
+    "winrate": 0.34375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1385.852241,
+    "player_id": "monecraft__p739__ai6961",
+    "points": 5.5,
+    "track": null,
+    "winrate": 0.34375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1384.643614,
+    "player_id": "monecraft__p755__ai6965",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1376.995861,
+    "player_id": "monecraft__p628__ai4218",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1362.625575,
+    "player_id": "monecraft__p760__ai6966",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1361.995487,
+    "player_id": "monecraft__p669__ai6011",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1360.928118,
+    "player_id": "monecraft__p754__ai6963",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1351.37809,
+    "player_id": "monecraft__p668__ai4656",
+    "points": 5.5,
+    "track": null,
+    "winrate": 0.34375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1345.758856,
+    "player_id": "monecraft__p615__ai6175",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1340.587,
+    "player_id": "monecraft__p572__ai6156",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1337.658648,
+    "player_id": "monecraft__p655__ai4543",
+    "points": 6.5,
+    "track": null,
+    "winrate": 0.40625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1334.504127,
+    "player_id": "monecraft__p734__ai6808",
+    "points": 5.5,
+    "track": null,
+    "winrate": 0.34375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1329.184095,
+    "player_id": "monecraft__p566__ai5745",
+    "points": 4.5,
+    "track": null,
+    "winrate": 0.28125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1302.994268,
+    "player_id": "monecraft__p607__ai3951",
+    "points": 7.5,
+    "track": null,
+    "winrate": 0.46875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1302.651027,
+    "player_id": "monecraft__p599__ai3928",
+    "points": 7.5,
+    "track": null,
+    "winrate": 0.46875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1300.84733,
+    "player_id": "monecraft__p569__ai4887",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1280.523983,
+    "player_id": "monecraft__p662__ai4583",
+    "points": 5.5,
+    "track": null,
+    "winrate": 0.34375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1275.83238,
+    "player_id": "monecraft__p603__ai3993",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1269.234705,
+    "player_id": "monecraft__p724__ai6515",
+    "points": 3.5,
+    "track": null,
+    "winrate": 0.21875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1268.81802,
+    "player_id": "monecraft__p605__ai4096",
+    "points": 6.5,
+    "track": null,
+    "winrate": 0.40625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1268.210212,
+    "player_id": "monecraft__p661__ai4577",
+    "points": 4.5,
+    "track": null,
+    "winrate": 0.28125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1263.41208,
+    "player_id": "monecraft__p670__ai5619",
+    "points": 3.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1257.42647,
+    "player_id": "monecraft__p590__ai5854",
+    "points": 4.5,
+    "track": null,
+    "winrate": 0.28125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1247.727323,
+    "player_id": "monecraft__p604__ai5468",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1247.442005,
+    "player_id": "monecraft__p606__ai5115",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1238.398898,
+    "player_id": "monecraft__p613__ai3975",
+    "points": 4.5,
+    "track": null,
+    "winrate": 0.28125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1207.452842,
+    "player_id": "monecraft__p578__ai5465",
+    "points": 3.5,
+    "track": null,
+    "winrate": 0.21875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1198.405106,
+    "player_id": "monecraft__p611__ai3978",
+    "points": 4.5,
+    "track": null,
+    "winrate": 0.28125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1065.504003,
+    "player_id": "monecraft__p709__ai5629",
+    "points": 3.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1063.891277,
+    "player_id": "monecraft__p708__ai5580",
+    "points": 3.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1063.156159,
+    "player_id": "monecraft__p712__ai5633",
+    "points": 3.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1062.29033,
+    "player_id": "monecraft__p703__ai6390",
+    "points": 2.0,
+    "track": null,
+    "winrate": 0.125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1002.54808,
+    "player_id": "monecraft__p718__ai6304",
+    "points": 1.0,
+    "track": null,
+    "winrate": 0.0625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 963.415192,
+    "player_id": "monecraft__p659__ai5445",
+    "points": 0.5,
+    "track": null,
+    "winrate": 0.03125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 960.667256,
+    "player_id": "monecraft__p688__ai5211",
+    "points": 2.0,
+    "track": null,
+    "winrate": 0.125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 956.95704,
+    "player_id": "monecraft__p687__ai5218",
+    "points": 2.0,
+    "track": null,
+    "winrate": 0.125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 943.956497,
+    "player_id": "monecraft__p683__ai5135",
+    "points": 3.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 927.690809,
+    "player_id": "monecraft__p651__ai6155",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 919.199367,
+    "player_id": "monecraft__p680__ai5244",
+    "points": 1.0,
+    "track": null,
+    "winrate": 0.0625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 889.384007,
+    "player_id": "monecraft__p643__ai6928",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 854.455829,
+    "player_id": "monecraft__p629__ai6839",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 789.149377,
+    "player_id": "monecraft__p589__ai5006",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  }
+]

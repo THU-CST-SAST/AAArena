@@ -1,0 +1,79 @@
+{
+  "packs": [
+    {
+      "game": "rollman",
+      "verified_files": 491,
+      "expected_files": 491,
+      "passed": true
+    },
+    {
+      "game": "pacman",
+      "verified_files": 175,
+      "expected_files": 175,
+      "passed": true
+    },
+    {
+      "game": "antwar",
+      "verified_files": 765,
+      "expected_files": 765,
+      "passed": true
+    },
+    {
+      "game": "aquawar",
+      "verified_files": 852,
+      "expected_files": 852,
+      "passed": true
+    },
+    {
+      "game": "generals",
+      "verified_files": 2079,
+      "expected_files": 2079,
+      "passed": true
+    },
+    {
+      "game": "lostspace",
+      "verified_files": 425,
+      "expected_files": 425,
+      "passed": true
+    },
+    {
+      "game": "miracle",
+      "verified_files": 1404,
+      "expected_files": 1404,
+      "passed": true
+    },
+    {
+      "game": "dorado",
+      "verified_files": 506,
+      "expected_files": 506,
+      "passed": true
+    },
+    {
+      "game": "monecraft",
+      "verified_files": 227,
+      "expected_files": 227,
+      "passed": true
+    },
+    {
+      "game": "lota",
+      "verified_files": 379,
+      "expected_files": 379,
+      "passed": true
+    },
+    {
+      "game": "snakego",
+      "verified_files": 419,
+      "expected_files": 419,
+      "passed": true
+    },
+    {
+      "game": "antwar2",
+      "verified_files": 3693,
+      "expected_files": 3693,
+      "passed": true
+    }
+  ],
+  "secret_candidates": [],
+  "passes_integrity": true,
+  "passes_secret_patterns": true
+}

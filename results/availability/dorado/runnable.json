@@ -1,0 +1,2331 @@
+{
+  "attempts": 330,
+  "candidates": 330,
+  "checked": 330,
+  "cpus_per_match": 1,
+  "game": "dorado",
+  "generated_at": 1788841021.693622,
+  "method": "legacy_ai9_db_import_build_probe",
+  "partial": false,
+  "rows": [
+    {
+      "player_id": "dorado__p1526__ai23118",
+      "verified": true,
+      "track": null,
+      "elo": "1390",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1527__ai20306",
+      "verified": true,
+      "track": null,
+      "elo": "1743",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1528__ai20742",
+      "verified": true,
+      "track": null,
+      "elo": "1563",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1529__ai20143",
+      "verified": true,
+      "track": null,
+      "elo": "1105",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1530__ai18571",
+      "verified": true,
+      "track": null,
+      "elo": "1329",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1531__ai23087",
+      "verified": true,
+      "track": null,
+      "elo": "2875",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1534__ai20943",
+      "verified": true,
+      "track": null,
+      "elo": "1420",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1537__ai20209",
+      "verified": true,
+      "track": null,
+      "elo": "1254",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1538__ai18826",
+      "verified": true,
+      "track": null,
+      "elo": "1315",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1539__ai18938",
+      "verified": true,
+      "track": null,
+      "elo": "1491",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1540__ai18606",
+      "verified": true,
+      "track": null,
+      "elo": "1334",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1541__ai18576",
+      "verified": true,
+      "track": null,
+      "elo": "1031",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1542__ai23110",
+      "verified": false,
+      "track": null,
+      "elo": "2803",
+      "diagnostic": "build failed"
+    },
+    {
+      "player_id": "dorado__p1543__ai20708",
+      "verified": true,
+      "track": null,
+      "elo": "1456",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1544__ai22399",
+      "verified": true,
+      "track": null,
+      "elo": "1615",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1545__ai18968",
+      "verified": true,
+      "track": null,
+      "elo": "1349",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1546__ai18579",
+      "verified": true,
+      "track": null,
+      "elo": "1569",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1548__ai18744",
+      "verified": true,
+      "track": null,
+      "elo": "1255",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1549__ai23116",
+      "verified": true,
+      "track": null,
+      "elo": "2705",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1550__ai19103",
+      "verified": true,
+      "track": null,
+      "elo": "1597",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1551__ai22555",
+      "verified": true,
+      "track": null,
+      "elo": "1763",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1552__ai23025",
+      "verified": true,
+      "track": null,
+      "elo": "2470",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1553__ai21537",
+      "verified": true,
+      "track": null,
+      "elo": "1739",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1554__ai19592",
+      "verified": true,
+      "track": null,
+      "elo": "1461",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1555__ai22688",
+      "verified": true,
+      "track": null,
+      "elo": "2283",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1557__ai20144",
+      "verified": true,
+      "track": null,
+      "elo": "1350",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1560__ai23115",
+      "verified": true,
+      "track": null,
+      "elo": "1346",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1561__ai18594",
+      "verified": true,
+      "track": null,
+      "elo": "1287",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1563__ai22613",
+      "verified": true,
+      "track": null,
+      "elo": "2198",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1564__ai22619",
+      "verified": true,
+      "track": null,
+      "elo": "2266",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1565__ai18600",
+      "verified": true,
+      "track": null,
+      "elo": "1314",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1566__ai18886",
+      "verified": true,
+      "track": null,
+      "elo": "1493",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1568__ai19179",
+      "verified": true,
+      "track": null,
+      "elo": "1612",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1569__ai22726",
+      "verified": true,
+      "track": null,
+      "elo": "1890",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1570__ai18607",
+      "verified": true,
+      "track": null,
+      "elo": "1268",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1571__ai18617",
+      "verified": true,
+      "track": null,
+      "elo": "1082",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1572__ai18612",
+      "verified": true,
+      "track": null,
+      "elo": "1126",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1573__ai18616",
+      "verified": true,
+      "track": null,
+      "elo": "1248",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1575__ai19111",
+      "verified": true,
+      "track": null,
+      "elo": "1330",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1576__ai22635",
+      "verified": true,
+      "track": null,
+      "elo": "2486",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1577__ai23122",
+      "verified": true,
+      "track": null,
+      "elo": "2700",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1578__ai18798",
+      "verified": true,
+      "track": null,
+      "elo": "1154",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1579__ai18652",
+      "verified": true,
+      "track": null,
+      "elo": "1077",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1580__ai22295",
+      "verified": true,
+      "track": null,
+      "elo": "2240",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1581__ai18620",
+      "verified": true,
+      "track": null,
+      "elo": "1272",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1583__ai18624",
+      "verified": true,
+      "track": null,
+      "elo": "1514",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1585__ai18811",
+      "verified": true,
+      "track": null,
+      "elo": "1313",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1588__ai23154",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1590__ai22468",
+      "verified": true,
+      "track": null,
+      "elo": "1738",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1592__ai18625",
+      "verified": true,
+      "track": null,
+      "elo": "1286",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1593__ai23113",
+      "verified": true,
+      "track": null,
+      "elo": "2795",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1594__ai19078",
+      "verified": true,
+      "track": null,
+      "elo": "1240",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1595__ai18630",
+      "verified": true,
+      "track": null,
+      "elo": "1394",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1596__ai20206",
+      "verified": true,
+      "track": null,
+      "elo": "1704",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1601__ai19277",
+      "verified": true,
+      "track": null,
+      "elo": "1178",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1602__ai18640",
+      "verified": true,
+      "track": null,
+      "elo": "1258",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1603__ai18646",
+      "verified": true,
+      "track": null,
+      "elo": "1311",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1604__ai18669",
+      "verified": true,
+      "track": null,
+      "elo": "1329",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1605__ai18650",
+      "verified": true,
+      "track": null,
+      "elo": "1401",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1607__ai19766",
+      "verified": true,
+      "track": null,
+      "elo": "1492",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1612__ai18667",
+      "verified": true,
+      "track": null,
+      "elo": "1293",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1615__ai18686",
+      "verified": true,
+      "track": null,
+      "elo": "1231",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1616__ai18684",
+      "verified": true,
+      "track": null,
+      "elo": "1259",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1619__ai20106",
+      "verified": true,
+      "track": null,
+      "elo": "1099",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1623__ai19119",
+      "verified": true,
+      "track": null,
+      "elo": "1491",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1624__ai18700",
+      "verified": true,
+      "track": null,
+      "elo": "1335",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1625__ai20134",
+      "verified": true,
+      "track": null,
+      "elo": "1560",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1626__ai19121",
+      "verified": true,
+      "track": null,
+      "elo": "1129",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1627__ai23114",
+      "verified": true,
+      "track": null,
+      "elo": "2526",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1629__ai18704",
+      "verified": true,
+      "track": null,
+      "elo": "1252",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1631__ai18706",
+      "verified": true,
+      "track": null,
+      "elo": "1118",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1633__ai18708",
+      "verified": true,
+      "track": null,
+      "elo": "1265",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1634__ai18709",
+      "verified": true,
+      "track": null,
+      "elo": "1349",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1635__ai18710",
+      "verified": true,
+      "track": null,
+      "elo": "1312",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1637__ai22671",
+      "verified": true,
+      "track": null,
+      "elo": "2631",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1638__ai18722",
+      "verified": true,
+      "track": null,
+      "elo": "1243",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1639__ai18793",
+      "verified": true,
+      "track": null,
+      "elo": "1263",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1640__ai19368",
+      "verified": true,
+      "track": null,
+      "elo": "1620",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1641__ai18721",
+      "verified": true,
+      "track": null,
+      "elo": "1368",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1646__ai23152",
+      "verified": true,
+      "track": null,
+      "elo": "1291",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1648__ai18726",
+      "verified": true,
+      "track": null,
+      "elo": "1250",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1649__ai19041",
+      "verified": true,
+      "track": null,
+      "elo": "1460",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1651__ai18728",
+      "verified": true,
+      "track": null,
+      "elo": "1337",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1653__ai18730",
+      "verified": true,
+      "track": null,
+      "elo": "1305",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1654__ai18733",
+      "verified": true,
+      "track": null,
+      "elo": "1206",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1656__ai22712",
+      "verified": true,
+      "track": null,
+      "elo": "2367",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1657__ai18736",
+      "verified": true,
+      "track": null,
+      "elo": "1203",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1658__ai18737",
+      "verified": true,
+      "track": null,
+      "elo": "1226",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1659__ai19022",
+      "verified": true,
+      "track": null,
+      "elo": "1405",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1660__ai19252",
+      "verified": true,
+      "track": null,
+      "elo": "2040",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1661__ai19661",
+      "verified": true,
+      "track": null,
+      "elo": "1040",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1662__ai19251",
+      "verified": true,
+      "track": null,
+      "elo": "1126",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1663__ai22422",
+      "verified": true,
+      "track": null,
+      "elo": "1372",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1664__ai22624",
+      "verified": true,
+      "track": null,
+      "elo": "2384",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1665__ai19623",
+      "verified": true,
+      "track": null,
+      "elo": "1488",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1666__ai18817",
+      "verified": true,
+      "track": null,
+      "elo": "1348",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1668__ai23117",
+      "verified": true,
+      "track": null,
+      "elo": "1562",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1669__ai18812",
+      "verified": true,
+      "track": null,
+      "elo": "1264",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1670__ai18807",
+      "verified": true,
+      "track": null,
+      "elo": "1248",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1671__ai18783",
+      "verified": true,
+      "track": null,
+      "elo": "1339",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1672__ai22490",
+      "verified": true,
+      "track": null,
+      "elo": "1529",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1673__ai18819",
+      "verified": true,
+      "track": null,
+      "elo": "1283",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1674__ai18825",
+      "verified": true,
+      "track": null,
+      "elo": "1164",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1677__ai18827",
+      "verified": false,
+      "track": null,
+      "elo": "1034",
+      "diagnostic": "Native callback absent: archived source is incompatible with current game SDK"
+    },
+    {
+      "player_id": "dorado__p1678__ai18810",
+      "verified": true,
+      "track": null,
+      "elo": "1141",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1679__ai18792",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1682__ai23119",
+      "verified": false,
+      "track": null,
+      "elo": "2393",
+      "diagnostic": "build failed"
+    },
+    {
+      "player_id": "dorado__p1683__ai22595",
+      "verified": true,
+      "track": null,
+      "elo": "1933",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1684__ai18843",
+      "verified": true,
+      "track": null,
+      "elo": "1105",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1686__ai18870",
+      "verified": true,
+      "track": null,
+      "elo": "1252",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1687__ai18871",
+      "verified": true,
+      "track": null,
+      "elo": "1163",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1688__ai21694",
+      "verified": true,
+      "track": null,
+      "elo": "1405",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1690__ai22520",
+      "verified": true,
+      "track": null,
+      "elo": "1544",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1692__ai18885",
+      "verified": true,
+      "track": null,
+      "elo": "1322",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1696__ai18896",
+      "verified": true,
+      "track": null,
+      "elo": "1321",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1697__ai19112",
+      "verified": true,
+      "track": null,
+      "elo": "1496",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1699__ai21871",
+      "verified": true,
+      "track": null,
+      "elo": "1571",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1701__ai18899",
+      "verified": true,
+      "track": null,
+      "elo": "1209",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1702__ai18902",
+      "verified": true,
+      "track": null,
+      "elo": "1362",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1703__ai21828",
+      "verified": true,
+      "track": null,
+      "elo": "1552",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1705__ai23084",
+      "verified": true,
+      "track": null,
+      "elo": "2531",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1707__ai20488",
+      "verified": true,
+      "track": null,
+      "elo": "1338",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1708__ai18910",
+      "verified": true,
+      "track": null,
+      "elo": "1223",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1710__ai22535",
+      "verified": true,
+      "track": null,
+      "elo": "1737",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1712__ai22522",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1714__ai18948",
+      "verified": true,
+      "track": null,
+      "elo": "1238",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1716__ai19191",
+      "verified": true,
+      "track": null,
+      "elo": "1506",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1717__ai18943",
+      "verified": true,
+      "track": null,
+      "elo": "1365",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1718__ai18944",
+      "verified": true,
+      "track": null,
+      "elo": "1096",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1720__ai18946",
+      "verified": true,
+      "track": null,
+      "elo": "1277",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1722__ai20204",
+      "verified": true,
+      "track": null,
+      "elo": "1571",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1723__ai18950",
+      "verified": true,
+      "track": null,
+      "elo": "1364",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1724__ai18951",
+      "verified": true,
+      "track": null,
+      "elo": "1332",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1725__ai20154",
+      "verified": true,
+      "track": null,
+      "elo": "1614",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1727__ai18961",
+      "verified": true,
+      "track": null,
+      "elo": "1039",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1728__ai22585",
+      "verified": true,
+      "track": null,
+      "elo": "2097",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1729__ai18963",
+      "verified": true,
+      "track": null,
+      "elo": "1269",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1731__ai18973",
+      "verified": true,
+      "track": null,
+      "elo": "1249",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1733__ai18974",
+      "verified": true,
+      "track": null,
+      "elo": "1270",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1735__ai18996",
+      "verified": true,
+      "track": null,
+      "elo": "1312",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1736__ai18997",
+      "verified": true,
+      "track": null,
+      "elo": "1283",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1737__ai19004",
+      "verified": true,
+      "track": null,
+      "elo": "1295",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1738__ai22436",
+      "verified": true,
+      "track": null,
+      "elo": "1764",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1740__ai19017",
+      "verified": true,
+      "track": null,
+      "elo": "1260",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1741__ai19021",
+      "verified": true,
+      "track": null,
+      "elo": "1338",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1743__ai19027",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1744__ai19034",
+      "verified": true,
+      "track": null,
+      "elo": "1363",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1745__ai19035",
+      "verified": true,
+      "track": null,
+      "elo": "1329",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1746__ai19037",
+      "verified": true,
+      "track": null,
+      "elo": "1236",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1748__ai19038",
+      "verified": true,
+      "track": null,
+      "elo": "1190",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1750__ai19040",
+      "verified": true,
+      "track": null,
+      "elo": "1369",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1751__ai19624",
+      "verified": true,
+      "track": null,
+      "elo": "1453",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1753__ai19058",
+      "verified": true,
+      "track": null,
+      "elo": "1373",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1754__ai19148",
+      "verified": true,
+      "track": null,
+      "elo": "1262",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1755__ai19067",
+      "verified": true,
+      "track": null,
+      "elo": "1431",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1756__ai19069",
+      "verified": true,
+      "track": null,
+      "elo": "1328",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1757__ai19071",
+      "verified": true,
+      "track": null,
+      "elo": "1185",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1758__ai20108",
+      "verified": true,
+      "track": null,
+      "elo": "1450",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1759__ai19084",
+      "verified": true,
+      "track": null,
+      "elo": "1307",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1761__ai23108",
+      "verified": true,
+      "track": null,
+      "elo": "2963",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1768__ai21998",
+      "verified": true,
+      "track": null,
+      "elo": "1334",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1769__ai19131",
+      "verified": true,
+      "track": null,
+      "elo": "1370",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1770__ai19132",
+      "verified": true,
+      "track": null,
+      "elo": "1119",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1771__ai19134",
+      "verified": true,
+      "track": null,
+      "elo": "1328",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1772__ai19510",
+      "verified": true,
+      "track": null,
+      "elo": "1508",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1773__ai22711",
+      "verified": true,
+      "track": null,
+      "elo": "2332",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1777__ai22534",
+      "verified": true,
+      "track": null,
+      "elo": "1870",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1783__ai21147",
+      "verified": true,
+      "track": null,
+      "elo": "1366",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1787__ai19216",
+      "verified": true,
+      "track": null,
+      "elo": "1316",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1789__ai23159",
+      "verified": true,
+      "track": null,
+      "elo": "1518",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1790__ai20110",
+      "verified": true,
+      "track": null,
+      "elo": "1296",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1792__ai22333",
+      "verified": true,
+      "track": null,
+      "elo": "2397",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1795__ai20137",
+      "verified": true,
+      "track": null,
+      "elo": "1376",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1796__ai20820",
+      "verified": false,
+      "track": null,
+      "elo": "1759",
+      "diagnostic": "build failed"
+    },
+    {
+      "player_id": "dorado__p1798__ai22425",
+      "verified": true,
+      "track": null,
+      "elo": "2395",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1802__ai22159",
+      "verified": true,
+      "track": null,
+      "elo": "1665",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1803__ai19306",
+      "verified": true,
+      "track": null,
+      "elo": "1343",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1804__ai21946",
+      "verified": true,
+      "track": null,
+      "elo": "1375",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1807__ai19830",
+      "verified": true,
+      "track": null,
+      "elo": "1269",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1808__ai19328",
+      "verified": true,
+      "track": null,
+      "elo": "1292",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1809__ai19329",
+      "verified": true,
+      "track": null,
+      "elo": "1321",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1810__ai19331",
+      "verified": true,
+      "track": null,
+      "elo": "1334",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1812__ai21705",
+      "verified": true,
+      "track": null,
+      "elo": "1245",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1814__ai19425",
+      "verified": true,
+      "track": null,
+      "elo": "1506",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1815__ai19389",
+      "verified": true,
+      "track": null,
+      "elo": "1477",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1816__ai19395",
+      "verified": true,
+      "track": null,
+      "elo": "1545",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1817__ai19362",
+      "verified": true,
+      "track": null,
+      "elo": "1152",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1818__ai22602",
+      "verified": true,
+      "track": null,
+      "elo": "2321",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1819__ai19380",
+      "verified": true,
+      "track": null,
+      "elo": "1280",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1824__ai19383",
+      "verified": true,
+      "track": null,
+      "elo": "1271",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1825__ai19379",
+      "verified": true,
+      "track": null,
+      "elo": "1425",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1826__ai19388",
+      "verified": true,
+      "track": null,
+      "elo": "1190",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1827__ai19394",
+      "verified": true,
+      "track": null,
+      "elo": "1231",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1833__ai22541",
+      "verified": true,
+      "track": null,
+      "elo": "1246",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1834__ai19423",
+      "verified": true,
+      "track": null,
+      "elo": "1250",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1835__ai19724",
+      "verified": true,
+      "track": null,
+      "elo": "1264",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1837__ai19444",
+      "verified": true,
+      "track": null,
+      "elo": "1359",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1839__ai19485",
+      "verified": true,
+      "track": null,
+      "elo": "1587",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1840__ai21714",
+      "verified": true,
+      "track": null,
+      "elo": "2331",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1842__ai20081",
+      "verified": true,
+      "track": null,
+      "elo": "1343",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1843__ai19514",
+      "verified": true,
+      "track": null,
+      "elo": "1295",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1844__ai19519",
+      "verified": true,
+      "track": null,
+      "elo": "1338",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1847__ai23121",
+      "verified": true,
+      "track": null,
+      "elo": "2406",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1848__ai23096",
+      "verified": true,
+      "track": null,
+      "elo": "2566",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1851__ai19698",
+      "verified": true,
+      "track": null,
+      "elo": "1343",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1852__ai19615",
+      "verified": true,
+      "track": null,
+      "elo": "1376",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1853__ai19921",
+      "verified": true,
+      "track": null,
+      "elo": "1364",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1855__ai19668",
+      "verified": true,
+      "track": null,
+      "elo": "1337",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1857__ai21739",
+      "verified": true,
+      "track": null,
+      "elo": "1527",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1858__ai19715",
+      "verified": true,
+      "track": null,
+      "elo": "1211",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1859__ai22546",
+      "verified": true,
+      "track": null,
+      "elo": "2468",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1863__ai21773",
+      "verified": true,
+      "track": null,
+      "elo": "1266",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1864__ai21505",
+      "verified": true,
+      "track": null,
+      "elo": "1195",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1865__ai22586",
+      "verified": true,
+      "track": null,
+      "elo": "2211",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1866__ai19826",
+      "verified": true,
+      "track": null,
+      "elo": "1270",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1867__ai19936",
+      "verified": true,
+      "track": null,
+      "elo": "1313",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1875__ai19932",
+      "verified": true,
+      "track": null,
+      "elo": "1333",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1876__ai19931",
+      "verified": true,
+      "track": null,
+      "elo": "1278",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1877__ai19934",
+      "verified": true,
+      "track": null,
+      "elo": "1242",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1878__ai19930",
+      "verified": true,
+      "track": null,
+      "elo": "1249",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1879__ai19939",
+      "verified": true,
+      "track": null,
+      "elo": "1296",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1880__ai19935",
+      "verified": true,
+      "track": null,
+      "elo": "1356",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1884__ai19947",
+      "verified": true,
+      "track": null,
+      "elo": "1159",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1885__ai23104",
+      "verified": true,
+      "track": null,
+      "elo": "2626",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1887__ai19978",
+      "verified": true,
+      "track": null,
+      "elo": "1304",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1889__ai21138",
+      "verified": true,
+      "track": null,
+      "elo": "2037",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1892__ai20138",
+      "verified": true,
+      "track": null,
+      "elo": "1580",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1895__ai20184",
+      "verified": true,
+      "track": null,
+      "elo": "1271",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1896__ai22089",
+      "verified": true,
+      "track": null,
+      "elo": "1472",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1897__ai20227",
+      "verified": true,
+      "track": null,
+      "elo": "1282",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1900__ai21922",
+      "verified": true,
+      "track": null,
+      "elo": "1881",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1902__ai20346",
+      "verified": true,
+      "track": null,
+      "elo": "1303",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1906__ai20372",
+      "verified": true,
+      "track": null,
+      "elo": "1261",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1908__ai20905",
+      "verified": true,
+      "track": null,
+      "elo": "1499",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1911__ai20562",
+      "verified": true,
+      "track": null,
+      "elo": "1392",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1913__ai20593",
+      "verified": true,
+      "track": null,
+      "elo": "1326",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1914__ai20594",
+      "verified": true,
+      "track": null,
+      "elo": "1355",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1915__ai21985",
+      "verified": true,
+      "track": null,
+      "elo": "2575",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1917__ai22373",
+      "verified": true,
+      "track": null,
+      "elo": "2226",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1918__ai21284",
+      "verified": true,
+      "track": null,
+      "elo": "1609",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1919__ai22122",
+      "verified": true,
+      "track": null,
+      "elo": "2525",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1920__ai22431",
+      "verified": true,
+      "track": null,
+      "elo": "1826",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1921__ai23041",
+      "verified": true,
+      "track": null,
+      "elo": "2362",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1922__ai23079",
+      "verified": true,
+      "track": null,
+      "elo": "1992",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1923__ai21895",
+      "verified": true,
+      "track": null,
+      "elo": "2021",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1924__ai20938",
+      "verified": true,
+      "track": null,
+      "elo": "1309",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1925__ai20940",
+      "verified": true,
+      "track": null,
+      "elo": "1426",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1926__ai22833",
+      "verified": true,
+      "track": null,
+      "elo": "2335",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1927__ai23051",
+      "verified": true,
+      "track": null,
+      "elo": "2495",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1928__ai22581",
+      "verified": true,
+      "track": null,
+      "elo": "2314",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1929__ai21091",
+      "verified": true,
+      "track": null,
+      "elo": "1507",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1930__ai22953",
+      "verified": true,
+      "track": null,
+      "elo": "1777",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1931__ai22401",
+      "verified": true,
+      "track": null,
+      "elo": "2385",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1932__ai21654",
+      "verified": true,
+      "track": null,
+      "elo": "2542",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1934__ai21273",
+      "verified": false,
+      "track": null,
+      "elo": "1311",
+      "diagnostic": "Archive declares but never defines wiku_ai::work(); compiled shared library has unresolved symbol _ZN7wiku_ai4workEv. Excluded by full dynamic-link preflight."
+    },
+    {
+      "player_id": "dorado__p1937__ai21367",
+      "verified": true,
+      "track": null,
+      "elo": "1252",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1938__ai22991",
+      "verified": true,
+      "track": null,
+      "elo": "1642",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1939__ai21507",
+      "verified": true,
+      "track": null,
+      "elo": "1351",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1941__ai21591",
+      "verified": true,
+      "track": null,
+      "elo": "1748",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1942__ai23082",
+      "verified": true,
+      "track": null,
+      "elo": "2883",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1943__ai22552",
+      "verified": true,
+      "track": null,
+      "elo": "1384",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1944__ai22346",
+      "verified": true,
+      "track": null,
+      "elo": "1778",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1945__ai22326",
+      "verified": true,
+      "track": null,
+      "elo": "2525",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1946__ai22483",
+      "verified": true,
+      "track": null,
+      "elo": "1327",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1947__ai22448",
+      "verified": true,
+      "track": null,
+      "elo": "2387",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1948__ai21822",
+      "verified": true,
+      "track": null,
+      "elo": "1266",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1950__ai21807",
+      "verified": true,
+      "track": null,
+      "elo": "1243",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1952__ai21780",
+      "verified": true,
+      "track": null,
+      "elo": "1277",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1955__ai21813",
+      "verified": true,
+      "track": null,
+      "elo": "1426",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1956__ai21818",
+      "verified": true,
+      "track": null,
+      "elo": "1379",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1959__ai21921",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1961__ai23066",
+      "verified": true,
+      "track": null,
+      "elo": "2208",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1965__ai22080",
+      "verified": true,
+      "track": null,
+      "elo": "1321",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1967__ai22083",
+      "verified": true,
+      "track": null,
+      "elo": "1286",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1968__ai22090",
+      "verified": true,
+      "track": null,
+      "elo": "1256",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1971__ai22152",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1972__ai22794",
+      "verified": true,
+      "track": null,
+      "elo": "2398",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1973__ai22305",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1974__ai22304",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1975__ai22312",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1976__ai22492",
+      "verified": true,
+      "track": null,
+      "elo": "1395",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1977__ai22447",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1978__ai22389",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1979__ai22607",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1980__ai22466",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1981__ai22678",
+      "verified": true,
+      "track": null,
+      "elo": "1396",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1984__ai22947",
+      "verified": true,
+      "track": null,
+      "elo": "2515",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1985__ai22686",
+      "verified": true,
+      "track": null,
+      "elo": "1356",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1986__ai23075",
+      "verified": true,
+      "track": null,
+      "elo": "1702",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1988__ai22749",
+      "verified": true,
+      "track": null,
+      "elo": "1364",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1989__ai22766",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1990__ai23099",
+      "verified": true,
+      "track": null,
+      "elo": "1754",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1991__ai22819",
+      "verified": false,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": "Native callback absent: archived source is incompatible with current game SDK"
+    },
+    {
+      "player_id": "dorado__p1992__ai23061",
+      "verified": true,
+      "track": null,
+      "elo": "1674",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1993__ai22843",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1994__ai22907",
+      "verified": false,
+      "track": null,
+      "elo": "1874",
+      "diagnostic": "build failed"
+    },
+    {
+      "player_id": "dorado__p1995__ai22868",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1996__ai22877",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1997__ai22930",
+      "verified": true,
+      "track": null,
+      "elo": "1315",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p1998__ai23059",
+      "verified": true,
+      "track": null,
+      "elo": "1393",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2001__ai23068",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2012__ai23123",
+      "verified": true,
+      "track": null,
+      "elo": "1299",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2014__ai23124",
+      "verified": true,
+      "track": null,
+      "elo": "1284",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2015__ai23125",
+      "verified": true,
+      "track": null,
+      "elo": "1341",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2017__ai23126",
+      "verified": true,
+      "track": null,
+      "elo": "1271",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2019__ai23127",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2023__ai23128",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2024__ai23129",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2027__ai23130",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2029__ai23131",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2030__ai23132",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2031__ai23133",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2040__ai23134",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2042__ai23135",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2043__ai23136",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2045__ai23138",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2047__ai23139",
+      "verified": true,
+      "track": null,
+      "elo": "1316",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2048__ai23145",
+      "verified": true,
+      "track": null,
+      "elo": "1284",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2049__ai23141",
+      "verified": true,
+      "track": null,
+      "elo": "1316",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2052__ai23142",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2053__ai23143",
+      "verified": true,
+      "track": null,
+      "elo": "1284",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2054__ai23146",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2055__ai23147",
+      "verified": true,
+      "track": null,
+      "elo": "1284",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2057__ai23148",
+      "verified": true,
+      "track": null,
+      "elo": "1315",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2058__ai23149",
+      "verified": true,
+      "track": null,
+      "elo": "1283",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2059__ai23150",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2063__ai23151",
+      "verified": true,
+      "track": null,
+      "elo": "1316",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2069__ai23156",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2072__ai23155",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    },
+    {
+      "player_id": "dorado__p2079__ai23158",
+      "verified": true,
+      "track": null,
+      "elo": "1300",
+      "diagnostic": null
+    }
+  ],
+  "native_callback_audit": {
+    "valid_players": 324,
+    "excluded_players": [
+      "dorado__p1677__ai18827",
+      "dorado__p1991__ai22819"
+    ],
+    "required_symbol": "player_ai",
+    "checked_at": "2026-09-09T23:52:23.964017+00:00"
+  }
+}

@@ -1,0 +1,839 @@
+{
+  "attempts": 117,
+  "candidates": 117,
+  "checked": 117,
+  "cpus_per_match": 1,
+  "game": "monecraft",
+  "generated_at": 1788841021.6942215,
+  "method": "legacy_ai9_db_import_build_probe",
+  "partial": false,
+  "rows": [
+    {
+      "player_id": "monecraft__p565__ai3936",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p566__ai5745",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p567__ai3910",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p569__ai4887",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p570__ai6829",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p571__ai6881",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p572__ai6156",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p573__ai5896",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p575__ai5435",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p576__ai4101",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p577__ai6737",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p578__ai5465",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p579__ai4292",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p583__ai6351",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p586__ai6755",
+      "verified": false,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": "build failed"
+    },
+    {
+      "player_id": "monecraft__p587__ai5070",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p589__ai5006",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p590__ai5854",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p591__ai6958",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p594__ai6372",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p599__ai3928",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p603__ai3993",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p604__ai5468",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p605__ai4096",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p606__ai5115",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p607__ai3951",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p609__ai5583",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p611__ai3978",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p613__ai3975",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p614__ai5887",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p615__ai6175",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p616__ai6942",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p617__ai5043",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p618__ai6465",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p619__ai4230",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p621__ai6957",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p623__ai6791",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p624__ai5042",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p625__ai5314",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p626__ai6866",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p627__ai4838",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p628__ai4218",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p629__ai6839",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p632__ai4261",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p634__ai6795",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p635__ai5509",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p636__ai5002",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p637__ai5021",
+      "verified": false,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": "build failed"
+    },
+    {
+      "player_id": "monecraft__p638__ai4277",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p639__ai5613",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p640__ai4626",
+      "verified": false,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": "Native callback absent: archived source is incompatible with current game SDK"
+    },
+    {
+      "player_id": "monecraft__p642__ai5511",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p643__ai6928",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p645__ai4814",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p646__ai4324",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p647__ai4686",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p650__ai6382",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p651__ai6155",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p653__ai5731",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p654__ai6591",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p655__ai4543",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p656__ai5415",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p659__ai5445",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p660__ai5044",
+      "verified": false,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": "build failed"
+    },
+    {
+      "player_id": "monecraft__p661__ai4577",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p662__ai4583",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p665__ai6824",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p666__ai4599",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p667__ai5030",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p668__ai4656",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p669__ai6011",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p670__ai5619",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p671__ai4692",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p672__ai6935",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p673__ai5165",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p674__ai5578",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p675__ai5675",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p677__ai5293",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p678__ai6669",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p679__ai6786",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p680__ai5244",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p681__ai5088",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p682__ai6743",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p683__ai5135",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p684__ai6213",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p685__ai5401",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p687__ai5218",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p688__ai5211",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p689__ai5625",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p693__ai6400",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p694__ai6380",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p695__ai6392",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p699__ai5743",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p701__ai5450",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p702__ai5475",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p703__ai6390",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p704__ai5684",
+      "verified": false,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": "build failed"
+    },
+    {
+      "player_id": "monecraft__p707__ai6857",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p708__ai5580",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p709__ai5629",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p710__ai6903",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p711__ai5655",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p712__ai5633",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p714__ai6927",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p716__ai6910",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p718__ai6304",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p720__ai6477",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p723__ai6396",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p724__ai6515",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p729__ai6467",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p732__ai6686",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p733__ai6801",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p734__ai6808",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p739__ai6961",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p754__ai6963",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p755__ai6965",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "monecraft__p760__ai6966",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    }
+  ],
+  "native_callback_audit": {
+    "valid_players": 112,
+    "excluded_players": [
+      "monecraft__p640__ai4626"
+    ],
+    "required_symbol": "player_ai",
+    "checked_at": "2026-09-09T23:52:23.964588+00:00"
+  }
+}

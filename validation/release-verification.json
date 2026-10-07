@@ -1,0 +1,121 @@
+{
+  "version": "0.3.0",
+  "evaluation_scope": "published-subset",
+  "complete_pool_service": "not implemented or available",
+  "component_tests_passed": 124,
+  "published_players": 909,
+  "game_resource_live_checks": [
+    {
+      "game": "pacman",
+      "passed": true
+    },
+    {
+      "game": "antwar",
+      "passed": true
+    },
+    {
+      "game": "generals",
+      "passed": true
+    },
+    {
+      "game": "lostspace",
+      "passed": true
+    },
+    {
+      "game": "miracle",
+      "passed": true
+    },
+    {
+      "game": "aquawar",
+      "passed": true
+    },
+    {
+      "game": "monecraft",
+      "passed": true
+    },
+    {
+      "game": "dorado",
+      "passed": true
+    },
+    {
+      "game": "snakego",
+      "passed": true
+    },
+    {
+      "game": "lota",
+      "passed": true
+    },
+    {
+      "game": "rollman",
+      "passed": true
+    },
+    {
+      "game": "antwar2",
+      "passed": true
+    }
+  ],
+  "native_harness_checks": {
+    "codex-native-fixture": {
+      "passed": true,
+      "official_cli": "0.147.0",
+      "provider": "deterministic-local-fixture",
+      "paid_model_calls": 0,
+      "checks": {
+        "thread_start": true,
+        "goal": true,
+        "dynamic_tool": true,
+        "first_turn_shell": true,
+        "token_usage": true,
+        "shell_network_blocked": true,
+        "control_plane_hidden": true,
+        "credential_environment_hidden": true,
+        "compact": true,
+        "resume": true
+      },
+      "model_capability_tested": false
+    },
+    "codex-native-matches": {
+      "passed": true,
+      "official_cli": "0.147.0",
+      "provider": "deterministic-local-fixture",
+      "paid_model_calls": 0,
+      "checks": {
+        "small_match": true,
+        "published_pool_match": true,
+        "max_effort_sent": true,
+        "frozen_final_snapshot": true,
+        "exact_budget": true
+      },
+      "model_capability_tested": false
+    },
+    "claude-native-max-matches": {
+      "passed": true,
+      "official_cli": "2.1.231",
+      "provider": "deterministic-local-fixture",
+      "paid_model_calls": 0,
+      "tool_calls": [
+        "workspace_manifest",
+        "list_opponents",
+        "workspace_shell",
+        "small_match",
+        "workspace_shell",
+        "large_match"
+      ],
+      "session_resume": true,
+      "native_compactions": 1,
+      "compaction_preserved_budget": true,
+      "small_used": 1,
+      "large_used": 1,
+      "published_pool_opponents": 18,
+      "frozen_final_snapshot": true,
+      "max_effort_sent": true,
+      "model_capability_tested": false
+    }
+  },
+  "local_offpolicy_catalog": {
+    "game": "pacman",
+    "published_opponents": 2,
+    "verified_trajectories": 2
+  },
+  "paid_model_calls": 0
+}

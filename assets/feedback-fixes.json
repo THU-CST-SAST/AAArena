@@ -1,0 +1,14 @@
+[
+  {
+    "file": "games/rollman/evaluator/narrate.py",
+    "input_sha256": "5464fded241d40411694a656cd929ca140871ad07f68d7fedbe8620c4ffef064",
+    "sha256": "93935923ce9a994ecd097546866559c03925649c9f1646c51336609891a443e3",
+    "purpose": "Correct public replay narration without changing referee adjudication or player pools"
+  },
+  {
+    "file": "games/monecraft/evaluator/narrate.py",
+    "input_sha256": "a0f6bc14a74f6ef8d2bee032e2c51b1f5d5229670dd4c867b48668c6a9d1ecfe",
+    "sha256": "ff2b0846edf002ee30b47e8b160cb72dea409565d18b9e7cb174ec3233bf70d9",
+    "purpose": "Correct public replay narration without changing referee adjudication or player pools"
+  }
+]

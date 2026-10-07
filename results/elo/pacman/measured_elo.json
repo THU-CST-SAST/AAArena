@@ -1,0 +1,398 @@
+[
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2197.773441,
+    "player_id": "pacman__p43__ai895",
+    "points": 15.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2127.533954,
+    "player_id": "pacman__p46__ai972",
+    "points": 14.0,
+    "track": null,
+    "winrate": 0.875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2106.275275,
+    "player_id": "pacman__p70__ai902",
+    "points": 15.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2079.369275,
+    "player_id": "pacman__p29__ai979",
+    "points": 16.0,
+    "track": null,
+    "winrate": 1.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2018.663243,
+    "player_id": "pacman__p85__ai671",
+    "points": 15.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2007.16973,
+    "player_id": "pacman__p40__ai906",
+    "points": 13.0,
+    "track": null,
+    "winrate": 0.8125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1997.47274,
+    "player_id": "pacman__p100__ai965",
+    "points": 16.0,
+    "track": null,
+    "winrate": 1.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1937.523173,
+    "player_id": "pacman__p50__ai472",
+    "points": 14.0,
+    "track": null,
+    "winrate": 0.875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1936.556518,
+    "player_id": "pacman__p68__ai3905",
+    "points": 14.0,
+    "track": null,
+    "winrate": 0.875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1725.017233,
+    "player_id": "pacman__p23__ai995",
+    "points": 13.0,
+    "track": null,
+    "winrate": 0.8125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1706.554656,
+    "player_id": "pacman__p58__ai914",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.6875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1677.489162,
+    "player_id": "pacman__p33__ai811",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1650.095557,
+    "player_id": "pacman__p14__ai327",
+    "points": 13.0,
+    "track": null,
+    "winrate": 0.8125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1586.815989,
+    "player_id": "pacman__p36__ai308",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1551.763307,
+    "player_id": "pacman__p67__ai732",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1498.958502,
+    "player_id": "pacman__p105__ai985",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1492.04637,
+    "player_id": "pacman__p102__ai937",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1458.858313,
+    "player_id": "pacman__p6__ai468",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1452.383885,
+    "player_id": "pacman__p549__ai15830",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1449.686383,
+    "player_id": "pacman__p101__ai929",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1448.65131,
+    "player_id": "pacman__p57__ai330",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1444.326328,
+    "player_id": "pacman__p4__ai793",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1435.25772,
+    "player_id": "pacman__p95__ai763",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1432.939231,
+    "player_id": "pacman__p62__ai973",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1432.829704,
+    "player_id": "pacman__p9__ai23",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1390.579169,
+    "player_id": "pacman__p44__ai822",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1389.361049,
+    "player_id": "pacman__p1__ai792",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1386.418807,
+    "player_id": "pacman__p3__ai783",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1369.123064,
+    "player_id": "pacman__p1093__ai12658",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1360.01393,
+    "player_id": "pacman__p107__ai1036",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1345.075371,
+    "player_id": "pacman__p30__ai22",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1341.244204,
+    "player_id": "pacman__p12__ai697",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1334.667927,
+    "player_id": "pacman__p32__ai21",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1334.497206,
+    "player_id": "pacman__p84__ai493",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1329.555271,
+    "player_id": "pacman__p93__ai826",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1325.603906,
+    "player_id": "pacman__p2__ai785",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1264.842706,
+    "player_id": "pacman__p7__ai720",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1146.839556,
+    "player_id": "pacman__p22__ai932",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1143.986241,
+    "player_id": "pacman__p506__ai3648",
+    "points": 1.0,
+    "track": null,
+    "winrate": 0.0625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1052.666579,
+    "player_id": "pacman__p28__ai89",
+    "points": 3.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1052.057993,
+    "player_id": "pacman__p72__ai466",
+    "points": 1.0,
+    "track": null,
+    "winrate": 0.0625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 904.358208,
+    "player_id": "pacman__p25__ai1524",
+    "points": 1.0,
+    "track": null,
+    "winrate": 0.0625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 847.383255,
+    "player_id": "pacman__p99__ai981",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 829.714557,
+    "player_id": "pacman__p103__ai927",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  }
+]

@@ -1,0 +1,2909 @@
+[
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2305.444297,
+    "player_id": "dorado__p1859__ai22546",
+    "points": 16.0,
+    "track": null,
+    "winrate": 1.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2202.879156,
+    "player_id": "dorado__p1549__ai23116",
+    "points": 15.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2187.40924,
+    "player_id": "dorado__p1593__ai23113",
+    "points": 16.0,
+    "track": null,
+    "winrate": 1.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2168.182765,
+    "player_id": "dorado__p1761__ai23108",
+    "points": 16.0,
+    "track": null,
+    "winrate": 1.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2166.06991,
+    "player_id": "dorado__p1683__ai22595",
+    "points": 16.0,
+    "track": null,
+    "winrate": 1.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2155.340355,
+    "player_id": "dorado__p1915__ai21985",
+    "points": 15.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2135.544615,
+    "player_id": "dorado__p1942__ai23082",
+    "points": 16.0,
+    "track": null,
+    "winrate": 1.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2124.926784,
+    "player_id": "dorado__p1710__ai22535",
+    "points": 16.0,
+    "track": null,
+    "winrate": 1.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2117.59871,
+    "player_id": "dorado__p1544__ai22399",
+    "points": 15.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2115.192368,
+    "player_id": "dorado__p1972__ai22794",
+    "points": 16.0,
+    "track": null,
+    "winrate": 1.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2113.037361,
+    "player_id": "dorado__p1798__ai22425",
+    "points": 16.0,
+    "track": null,
+    "winrate": 1.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2082.221953,
+    "player_id": "dorado__p1928__ai22581",
+    "points": 15.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2079.280462,
+    "player_id": "dorado__p1848__ai23096",
+    "points": 16.0,
+    "track": null,
+    "winrate": 1.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2031.096471,
+    "player_id": "dorado__p1865__ai22586",
+    "points": 14.0,
+    "track": null,
+    "winrate": 0.875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2026.458416,
+    "player_id": "dorado__p1576__ai22635",
+    "points": 16.0,
+    "track": null,
+    "winrate": 1.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2008.566853,
+    "player_id": "dorado__p1919__ai22122",
+    "points": 14.0,
+    "track": null,
+    "winrate": 0.875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 2001.980784,
+    "player_id": "dorado__p1989__ai22766",
+    "points": 14.0,
+    "track": null,
+    "winrate": 0.875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1977.600608,
+    "player_id": "dorado__p1978__ai22389",
+    "points": 15.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1956.44088,
+    "player_id": "dorado__p1637__ai22671",
+    "points": 15.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1946.386335,
+    "player_id": "dorado__p1990__ai23099",
+    "points": 14.0,
+    "track": null,
+    "winrate": 0.875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1943.969261,
+    "player_id": "dorado__p1773__ai22711",
+    "points": 15.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1919.182903,
+    "player_id": "dorado__p2001__ai23068",
+    "points": 15.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1918.728193,
+    "player_id": "dorado__p1839__ai19485",
+    "points": 15.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1915.77524,
+    "player_id": "dorado__p1920__ai22431",
+    "points": 13.0,
+    "track": null,
+    "winrate": 0.8125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1914.649467,
+    "player_id": "dorado__p1889__ai21138",
+    "points": 15.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1904.162915,
+    "player_id": "dorado__p1553__ai21537",
+    "points": 13.0,
+    "track": null,
+    "winrate": 0.8125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1900.051139,
+    "player_id": "dorado__p1984__ai22947",
+    "points": 13.0,
+    "track": null,
+    "winrate": 0.8125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1865.446364,
+    "player_id": "dorado__p1927__ai23051",
+    "points": 13.0,
+    "track": null,
+    "winrate": 0.8125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1847.58357,
+    "player_id": "dorado__p1527__ai20306",
+    "points": 15.0,
+    "track": null,
+    "winrate": 0.9375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1841.432135,
+    "player_id": "dorado__p1992__ai23061",
+    "points": 13.0,
+    "track": null,
+    "winrate": 0.8125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1825.908135,
+    "player_id": "dorado__p1552__ai23025",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1813.455553,
+    "player_id": "dorado__p1564__ai22619",
+    "points": 13.0,
+    "track": null,
+    "winrate": 0.8125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 14,
+    "measured_elo": 1812.833897,
+    "player_id": "dorado__p1932__ai21654",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.7857142857142857
+  },
+  {
+    "anchor_elo": null,
+    "matches": 14,
+    "measured_elo": 1807.229538,
+    "player_id": "dorado__p1930__ai22953",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.7142857142857143
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1790.961605,
+    "player_id": "dorado__p1945__ai22326",
+    "points": 13.0,
+    "track": null,
+    "winrate": 0.8125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1777.750762,
+    "player_id": "dorado__p1590__ai22468",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1775.107461,
+    "player_id": "dorado__p1625__ai20134",
+    "points": 13.0,
+    "track": null,
+    "winrate": 0.8125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1770.679696,
+    "player_id": "dorado__p1566__ai18886",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1764.805722,
+    "player_id": "dorado__p1772__ai19510",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1764.685326,
+    "player_id": "dorado__p1569__ai22726",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1758.001674,
+    "player_id": "dorado__p1795__ai20137",
+    "points": 13.0,
+    "track": null,
+    "winrate": 0.8125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1749.838594,
+    "player_id": "dorado__p1699__ai21871",
+    "points": 13.0,
+    "track": null,
+    "winrate": 0.8125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1738.042743,
+    "player_id": "dorado__p1703__ai21828",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1731.659425,
+    "player_id": "dorado__p1640__ai19368",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1729.925849,
+    "player_id": "dorado__p1911__ai20562",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1723.781336,
+    "player_id": "dorado__p1665__ai19623",
+    "points": 13.0,
+    "track": null,
+    "winrate": 0.8125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1709.881786,
+    "player_id": "dorado__p1722__ai20204",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1704.848508,
+    "player_id": "dorado__p1768__ai21998",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1704.174215,
+    "player_id": "dorado__p1595__ai18630",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.6875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1701.503149,
+    "player_id": "dorado__p1758__ai20108",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.6875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1697.617747,
+    "player_id": "dorado__p1627__ai23114",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.6875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1695.888307,
+    "player_id": "dorado__p1866__ai19826",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1688.888901,
+    "player_id": "dorado__p1688__ai21694",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1682.637717,
+    "player_id": "dorado__p1672__ai22490",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1682.441986,
+    "player_id": "dorado__p1725__ai20154",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1680.944393,
+    "player_id": "dorado__p1847__ai23121",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1670.799284,
+    "player_id": "dorado__p2047__ai23139",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.6875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1667.470966,
+    "player_id": "dorado__p1967__ai22083",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.6875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1664.07282,
+    "player_id": "dorado__p1651__ai18728",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1655.529561,
+    "player_id": "dorado__p1634__ai18709",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1654.069455,
+    "player_id": "dorado__p1892__ai20138",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1653.546507,
+    "player_id": "dorado__p1738__ai22436",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1652.930663,
+    "player_id": "dorado__p1908__ai20905",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1652.046678,
+    "player_id": "dorado__p1833__ai22541",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1648.291291,
+    "player_id": "dorado__p1981__ai22678",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.6875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1646.700889,
+    "player_id": "dorado__p1551__ai22555",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1642.606943,
+    "player_id": "dorado__p1998__ai23059",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.6875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1641.965845,
+    "player_id": "dorado__p2048__ai23145",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1641.761342,
+    "player_id": "dorado__p1815__ai19389",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1636.061784,
+    "player_id": "dorado__p1814__ai19425",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1636.051096,
+    "player_id": "dorado__p1534__ai20943",
+    "points": 13.0,
+    "track": null,
+    "winrate": 0.8125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1635.000786,
+    "player_id": "dorado__p1568__ai19179",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1634.14235,
+    "player_id": "dorado__p1816__ai19395",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1631.471848,
+    "player_id": "dorado__p1570__ai18607",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1631.107574,
+    "player_id": "dorado__p1863__ai21773",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1630.125303,
+    "player_id": "dorado__p1897__ai20227",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.6875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1629.973312,
+    "player_id": "dorado__p1880__ai19935",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.6875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1625.599716,
+    "player_id": "dorado__p1952__ai21780",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1624.8562,
+    "player_id": "dorado__p1965__ai22080",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1621.698717,
+    "player_id": "dorado__p2015__ai23125",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1616.183933,
+    "player_id": "dorado__p2052__ai23142",
+    "points": 9.5,
+    "track": null,
+    "winrate": 0.59375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1613.448569,
+    "player_id": "dorado__p1925__ai20940",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.6875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1613.082218,
+    "player_id": "dorado__p1718__ai18944",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1610.998072,
+    "player_id": "dorado__p1751__ai19624",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1607.791115,
+    "player_id": "dorado__p1827__ai19394",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1605.103712,
+    "player_id": "dorado__p1729__ai18963",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.6875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1604.929789,
+    "player_id": "dorado__p1686__ai18870",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1602.993038,
+    "player_id": "dorado__p1629__ai18704",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1601.023986,
+    "player_id": "dorado__p1687__ai18871",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1593.318486,
+    "player_id": "dorado__p2058__ai23149",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1591.118953,
+    "player_id": "dorado__p2054__ai23146",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1588.220655,
+    "player_id": "dorado__p1924__ai20938",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1587.393805,
+    "player_id": "dorado__p1878__ai19930",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.6875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1586.117962,
+    "player_id": "dorado__p1913__ai20593",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1585.481984,
+    "player_id": "dorado__p1596__ai20206",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1585.30767,
+    "player_id": "dorado__p1668__ai23117",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1583.866509,
+    "player_id": "dorado__p1666__ai18817",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1583.149804,
+    "player_id": "dorado__p1575__ai19111",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.6875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1581.192474,
+    "player_id": "dorado__p1690__ai22520",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1579.610305,
+    "player_id": "dorado__p1867__ai19936",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1578.769582,
+    "player_id": "dorado__p1623__ai19119",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1574.935626,
+    "player_id": "dorado__p1956__ai21818",
+    "points": 9.5,
+    "track": null,
+    "winrate": 0.59375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1574.3342,
+    "player_id": "dorado__p1670__ai18807",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1572.687083,
+    "player_id": "dorado__p1724__ai18951",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1571.22975,
+    "player_id": "dorado__p1736__ai18997",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1570.957194,
+    "player_id": "dorado__p2049__ai23141",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1570.607594,
+    "player_id": "dorado__p1840__ai21714",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1570.071597,
+    "player_id": "dorado__p1717__ai18943",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1569.047398,
+    "player_id": "dorado__p2043__ai23136",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1568.999034,
+    "player_id": "dorado__p2012__ai23123",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1568.624396,
+    "player_id": "dorado__p1740__ai19017",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1566.399656,
+    "player_id": "dorado__p1697__ai19112",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1564.089549,
+    "player_id": "dorado__p2069__ai23156",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1563.128325,
+    "player_id": "dorado__p1679__ai18792",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1562.561887,
+    "player_id": "dorado__p1649__ai19041",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1559.222618,
+    "player_id": "dorado__p2059__ai23150",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1558.264774,
+    "player_id": "dorado__p1659__ai19022",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1556.305833,
+    "player_id": "dorado__p1656__ai22712",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1556.072966,
+    "player_id": "dorado__p1985__ai22686",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1555.870364,
+    "player_id": "dorado__p1826__ai19388",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1555.396096,
+    "player_id": "dorado__p1561__ai18594",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1555.377919,
+    "player_id": "dorado__p1918__ai21284",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1554.984834,
+    "player_id": "dorado__p2019__ai23127",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.6875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1553.607351,
+    "player_id": "dorado__p1807__ai19830",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1553.10333,
+    "player_id": "dorado__p1550__ai19103",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1553.050008,
+    "player_id": "dorado__p1787__ai19216",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1551.689747,
+    "player_id": "dorado__p1539__ai18938",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.6875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1550.032908,
+    "player_id": "dorado__p1835__ai19724",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1545.798643,
+    "player_id": "dorado__p1678__ai18810",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1545.764625,
+    "player_id": "dorado__p1607__ai19766",
+    "points": 11.0,
+    "track": null,
+    "winrate": 0.6875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1545.124834,
+    "player_id": "dorado__p1809__ai19329",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1541.994854,
+    "player_id": "dorado__p1914__ai20594",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1539.436526,
+    "player_id": "dorado__p1658__ai18737",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1538.542557,
+    "player_id": "dorado__p1755__ai19067",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1538.497462,
+    "player_id": "dorado__p1750__ai19040",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1538.470776,
+    "player_id": "dorado__p1573__ai18616",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1534.044898,
+    "player_id": "dorado__p2045__ai23138",
+    "points": 7.5,
+    "track": null,
+    "winrate": 0.46875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1532.845133,
+    "player_id": "dorado__p1537__ai20209",
+    "points": 12.0,
+    "track": null,
+    "winrate": 0.75
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1529.717492,
+    "player_id": "dorado__p2079__ai23158",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1527.673595,
+    "player_id": "dorado__p1769__ai19131",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1526.050938,
+    "player_id": "dorado__p1955__ai21813",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1524.198289,
+    "player_id": "dorado__p1716__ai19191",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1524.05536,
+    "player_id": "dorado__p1654__ai18733",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1522.799268,
+    "player_id": "dorado__p1663__ai22422",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1520.73136,
+    "player_id": "dorado__p2017__ai23126",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1519.117986,
+    "player_id": "dorado__p1783__ai21147",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1518.699851,
+    "player_id": "dorado__p1612__ai18667",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1516.81605,
+    "player_id": "dorado__p1950__ai21807",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1516.770061,
+    "player_id": "dorado__p1577__ai23122",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1515.96073,
+    "player_id": "dorado__p1565__ai18600",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1515.905576,
+    "player_id": "dorado__p1876__ai19931",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1514.678967,
+    "player_id": "dorado__p1825__ai19379",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1513.450111,
+    "player_id": "dorado__p1626__ai19121",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1513.18012,
+    "player_id": "dorado__p1560__ai23115",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1512.554976,
+    "player_id": "dorado__p1980__ai22466",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1512.359679,
+    "player_id": "dorado__p1771__ai19134",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1512.154035,
+    "player_id": "dorado__p1528__ai20742",
+    "points": 9.5,
+    "track": null,
+    "winrate": 0.59375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1511.965531,
+    "player_id": "dorado__p1696__ai18896",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 14,
+    "measured_elo": 1509.802911,
+    "player_id": "dorado__p1941__ai21591",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1509.329672,
+    "player_id": "dorado__p1594__ai19078",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1508.869236,
+    "player_id": "dorado__p2072__ai23155",
+    "points": 7.5,
+    "track": null,
+    "winrate": 0.46875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1507.515634,
+    "player_id": "dorado__p1624__ai18700",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1504.682235,
+    "player_id": "dorado__p1770__ai19132",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1504.173666,
+    "player_id": "dorado__p1638__ai18722",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1502.091669,
+    "player_id": "dorado__p1657__ai18736",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1501.38866,
+    "player_id": "dorado__p1583__ai18624",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1501.350558,
+    "player_id": "dorado__p1959__ai21921",
+    "points": 7.5,
+    "track": null,
+    "winrate": 0.46875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1501.018652,
+    "player_id": "dorado__p1548__ai18744",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1500.441241,
+    "player_id": "dorado__p1669__ai18812",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1499.643972,
+    "player_id": "dorado__p1844__ai19519",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1499.449997,
+    "player_id": "dorado__p2031__ai23133",
+    "points": 10.0,
+    "track": null,
+    "winrate": 0.625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1497.759291,
+    "player_id": "dorado__p1673__ai18819",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1497.507942,
+    "player_id": "dorado__p1834__ai19423",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1497.039288,
+    "player_id": "dorado__p1968__ai22090",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1496.237476,
+    "player_id": "dorado__p1943__ai22552",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1494.534797,
+    "player_id": "dorado__p1692__ai18885",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1493.285848,
+    "player_id": "dorado__p1858__ai19715",
+    "points": 8.5,
+    "track": null,
+    "winrate": 0.53125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1491.05878,
+    "player_id": "dorado__p2055__ai23147",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1487.693295,
+    "player_id": "dorado__p2053__ai23143",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1487.298511,
+    "player_id": "dorado__p1824__ai19383",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1486.231427,
+    "player_id": "dorado__p1819__ai19380",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1486.203518,
+    "player_id": "dorado__p1743__ai19027",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1486.041604,
+    "player_id": "dorado__p1635__ai18710",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1483.875432,
+    "player_id": "dorado__p1996__ai22877",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1483.708121,
+    "player_id": "dorado__p1588__ai23154",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1482.942606,
+    "player_id": "dorado__p1619__ai20106",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1481.579857,
+    "player_id": "dorado__p1895__ai20184",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1481.253808,
+    "player_id": "dorado__p1723__ai18950",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1480.5205,
+    "player_id": "dorado__p1753__ai19058",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1480.334591,
+    "player_id": "dorado__p1684__ai18843",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1480.031305,
+    "player_id": "dorado__p1641__ai18721",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1478.954883,
+    "player_id": "dorado__p1720__ai18946",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1478.945475,
+    "player_id": "dorado__p1975__ai22312",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1473.558789,
+    "player_id": "dorado__p2040__ai23134",
+    "points": 8.5,
+    "track": null,
+    "winrate": 0.53125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1471.745201,
+    "player_id": "dorado__p1648__ai18726",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1471.689384,
+    "player_id": "dorado__p1631__ai18706",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1470.644702,
+    "player_id": "dorado__p1759__ai19084",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1469.857955,
+    "player_id": "dorado__p1639__ai18793",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1469.797527,
+    "player_id": "dorado__p1671__ai18783",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1468.230799,
+    "player_id": "dorado__p1855__ai19668",
+    "points": 7.5,
+    "track": null,
+    "winrate": 0.46875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1466.684364,
+    "player_id": "dorado__p1712__ai22522",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1464.341038,
+    "player_id": "dorado__p1581__ai18620",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1464.052902,
+    "player_id": "dorado__p1802__ai22159",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1462.368734,
+    "player_id": "dorado__p1995__ai22868",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1462.032355,
+    "player_id": "dorado__p1744__ai19034",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1461.202683,
+    "player_id": "dorado__p1728__ai22585",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1459.604931,
+    "player_id": "dorado__p1884__ai19947",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1458.319941,
+    "player_id": "dorado__p1735__ai18996",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1458.156859,
+    "player_id": "dorado__p1974__ai22304",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 14,
+    "measured_elo": 1456.912717,
+    "player_id": "dorado__p1939__ai21507",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.42857142857142855
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1455.100925,
+    "player_id": "dorado__p1602__ai18640",
+    "points": 8.5,
+    "track": null,
+    "winrate": 0.53125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1455.077871,
+    "player_id": "dorado__p1708__ai18910",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1453.771888,
+    "player_id": "dorado__p1852__ai19615",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1451.444697,
+    "player_id": "dorado__p2057__ai23148",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1450.529774,
+    "player_id": "dorado__p1803__ai19306",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1449.518207,
+    "player_id": "dorado__p1545__ai18968",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1448.039338,
+    "player_id": "dorado__p1843__ai19514",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1447.782852,
+    "player_id": "dorado__p1837__ai19444",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1446.189277,
+    "player_id": "dorado__p1592__ai18625",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1440.407518,
+    "player_id": "dorado__p1902__ai20346",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1439.390562,
+    "player_id": "dorado__p1973__ai22305",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1438.289305,
+    "player_id": "dorado__p1754__ai19148",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1437.852617,
+    "player_id": "dorado__p1615__ai18686",
+    "points": 7.5,
+    "track": null,
+    "winrate": 0.46875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1437.09183,
+    "player_id": "dorado__p1808__ai19328",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1433.050985,
+    "player_id": "dorado__p1947__ai22448",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1431.456994,
+    "player_id": "dorado__p1877__ai19934",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1431.031988,
+    "player_id": "dorado__p1879__ai19939",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1430.396273,
+    "player_id": "dorado__p1926__ai22833",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 14,
+    "measured_elo": 1427.676527,
+    "player_id": "dorado__p1938__ai22991",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.35714285714285715
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1427.432594,
+    "player_id": "dorado__p2042__ai23135",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1422.653928,
+    "player_id": "dorado__p1661__ai19661",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1420.899584,
+    "player_id": "dorado__p1714__ai18948",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1418.475257,
+    "player_id": "dorado__p1745__ai19035",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1418.017372,
+    "player_id": "dorado__p1993__ai22843",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1415.762401,
+    "player_id": "dorado__p1530__ai18571",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1411.534172,
+    "player_id": "dorado__p2063__ai23151",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1408.986098,
+    "player_id": "dorado__p1660__ai19252",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1408.893696,
+    "player_id": "dorado__p1757__ai19071",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1406.597438,
+    "player_id": "dorado__p1701__ai18899",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1403.95663,
+    "player_id": "dorado__p1733__ai18974",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1400.959626,
+    "player_id": "dorado__p1702__ai18902",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1400.519612,
+    "player_id": "dorado__p2023__ai23128",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1399.893388,
+    "player_id": "dorado__p2030__ai23132",
+    "points": 8.0,
+    "track": null,
+    "winrate": 0.5
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1398.777163,
+    "player_id": "dorado__p1546__ai18579",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1398.633945,
+    "player_id": "dorado__p1737__ai19004",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1397.936372,
+    "player_id": "dorado__p1633__ai18708",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1397.465457,
+    "player_id": "dorado__p1948__ai21822",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1397.042426,
+    "player_id": "dorado__p1741__ai19021",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1385.59744,
+    "player_id": "dorado__p1646__ai23152",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1385.345433,
+    "player_id": "dorado__p1812__ai21705",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1377.930351,
+    "player_id": "dorado__p1580__ai22295",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1377.595015,
+    "player_id": "dorado__p1616__ai18684",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 14,
+    "measured_elo": 1373.9023,
+    "player_id": "dorado__p1931__ai22401",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.2857142857142857
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1367.261537,
+    "player_id": "dorado__p1538__ai18826",
+    "points": 9.0,
+    "track": null,
+    "winrate": 0.5625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1366.465681,
+    "player_id": "dorado__p1789__ai23159",
+    "points": 5.5,
+    "track": null,
+    "winrate": 0.34375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1359.804984,
+    "player_id": "dorado__p1731__ai18973",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1357.517312,
+    "player_id": "dorado__p1585__ai18811",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1356.500372,
+    "player_id": "dorado__p2029__ai23131",
+    "points": 7.0,
+    "track": null,
+    "winrate": 0.4375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1349.126203,
+    "player_id": "dorado__p1887__ai19978",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 14,
+    "measured_elo": 1345.198732,
+    "player_id": "dorado__p1937__ai21367",
+    "points": 3.0,
+    "track": null,
+    "winrate": 0.21428571428571427
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1343.838754,
+    "player_id": "dorado__p1851__ai19698",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1340.94901,
+    "player_id": "dorado__p1603__ai18646",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1339.935629,
+    "player_id": "dorado__p1653__ai18730",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1336.20545,
+    "player_id": "dorado__p2024__ai23129",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1334.858707,
+    "player_id": "dorado__p1810__ai19331",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1327.276644,
+    "player_id": "dorado__p1746__ai19037",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1318.818664,
+    "player_id": "dorado__p1605__ai18650",
+    "points": 6.5,
+    "track": null,
+    "winrate": 0.40625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1317.789217,
+    "player_id": "dorado__p1604__ai18669",
+    "points": 6.0,
+    "track": null,
+    "winrate": 0.375
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1317.030492,
+    "player_id": "dorado__p1555__ai22688",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1315.423626,
+    "player_id": "dorado__p1946__ai22483",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1315.314899,
+    "player_id": "dorado__p1792__ai22333",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1299.423957,
+    "player_id": "dorado__p1756__ai19069",
+    "points": 3.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1298.414335,
+    "player_id": "dorado__p2014__ai23124",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1287.076741,
+    "player_id": "dorado__p1748__ai19038",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1286.46728,
+    "player_id": "dorado__p1818__ai22602",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1284.223682,
+    "player_id": "dorado__p1875__ai19932",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1279.843082,
+    "player_id": "dorado__p1526__ai23118",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1279.482105,
+    "player_id": "dorado__p1971__ai22152",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1272.582395,
+    "player_id": "dorado__p1790__ai20110",
+    "points": 4.5,
+    "track": null,
+    "winrate": 0.28125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1260.663778,
+    "player_id": "dorado__p1900__ai21922",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1250.025707,
+    "player_id": "dorado__p1979__ai22607",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1244.061744,
+    "player_id": "dorado__p1554__ai19592",
+    "points": 3.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1238.405562,
+    "player_id": "dorado__p1662__ai19251",
+    "points": 3.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1236.833383,
+    "player_id": "dorado__p1664__ai22624",
+    "points": 3.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1234.464018,
+    "player_id": "dorado__p1563__ai22613",
+    "points": 3.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1225.265997,
+    "player_id": "dorado__p1579__ai18652",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1210.498684,
+    "player_id": "dorado__p1917__ai22373",
+    "points": 2.0,
+    "track": null,
+    "winrate": 0.125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1210.19959,
+    "player_id": "dorado__p1977__ai22447",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1198.404285,
+    "player_id": "dorado__p1857__ai21739",
+    "points": 5.0,
+    "track": null,
+    "winrate": 0.3125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1180.546812,
+    "player_id": "dorado__p1540__ai18606",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1177.40717,
+    "player_id": "dorado__p1944__ai22346",
+    "points": 2.0,
+    "track": null,
+    "winrate": 0.125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1159.321175,
+    "player_id": "dorado__p1842__ai20081",
+    "points": 1.0,
+    "track": null,
+    "winrate": 0.0625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1157.671046,
+    "player_id": "dorado__p1543__ai20708",
+    "points": 4.0,
+    "track": null,
+    "winrate": 0.25
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1147.78095,
+    "player_id": "dorado__p1571__ai18617",
+    "points": 2.0,
+    "track": null,
+    "winrate": 0.125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1137.646916,
+    "player_id": "dorado__p1707__ai20488",
+    "points": 3.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1134.026937,
+    "player_id": "dorado__p1529__ai20143",
+    "points": 3.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1133.922542,
+    "player_id": "dorado__p1557__ai20144",
+    "points": 2.0,
+    "track": null,
+    "winrate": 0.125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1105.321027,
+    "player_id": "dorado__p1885__ai23104",
+    "points": 1.0,
+    "track": null,
+    "winrate": 0.0625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1070.395761,
+    "player_id": "dorado__p1986__ai23075",
+    "points": 1.0,
+    "track": null,
+    "winrate": 0.0625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1064.469823,
+    "player_id": "dorado__p1922__ai23079",
+    "points": 3.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1059.668207,
+    "player_id": "dorado__p1988__ai22749",
+    "points": 1.0,
+    "track": null,
+    "winrate": 0.0625
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 1029.749764,
+    "player_id": "dorado__p1921__ai23041",
+    "points": 3.0,
+    "track": null,
+    "winrate": 0.1875
+  },
+  {
+    "anchor_elo": null,
+    "matches": 14,
+    "measured_elo": 989.817186,
+    "player_id": "dorado__p1929__ai21091",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 966.433156,
+    "player_id": "dorado__p1601__ai19277",
+    "points": 0.5,
+    "track": null,
+    "winrate": 0.03125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 962.54194,
+    "player_id": "dorado__p1896__ai22089",
+    "points": 2.0,
+    "track": null,
+    "winrate": 0.125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 950.660776,
+    "player_id": "dorado__p2027__ai23130",
+    "points": 0.5,
+    "track": null,
+    "winrate": 0.03125
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 945.696882,
+    "player_id": "dorado__p1674__ai18825",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 890.675849,
+    "player_id": "dorado__p1727__ai18961",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 888.308075,
+    "player_id": "dorado__p1804__ai21946",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 888.095485,
+    "player_id": "dorado__p1961__ai23066",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 887.101305,
+    "player_id": "dorado__p1997__ai22930",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 865.267895,
+    "player_id": "dorado__p1777__ai22534",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 862.408164,
+    "player_id": "dorado__p1817__ai19362",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 852.78587,
+    "player_id": "dorado__p1572__ai18612",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 839.155637,
+    "player_id": "dorado__p1864__ai21505",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 837.80052,
+    "player_id": "dorado__p1578__ai18798",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 831.386004,
+    "player_id": "dorado__p1853__ai19921",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 802.512459,
+    "player_id": "dorado__p1705__ai23084",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 800.851642,
+    "player_id": "dorado__p1976__ai22492",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 796.008144,
+    "player_id": "dorado__p1531__ai23087",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 742.074462,
+    "player_id": "dorado__p1541__ai18576",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 689.873696,
+    "player_id": "dorado__p1906__ai20372",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  },
+  {
+    "anchor_elo": null,
+    "matches": 16,
+    "measured_elo": 682.930619,
+    "player_id": "dorado__p1923__ai21895",
+    "points": 0.0,
+    "track": null,
+    "winrate": 0.0
+  }
+]

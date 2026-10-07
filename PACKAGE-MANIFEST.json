@@ -1,0 +1,1201 @@
+{
+  "schema_version": 1,
+  "name": "AA-Arena",
+  "version": "0.3.0",
+  "games": [
+    "rollman",
+    "pacman",
+    "antwar",
+    "aquawar",
+    "generals",
+    "lostspace",
+    "miracle",
+    "dorado",
+    "monecraft",
+    "lota",
+    "snakego",
+    "antwar2"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "size": 317,
+      "sha256": "15bf17bd34175c2b0b15d4f33b8aa607ec2be3a788e942ec9c41ff5dc3fd783c"
+    },
+    {
+      "path": "LICENSE",
+      "size": 1063,
+      "sha256": "983d115562ed030f5ccf5ede4b189b4f143619c0673e4b6dc013c46022003a5e"
+    },
+    {
+      "path": "README.md",
+      "size": 17859,
+      "sha256": "21a1c9c15db0b3012166b0483ff3b6c01a1fd81af2ae1614e35b8c5835996cce"
+    },
+    {
+      "path": "assets/antwar.tar.gz",
+      "size": 1309014,
+      "sha256": "aadd3e37a52f1a71c185a1d11985e3d06adb36d53c582c40d7f8d44666ff2659"
+    },
+    {
+      "path": "assets/antwar2.tar.gz",
+      "size": 7838476,
+      "sha256": "53c60836f51d921855d94bd8d57615957d0b0020f1c963cc5adbd4c8a27d098b"
+    },
+    {
+      "path": "assets/aquawar.tar.gz",
+      "size": 5558301,
+      "sha256": "77b38c39feac77ec6dadfd2fbd0b8a8915d385161e9f6996c63bbf964e1e362a"
+    },
+    {
+      "path": "assets/dorado.tar.gz",
+      "size": 723345,
+      "sha256": "b13ebafcab6755ee9a1d1d0757c768d1749f5cf024b2ca9c61b3b19bd993de90"
+    },
+    {
+      "path": "assets/evaluator-bindings.json",
+      "size": 616,
+      "sha256": "54983beb04ba705925ca1aaaa3c0339d33af3be342bd6c8ef16cca3635fcc4ed"
+    },
+    {
+      "path": "assets/feedback-fixes.json",
+      "size": 669,
+      "sha256": "7f495ec0f1c67a73e383956ad88e29e5f8da33b4eb33413a9b18c4dae43ff58f"
+    },
+    {
+      "path": "assets/generals.tar.gz",
+      "size": 9116850,
+      "sha256": "11d4bde9745975f533b65ac669880daefd8271015d51a39493b033bd110d7e6b"
+    },
+    {
+      "path": "assets/lostspace.tar.gz",
+      "size": 2309952,
+      "sha256": "8da64c5cd9d39b3a76c9b223cefcb70f4e3ebfb747adf522c930048c2eadc0c9"
+    },
+    {
+      "path": "assets/lota.tar.gz",
+      "size": 951991,
+      "sha256": "caedc485e709f8645508280244bd3461067aa855f0508e06bb4cbd17c1c576ab"
+    },
+    {
+      "path": "assets/manifest.json",
+      "size": 3025,
+      "sha256": "2b7da5538c866d91ff1377a186d1deccd8af5c3e0bb560fa8a863f1d9fc4d219"
+    },
+    {
+      "path": "assets/miracle.tar.gz",
+      "size": 14036340,
+      "sha256": "34ee9002764d697a1ce6e9a603915298a865c81278e9d9a7919d2e0a6e6d5a09"
+    },
+    {
+      "path": "assets/monecraft.tar.gz",
+      "size": 168480,
+      "sha256": "69fffd4d77f7da743e22a4251ef9920cd0f082ef110647a0db815a44657a287a"
+    },
+    {
+      "path": "assets/pacman.tar.gz",
+      "size": 143402,
+      "sha256": "970f371c47341a0ed59791b0e695d206bc3e01ea310b300284fa112e94774086"
+    },
+    {
+      "path": "assets/provenance-verification.json",
+      "size": 531,
+      "sha256": "fdad682674fb81415a53c925413699a54c9e27b189883fbdeec71754c63cee43"
+    },
+    {
+      "path": "assets/rollman.tar.gz",
+      "size": 491520,
+      "sha256": "3fb68c012edb3d088a49e69aafffd8e97b22dc91e894e9ec561fc41b03042791"
+    },
+    {
+      "path": "assets/snakego.tar.gz",
+      "size": 841409,
+      "sha256": "6327ac7a25c9460e0191e155b3f3c440e80b7727363ad883e957efb74ca2664f"
+    },
+    {
+      "path": "assets/starter-fixes.json",
+      "size": 365,
+      "sha256": "0c384cf28ed4fc4a1af4c8f8f8d69d33abae719a2bfce75730c96a47b0a97883"
+    },
+    {
+      "path": "configs/distribution.json",
+      "size": 319,
+      "sha256": "93a63934d7a31468695165276fa68431208f5970b0a6570875645b6537d50c17"
+    },
+    {
+      "path": "configs/paper.json",
+      "size": 1311,
+      "sha256": "cf853966d0ce3b1e453cf8b097e992fad5ddff6d8c949d712847b7d0165ac748"
+    },
+    {
+      "path": "docs/initial-state.md",
+      "size": 1881,
+      "sha256": "e1ebeb3a7c28cf299f3704dc2b0ebee95a077abeb825020edfafedaae229be86"
+    },
+    {
+      "path": "docs/layout.md",
+      "size": 1493,
+      "sha256": "c36383577793e54f734902c3ddce4421ccfa6f0ad19257df55cec834cfd44059"
+    },
+    {
+      "path": "docs/offline.md",
+      "size": 1480,
+      "sha256": "e74605ab2475fb93fff7c9977a25d6955fce0ddb0d4e22d918390545ecf70789"
+    },
+    {
+      "path": "docs/remote-evaluation.md",
+      "size": 1142,
+      "sha256": "d913271b66ff3f83df21ba4db53fc471762ab49ddb05d2ffa6ac0fb6a5e38556"
+    },
+    {
+      "path": "docs/runtime.md",
+      "size": 2977,
+      "sha256": "86fa204643a1bdbe0e08266a185af6929225e223142818819e3e1d9b59580d44"
+    },
+    {
+      "path": "environment/controller-constraints-py314-linux.txt",
+      "size": 1057,
+      "sha256": "a50195be9724e1c5c3d20f52d1bc07dab62b08a719c9e70f8dda1f7d2b93b949"
+    },
+    {
+      "path": "environment/player-environment-owner.json",
+      "size": 111,
+      "sha256": "7bc8510e1d1088094dd5c0669b05d173aad2c1cbc8595e40fcff1d58c4e5ae63"
+    },
+    {
+      "path": "environment/player-environment.yml",
+      "size": 564,
+      "sha256": "e0d93842a37d48abb0a0f8b7af753dc0fa55107cbdc8a512314e0162e390dcb1"
+    },
+    {
+      "path": "environment/player-requirements.txt",
+      "size": 338,
+      "sha256": "e771c3b6eca084d91741ebfec3a61c835800cf20d586d4f6b7d302e5548c7e3b"
+    },
+    {
+      "path": "pyproject.toml",
+      "size": 1877,
+      "sha256": "4addb9de8bd2c6fb2d92d7dd9f779fe26c0230910b4cc30dc0eb6dec8cea3479"
+    },
+    {
+      "path": "results/README.md",
+      "size": 553,
+      "sha256": "4f47edbaa58d1d932f212475fec2efc9220b0ebfe80a25e4511c08ae0fe4cfc6"
+    },
+    {
+      "path": "results/availability/README.md",
+      "size": 635,
+      "sha256": "bbff4d9bca74f9185dde35c3fcb5740a08444af95e36181161c819ececf830e3"
+    },
+    {
+      "path": "results/availability/antwar/runnable.json",
+      "size": 175057,
+      "sha256": "e17fe79f9fc3070057383df0dfb9ac5f9058f1d7e0983aae76508fcc6a4b7b4a"
+    },
+    {
+      "path": "results/availability/antwar2/runnable.json",
+      "size": 154792,
+      "sha256": "7198b8d34533f627e43b123676b9cb5abdc17abd1a7a28f7d892687436d66e68"
+    },
+    {
+      "path": "results/availability/aquawar/runnable.json",
+      "size": 252099,
+      "sha256": "acec5b0092e6ccdc3b65e05ed7d888a86786beebffaad1bb8b32afcd10d22afc"
+    },
+    {
+      "path": "results/availability/dorado/runnable.json",
+      "size": 49993,
+      "sha256": "0698ec383659514275ed7cd230f9a20709bd5e1acce91521a58a7a46202a4d36"
+    },
+    {
+      "path": "results/availability/generals/runnable.json",
+      "size": 185888,
+      "sha256": "f5502f7a9c9060558246c4e20c21ffcd1c0e2b697dccf91c591d3013c1e23a2e"
+    },
+    {
+      "path": "results/availability/lostspace/runnable.json",
+      "size": 57597,
+      "sha256": "a15b27ee04ea0829b7938ad5efe08bbaae270f1ff6207481850f5ca29cbb0230"
+    },
+    {
+      "path": "results/availability/lota/runnable.json",
+      "size": 31669,
+      "sha256": "62622f5d1dc16c0c50d726add3a80cf35ea914f5a2da7d88ae485821d50579b4"
+    },
+    {
+      "path": "results/availability/miracle/runnable.json",
+      "size": 123847,
+      "sha256": "900c2332e3eda92caf88c5c9a469c7fb6c8c832286813871a9b18592a3b77e40"
+    },
+    {
+      "path": "results/availability/monecraft/runnable.json",
+      "size": 18113,
+      "sha256": "1f875eaee9ddc0b6f4ecd0a48e3d26381c6485f544f5924189a0fccf7e9322d4"
+    },
+    {
+      "path": "results/availability/native-build-recovery-summary.json",
+      "size": 1653,
+      "sha256": "4418ccfb8fb8c31d131a10421716c553028b7f8f6308f517b32681edd58b46ac"
+    },
+    {
+      "path": "results/availability/pacman/runnable.json",
+      "size": 7755,
+      "sha256": "01a9b34993da5c09a138e0187bf49c2998eb143d6c36c9c6c40e7cf8ed111721"
+    },
+    {
+      "path": "results/availability/rollman/runnable.json",
+      "size": 77919,
+      "sha256": "f78f3a006d204306f15ed8a90d73a7582ca77410133379c323510edd4eb6f378"
+    },
+    {
+      "path": "results/availability/snakego/runnable.json",
+      "size": 152985,
+      "sha256": "1fc8d003d4e42b33cd2d9974715019da273ee5240883b70ccff97a2326f016d2"
+    },
+    {
+      "path": "results/elo/README.md",
+      "size": 923,
+      "sha256": "95af1d6c6e338728680a38231fe8f3967dfff5d17f2c30478c25e3a9c8069903"
+    },
+    {
+      "path": "results/elo/antwar/measured_elo.json",
+      "size": 27173,
+      "sha256": "ec4eaa4e60c729dea1295c1188905904e6c87fd90532a8997a27ce5008f6bf82"
+    },
+    {
+      "path": "results/elo/antwar/measured_ranking.tsv",
+      "size": 9918,
+      "sha256": "2856bddf6ece60ed18d4d5ae9597c96cc232e40aaadc13b1af604b9f75735bad"
+    },
+    {
+      "path": "results/elo/antwar2/measured_elo.json",
+      "size": 45272,
+      "sha256": "729859f2e4251656110710c1fd01101ecf846ca3bf821670f2fa279c4a936060"
+    },
+    {
+      "path": "results/elo/antwar2/measured_ranking.tsv",
+      "size": 16761,
+      "sha256": "706d13393ecb248d7d8ecbcbc8b5e63d986492d31d5e9c28a24cd28d74eba290"
+    },
+    {
+      "path": "results/elo/aquawar/measured_elo.json",
+      "size": 40280,
+      "sha256": "685d0674038a8f01bc655de3afb7efda7c2e7f837a006795b4340ced0cbd21ee"
+    },
+    {
+      "path": "results/elo/aquawar/measured_ranking.tsv",
+      "size": 14812,
+      "sha256": "830dc5f4ac6b37af19de88a542be82bd225fdf82a4af3be75e9607404971523a"
+    },
+    {
+      "path": "results/elo/dorado/measured_elo.json",
+      "size": 60535,
+      "sha256": "f1f387842b32fde23c1c3f035cec7962758d023001901b23bbb997512cba89c2"
+    },
+    {
+      "path": "results/elo/dorado/measured_ranking.tsv",
+      "size": 17533,
+      "sha256": "5c5abd3fd3d7931b5dd42f8ddaa35255f7aaa8150246db89143f8682e0bde1b9"
+    },
+    {
+      "path": "results/elo/generals/measured_elo.json",
+      "size": 45760,
+      "sha256": "95f178dbb7e186d1c8ae51e027097da94514b143b02d174d39e5bfa1356a2275"
+    },
+    {
+      "path": "results/elo/generals/measured_ranking.tsv",
+      "size": 15946,
+      "sha256": "9210bca46ee79d78c22551fd94bb40f5076bab6dc74a0100921747878fa7fc35"
+    },
+    {
+      "path": "results/elo/lostspace/measured_elo.json",
+      "size": 25998,
+      "sha256": "f5f62fbeb45f5cf459a7a97b6d36d1c9d3f15de0906b17826414798f7f3fc7bd"
+    },
+    {
+      "path": "results/elo/lostspace/measured_ranking.tsv",
+      "size": 9285,
+      "sha256": "37d498223125388c912de2da2c8857a435b94cc9f0e41363bb9e0114073c84e3"
+    },
+    {
+      "path": "results/elo/lota/measured_elo.json",
+      "size": 38822,
+      "sha256": "75d34a7ff66bb2e4e9c18207ceb65d48a0227dd5b33489516a4357e742f05936"
+    },
+    {
+      "path": "results/elo/lota/measured_ranking.tsv",
+      "size": 12179,
+      "sha256": "84a2a93e1a40b323c52d336e619a49d0c7c33f40653c69e0f5b2d699f80cf25b"
+    },
+    {
+      "path": "results/elo/miracle/measured_elo.json",
+      "size": 59644,
+      "sha256": "5548c90eff63800806907b352eadd9fa09c7d9c5e919f52ab1be16c746531661"
+    },
+    {
+      "path": "results/elo/miracle/measured_ranking.tsv",
+      "size": 21895,
+      "sha256": "b6e5468cfed30a5feebdbfd1df1de3e202138a7a37364219dfddbb6b8ab2e5dd"
+    },
+    {
+      "path": "results/elo/monecraft/measured_elo.json",
+      "size": 21124,
+      "sha256": "359f3d3e2270fb6581ba79d1c639a7f4bb6722a515c8115390e00e738c97e6c2"
+    },
+    {
+      "path": "results/elo/monecraft/measured_ranking.tsv",
+      "size": 6185,
+      "sha256": "d471a6420b8e52697cb32c3bd2ddff87d2acfaa1a88cac6d4865cc29ab0a3c55"
+    },
+    {
+      "path": "results/elo/pacman/measured_elo.json",
+      "size": 8069,
+      "sha256": "e5059c8d6f3039fbf7e33ac371793b1ec1794068bff34f17f065f69dff2c3e02"
+    },
+    {
+      "path": "results/elo/pacman/measured_ranking.tsv",
+      "size": 2229,
+      "sha256": "51f04104dee2ae8eeb407331897f106bc419a53a112cdff258d3a7baa9ed7981"
+    },
+    {
+      "path": "results/elo/rollman/measured_elo.json",
+      "size": 15432,
+      "sha256": "0e5bdadc7bd831993c9f8ce8879558e9f665254ea29f4024a07eb12a8d8c96f3"
+    },
+    {
+      "path": "results/elo/rollman/measured_ranking.tsv",
+      "size": 5802,
+      "sha256": "3843bb70e9fd5991807dec64e72b1e5a7045d23eb313b55f57a98d120a1b6400"
+    },
+    {
+      "path": "results/elo/snakego/measured_elo.json",
+      "size": 33102,
+      "sha256": "1d2ffb10a09208db18031ec69b11a37dcd88b8fb5d3320a55b9cba9415f90001"
+    },
+    {
+      "path": "results/elo/snakego/measured_ranking.tsv",
+      "size": 11729,
+      "sha256": "624d9345e2df57bc79e96ef953bbd4406f01a0179329f241d5e395cf63c5efa0"
+    },
+    {
+      "path": "scripts/configure_model.py",
+      "size": 2061,
+      "sha256": "a09548904b92ade0f53a325948d3ca9afa03512fcd1c9de5aa00b53299c5c47f"
+    },
+    {
+      "path": "scripts/install_assets.py",
+      "size": 4432,
+      "sha256": "e3d703e051330b8e4628aefacad5aea976786102ffce9c86a64f681284614da7"
+    },
+    {
+      "path": "scripts/install_claude_cli.py",
+      "size": 2511,
+      "sha256": "1cacbfb9e7fd98d36c43e09b6af3c562b5095f50db72ca0df762150855637976"
+    },
+    {
+      "path": "scripts/install_codex_cli.py",
+      "size": 2560,
+      "sha256": "7cccd46eebd2211e2a1877221f34646b60ce130b7228f9502daf0c198934e785"
+    },
+    {
+      "path": "scripts/install_player_env.py",
+      "size": 1336,
+      "sha256": "7ea8b941e88e024284713399527d921efd11633b7e6f865a911bef02d86850fb"
+    },
+    {
+      "path": "scripts/offline/capacity.py",
+      "size": 332,
+      "sha256": "5f46a9e7125e5661f8ad13cfe2d83fe2ad254505fc578a382d6055cb54ca74fa"
+    },
+    {
+      "path": "scripts/offline/make_pool_dense_catalog.py",
+      "size": 11430,
+      "sha256": "b618830a50d03ff963e0eb1d25423f34aa4f140cf6fa5d4757e1570d8d119520"
+    },
+    {
+      "path": "scripts/practice.py",
+      "size": 1865,
+      "sha256": "77f122195d59b0b49d0a9c65b72517c5fb577d0765b2fedadffcea619cad434b"
+    },
+    {
+      "path": "scripts/run_experiments.py",
+      "size": 13306,
+      "sha256": "7cde47ae6493a2b14b96150d8a6591978c2e7e46ecd31331da8f5698b467027b"
+    },
+    {
+      "path": "scripts/validate_games.py",
+      "size": 2438,
+      "sha256": "1f3ba395421924dd9c13309baaddcd3c538b55f7d5b89ad0a1b3fb9708254e3d"
+    },
+    {
+      "path": "src/aa_arena/__init__.py",
+      "size": 104,
+      "sha256": "e351d4579defd55fafeb49a8b58d3398c8a85b9c1e531dd1dc1910a2562b9f55"
+    },
+    {
+      "path": "src/aa_arena/benchmark/__init__.py",
+      "size": 342,
+      "sha256": "de54a66deef40a75fbb1142541f509ab4b6ac476e07792acad0031bc4bacc4ec"
+    },
+    {
+      "path": "src/aa_arena/benchmark/admission.py",
+      "size": 6035,
+      "sha256": "d4e1d906bac3e208d152cc5627a34bbc84319c3f721eb8dcb9554c77d6105a36"
+    },
+    {
+      "path": "src/aa_arena/benchmark/claude_runtime.py",
+      "size": 30960,
+      "sha256": "b8caa65fdd66a428b5e894cca59bb70d1f8bfa60e0c921de05856d094d42487b"
+    },
+    {
+      "path": "src/aa_arena/benchmark/credential_proxy.py",
+      "size": 10772,
+      "sha256": "ef163fe81c7fff27f0980b2200ce62436e04d22f0eb0454fb10463f2b35b5d75"
+    },
+    {
+      "path": "src/aa_arena/benchmark/distribution.py",
+      "size": 600,
+      "sha256": "06ae986a1e4f2be696bde7b2179422ebb2e1d9f7ba0a3ce1afe65df04cd2d895"
+    },
+    {
+      "path": "src/aa_arena/benchmark/experiment.py",
+      "size": 6409,
+      "sha256": "4ea1b89620caa824b1287340ecc9b1328b3aab3046142f8c2de9dc8d74baf2b9"
+    },
+    {
+      "path": "src/aa_arena/benchmark/history_encoding.py",
+      "size": 903,
+      "sha256": "c2273c260b7047a0689b6f407d054672079d525c7cdbec7747b48aa37ee80462"
+    },
+    {
+      "path": "src/aa_arena/benchmark/ledger.py",
+      "size": 22892,
+      "sha256": "1b1e25d446cb54d302d384819ee9eb544564855205d8ce27a1e01060a6e94375"
+    },
+    {
+      "path": "src/aa_arena/benchmark/matches.py",
+      "size": 28020,
+      "sha256": "7a2c01ffa5b442edf201250f728a991e5ed66f9ccab8222bd431c3a410613365"
+    },
+    {
+      "path": "src/aa_arena/benchmark/netns_proxy.py",
+      "size": 2032,
+      "sha256": "c8148d6fa2654c667d74a4f01fa41a34d60d18d5b5293ba29a497ce8debc3684"
+    },
+    {
+      "path": "src/aa_arena/benchmark/pool_dense.py",
+      "size": 4850,
+      "sha256": "2f5942e9bbd891e154ef46923438b83633d8e10964e384f585b5c2fce6f8c073"
+    },
+    {
+      "path": "src/aa_arena/benchmark/profile.py",
+      "size": 7736,
+      "sha256": "860f3bfbc25c882df301d5dc437320c5e8886368082d8c3c9a81b755a940c5d2"
+    },
+    {
+      "path": "src/aa_arena/benchmark/protocol.py",
+      "size": 6050,
+      "sha256": "3d6026f5f27e2919e4030f715a46863223bca4324df33d87a2f0ce2dd5f6c42f"
+    },
+    {
+      "path": "src/aa_arena/benchmark/runtime.py",
+      "size": 78362,
+      "sha256": "169d97584eb6e9efbd11637e1e34d47ec3d2e214a6bcab52955c9d18948be489"
+    },
+    {
+      "path": "src/aa_arena/benchmark/service.py",
+      "size": 57710,
+      "sha256": "d128ed74c729165a3fc017aac873281fd2a5244e6316b1dd0a3fe3190e68d8c4"
+    },
+    {
+      "path": "src/aa_arena/benchmark/snapshot.py",
+      "size": 15302,
+      "sha256": "59988a3b8852cf902e2db669c387555ee8ec2b25ee12cbc141a0a9e1c7e57802"
+    },
+    {
+      "path": "src/aa_arena/benchmark/trajectory.py",
+      "size": 15004,
+      "sha256": "275740eb495a80f1f7f6ab63366ad339314e49e5f651c755a4235505680be45d"
+    },
+    {
+      "path": "src/aa_arena/cli.py",
+      "size": 9651,
+      "sha256": "00f3aca80649bf68d53ea70bfcd8b8f216461e6384a4503e8cc4637b59b050c7"
+    },
+    {
+      "path": "src/aa_arena/core/__init__.py",
+      "size": 1460,
+      "sha256": "e8c9490b820c4ca03f2bbe9afe7d421d980f4acfc423d45afe470ef1d468c873"
+    },
+    {
+      "path": "src/aa_arena/core/build_sandbox.py",
+      "size": 8015,
+      "sha256": "45b812f3b97ca364efbc3bdf940d6c6f05a678638fa5ef5f2d50e6666e6b9b8e"
+    },
+    {
+      "path": "src/aa_arena/core/buildcache.py",
+      "size": 9895,
+      "sha256": "055ef8b7d66cf5634af43c2552f73c6b216c2677ca0f0b8a37353f6b0195a3ae"
+    },
+    {
+      "path": "src/aa_arena/core/contract.py",
+      "size": 3025,
+      "sha256": "ba93d9de2d51663d9aae46232dfc4533e4cbd9514b47ed71822bc057c661e22d"
+    },
+    {
+      "path": "src/aa_arena/core/cpp_build.py",
+      "size": 44252,
+      "sha256": "dc8c141252d157e6b7b5fa3d02011e5b7df3a019293a08161784fbcba94268c9"
+    },
+    {
+      "path": "src/aa_arena/core/cpp_compat_shim.h",
+      "size": 1128,
+      "sha256": "0ae825525639a25d919f87e5e1de9fee5aa830270d257a34f8116e5ca0ad6632"
+    },
+    {
+      "path": "src/aa_arena/core/decision_space.py",
+      "size": 9416,
+      "sha256": "c02ba4fd97d5b269247e97d62c460d6e81368488a9f2e7f63e491d7ce7df75a7"
+    },
+    {
+      "path": "src/aa_arena/core/evaluator.py",
+      "size": 1231,
+      "sha256": "e813229913d19dd420e6ee36c1abec1b28927777be22e9029ddee9ddda0ccd60"
+    },
+    {
+      "path": "src/aa_arena/core/native_sdk.py",
+      "size": 14982,
+      "sha256": "424d16c1fa4e6c29df8dda959de0308c1808c33b5c49d721a8ffbe3381106f9c"
+    },
+    {
+      "path": "src/aa_arena/core/player_entry.py",
+      "size": 3454,
+      "sha256": "f5bda5f30b863a37617b89972a119de05eaa7148cbfb9e357a09fede578feaea"
+    },
+    {
+      "path": "src/aa_arena/core/player_environment.py",
+      "size": 6832,
+      "sha256": "1dc8797fe5301f556c1a3115992691134115ae65f4e650dec5fb286b394f8d74"
+    },
+    {
+      "path": "src/aa_arena/core/registry.py",
+      "size": 2978,
+      "sha256": "afa5410dd0b598efa22fa407a29473abba6ec448dfcf12b06394b2ebcae1e8a8"
+    },
+    {
+      "path": "src/aa_arena/elo/__init__.py",
+      "size": 157,
+      "sha256": "7a1006184944688292529dbaf2544f252866f9942ca42b910049c8a581cbc64d"
+    },
+    {
+      "path": "src/aa_arena/elo/model.py",
+      "size": 6416,
+      "sha256": "be5a97d9fee7bd3da3f86ccb2de251a4571f33314506f9c00a8db063a4c1462c"
+    },
+    {
+      "path": "src/aa_arena/elo/rating.py",
+      "size": 4908,
+      "sha256": "479377b4f95f8e69d477d152be9d4fc78ccfd95e010ffcf63a11db5be7673ad7"
+    },
+    {
+      "path": "src/aa_arena/elo/runner.py",
+      "size": 16410,
+      "sha256": "3c3711986788a8282ba5ec5842d04346d6fe06803c0584a01a9d3cd6a27e6e7e"
+    },
+    {
+      "path": "src/aa_arena/io.py",
+      "size": 1352,
+      "sha256": "18d3577446ffcdc247a99db90ccd4ada192f69ad1633c96b62feeda9b5393624"
+    },
+    {
+      "path": "src/aa_arena/legacy/__init__.py",
+      "size": 32,
+      "sha256": "2b164f2f46c3023dc1a49e07ed27d8300eddc3f1fbf11955dc9d7048be32d821"
+    },
+    {
+      "path": "src/aa_arena/legacy/ai9.py",
+      "size": 22061,
+      "sha256": "545dec9e8340a49f06e5235635328afae20503acebfab86f55f639d0f8b9de73"
+    },
+    {
+      "path": "src/aa_arena/legacy/replay.py",
+      "size": 5084,
+      "sha256": "16f6b6ec652677ce4e972ddb2f922fe03a4d4a76d68237f98ba81e99bed5b72f"
+    },
+    {
+      "path": "src/aa_arena/public_replay_translate.py",
+      "size": 9430,
+      "sha256": "f0087b6bf2ce1f0f3f170036c398ba3924700c31168a6424cd1a8e3913eb3d28"
+    },
+    {
+      "path": "src/aa_arena/replay/__init__.py",
+      "size": 1014,
+      "sha256": "bc9dc0d1eadb62686813fc009b219fa539434d9ae8a8ab894953ecba1f31e884"
+    },
+    {
+      "path": "src/aa_arena/replay/__main__.py",
+      "size": 3187,
+      "sha256": "8d03e4f7501ab6265c3538cbc137cc32c7d1a846fbe70813f43c6f5aae626c8b"
+    },
+    {
+      "path": "src/aa_arena/replay/narration.py",
+      "size": 11501,
+      "sha256": "62cf694b87c5580613ca9823cf393deeaec4c9ff0b223cb44330766c134685f7"
+    },
+    {
+      "path": "src/aa_arena/replay/prose.py",
+      "size": 9314,
+      "sha256": "85f58bca98e9f80eacd7aad075125edfa6fc3cabe52489277660a73e49a1fdd6"
+    },
+    {
+      "path": "src/aa_arena/replay/public_json.py",
+      "size": 17494,
+      "sha256": "a00ffbde1e1795e740989d9da0d7841722fe9452836b7686df25e3c200a56527"
+    },
+    {
+      "path": "src/aa_arena/replay_reading_skill.md",
+      "size": 1248,
+      "sha256": "5f749bad7a2be44aeb2c8cb3ed93aa5388738543337164a5ac45300940826943"
+    },
+    {
+      "path": "src/aa_arena/resources.py",
+      "size": 36533,
+      "sha256": "b6bd8d1719ef9311e02dce8e8297e9cd7dc4ce1d774464045de724b5ef735d5b"
+    },
+    {
+      "path": "src/aa_arena/saiblo/UPSTREAM.md",
+      "size": 2131,
+      "sha256": "b4eb3325351d988901ebae072ce4451225d91a4696d0f1d1f805355097ebf8f8"
+    },
+    {
+      "path": "src/aa_arena/saiblo/__init__.py",
+      "size": 747,
+      "sha256": "16a5db1551c0432ea6839be08de18b2f65e80de47388aacb258102029fdd39c4"
+    },
+    {
+      "path": "src/aa_arena/saiblo/judger.py",
+      "size": 21926,
+      "sha256": "fea4f181569ee47661e0b662d1bbdaa460f43c2794825b2a0b6ff57ae365013a"
+    },
+    {
+      "path": "src/aa_arena/saiblo/player_errors.py",
+      "size": 992,
+      "sha256": "985cefc801e8c677cf9bd2204a1ee76f9ec2f878fe7649a9547680aadc798a49"
+    },
+    {
+      "path": "src/aa_arena/saiblo/protocol.py",
+      "size": 4818,
+      "sha256": "24d8a800a5765e8be0930b09f39d8fb0765561287f04f4c111cd4a14b14ee4e8"
+    },
+    {
+      "path": "src/aa_arena/sandbox/__init__.py",
+      "size": 681,
+      "sha256": "f3abfd1821a987a059b18d9bfff9d6b83fb65128b09c7322cd52b05575e6aeac"
+    },
+    {
+      "path": "src/aa_arena/sandbox/direct.py",
+      "size": 1049,
+      "sha256": "805970a2b324a185645ad3b4dc48d761a3f48066d16f1404c027e17313f25afe"
+    },
+    {
+      "path": "src/aa_arena/sandbox/model.py",
+      "size": 5437,
+      "sha256": "8c705846e0049077cfd07e90c9984e2af6da0499fd69831018072529b5917e81"
+    },
+    {
+      "path": "src/aa_arena/sandbox/private_mount.py",
+      "size": 1037,
+      "sha256": "01428d1e2cde272667a876f7ac74281fbd60f174cdc422d32b7df8171afab9f3"
+    },
+    {
+      "path": "src/aa_arena/sandbox/scope_entry.py",
+      "size": 1223,
+      "sha256": "f1b6e9cf3d5e6a419c09ea32665c52e68d2738a0400b646a4202e34a26d94877"
+    },
+    {
+      "path": "src/aa_arena/sandbox/systemd.py",
+      "size": 25342,
+      "sha256": "121744b60732c9a0b4d68d59650dadfebad0d7de73276ea859af301695e7e50d"
+    },
+    {
+      "path": "tests/conftest.py",
+      "size": 1532,
+      "sha256": "ab331d91b7d6682ca70e881389b47309062d5f75d9abb8db5cac0da0c3294743"
+    },
+    {
+      "path": "tests/fixtures/dorado_respawn_bounds.cc",
+      "size": 1021,
+      "sha256": "1fa5c5cf9e5b182c5cb731cc0f822b0a491004640603f746b4870e0714238d2f"
+    },
+    {
+      "path": "tests/smoke_matches.py",
+      "size": 4008,
+      "sha256": "f00543dbbf148e45ceb5bb5ba903557bfda3ec10d8d3c1652239e87b9e509cb9"
+    },
+    {
+      "path": "tests/test_active_deadline.py",
+      "size": 2818,
+      "sha256": "cc664e5ce0b73454bcf4389fc3ab8300d2e761e55a0f067937801a3022b46fd4"
+    },
+    {
+      "path": "tests/test_ai9_callback_preflight.py",
+      "size": 3218,
+      "sha256": "589b2bdfe45644e6c3b9c981ed726a39533301e8a048372b9057b20ff72a7b46"
+    },
+    {
+      "path": "tests/test_ai9_finalization.py",
+      "size": 1551,
+      "sha256": "5dbb30c74de0a2eb70544f26719d42fb2fcc11bdd0696810a664227d05022e70"
+    },
+    {
+      "path": "tests/test_ai9_loader_session.py",
+      "size": 2417,
+      "sha256": "e3410d6cb9a1725a4fc98d488f6deaff0bbab128c5bb464b21199d0375bf3c71"
+    },
+    {
+      "path": "tests/test_ai9_official_draw.py",
+      "size": 1853,
+      "sha256": "e70633bb0773ca5a58f3458b08f0609ad11fcced6510e4e76e91253e25cd625d"
+    },
+    {
+      "path": "tests/test_ai9_player_error_ownership.py",
+      "size": 1938,
+      "sha256": "1542388ee3e3b556ff41f1637b8f596e5a573c74fc27c136b9c3d56a8958aee1"
+    },
+    {
+      "path": "tests/test_ai9_public_translate.py",
+      "size": 1506,
+      "sha256": "c854932faa5fe0b5ecf72a29be458ac5ccb732178fb774a0dd5a0369c5b9faea"
+    },
+    {
+      "path": "tests/test_ai9_resource_semantics.py",
+      "size": 696,
+      "sha256": "0d44e34af23a413d88433d1fefe6a38717c0d245c675386448d112f25df3c108"
+    },
+    {
+      "path": "tests/test_ai9_result_integrity.py",
+      "size": 4612,
+      "sha256": "e0966f280fc6528ba6d81176598fb569a1bab97278b7af8e77afc733a3df7c34"
+    },
+    {
+      "path": "tests/test_ai9_round_cpu_timer.py",
+      "size": 4065,
+      "sha256": "96ab0ba2fdfa4116c3499185567cd5dca6c15289a290d91046b489d8a8cc8f68"
+    },
+    {
+      "path": "tests/test_ai9_socket_disconnect.py",
+      "size": 2986,
+      "sha256": "a3292b4bd54971cf54835584e5bc25cb05f0904dc6f3990dbeeecdd92086d55b"
+    },
+    {
+      "path": "tests/test_antwar2_backend_concurrency.py",
+      "size": 10517,
+      "sha256": "5aa6fd17f7b8ed0e1105c715e973122d23a507ae24fdca393a6ef7a4a1f77ee1"
+    },
+    {
+      "path": "tests/test_aquawar_narration.py",
+      "size": 1429,
+      "sha256": "f12c4afa8a9e9095df4d4a4e3766ba1cacf581d93269fe7ff9a28ed2367c2a5c"
+    },
+    {
+      "path": "tests/test_aquawar_official_adjudication.py",
+      "size": 1783,
+      "sha256": "9297182c00977a8795fbe0c2f35a424ed0c5eb1c38863f7ca44d7f0e13c91bb9"
+    },
+    {
+      "path": "tests/test_aquawar_python_starter.py",
+      "size": 2510,
+      "sha256": "53e39944f7088a6b8d2f29382ce14be162bb315b6c11f6d69d8d9fbe6ef4feb2"
+    },
+    {
+      "path": "tests/test_asset_layout.py",
+      "size": 3439,
+      "sha256": "81968b9c32a0a4fb103ff4906ec0f4ac82eb5962e8b92642a3d54edae1750d10"
+    },
+    {
+      "path": "tests/test_backend_layout.py",
+      "size": 3019,
+      "sha256": "f2b5a54d93ad3ea189d959ddc78a54fd1c9943ed6aaafa231bdad1e74bf31dde"
+    },
+    {
+      "path": "tests/test_benchmark_ledger.py",
+      "size": 7454,
+      "sha256": "b3ca7065624b683c815105acc2b6dbc46b00ac8906948512b872fd1cd1e80bb2"
+    },
+    {
+      "path": "tests/test_benchmark_matches.py",
+      "size": 2971,
+      "sha256": "de7fd3e56be4329ec6cefba01be2a034960f9dae83539aefb1d2d2cb4080a80f"
+    },
+    {
+      "path": "tests/test_benchmark_recovery.py",
+      "size": 2509,
+      "sha256": "499f71d92a640a65ea72022a8c948674840fdc59aecc8400086f91d82b7dc9a9"
+    },
+    {
+      "path": "tests/test_benchmark_runtime.py",
+      "size": 8576,
+      "sha256": "00248c37d9426b1df893debec5432d8a479666b5d5df8ed27d17c2ea2fde77b4"
+    },
+    {
+      "path": "tests/test_benchmark_service.py",
+      "size": 13332,
+      "sha256": "15b3c4c6885874826040b8a21b1937376c1432872319d87cc7b962d4abe8ccc0"
+    },
+    {
+      "path": "tests/test_benchmark_snapshot.py",
+      "size": 2220,
+      "sha256": "6e0e33ef493d21a4ac210995a565b12ba65b308f7fede959a9f92d4bdd2f3845"
+    },
+    {
+      "path": "tests/test_benchmark_trajectory.py",
+      "size": 1944,
+      "sha256": "9d9975f100e1f5dcf2b7aa57f6400281dc3d86e76892f790ed29d897ee698319"
+    },
+    {
+      "path": "tests/test_candidate_build_isolation.py",
+      "size": 10373,
+      "sha256": "d56eb2d2ba24ad2a1c2a4177a8c360ca0b184d347c346c59c16ffe3f7e757cba"
+    },
+    {
+      "path": "tests/test_candidate_build_permissions.py",
+      "size": 4390,
+      "sha256": "e002bc03554ec38b07fc7be4f8da93f7fd5d4aa64ac35ff630876bd6076ea566"
+    },
+    {
+      "path": "tests/test_claude_bridge.py",
+      "size": 8821,
+      "sha256": "59a0be7da1b54067555bd37aa0555696929c8645499693a5e2c11295dcc834ff"
+    },
+    {
+      "path": "tests/test_claude_build.py",
+      "size": 762,
+      "sha256": "af9cee18f6015dd275e963a4f5c017574640e011e494eb2841322d22de081071"
+    },
+    {
+      "path": "tests/test_claude_error_attribution.py",
+      "size": 1457,
+      "sha256": "714feb1e8b9c2cf5009b20f00cddb3e074d01cbd72792fe2e9bf1f3ff4bf0151"
+    },
+    {
+      "path": "tests/test_claude_freeze.py",
+      "size": 1814,
+      "sha256": "8693f191cb91a22a18381cff8b328be902a8cb18819060d00e6965b16a8a42c4"
+    },
+    {
+      "path": "tests/test_claude_workspace.py",
+      "size": 2478,
+      "sha256": "28c4a45a97171217790efb0c3f533a017bcbe92a9ebc492173e68e9f5e508a17"
+    },
+    {
+      "path": "tests/test_cpp_build.py",
+      "size": 22307,
+      "sha256": "0b180305110f4e637163a3d6a667b4f0ec14844dcbd0770019ad7157a424623b"
+    },
+    {
+      "path": "tests/test_credential_proxy.py",
+      "size": 529,
+      "sha256": "2d72b5dbdcfae47cb888994949c8d03bb5617788305e418a4d49337b716514b0"
+    },
+    {
+      "path": "tests/test_dorado_gamepack.py",
+      "size": 2133,
+      "sha256": "5a42c3072166036e66c3a2580c8838504cce4606cd09cf9b47485c428c438a2a"
+    },
+    {
+      "path": "tests/test_dorado_respawn_bounds.py",
+      "size": 1126,
+      "sha256": "3633d1b85271ffc10c40c09f4cedd974ee40256a3196e0ecc52b9beeb0b85984"
+    },
+    {
+      "path": "tests/test_dorado_runtime_preflight.py",
+      "size": 1119,
+      "sha256": "45cceb7d17e1a45c1730f513e88c7d6baaad66880ea52a6d651e66a0b8bb527e"
+    },
+    {
+      "path": "tests/test_elo_integration.py",
+      "size": 1095,
+      "sha256": "deba2e5257152a99a0e6f14cd61886f25f1e1762267f58ca0f92461a19d572db"
+    },
+    {
+      "path": "tests/test_elo_model.py",
+      "size": 5246,
+      "sha256": "e8ffd8b40e1e58d223a7142468da9be25cb7f1bd59042ba59cacef6f1296c8ab"
+    },
+    {
+      "path": "tests/test_elo_rating.py",
+      "size": 2501,
+      "sha256": "3b8a92b7442f73abe112733888af048b3d448e4d5d4661a744ce4e89be27b26c"
+    },
+    {
+      "path": "tests/test_elo_runner.py",
+      "size": 9683,
+      "sha256": "fd669b8468002b55c14e71578d97d4eb30768c7f66e42a93f5b4059d349d5d0c"
+    },
+    {
+      "path": "tests/test_experiment_runtime.py",
+      "size": 23971,
+      "sha256": "ee1c092472516adbd5a4b8768fb07b584e0d8e1b54627b193b6e53a5e65eea25"
+    },
+    {
+      "path": "tests/test_experiment_service.py",
+      "size": 18396,
+      "sha256": "be5a3bdaefa377da5654e951bef5d58011b2f759792cb301939e1662dcf165c7"
+    },
+    {
+      "path": "tests/test_four_game_backend_preparation.py",
+      "size": 3667,
+      "sha256": "6e00d3ffc4dfc707f63a617f3fda558b8d493c9cdd11365f482d06a3e8cc58c4"
+    },
+    {
+      "path": "tests/test_four_game_smoke.py",
+      "size": 1593,
+      "sha256": "58bcdf4bae4f207732bf35db2a41f39bdb5777f08dfff6d5df9fdd8aa3c1b7d1"
+    },
+    {
+      "path": "tests/test_game_runtime_dependencies.py",
+      "size": 2709,
+      "sha256": "7d57435aeda7c3aa8f77a822e3dbf5512518f3567438c803fdfea544f100d760"
+    },
+    {
+      "path": "tests/test_generals_traceback_replay.py",
+      "size": 2110,
+      "sha256": "7544073f56949bf32e00f70667af0b736e64cb0cd36d28b8b4adf99f433ae868"
+    },
+    {
+      "path": "tests/test_history_encoding.py",
+      "size": 1088,
+      "sha256": "76956ea9af38161167efcb3b5858751770b73599f84ceb24ba512a863d4ce5b5"
+    },
+    {
+      "path": "tests/test_legacy_ai9_build_isolation.py",
+      "size": 6336,
+      "sha256": "db78f738623a026d04e81055d53d1d013da563cdc5ad348fd49152c5197b506b"
+    },
+    {
+      "path": "tests/test_local_subset.py",
+      "size": 2259,
+      "sha256": "bb2e03a0c6cf73d7789d59b04be835a23eb5640eb3e3843859a28232b2a7786d"
+    },
+    {
+      "path": "tests/test_lostspace_sdk.py",
+      "size": 5391,
+      "sha256": "843b0af88621c54126326ce7fbd431a3dc62456fd714f2cdacc69c6a0de72e07"
+    },
+    {
+      "path": "tests/test_miracle_backend_geometry.py",
+      "size": 743,
+      "sha256": "541380c97badcae0d00279c815bff808b113b87991f89a5c4231fc02cbede9d0"
+    },
+    {
+      "path": "tests/test_miracle_capacity.py",
+      "size": 1428,
+      "sha256": "cb4bc02bde36a5e0ba6143accda00102e1a3507a8e4efb6feacb7d5bb2b1fd6c"
+    },
+    {
+      "path": "tests/test_miracle_forfeit_diagnostics.py",
+      "size": 1686,
+      "sha256": "5d05c747256a6b4d2e8e756ce1ce5e2e06ba899516646bf328e9e5baaaf5450f"
+    },
+    {
+      "path": "tests/test_miracle_sdk.py",
+      "size": 3315,
+      "sha256": "15a76dacf77b8f9d50ca703db5e8fcb7b36fdffd24c834a60efb7aba30da1cf4"
+    },
+    {
+      "path": "tests/test_model_profile.py",
+      "size": 2212,
+      "sha256": "2aba2f1cc185191d4bf076e06277c6e6129070d2cad9a4ddaddbc7d5c8e66383"
+    },
+    {
+      "path": "tests/test_monecraft_terminal_result.py",
+      "size": 2828,
+      "sha256": "8acdf71dc026598f7d88c64dcea551189455b9b07626c0c855b5ba8e048e42be"
+    },
+    {
+      "path": "tests/test_native_sdk.py",
+      "size": 7546,
+      "sha256": "03160fba27cbfd924b6f594d07ad2f84f7712c395a94c2820d692d3ec1511b57"
+    },
+    {
+      "path": "tests/test_neutral_replay_narration.py",
+      "size": 9301,
+      "sha256": "f605d231f8bdf510bd72c6c368865eb837e147e0972e0727105b63c6f2a58f52"
+    },
+    {
+      "path": "tests/test_output_limit_recovery.py",
+      "size": 3712,
+      "sha256": "560aea42facdae9b8c6320349b6ceb0dfa0db6892ebe58974ec87cab02ed771b"
+    },
+    {
+      "path": "tests/test_player_entry.py",
+      "size": 1407,
+      "sha256": "9b4d06bbbcbc420a3fc472c70d55835abd56e60eadeaa77e2c699a4304fa9748"
+    },
+    {
+      "path": "tests/test_player_environment.py",
+      "size": 16480,
+      "sha256": "22632d6ed18ea7859e1325dc28ba3e8e254f477e79cd008e8b33ea8ceb85af25"
+    },
+    {
+      "path": "tests/test_player_visibility_isolation.py",
+      "size": 1502,
+      "sha256": "e51d531993ddb4bcbb3a3498b2fea7ad5abe5f5c0de718c10469948cbe13f0d7"
+    },
+    {
+      "path": "tests/test_public_player_policy.py",
+      "size": 3560,
+      "sha256": "a7e05e1a6bf3cf716ad4dd7b3fa986c2d434d348309cea8e8abd2d9ae5498161"
+    },
+    {
+      "path": "tests/test_public_replay_json.py",
+      "size": 3712,
+      "sha256": "95f99d84122a2d03f4eb7605354469a22765617dccbe8b61616103d9b62b97e9"
+    },
+    {
+      "path": "tests/test_public_resources.py",
+      "size": 8435,
+      "sha256": "d07de81a4e958bf968e5be2aad04a08bfb708ad1702fb81aa13489f316876e8b"
+    },
+    {
+      "path": "tests/test_public_sdk_cpp.py",
+      "size": 15926,
+      "sha256": "a841f518c221516fce2b7569a80eb90f5cf0c9b59dca8dca393a0d1b44b796ce"
+    },
+    {
+      "path": "tests/test_release_feedback.py",
+      "size": 1588,
+      "sha256": "899e2cdb4d09296877653e81e72a1eaa0a6239d542fa394dbc14dea6b3f1fb02"
+    },
+    {
+      "path": "tests/test_release_profile_policy.py",
+      "size": 4588,
+      "sha256": "6b87736111a860615b098937cb8873ecf7a0e6752d8761b4e750afe95d92b750"
+    },
+    {
+      "path": "tests/test_release_tools.py",
+      "size": 5200,
+      "sha256": "e5eee1a62999897d17714a6d085234b581e7947f5cb3949b2d05db17bdde3b55"
+    },
+    {
+      "path": "tests/test_rollman_native_selection.py",
+      "size": 5292,
+      "sha256": "2b9a0057e9b9db50f0cfeb99c72c451115b33d3ff1ceb5f7c33a01d3b1c9d409"
+    },
+    {
+      "path": "tests/test_rootless_policy.py",
+      "size": 6101,
+      "sha256": "69e8c9182352e1a272554ed8a9d451b5f025c462b4a902a608012bacfe44e9b6"
+    },
+    {
+      "path": "tests/test_rpc_notification_deadlines.py",
+      "size": 2830,
+      "sha256": "5698b9f673e00653d7016827bbc7d9b7281ba19382176ff5357b808c43db7bc9"
+    },
+    {
+      "path": "tests/test_runtime_home_ownership.py",
+      "size": 1448,
+      "sha256": "0b1eee2990fb9db8cf43e69eeb1c6436ac75c1f0926a843dc5bde3b9846ab787"
+    },
+    {
+      "path": "tests/test_saiblo_protocol.py",
+      "size": 2271,
+      "sha256": "5f7e44a6ac8df750185a31dd239e7e6bc6790615dd05fe9d72b310230de3ba9a"
+    },
+    {
+      "path": "tests/test_sandbox_error_classification.py",
+      "size": 5097,
+      "sha256": "99f86ba15e250c3a31dc9295b98f92110634ebbf432942097df49e2e2d3483e0"
+    },
+    {
+      "path": "tests/test_sandbox_model.py",
+      "size": 2860,
+      "sha256": "aeeab263254ef791fdd240a062e8b6d7126ec876d5cb5d0c008906c40d0b6dc3"
+    },
+    {
+      "path": "tests/test_scope_entry.py",
+      "size": 1547,
+      "sha256": "24f0d53f02a63d843d7ba3574596a2cec713ca253754e592d76901ad2b3a2850"
+    },
+    {
+      "path": "tests/test_self_contained_gamepacks.py",
+      "size": 10771,
+      "sha256": "ade5ec0e5761a6ab17b4cd61b276936f49a73db188044421cbab67777e93ac31"
+    },
+    {
+      "path": "tests/test_shared_admission.py",
+      "size": 1972,
+      "sha256": "014f536f07c7c19575d8dddc8992318593087bf70161dc3a8a1423f986200ccb"
+    },
+    {
+      "path": "tests/test_shared_judger_layout.py",
+      "size": 589,
+      "sha256": "6df24a316670e38c8fe64573a6e7b3f6bbdade2e1de3acf7a0c02d76c8860ad7"
+    },
+    {
+      "path": "tests/test_shared_saiblo_judger.py",
+      "size": 17935,
+      "sha256": "d2cd8718b3655d5a442ae1f815c88a4582c49651098ada257c4e0f759612a267"
+    },
+    {
+      "path": "tests/test_smoke_matches_cli.py",
+      "size": 945,
+      "sha256": "ee8158017e39d126844a5dc6c17690658fd51f35d1ae1e8658bd5f0e50697c2b"
+    },
+    {
+      "path": "tests/test_snakego_forfeit_integrity.py",
+      "size": 2968,
+      "sha256": "d6e0d0c2d0759def7137c635c11d54ddb218e49cc1e56ae4809c3cf02592d813"
+    },
+    {
+      "path": "tests/test_standalone_runtime.py",
+      "size": 2167,
+      "sha256": "863c458f023d6f04beb7f75fd864aea432f14b996ecd90607a878b2db3d80e45"
+    },
+    {
+      "path": "tests/test_supplement_admission.py",
+      "size": 1139,
+      "sha256": "d5a000c576c16cc5f1924477c2e0ae722dc1712158295b29a2e3f898b90cdd44"
+    },
+    {
+      "path": "tests/test_systemd_scope_integration.py",
+      "size": 4969,
+      "sha256": "31623790fe53aa2263090d102ff69aa623710bbe0ad5c8e65be2ac93484df766"
+    },
+    {
+      "path": "tests/test_systemd_scope_launcher.py",
+      "size": 10305,
+      "sha256": "177b96221d0eb221c2070ca5d99e210b6c4e04966566d08165e54ee5c2a22b47"
+    },
+    {
+      "path": "tests/test_token_budget_policy.py",
+      "size": 18453,
+      "sha256": "6c88ca29c56dfdebef376c25ab184aacd1b3f40ed8d3dfc4f98c40fa50fe1941"
+    },
+    {
+      "path": "validation/README.md",
+      "size": 916,
+      "sha256": "9e28899d79726eef27656b5ac5902298b81bca0bff1b6cd662577b1a3dd6c4b5"
+    },
+    {
+      "path": "validation/asset-audit.json",
+      "size": 1518,
+      "sha256": "5f7c983173dcfeca7c051dd550739c5af4199338a779ba195751bfa8eba0a435"
+    },
+    {
+      "path": "validation/package-privacy.json",
+      "size": 203,
+      "sha256": "cae714ca4dad845f6ed5052701027cc91b7c8e5e79598201421f6afd12fb13bd"
+    },
+    {
+      "path": "validation/player-publication.json",
+      "size": 1578,
+      "sha256": "fd02f0e4b9a7071fc5ccd7dbbaa49588014da5f035bf83ef360e958bf1d06bbd"
+    },
+    {
+      "path": "validation/release-verification.json",
+      "size": 2721,
+      "sha256": "7cf7d532d7a721248aaadc45ee0790f0a4375596a0d9fd4d2f8df8d185af3a7d"
+    }
+  ]
+}

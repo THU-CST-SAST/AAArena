@@ -1,0 +1,364 @@
+{
+  "attempts": 49,
+  "candidates": 49,
+  "checked": 49,
+  "cpus_per_match": 1,
+  "game": "pacman",
+  "generated_at": 1788841021.6943727,
+  "method": "legacy_ai9_db_import_build_probe",
+  "partial": false,
+  "rows": [
+    {
+      "player_id": "pacman__p100__ai965",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p101__ai929",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p102__ai937",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p103__ai927",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p105__ai985",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p107__ai1036",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p1093__ai12658",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p1096__ai12660",
+      "verified": false,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": "Native callback absent: archived source is incompatible with current game SDK"
+    },
+    {
+      "player_id": "pacman__p12__ai697",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p14__ai327",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p1__ai792",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p22__ai932",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p23__ai995",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p24__ai825",
+      "verified": false,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": "build failed"
+    },
+    {
+      "player_id": "pacman__p25__ai1524",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p28__ai89",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p29__ai979",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p2__ai785",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p30__ai22",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p32__ai21",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p33__ai811",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p36__ai308",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p3__ai783",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p40__ai906",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p43__ai895",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p44__ai822",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p46__ai972",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p49__ai974",
+      "verified": false,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": "build failed"
+    },
+    {
+      "player_id": "pacman__p4__ai793",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p506__ai3648",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p50__ai472",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p549__ai15830",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p57__ai330",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p58__ai914",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p59__ai977",
+      "verified": false,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": "build failed"
+    },
+    {
+      "player_id": "pacman__p62__ai973",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p67__ai732",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p68__ai3905",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p6__ai468",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p70__ai902",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p72__ai466",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p7__ai720",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p84__ai493",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p85__ai671",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p8__ai7",
+      "verified": false,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": "Native callback absent: archived source is incompatible with current game SDK"
+    },
+    {
+      "player_id": "pacman__p93__ai826",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p95__ai763",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p99__ai981",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    },
+    {
+      "player_id": "pacman__p9__ai23",
+      "verified": true,
+      "track": null,
+      "elo": "1000",
+      "diagnostic": null
+    }
+  ],
+  "native_callback_audit": {
+    "valid_players": 44,
+    "excluded_players": [
+      "pacman__p1096__ai12660",
+      "pacman__p8__ai7"
+    ],
+    "required_symbol": "decide",
+    "checked_at": "2026-09-09T23:52:23.964862+00:00"
+  }
+}

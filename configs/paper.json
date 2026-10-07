@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "games": [
+    "rollman",
+    "pacman",
+    "antwar",
+    "aquawar",
+    "generals",
+    "lostspace",
+    "miracle",
+    "dorado",
+    "monecraft",
+    "lota",
+    "snakego",
+    "antwar2"
+  ],
+  "main": {
+    "small_budget": 128,
+    "large_budget": 16,
+    "opponent_policy": "model",
+    "feedback": "detailed",
+    "initial_rank": 25,
+    "seed": 20260922
+  },
+  "continuation": {
+    "games": [
+      "generals",
+      "miracle",
+      "lota",
+      "antwar2"
+    ],
+    "additional_small": 256,
+    "additional_large": 32,
+    "cumulative_small": 384,
+    "cumulative_large": 48
+  },
+  "ablation_games": [
+    "pacman",
+    "antwar",
+    "miracle"
+  ],
+  "order": {
+    "policies": [
+      "model",
+      "ladder",
+      "random",
+      "top4"
+    ],
+    "fixed_small_batch": 4,
+    "ladder_initial_rank": 30,
+    "match_base_seed": 43
+  },
+  "feedback": {
+    "values": [
+      "detailed",
+      "binary"
+    ],
+    "match_base_seed": 42
+  },
+  "batch": {
+    "sizes": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "match_base_seed": 42
+  },
+  "active_clone": {
+    "ranks": [
+      5,
+      15,
+      25,
+      35
+    ],
+    "small_budget": 32,
+    "large_budget": 0
+  },
+  "offpolicy": {
+    "trajectory_views": 128,
+    "large_budget": 16,
+    "match_base_seed": 42
+  }
+}
