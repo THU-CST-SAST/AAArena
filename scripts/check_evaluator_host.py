@@ -11,17 +11,18 @@ with tempfile.TemporaryDirectory(prefix='arena-host-check-') as directory:
     root=Path(directory); candidate=root/'candidate'; candidate.mkdir()
     private=root/'private'; private.write_text('private sentinel')
     (candidate/'probe.py').write_text(
-        'import json,socket,sys,numpy\nfrom pathlib import Path\n'
+        'import json,socket,sys,numpy,matplotlib\nfrom pathlib import Path\n'
         f'visible=Path({str(private)!r}).exists()\n'
         'network=True\n'
         'try:\n socket.create_connection(("1.1.1.1",53),timeout=2)\n'
         'except OSError:\n network=False\n'
-        'print(json.dumps({"python":list(sys.version_info[:3]),"numpy":numpy.__version__,"private_visible":visible,"network":network}),flush=True)\n')
+        'print(json.dumps({"python":list(sys.version_info[:3]),"numpy":numpy.__version__,"matplotlib":matplotlib.__version__,"private_visible":visible,"network":network}),flush=True)\n')
     proc=SystemdScopeLauncher(user_mode=True,cpu_policy='unlimited').start(
         ProcessSpec((str(player_python()),'probe.py'),candidate),match_id='evaluator-host-check',player_index=0)
     try:
         row=json.loads(proc.stdout.readline())
         assert row['python']==[3,10,14], row
+        assert row['matplotlib']=='3.8.4', row
         assert not row['private_visible'] and not row['network'], row
     finally:
         outcome=proc.cleanup()

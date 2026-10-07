@@ -169,13 +169,13 @@
     },
     {
       "path": "environment/player-environment.yml",
-      "size": 564,
-      "sha256": "e0d93842a37d48abb0a0f8b7af753dc0fa55107cbdc8a512314e0162e390dcb1"
+      "size": 590,
+      "sha256": "60400b06f15dc46d115d86649c0ad268f21f48ab7379f243a9b50549a8a2ee08"
     },
     {
       "path": "environment/player-requirements.txt",
-      "size": 338,
-      "sha256": "e771c3b6eca084d91741ebfec3a61c835800cf20d586d4f6b7d302e5548c7e3b"
+      "size": 356,
+      "sha256": "57bdb059b4f96f00c1989039c1e73087edd243584836abfbe162c32dfb11d49e"
     },
     {
       "path": "pyproject.toml",
@@ -384,8 +384,8 @@
     },
     {
       "path": "scripts/check_evaluator_host.py",
-      "size": 3666,
-      "sha256": "936b2bd3b6636732e4af6281d94339fa32e8a7a562792dda9cb827c2f6f8357e"
+      "size": 3760,
+      "sha256": "084b74e2a336392d0aadb31102f7b07726835dd5b6207ed30c7cf5db32be453f"
     },
     {
       "path": "scripts/configure_model.py",
@@ -1264,8 +1264,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 8249,
-      "sha256": "beeaeaf525e45e673118626795702738a4eed17b1afd497f18ac83c96cdd5e73"
+      "size": 8711,
+      "sha256": "22bbd03af8f48d641f314c2c16e7ec7de38eda1b13034de5c7787902bba87d36"
     }
   ]
 }

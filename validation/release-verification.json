@@ -363,5 +363,25 @@
     },
     "complete_pool_matrix": "pending",
     "public_service_sdk_deployment": "pending"
+  },
+  "miracle_dependency": {
+    "matplotlib": "3.8.4",
+    "isolated_runtime_import_passed": true,
+    "existing_dependency_versions_changed": false,
+    "pip_check_passed": true,
+    "real_match_regression": {
+      "seeds": [
+        862625304,
+        2001838920
+      ],
+      "rounds": [
+        20,
+        21
+      ],
+      "candidate_errors": 0,
+      "opponent_errors": 0,
+      "game_errors": 0
+    },
+    "hosted_environment_deployment": "pending"
   }
 }
