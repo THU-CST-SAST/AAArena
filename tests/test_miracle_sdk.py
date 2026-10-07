@@ -99,6 +99,18 @@ def test_operation_serialization(miracle_sdk: MiracleSdk) -> None:
     }
 
 
+def test_sdk_decodes_every_official_unit_and_artifact(miracle_sdk: MiracleSdk) -> None:
+    data = json.loads((ROOT / "games/miracle/backend/Data.json").read_text())
+    sdk = miracle_sdk.gameunit
+    for name, index in data["UnitNameParsed"].items():
+        assert sdk.CreatureCapacity([index, 3, []]).type == name
+        unit = [-1, 0, index, 0, 0, 0, 0, [0, 0], 0, 0,
+                [0, 0, 0], 0, False, False, False, False, False, False]
+        assert sdk.Unit(unit).type == name
+    for name, index in data["ArtifactNameParsed"].items():
+        assert sdk.Artifact([0, index, 0, 0, 0, 0, 0]).name == name
+
+
 def test_neutral_example_selects_fixed_cards_and_ends_round(
     miracle_sdk: MiracleSdk,
 ) -> None:

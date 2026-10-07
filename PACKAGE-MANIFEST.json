@@ -80,12 +80,12 @@
     {
       "path": "assets/manifest.json",
       "size": 3025,
-      "sha256": "0a072062363c50a49355dbfc5f7e49e8ebe56599394a469e83fbe0bb19e7e869"
+      "sha256": "1a45946240a1a454f8aa4bfcaa5d7523ddbfb8905f27598f1f071604e39dc789"
     },
     {
       "path": "assets/miracle.tar.gz",
-      "size": 14036340,
-      "sha256": "34ee9002764d697a1ce6e9a603915298a865c81278e9d9a7919d2e0a6e6d5a09"
+      "size": 13869554,
+      "sha256": "93326b4940ca6ba03ee7762068dfb4451689a272094c64b2e516e381477e4236"
     },
     {
       "path": "assets/monecraft.tar.gz",
@@ -1059,8 +1059,8 @@
     },
     {
       "path": "tests/test_miracle_sdk.py",
-      "size": 3315,
-      "sha256": "15a76dacf77b8f9d50ca703db5e8fcb7b36fdffd24c834a60efb7aba30da1cf4"
+      "size": 3932,
+      "sha256": "3c18863c7e8c526f2fd4cc8e7f695051f6f0d68eca9db9626c75b41818f7e9f0"
     },
     {
       "path": "tests/test_model_profile.py",
@@ -1264,8 +1264,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 7807,
-      "sha256": "27d8f566df3fb7d63f19c11facd66529ef86f8bb74dd8fbdaaf71b2767b23d49"
+      "size": 8249,
+      "sha256": "beeaeaf525e45e673118626795702738a4eed17b1afd497f18ac83c96cdd5e73"
     }
   ]
 }

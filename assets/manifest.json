@@ -52,10 +52,10 @@
     {
       "game": "miracle",
       "archive": "miracle.tar.gz",
-      "sha256": "34ee9002764d697a1ce6e9a603915298a865c81278e9d9a7919d2e0a6e6d5a09",
-      "compressed_bytes": 14036340,
-      "uncompressed_bytes": 82893863,
-      "files": 3589
+      "sha256": "93326b4940ca6ba03ee7762068dfb4451689a272094c64b2e516e381477e4236",
+      "compressed_bytes": 13869554,
+      "uncompressed_bytes": 82892886,
+      "files": 1405
     },
     {
       "game": "dorado",

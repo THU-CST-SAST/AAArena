@@ -343,5 +343,25 @@
     "hosted_deployment": "pending",
     "full_pool_matrix": "required",
     "result_regression_tests_passed": 39
+  },
+  "miracle_sdk": {
+    "supported_units": 7,
+    "supported_artifacts": 4,
+    "official_enum_parser_tests_passed": 6,
+    "real_match_regression": {
+      "seeds": [
+        231034738,
+        1536596557
+      ],
+      "rounds": [
+        29,
+        30
+      ],
+      "candidate_errors": 0,
+      "opponent_errors": 0,
+      "game_errors": 0
+    },
+    "complete_pool_matrix": "pending",
+    "public_service_sdk_deployment": "pending"
   }
 }
