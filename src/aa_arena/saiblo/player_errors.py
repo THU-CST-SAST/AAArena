@@ -2,7 +2,9 @@
 import json
 from pathlib import Path
 
-def transport_player_errors(events_path: Path | None) -> tuple[list[str], str | None]:
+def transport_player_errors(
+    events_path: Path | None, *, roles: tuple[str, ...] = ("P0", "P1")
+) -> tuple[list[str], str | None]:
     failed_roles: set[str] = set()
     failures: list[str] = []
     if events_path is not None and events_path.is_file():
@@ -19,7 +21,8 @@ def transport_player_errors(events_path: Path | None) -> tuple[list[str], str | 
                 if event.get("kind") != "ai_error":
                     continue
                 player = event.get("player")
-                if type(player) is int and player in (0, 1):
-                    failed_roles.add(f"P{player}")
-                    failures.append(f"P{player}: {event.get('error_log', 'player_error')}")
+                if type(player) is int and 0 <= player < len(roles):
+                    role = roles[player]
+                    failed_roles.add(role)
+                    failures.append(f"{role}: {event.get('error_log', 'player_error')}")
     return sorted(failed_roles), "; ".join(dict.fromkeys(failures)) if failures else None

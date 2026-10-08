@@ -343,10 +343,10 @@ class MatchService:
             # the adapter labels it COMPLETE. Preserve that score and attribute
             # in-game errors from transport evidence, never from who won.
             if (result.status in (EvaluationStatus.COMPLETE, EvaluationStatus.GAME_ERROR)
-                    and result.replay_path and set(self.roles) == {"P0", "P1"}):
+                    and result.replay_path):
                 from aa_arena.saiblo.player_errors import transport_player_errors
                 failed_roles, detail = transport_player_errors(
-                    Path(result.replay_path).with_name("transport-events.jsonl"))
+                    Path(result.replay_path).with_name("transport-events.jsonl"), roles=self.roles)
                 if failed_roles:
                     failed_roles = sorted(set(failed_roles) | set(result.payload.get("failed_roles", ())))
                     result = replace(result, status=EvaluationStatus.GAME_ERROR,

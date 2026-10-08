@@ -112,3 +112,29 @@ def test_transport_cleanup_error_does_not_change_completed_game(tmp_path):
     p = tmp_path / 'transport-events.jsonl'
     p.write_text('{"kind":"game_over"}\n{"kind":"ai_error","player":0,"error_log":"runError"}\n')
     assert transport_player_errors(p) == ([], None)
+
+
+def test_four_player_transport_errors_attribute_grouped_candidate_roles(tmp_path, monkeypatch):
+    import json
+    events = [
+        {'kind': 'ai_error', 'player': 2, 'error_log': 'runError'},
+        {'kind': 'ai_error', 'player': 0, 'error_log': 'timeOutError'},
+        {'kind': 'ai_error', 'player': 4, 'error_log': 'invalid player'},
+        {'kind': 'ai_error', 'player': True, 'error_log': 'invalid player'},
+        {'kind': 'game_over'},
+    ]
+    (tmp_path / 'transport-events.jsonl').write_text('\n'.join(map(json.dumps, events)))
+    result = EvaluateResult(status=EvaluationStatus.COMPLETE, winner='P3',
+        scores={'P0': 0, 'P1': 1, 'P2': 0, 'P3': 2}, replay_path=str(tmp_path / 'replay.json'))
+    monkeypatch.setattr('aa_arena.benchmark.matches._configured_evaluator',
+        lambda *args: SimpleNamespace(evaluate=lambda *args: result))
+    service = MatchService.__new__(MatchService)
+    service.game = 'lostspace'; service.roles = ('P0', 'P1', 'P2', 'P3'); service.seed = 1
+    service.repository = tmp_path; service.hidden_root = tmp_path / 'matches'
+    service.build_root = tmp_path / 'build'; service.infrastructure_retries = 0
+    row = service._evaluate_seat(tmp_path, _opponent('other', 1500, 1),
+        ('P1', 'P2', 'P3'), 1, 'four-seat-proof')
+    assert row.failed_roles == ('P0', 'P2')
+    assert row.status == 'game_error' and row.winner == 'P3' and row.score == 1
+    aggregate = service._aggregate((row,))
+    assert aggregate['candidate_errors'] == aggregate['opponent_errors'] == 1
