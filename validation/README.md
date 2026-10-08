@@ -45,7 +45,7 @@ The hosted full-pool off-policy replay catalog is not provisioned.
 
 ## Saiblo deadline validation
 
-The deployed runtime `35b6529` resolves round deadlines using frame receive timestamps. Twenty-two focused tests cover delayed dispatch, state transitions, genuine late replies and SnakeGo multi-action states. Seventeen matched cases on each reference host verify unchanged source hashes without infrastructure exceptions; historical player runtime parity remains pending. The twelve-game HTTPS detailed/binary small matrix and twelve-game local matrix pass for this runtime. The eight-game Python-referee full-pool matrix has six completed execution-integrity audits covering 1,530 matches; AntWar2 remains in progress. Seven-game paired diagnostics use frozen paper candidates and their recorded experiment seeds. Round limits and human strategy sources are unchanged.
+The deployed runtime `35b6529` resolves round deadlines using frame receive timestamps. Twenty-two focused tests cover delayed dispatch, state transitions, genuine late replies and SnakeGo multi-action states. Seventeen matched cases on each reference host verify unchanged source hashes without infrastructure exceptions; historical player runtime parity remains pending. The twelve-game HTTPS detailed/binary small matrix and twelve-game local matrix pass for this runtime. The eight-game Python-referee full-pool matrix has seven completed execution-integrity audits covering 2,036 matches; AntWar2 remains in progress. Seven-game paired diagnostics use frozen paper candidates and their recorded experiment seeds. Round limits and human strategy sources are unchanged.
 
 ## Concurrency validation
 
@@ -94,3 +94,8 @@ One unchanged AntWar2 policy catches unavailable neural-network weights and sele
 ## Public AntWar2 SDK refund contract
 
 The public Python SDK forwards an optional tower state when calculating downgrade refunds. The interface supports both the full-health refund and the health-scaled refund defined by its engine. Thirteen SDK and backend concurrency tests pass, including eight refund cases across two tower levels and four health values. The local AntWar2 live-game contract passes with the public package. Original player packages and their bundled SDK files retain their bytes; this public SDK contract does not certify those packages against all historical inputs.
+
+
+## AntWar2 bundled SDK compatibility
+
+An unchanged player invokes a two-argument downgrade-refund method through a bundled Python SDK adapter that accepts one argument. Paired diagnostic executions verify the same candidate and player source hashes and the same experiment seed, using the same release runtime and unlimited CPU policy. Both hosts reproduce the adapter TypeError in the same policy call path; the trajectories and failure rounds differ. This establishes an SDK interface defect for those inputs, but does not establish historical-success parity. The public SDK accepts the optional tower argument and forwards it to the engine, with thirteen focused tests and a local live-game contract passing. Original human player packages retain their hashes.

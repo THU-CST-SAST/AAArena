@@ -1349,7 +1349,21 @@
       "unit_tests_passed": 13,
       "refund_cases": 8,
       "local_live_game": "passed",
-      "original_player_sdk_failure_classification": "requires original historical inputs; no player-source modifications"
+      "original_player_sdk_failure_classification": "SDK adapter argument mismatch reproduced on both aligned runtimes; historical-success parity remains unverified; original player packages retain their hashes"
+    },
+    "antwar2_sdk_aligned_diagnostic": {
+      "original_player_packages_modified": false,
+      "runtime_source_commit": "dbab2e298d95899c3236f39f430b25e159e93486",
+      "cpu_policy": "unlimited",
+      "paired_candidate_source_hashes_verified": true,
+      "paired_player_source_hashes_verified": true,
+      "experiment_seed": 1567098032,
+      "candidate_seat": 0,
+      "reference_failure_round": 60,
+      "hosted_failure_round": 54,
+      "same_exception": "PythonBackendState.downgrade_tower_income() takes 2 positional arguments but 3 were given",
+      "historical_success_equivalence_established": false,
+      "full_replay_equality_claimed": false
     }
   },
   "release_acceptance": {
