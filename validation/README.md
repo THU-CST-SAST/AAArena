@@ -10,7 +10,7 @@ See `release-verification.json` for measured acceptance status. Historical oppon
 
 ## Complete-pool interface matrix
 
-Release acceptance is pending. The frozen-runtime HTTPS matrix and transport-level error audit are required release gates. Rollman, AntWar and LostSpace raw logs contain in-game error events absent from API counters. Error-reporting regression tests cover two-player and four-player assignments; the deployed runtime requires pinned-backend HTTPS verification. Original results and receipts remain immutable.
+Release acceptance is pending. The frozen-runtime HTTPS matrix and transport-level error audit are required release gates. Rollman, AntWar and LostSpace raw logs contain in-game error events absent from API counters. Error-reporting regression tests cover two-player and four-player assignments; the pinned-backend runtime passes all 12 detailed/binary small-match checks. Its eight Saiblo complete-pool HTTPS sweeps are in progress. Original results and receipts remain immutable.
 
 The interface matrix contains 3,776 matches against all 1,920 frozen human opponents. These are SDK candidate checks, not model benchmark scores. Error columns contain adapter-reported counters and require transport-level verification. Zero counters are not evidence of zero in-game errors. Root-cause attribution requires run-specific diagnosis; every opponent remains in the evaluation pool.
 

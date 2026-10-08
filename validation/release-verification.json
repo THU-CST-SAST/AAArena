@@ -399,10 +399,11 @@
     "reference_profile_regression": {
       "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
       "transport": "authenticated public HTTPS",
-      "status": "running",
+      "status": "execution integrity verified; adapter error counters require transport audit",
       "games": 12,
       "complete_pool_opponents": 1920,
-      "expected_matches": 3776
+      "expected_matches": 3776,
+      "backend_scope": "service interpreter; distinct from pinned-backend matrix"
     },
     "error_observations": {
       "snakego": "The SDK sample candidate produced one illegal-action exception. This is a policy failure reported by the official game engine, not a service failure.",
@@ -410,7 +411,22 @@
       "lota": "14 of 15 opponents with errors have errors in the 17 historical comparison submissions; the remaining opponent has a seat/seed-specific segmentation fault also observed in another hosted sweep.",
       "miracle": "67 opponent errors: 59 run errors, four output-limit errors and four timeouts. No missing dependencies in the full-pool sweep."
     },
-    "counter_audit_status": "Transport-level error audit required; adapter-reported counts are not authoritative zero-error evidence."
+    "counter_audit_status": "Transport-level error audit required; adapter-reported counts are not authoritative zero-error evidence.",
+    "pinned_backend_regression": {
+      "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
+      "status": "running",
+      "games": [
+        "rollman",
+        "antwar",
+        "aquawar",
+        "generals",
+        "lostspace",
+        "miracle",
+        "snakego",
+        "antwar2"
+      ],
+      "transport": "authenticated public HTTPS"
+    }
   },
   "ai9_isolation_and_compiler": {
     "compiler": "GCC 14.2.0",
@@ -528,7 +544,7 @@
     "public_small_matrix_games": 12,
     "client_preflight_compiler": "P5 GCC 11.4 via explicit override; actual evaluations use hosted GCC 14.2.0",
     "glibc": "2.41",
-    "public_small_matrix_status": "pinned-backend regression running",
+    "public_small_matrix_status": "12/12 passed under pinned backend",
     "backend_python": "3.14.6",
     "backend_numpy": "2.3.5",
     "backend_matplotlib": "3.11.1",
@@ -537,7 +553,7 @@
   "environment_parity": {
     "status": "in progress",
     "reference": "agentlab research runtime",
-    "blocking_issue": "Pinned-backend production HTTPS small and full-pool matrices and per-case runtime error diagnosis are required.",
+    "blocking_issue": "Pinned-backend full-pool HTTPS matrix and per-case runtime error diagnosis are required.",
     "reference_profile": {
       "compiler": "Debian GCC/G++ 14.2.0-19",
       "glibc": "2.41",
@@ -576,7 +592,7 @@
     },
     "production_source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
     "public_https_health": "passed",
-    "full_pool_regression": "pinned-backend HTTPS matrix pending small-matrix completion",
+    "full_pool_regression": "Eight Saiblo full pools running under pinned backend; four AI9 full pools have unchanged compiled runtime.",
     "memory_safety_diagnostics": {
       "host": "reference host",
       "used_for_scoring": false,
@@ -591,7 +607,7 @@
       ],
       "strategy_sources_modified": false
     },
-    "https_small_matrix": "12/12 passed",
+    "https_small_matrix": "12/12 passed under pinned backend",
     "error_reporting_regression": {
       "tests_passed": 18,
       "production_deployment": "verified",
@@ -667,6 +683,230 @@
       "artifact_integrity": "verified",
       "adapter_error_counts": "not authoritative; transport audit records undercounts",
       "backend_python_scope": "service interpreter, distinct from pinned-backend acceptance"
+    },
+    "pinned_backend_small_matrix": {
+      "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
+      "transport": "authenticated public HTTPS",
+      "games": [
+        {
+          "checks": [
+            {
+              "feedback": "detailed",
+              "kind": "small",
+              "passed": true
+            },
+            {
+              "feedback": "binary",
+              "kind": "small",
+              "passed": true
+            }
+          ],
+          "game": "antwar",
+          "passed": true,
+          "pool_count": 114,
+          "seconds": 97.87
+        },
+        {
+          "checks": [
+            {
+              "feedback": "detailed",
+              "kind": "small",
+              "passed": true
+            },
+            {
+              "feedback": "binary",
+              "kind": "small",
+              "passed": true
+            }
+          ],
+          "game": "antwar2",
+          "passed": true,
+          "pool_count": 191,
+          "seconds": 164.1
+        },
+        {
+          "checks": [
+            {
+              "feedback": "detailed",
+              "kind": "small",
+              "passed": true
+            },
+            {
+              "feedback": "binary",
+              "kind": "small",
+              "passed": true
+            }
+          ],
+          "game": "aquawar",
+          "passed": true,
+          "pool_count": 170,
+          "seconds": 214.96
+        },
+        {
+          "checks": [
+            {
+              "feedback": "detailed",
+              "kind": "small",
+              "passed": true
+            },
+            {
+              "feedback": "binary",
+              "kind": "small",
+              "passed": true
+            }
+          ],
+          "game": "dorado",
+          "passed": true,
+          "pool_count": 323,
+          "seconds": 306.59
+        },
+        {
+          "checks": [
+            {
+              "feedback": "detailed",
+              "kind": "small",
+              "passed": true
+            },
+            {
+              "feedback": "binary",
+              "kind": "small",
+              "passed": true
+            }
+          ],
+          "game": "generals",
+          "passed": true,
+          "pool_count": 197,
+          "seconds": 113.69
+        },
+        {
+          "checks": [
+            {
+              "feedback": "detailed",
+              "kind": "small",
+              "passed": true
+            },
+            {
+              "feedback": "binary",
+              "kind": "small",
+              "passed": true
+            }
+          ],
+          "game": "lostspace",
+          "passed": true,
+          "pool_count": 111,
+          "seconds": 17.0
+        },
+        {
+          "checks": [
+            {
+              "feedback": "detailed",
+              "kind": "small",
+              "passed": true
+            },
+            {
+              "feedback": "binary",
+              "kind": "small",
+              "passed": true
+            }
+          ],
+          "game": "lota",
+          "passed": true,
+          "pool_count": 200,
+          "seconds": 249.49
+        },
+        {
+          "checks": [
+            {
+              "feedback": "detailed",
+              "kind": "small",
+              "passed": true
+            },
+            {
+              "feedback": "binary",
+              "kind": "small",
+              "passed": true
+            }
+          ],
+          "game": "miracle",
+          "passed": true,
+          "pool_count": 253,
+          "seconds": 26.43
+        },
+        {
+          "checks": [
+            {
+              "feedback": "detailed",
+              "kind": "small",
+              "passed": true
+            },
+            {
+              "feedback": "binary",
+              "kind": "small",
+              "passed": true
+            }
+          ],
+          "game": "monecraft",
+          "passed": true,
+          "pool_count": 112,
+          "seconds": 291.95
+        },
+        {
+          "checks": [
+            {
+              "feedback": "detailed",
+              "kind": "small",
+              "passed": true
+            },
+            {
+              "feedback": "binary",
+              "kind": "small",
+              "passed": true
+            }
+          ],
+          "game": "pacman",
+          "passed": true,
+          "pool_count": 44,
+          "seconds": 83.64
+        },
+        {
+          "checks": [
+            {
+              "feedback": "detailed",
+              "kind": "small",
+              "passed": true
+            },
+            {
+              "feedback": "binary",
+              "kind": "small",
+              "passed": true
+            }
+          ],
+          "game": "rollman",
+          "passed": true,
+          "pool_count": 64,
+          "seconds": 71.42
+        },
+        {
+          "checks": [
+            {
+              "feedback": "detailed",
+              "kind": "small",
+              "passed": true
+            },
+            {
+              "feedback": "binary",
+              "kind": "small",
+              "passed": true
+            }
+          ],
+          "game": "snakego",
+          "passed": true,
+          "pool_count": 141,
+          "seconds": 19.69
+        }
+      ],
+      "passed": true,
+      "model_calls": 0
     }
   }
 }
