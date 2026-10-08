@@ -33,6 +33,30 @@ def test_make_and_plain_compiler_use_selected_toolchain(tmp_path, monkeypatch):
     assert '#define __GNUC__ 14' in (tmp_path / 'macros.txt').read_text()
 
 
+def test_declared_sdk_parent_alias_is_visible_without_host_siblings(tmp_path: Path) -> None:
+    real = tmp_path / 'private-parent'
+    real.mkdir()
+    sdk = real / 'sdk'
+    sdk.mkdir()
+    (sdk / 'answer.h').write_text('#define ANSWER 42\n')
+    (real / 'secret.h').write_text('#error private sibling exposed\n')
+    alias = tmp_path / 'public-alias'
+    alias.symlink_to(real, target_is_directory=True)
+    source = tmp_path / 'candidate'
+    source.mkdir()
+    (source / 'main.cpp').write_text(
+        '#include "answer.h"\n'
+        f'#if __has_include("{alias / "secret.h"}")\n#error alias sibling visible\n#endif\n'
+        f'#if __has_include("{real / "secret.h"}")\n#error real sibling visible\n#endif\n'
+        'int main(){return ANSWER;}\n')
+    result = run_isolated_build(
+        ('g++', '-I', str(alias / 'sdk'), 'main.cpp', '-o', 'main'),
+        cwd=source, readonly_paths=(alias / 'sdk',), timeout=60,
+    )
+    assert result.returncode == 0, result.stderr
+    assert (source / 'main').is_file()
+
+
 @pytest.mark.parametrize("recipe", ["make", "cmake"])
 def test_recipe_cannot_access_host_files_network_or_environment(
     tmp_path: Path,

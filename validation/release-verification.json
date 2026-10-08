@@ -531,11 +531,26 @@
     },
     "targeted_tests_passed": 31,
     "production_deployment": "pending",
-    "cross_host_matrix": "pending",
+    "cross_host_matrix": "in progress; game outcome differences require diagnosis",
     "python_snapshot": {
       "files": 36715,
       "file_manifest_sha256": "b863cced85ff10eb11f196ada16f32015b332753df38c09661c76569c2356be3",
       "matched": true
+    },
+    "system_snapshot": {
+      "files": 28332,
+      "matched": true,
+      "fingerprint": "ccef511da39a5b0d373e2ff93888cd1bb83744fb22250ed44be4983c573be5af",
+      "cloud_integrity_check": "passed"
+    },
+    "cloud_reference_preflight": {
+      "python_and_matplotlib": "passed",
+      "private_files_and_network_isolation": "passed",
+      "isolated_gcc_and_gxx_14_2": "passed"
+    },
+    "cloud_build_isolation_regression": {
+      "passed": 23,
+      "scope": "SDK parent path aliases, trusted C/C++ compiler selection, build secrecy, and supported game SDK compilation"
     }
   }
 }

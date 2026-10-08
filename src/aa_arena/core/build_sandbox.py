@@ -125,14 +125,19 @@ def run_isolated_build(
             if target.startswith('/usr/bin/'):
                 arguments += ["--symlink", target, '/etc/alternatives/' + name]
     arguments += ["--proc", "/proc", "--dev", "/dev", "--tmpfs", "/tmp", "--dir", "/tmp/home"]
-    sdk_paths: list[Path] = []
+    sdk_mounts: dict[Path, Path] = {}
     for raw_path in readonly_paths:
         path = Path(raw_path).resolve(strict=True)
-        if path == root or root.is_relative_to(path) or path.is_relative_to(root):
-            raise BuildSandboxError("SDK mount overlaps writable staging")
+        declared = Path(os.path.abspath(raw_path))
+        for destination in (path, declared):
+            if destination == root or root.is_relative_to(destination) or destination.is_relative_to(root):
+                raise BuildSandboxError("SDK mount overlaps writable staging")
         if path.is_dir():
             validate_build_tree(path)
-        sdk_paths.append(path)
+        # Compiler arguments may retain a trusted SDK's symlinked parent path.
+        # Mount that spelling too, without exposing either host parent directory.
+        sdk_mounts[path] = path
+        sdk_mounts[declared] = path
     try:
         _make_staging_owner_writable(root)
         # Root loses DAC override inside bwrap's user namespace. Mirror only
@@ -164,8 +169,9 @@ def run_isolated_build(
                 arguments += ["--ro-bind", str(toolchain), "/toolchain/bin"]
                 build_environment['PATH'] = '/toolchain/bin:' + _SYSTEM_PATH
             plan = []
-            for index, (path, flag) in enumerate(
-                [(p, "--ro-bind") for p in sdk_paths] + [(root, "--bind")]
+            for index, (path, destination, flag) in enumerate(
+                [(source, destination, "--ro-bind") for destination, source in sdk_mounts.items()]
+                + [(root, root, "--bind")]
             ):
                 mount_source = path
                 if os.geteuid() == 0:
@@ -175,7 +181,7 @@ def run_isolated_build(
                     else:
                         mount_source.touch()
                     plan.append({"source": str(path), "target": str(mount_source)})
-                arguments += [flag, str(mount_source), str(path)]
+                arguments += [flag, str(mount_source), str(destination)]
             arguments += ["--chdir", str(work_cwd), "--remount-ro", "/", "--clearenv"]
             for key, value in build_environment.items():
                 arguments += ["--setenv", key, value]
