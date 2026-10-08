@@ -22,7 +22,7 @@ API completion, an Elo value, matching runtime hashes or accurate error counters
 
 Release acceptance is pending historical player runtime parity and the final local live-game regression. The HTTPS checks verify all frozen opponents, actual match artifacts, immutable submissions, candidate hashes, receipts and budgets. These are SDK candidate checks, not model benchmark scores. A counted game error requires case-specific diagnosis; it does not certify a player defect.
 
-The Python-referee profile uses the pinned Python 3.14.6 backend and Debian reference runtime. The native-referee profile uses GCC 14.2 and the reference runtime; its full-pool records are identified separately. No Elo scores are combined across profiles. The 12-game detailed/binary small matrix uses the deployed HTTPS service. Error counts below are per-match and may overlap between candidate and opponent.
+The table records the Python-referee execution profile at `13bb7f4`, using the pinned Python 3.14.6 backend and Debian reference runtime. The native-referee profile uses GCC 14.2 and the reference runtime; its full-pool records are identified separately. No Elo scores are combined across profiles. The 12-game detailed/binary small matrix uses the deployed HTTPS service. Error counts below are per-match and may overlap between candidate and opponent.
 
 | Game | Referee profile | Opponents | Matches | Candidate errors | Opponent errors | Infrastructure retries |
 |---|---|---:|---:|---:|---:|---:|
@@ -42,3 +42,7 @@ The Python-referee profile uses the pinned Python 3.14.6 backend and Debian refe
 All eight Python-referee pools pass independent counter attribution checks. AquaWar includes native game-rule errors recorded in replay data as well as transport errors. Four-role attribution is verified for LostSpace. Every original opponent remains in the pool. These checks do not substitute for reconciling hosted failures with agentlab historical successful execution.
 
 The hosted full-pool off-policy replay catalog is not provisioned.
+
+## Saiblo deadline validation
+
+The deployed runtime `35b6529` resolves round deadlines using frame receive timestamps. Twenty-two focused tests cover delayed dispatch, state transitions, genuine late replies and SnakeGo multi-action states. Seventeen matched cases on each reference host verify unchanged source hashes without infrastructure exceptions; historical player runtime parity remains pending. The twelve-game HTTPS small matrix, eight-game Python-referee full-pool matrix and final local game matrix are in progress for this runtime. Seven-game paired diagnostics use frozen paper candidates and their recorded experiment seeds. Round limits and human strategy sources are unchanged.

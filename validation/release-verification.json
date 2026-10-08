@@ -990,10 +990,25 @@
       "confirmed_defect": "An already-received referee state transition can be preempted by a timeout when controller dispatch is delayed.",
       "fix": "Timestamp queued frames and resolve deadlines using receive order; genuinely late replies remain timeouts.",
       "tests_passed": 22,
-      "production_deployment": "pending",
-      "paired_real_match_regression": "running",
+      "production_deployment": "verified",
+      "paired_real_match_regression": {
+        "cases_per_host": 17,
+        "hosts": 2,
+        "source_hashes": "verified",
+        "infrastructure_exceptions": 0,
+        "player_runtime_parity": "pending"
+      },
       "player_sources_modified": false,
-      "round_limits_changed": false
+      "round_limits_changed": false,
+      "runtime_commit": "35b6529f6433eac36d77cd9a7c8b9118c9818931",
+      "authenticated_https_health": "passed",
+      "https_regression": "running",
+      "historical_champion_diagnostic": {
+        "games": 7,
+        "target_opponents": 161,
+        "status": "running",
+        "player_sources_modified": false
+      }
     }
   },
   "release_acceptance": {
