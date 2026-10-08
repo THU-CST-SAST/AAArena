@@ -1290,6 +1290,22 @@
       "live_matches": 52,
       "model_calls": 0,
       "api_calls": 0
+    },
+    "lostspace_player_build_resources": {
+      "original_player_source_unchanged": true,
+      "generator_sha256": "4ca8c312d43fae77f4fb584080d3e7c9e1ea80bcea193fef8dea553c00c7f107",
+      "generated_asset_files": 5,
+      "generated_bytes": 9604,
+      "paired_asset_hashes_identical": true,
+      "reference_assignments_completed": 2,
+      "hosted_assignments_completed": 2,
+      "rounds_per_assignment": 100,
+      "missing_asset_failures": 0,
+      "reference_error_free_assignments": 1,
+      "hosted_error_free_assignments": 1,
+      "remaining_diagnostic": "The other assignment contains a candidate shutdown error; one reference opponent transport closes with exit code zero. These are retained for lifecycle analysis.",
+      "production_deployed": false,
+      "local_packaged_regression": "passed"
     }
   },
   "release_acceptance": {

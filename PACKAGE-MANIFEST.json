@@ -69,8 +69,8 @@
     },
     {
       "path": "assets/lostspace.tar.gz",
-      "size": 2309952,
-      "sha256": "8da64c5cd9d39b3a76c9b223cefcb70f4e3ebfb747adf522c930048c2eadc0c9"
+      "size": 2311222,
+      "sha256": "0c4b4fd9e53dfb688b088a5f89bc0e2a60cab62c492e261e20a959a5e15faf86"
     },
     {
       "path": "assets/lota.tar.gz",
@@ -79,8 +79,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "size": 3025,
-      "sha256": "b824ee13f7239b4eef5e5606bae4f0bc38ac9e35b4d79df6a2908ed1b01d341c"
+      "size": 3024,
+      "sha256": "efe658e465b3461f5a441c2075f45fa07258590a6cf7ccc5e8ae7da03746f355"
     },
     {
       "path": "assets/miracle.tar.gz",
@@ -96,6 +96,11 @@
       "path": "assets/pacman.tar.gz",
       "size": 143402,
       "sha256": "970f371c47341a0ed59791b0e695d206bc3e01ea310b300284fa112e94774086"
+    },
+    {
+      "path": "assets/player-builds.json",
+      "size": 1687,
+      "sha256": "c07125fe40b709f42e82fff98e8f317f2a85dc2e922eef8679986a8dbaadf0cf"
     },
     {
       "path": "assets/provenance-verification.json",
@@ -1289,8 +1294,8 @@
     },
     {
       "path": "validation/README.md",
-      "size": 14309,
-      "sha256": "7f8960759750c724446c742e9be6ccd2cb34fadf0f22450f731700d3587421e4"
+      "size": 15117,
+      "sha256": "e4e45db23d71fdb65c40badf3e3ea57fc6cbea96c16d8cf78732d0067d56f562"
     },
     {
       "path": "validation/asset-audit.json",
@@ -1309,8 +1314,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 44723,
-      "sha256": "c93fc3629f6ac583a9b6254325593008526ce9cbc77170336d6cb8ecefffae9f"
+      "size": 45542,
+      "sha256": "797900233a23a5657477cfa7eb28074d23d492e12f234df04f351ae39ba17016"
     }
   ]
 }

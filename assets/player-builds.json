@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "builds": [
+    {
+      "game": "lostspace",
+      "player_id": "yanlifeng__ent_7c7c4f70f4240520__v4",
+      "published_elo_rank": 98,
+      "generator": "ShowCry/make_map.py",
+      "generator_sha256": "4ca8c312d43fae77f4fb584080d3e7c9e1ea80bcea193fef8dea553c00c7f107",
+      "entrypoint": "make_map.make_map()",
+      "source_files_unchanged": true,
+      "outputs": [
+        {
+          "path": "games/lostspace/players/pool/yanlifeng__ent_7c7c4f70f4240520__v4/ShowCry/delta.npy",
+          "size": 272,
+          "sha256": "3fc1995a892766ba3fff33107bb0f5472d85e2aa87daf2560c6ef2bdab91e24c"
+        },
+        {
+          "path": "games/lostspace/players/pool/yanlifeng__ent_7c7c4f70f4240520__v4/ShowCry/forbid_round.npy",
+          "size": 716,
+          "sha256": "1a6686d0e2acedd7af5e98a208f7be3271785ca2439aa66c7d9c772f0ee536a3"
+        },
+        {
+          "path": "games/lostspace/players/pool/yanlifeng__ent_7c7c4f70f4240520__v4/ShowCry/connection.npy",
+          "size": 7184,
+          "sha256": "fd073fab747ed4936ff2c92b451191b7b825bd1d1a43ee7c87df7ec12a630979"
+        },
+        {
+          "path": "games/lostspace/players/pool/yanlifeng__ent_7c7c4f70f4240520__v4/ShowCry/circle.npy",
+          "size": 716,
+          "sha256": "5c4ff3e5335d542bb7d7a46fc13888f3eba625f0ab4909277d40bbf7cb55d8e1"
+        },
+        {
+          "path": "games/lostspace/players/pool/yanlifeng__ent_7c7c4f70f4240520__v4/ShowCry/type.npy",
+          "size": 716,
+          "sha256": "419a1c71faab95f79bdc841a3370970b6d55e4cc64d45d2bd2d6026f49594dca"
+        }
+      ],
+      "purpose": "Deterministic map tables required by the packaged player SDK."
+    }
+  ]
+}
