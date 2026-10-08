@@ -1006,9 +1006,11 @@
       "historical_champion_diagnostic": {
         "games": 7,
         "target_opponents": 161,
-        "status": "running",
+        "status": "comparison_pending",
         "player_sources_modified": false,
-        "reference_cases_completed": 318
+        "reference_cases_completed": 318,
+        "hosted_cases_completed": 318,
+        "infrastructure_exceptions": 0
       },
       "https_small_matrix": {
         "games": 12,
@@ -1025,13 +1027,16 @@
       "full_pool_execution_integrity": {
         "games_verified": [
           "rollman",
-          "antwar"
+          "antwar",
+          "aquawar",
+          "generals",
+          "lostspace"
         ],
-        "matches_verified": 292,
+        "matches_verified": 1248,
         "request_result_pool_hashes": "verified",
         "budgets_and_candidate_snapshots": "verified",
         "actual_match_artifacts": "verified",
-        "remaining_python_referee_games": 6,
+        "remaining_python_referee_games": 3,
         "scheduling_transition_recorded": true,
         "player_runtime_parity": "pending"
       }
@@ -1040,8 +1045,8 @@
       "physical_cores": 8,
       "logical_cpus": 16,
       "capacity_unit": "complete_match",
-      "hosted_match_capacity": 6,
-      "small_match_reserve": 2,
+      "hosted_match_capacity": 3,
+      "small_match_reserve": 1,
       "active_matches_drained_before_configuration_change": true,
       "paired_antwar_cases": {
         "cases": 5,
@@ -1051,8 +1056,42 @@
       },
       "time_limits_changed": false,
       "strategy_sources_modified": false,
-      "broader_discrepancy_regression": "running",
-      "full_pool_matrix_scheduling_transition": "Recorded as diagnostic execution evidence; not a uniform-concurrency model benchmark."
+      "broader_discrepancy_regression": "pending",
+      "full_pool_matrix_scheduling_transition": "Recorded as diagnostic execution evidence; not a uniform-concurrency model benchmark.",
+      "scheduler_tests_passed": 7,
+      "generals_controlled_regression": {
+        "same_original_sources_and_seed": true,
+        "round_limit_ms": 1000,
+        "identical_input_prefix_rounds": 31,
+        "isolated_runs": 3,
+        "isolated_successful_rounds_per_run": 501,
+        "isolated_transport_errors": 0,
+        "isolated_state61_ms": [
+          953,
+          962,
+          950
+        ],
+        "capacity3_runs": 3,
+        "capacity3_successful_rounds_per_run": 501,
+        "capacity3_transport_errors": 0,
+        "scope": "Single timeout-sensitive original policy; broader full-pool runtime parity remains pending."
+      }
+    },
+    "rollman_seed_reconciliation": {
+      "original_backend_honors_requested_seed": false,
+      "diagnostic_reference_backend_honors_requested_seed": true,
+      "same_initial_map_sha256": "959036abb228b3e5a6c648cba16d50942b16e84138211646f24bdf674893af87",
+      "same_original_policy_hashes": true,
+      "matched_failure_round": 352,
+      "matched_failure_state": 1536,
+      "failure": "Bundled SDK attempts JSON parsing of a player-notification line.",
+      "scope": "Paired diagnostic with explicit seed handling; does not certify all historical successful executions."
+    },
+    "lostspace_completion_reconciliation": {
+      "candidate_escaped_round": 39,
+      "candidate_shutdown_error_round": 69,
+      "error": "Python buffered stdin lock during interpreter shutdown",
+      "scope": "Candidate process shutdown after successful escape; raw transport error retained. Original opponents are unaffected by this case."
     }
   },
   "release_acceptance": {
@@ -1107,7 +1146,7 @@
         "local_live_games_verified": 12,
         "source_script_asset_hashes_verified": 96,
         "runtime_commit": "35b6529f6433eac36d77cd9a7c8b9118c9818931",
-        "scheduler_unit_tests_passed": 6
+        "scheduler_unit_tests_passed": 7
       }
     },
     "all_criteria_required": true,

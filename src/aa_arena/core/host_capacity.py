@@ -27,4 +27,8 @@ def default_match_capacity(*, topology_root=None, cpu_ids=None):
     except (OSError, ValueError):
         # Unknown topology: avoid treating every logical CPU as a full core.
         count = max(1, len(cpu_ids) // 2)
-    return max(1, min(32, count - max(1, (count + 3) // 4)))
+    # Each admitted match owns a referee and multiple player processes. A
+    # physical-core count is not a match count: even modest interference can
+    # push a valid decision near its fixed wall-clock deadline over the limit.
+    headroom = max(1, (count + 3) // 4)
+    return max(1, min(32, (count - headroom) // 2))

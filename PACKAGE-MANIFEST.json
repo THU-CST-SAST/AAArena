@@ -154,8 +154,8 @@
     },
     {
       "path": "docs/runtime.md",
-      "size": 5772,
-      "sha256": "ba6043c971390ede819f60cef0758aa6a394837c2502785b0b7ef56a2ce2a626"
+      "size": 5861,
+      "sha256": "1ad187102a328819e71a71ec7342e1f60c883072e3260fcbc07a951fab026f41"
     },
     {
       "path": "environment/controller-constraints-py314-linux.txt",
@@ -604,8 +604,8 @@
     },
     {
       "path": "src/aa_arena/core/host_capacity.py",
-      "size": 1180,
-      "sha256": "d3d7200fea1907a57efd80ac603ea73adcdf0f70ec987efe650254be4ed12c9e"
+      "size": 1441,
+      "sha256": "0a468290f7483588eefd7fc4fef7438b83fc7efc23492ab66d661f46ff909976"
     },
     {
       "path": "src/aa_arena/core/native_sdk.py",
@@ -1050,7 +1050,7 @@
     {
       "path": "tests/test_host_capacity.py",
       "size": 1100,
-      "sha256": "0cd082ddf70a4c047a0849643f159d43bee4aa29a8f3bd30ff099ef109e23478"
+      "sha256": "5b6293246bdda7edb6c452d4aab5007a1b0625e4cae2f21747f17e36a38922a8"
     },
     {
       "path": "tests/test_legacy_ai9_build_isolation.py",
@@ -1279,8 +1279,8 @@
     },
     {
       "path": "validation/README.md",
-      "size": 6739,
-      "sha256": "e8628751c7dc5c18f1b81ba9498a7fd8c3cea488c078ab70d8d64d83bf1c6f65"
+      "size": 7859,
+      "sha256": "c2ca6349f8d100a0c8c9f5705e597d6dccb472c7f4530efba042a392a431b639"
     },
     {
       "path": "validation/asset-audit.json",
@@ -1299,8 +1299,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 33872,
-      "sha256": "843e016fcf46a31460c37c5ee49d3e7add17fd5e30ec1b7719781b3e0b458cc4"
+      "size": 35619,
+      "sha256": "46b89c0621d9268f8d53999d991d8cfc1a9adcbbd8113750db3303ebb81b0d08"
     }
   ]
 }
