@@ -8,6 +8,6 @@ Small-match feedback is fixed per experiment: binary win/non-win outcomes, or de
 
 `practice.py` and the local evaluator operate on the published subset without a service token. The local leaderboard numbers published opponents consecutively; `reference_rank` preserves their complete-pool rank. Resource bundles for formal agents use complete ranking metadata while containing only the permitted public example code. Existing local-subset runs cannot resume as formal runs.
 
-我们只公布未进入决赛圈的偶数人类选手的代码。
+We release code only for human players with even-numbered ranks outside the top eight.
 
 Only frozen measured Elo ranks greater than eight and even are distributed. Full ranking metadata does not grant access to withheld programs. Off-policy catalog download is supported by the protocol, but the hosted catalog is not provisioned. Use an explicitly supplied frozen replay-only catalog and report its population.

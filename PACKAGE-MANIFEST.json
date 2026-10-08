@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "name": "AA-Arena",
+  "name": "AAArena",
   "version": "0.4.0",
   "games": [
     "rollman",
@@ -29,8 +29,8 @@
     },
     {
       "path": "README.md",
-      "size": 20948,
-      "sha256": "b36015a56c16228bd0d4014bb9abeeba7aba575f2a98208612c482f1ca8a8717"
+      "size": 20965,
+      "sha256": "8d96e218607aea02fa45c5dc4a5b0bc5af4e8b5c26f6b6184da49c5e982317f3"
     },
     {
       "path": "assets/antwar.tar.gz",
@@ -149,8 +149,8 @@
     },
     {
       "path": "docs/remote-evaluation.md",
-      "size": 1888,
-      "sha256": "92d6cc9a41c44090cd9628905758dfd2dd37882a9517a033980dc901177e8df2"
+      "size": 1908,
+      "sha256": "0280e80b0750bba5d6a90a5f9b114324c046eaff5b661dff1923854d815f85ce"
     },
     {
       "path": "docs/runtime.md",

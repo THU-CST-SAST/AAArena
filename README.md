@@ -1,6 +1,6 @@
 <div align="center">
 
-# AA-Arena
+# AAArena
 
 ### Can AI Agents Build Game Agents for Real-World Adversarial Games?
 
@@ -25,7 +25,7 @@ Xiaohui Xie<sup>1</sup>, Wentao Han<sup>1</sup>, Hongning Wang<sup>1,‡</sup>
 
 ## Overview
 
-AA-Arena (Agents for Agents Arena) is a benchmark for **Adversarial Heuristic Learning**: a coding agent reads game rules, writes an executable game-playing policy, plays against archived human opponents, and improves its code from feedback while its model weights remain fixed. Performance is measured by Elo and rank against a frozen, game-specific human opponent pool.
+AAArena (Agents for Agents Arena) is a benchmark for **Adversarial Heuristic Learning**: a coding agent reads game rules, writes an executable game-playing policy, plays against archived human opponents, and improves its code from feedback while its model weights remain fixed. Performance is measured by Elo and rank against a frozen, game-specific human opponent pool.
 
 This repository contains the paper's **12 games**, public SDKs, selected human-player code for local practice, Saiblo and AI9 evaluators, official Codex and Claude Code harness integrations, and experiment runners. Game resources are bundled in `assets/*.tar.gz`; no separate game download or Git LFS checkout is required. The experiment presets are in [`configs/paper.json`](configs/paper.json).
 
@@ -40,7 +40,7 @@ This repository contains the paper's **12 games**, public SDKs, selected human-p
 
 Models, games and experiment suites are independently selectable. Supply your own model identifier, compatible API endpoint and credential. The Codex harness requires a compatible Responses endpoint; the Claude Code harness requires a compatible Messages endpoint. The endpoint must support the requested reasoning effort, context length, streaming and tool interfaces. There is no built-in model allowlist. Additional games require an evaluator/resource adapter and a verified opponent pool.
 
-我们只公布未进入决赛圈的偶数人类选手的代码。
+We release code only for human players with even-numbered ranks outside the top eight.
 
 Player-code publication follows the experiment's **frozen measured Elo ranking**: only ranks **10, 12, 14, …** are included. Ranks 1–8 and all odd ranks are withheld. The 12 game packs contain **909 published human-player packages**. Full ranking metadata is available in `results/elo`; each game's `players/publication.json` identifies the released players and their original reference ranks.
 
@@ -334,7 +334,7 @@ validation/      Verification summaries
 
 ```bibtex
 @misc{yang2026aaarena,
-  title  = {AA-Arena: Can AI Agents Build Game Agents for Real-World Adversarial Games?},
+  title  = {AAArena: Can AI Agents Build Game Agents for Real-World Adversarial Games?},
   author = {Kaisen Yang and Qingle Liu and Kejin Wang and Yicheng Zhao and Jieming Li and Shenghan Zheng and Ruize Yang and Bojun Yang and Heng Gong and Xiang Gao and Lanyue Zhang and Kaiyu Zhong and Zhuo Liu and Shaoxuan Li and Chengxi Li and Yong Yan and Weixuan Zhang and Tianwei Luo and Situ Wang and Youjie Zheng and Sihan Zhao and Shengyuan Wang and Huan-ang Gao and Jiazheng Xu and Xiaohui Xie and Wentao Han and Hongning Wang},
   year   = {2026},
   url    = {https://github.com/THU-CST-SAST/AAArena}
