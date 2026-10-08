@@ -729,8 +729,8 @@
     },
     {
       "path": "src/aa_arena/saiblo/judger.py",
-      "size": 22648,
-      "sha256": "9d11ea94cac91157da01cd0214fdeed291c0c22cda97340a337182d35b56ffd1"
+      "size": 23380,
+      "sha256": "df4f997c4e207c18f5f1c2b2f7d86bae133f1837a291dfe1c7cbb92455e1859b"
     },
     {
       "path": "src/aa_arena/saiblo/player_errors.py",
@@ -1188,6 +1188,11 @@
       "sha256": "0b1eee2990fb9db8cf43e69eeb1c6436ac75c1f0926a843dc5bde3b9846ab787"
     },
     {
+      "path": "tests/test_saiblo_deadline_queue.py",
+      "size": 3150,
+      "sha256": "6c52aa7959d780accaa90daec61b69f4553aba279c993a6af4ec51f7248ff0f8"
+    },
+    {
       "path": "tests/test_saiblo_protocol.py",
       "size": 2271,
       "sha256": "5f7e44a6ac8df750185a31dd239e7e6bc6790615dd05fe9d72b310230de3ba9a"
@@ -1284,8 +1289,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 31315,
-      "sha256": "303780d71489e7e7da36d3494d8f65807d830fc1d4faf5f6dbefc019baf9c884"
+      "size": 31860,
+      "sha256": "99556a6c7d5a6b146e5bb6e3932e718271e4b4749275636ed468d9b6031c63bd"
     }
   ]
 }

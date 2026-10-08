@@ -985,6 +985,15 @@
       "actual_match_artifacts": "verified",
       "counter_ownership": "verified",
       "player_runtime_parity": "pending"
+    },
+    "queue_deadline_regression": {
+      "confirmed_defect": "An already-received referee state transition can be preempted by a timeout when controller dispatch is delayed.",
+      "fix": "Timestamp queued frames and resolve deadlines using receive order; genuinely late replies remain timeouts.",
+      "tests_passed": 22,
+      "production_deployment": "pending",
+      "paired_real_match_regression": "running",
+      "player_sources_modified": false,
+      "round_limits_changed": false
     }
   },
   "release_acceptance": {
@@ -1028,14 +1037,15 @@
         "runtime_profiles_reported_separately": true
       },
       "local_release_package": {
-        "status": "final_local_live_regression_running",
+        "status": "baseline_local_execution_verified_runtime_patch_regression_pending",
         "requirement": "A clean installation of the released repository runs all twelve games with published opponents locally, supports local agent iteration and calls the hosted evaluator.",
         "retained_evidence": "Twelve-game public-subset live certificates and both official native harness acceptance records.",
-        "remaining": "Complete public-subset contract tests and all twelve live game certificates for the release runtime.",
+        "remaining": "Verify the deadline patch with real matches and the final source manifest.",
         "fresh_controller_environment": true,
         "fresh_player_environment": true,
         "assets_verified": true,
-        "public_subset_contract_tests_passed": 27
+        "public_subset_contract_tests_passed": 27,
+        "local_live_games_verified": 12
       }
     },
     "all_criteria_required": true,

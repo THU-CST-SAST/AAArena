@@ -122,6 +122,13 @@ def _cleanup_players(
     return failures
 
 
+class _ArrivalQueue(queue.Queue):
+    """Timestamp frames under the queue lock, before controller dispatch."""
+
+    def _put(self, item: tuple[Any, ...]) -> None:
+        super()._put((time.monotonic(), item))
+
+
 def _backend_reader(stream: BinaryIO, events: queue.Queue[tuple[Any, ...]]) -> None:
     try:
         while True:
@@ -235,7 +242,7 @@ def run_stdio_match(
             ) from exc
         raise
     processes = (backend_process, *player_processes)
-    event_queue: queue.Queue[tuple[Any, ...]] = queue.Queue()
+    event_queue = _ArrivalQueue()
     stderr_tails = tuple(bytearray() for _ in processes)
 
     threads = [
@@ -277,7 +284,7 @@ def run_stdio_match(
     listen_targets: tuple[int, ...] = ()
     awaiting_replies: set[int] = set()
     reported_errors: set[int] = set()
-    pending_ai: dict[int, list[bytes]] = {}
+    pending_ai: dict[int, list[tuple[bytes, float]]] = {}
     players_with_input: set[int] = set()
     game_over: GameOver | None = None
     backend_input_closed = False
@@ -315,7 +322,7 @@ def run_stdio_match(
                     detail=detail,
                 )
 
-            def forward_ai_reply(ai_id: int, body: bytes) -> None:
+            def forward_ai_reply(ai_id: int, body: bytes, received_at: float) -> None:
                 nonlocal backend_input_closed
                 if backend_input_closed:
                     return
@@ -324,7 +331,7 @@ def run_stdio_match(
                 except UnicodeDecodeError as exc:
                     report_ai_error(ai_id, AiErrorType.RUN_ERROR, str(exc))
                     return
-                elapsed_ms = int(1000 * (time.monotonic() - round_begin))
+                elapsed_ms = max(0, int(1000 * (received_at - round_begin)))
                 try:
                     _write(
                         backend_process.stdin,
@@ -341,7 +348,8 @@ def run_stdio_match(
                 # The official judger keeps its state timer armed after replies;
                 # only a new listen/state, a terminal frame, or an error ends it.
                 # Clearing it here lets an AI answer once and then hang forever.
-                record("ai_reply", player=ai_id, size=len(body), time=elapsed_ms)
+                record("ai_reply", player=ai_id, size=len(body), time=elapsed_ms,
+                       dispatch_delay_ms=max(0, int(1000 * (time.monotonic() - received_at))))
 
             _write(
                 backend_process.stdin,
@@ -360,19 +368,10 @@ def run_stdio_match(
                 wait_s = remaining
                 if round_deadline is not None and awaiting_replies:
                     wait_s = min(wait_s, max(0.0, round_deadline - now))
-                if wait_s <= 0 and awaiting_replies:
-                    timed_out_ai = next(
-                        ai_id for ai_id in listen_targets if ai_id in awaiting_replies
-                    )
-                    report_ai_error(
-                        timed_out_ai,
-                        AiErrorType.TIMEOUT_ERROR,
-                        f"AI {timed_out_ai} exceeded the {round_time_limit_s:g}s "
-                        f"round limit in state {current_state}",
-                    )
-                    continue
                 try:
-                    event = event_queue.get(timeout=wait_s)
+                    # A referee transition already received before the deadline
+                    # must be dispatched before its superseded state can time out.
+                    received_at, event = event_queue.get(timeout=max(0.0, wait_s))
                 except queue.Empty as exc:
                     if (
                         round_deadline is not None
@@ -392,6 +391,19 @@ def run_stdio_match(
                     raise TimeoutError(
                         f"match stalled; returncodes={[process.poll() for process in processes]}"
                     ) from exc
+
+                if (round_deadline is not None and awaiting_replies
+                        and received_at > round_deadline):
+                    # Queuing must not turn a genuinely late reply into an on-time
+                    # response, even if the controller itself was descheduled.
+                    timed_out_ai = next(
+                        ai_id for ai_id in listen_targets if ai_id in awaiting_replies
+                    )
+                    report_ai_error(
+                        timed_out_ai, AiErrorType.TIMEOUT_ERROR,
+                        f"AI {timed_out_ai} exceeded the {round_time_limit_s:g}s "
+                        f"round limit in state {current_state}",
+                    )
 
                 kind = event[0]
                 if kind == "logic_error":
@@ -442,7 +454,7 @@ def run_stdio_match(
                         if current_state >= 0 or ai_id in players_with_input:
                             queued = pending_ai.setdefault(ai_id, [])
                             if len(queued) < 16:
-                                queued.append(body)
+                                queued.append((body, received_at))
                                 record("defer_ai_output", player=ai_id, size=len(body))
                             else:
                                 report_ai_error(
@@ -453,7 +465,7 @@ def run_stdio_match(
                         else:
                             record("unexpected_ai_output", player=ai_id, size=len(body))
                         continue
-                    forward_ai_reply(ai_id, body)
+                    forward_ai_reply(ai_id, body, received_at)
                     continue
 
                 if kind != "logic_frame":
@@ -524,8 +536,8 @@ def run_stdio_match(
                     if ai_id in reported_errors:
                         pending_ai.pop(ai_id, None)
                         continue
-                    for deferred in pending_ai.pop(ai_id, []):
-                        forward_ai_reply(ai_id, deferred)
+                    for deferred, arrival in pending_ai.pop(ai_id, []):
+                        forward_ai_reply(ai_id, deferred, arrival)
 
         try:
             backend_process.wait(timeout=TERMINAL_GRACE_S)
