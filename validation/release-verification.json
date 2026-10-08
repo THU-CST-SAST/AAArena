@@ -1382,14 +1382,56 @@
       "authenticated_https_health": "passed",
       "games_available": 12,
       "original_player_sources_unchanged": true,
-      "post_deployment_small_matrix": "running",
+      "post_deployment_small_matrix": "passed",
       "post_deployment_full_pool_games": [
         "lostspace",
         "antwar2"
       ],
-      "post_deployment_full_pool_status": "pending_small_matrix",
+      "post_deployment_full_pool_status": "running",
       "client_runtime_source_commit": "dbab2e298d95899c3236f39f430b25e159e93486",
-      "model_calls": 0
+      "model_calls": 0,
+      "small_execution_integrity": {
+        "games": 12,
+        "submissions": 24,
+        "actual_matches": 46,
+        "feedback_modes": [
+          "detailed",
+          "binary"
+        ],
+        "strategy_snapshot_hashes_verified": true,
+        "request_result_pool_hashes_verified": true,
+        "budgets_verified": true,
+        "local_replay_hashes_match_hosted_artifacts": true,
+        "binary_dense_artifacts_exposed": false,
+        "in_game_transport_errors": 0,
+        "model_calls": 0,
+        "receipt_result_sha256": {
+          "antwar/detailed": "c2192c0ec39c40ee291ad723caeb189a35ae009db02a636f5cf37188779f31f9",
+          "antwar/binary": "9d8f4e8bebaf824c588498edb0fce0d26847157d51183cc5d3edacee42735e07",
+          "antwar2/detailed": "3fc1e49a5f455a677e671445a4f1f2eb2c4e6b9b62e703f797ad07b7a69087be",
+          "antwar2/binary": "d7064d221c12b17cf664a1a2288d5aa559fd5a89a28a9b93af3b482d2055742b",
+          "aquawar/detailed": "5d1a08afd4f0ee1e46f755105916a4ae9539e78efd6ff42348ee8ff32291425b",
+          "aquawar/binary": "1b613e2a05d176acdf2b62ad2183683c865e858ca91c7cce91b2f64bbc9f42c7",
+          "dorado/detailed": "84a9655240137a403f7ff6e57e285de902cf4f56b54fd65d4aab333ad2e98afb",
+          "dorado/binary": "2c595c719e9c055f9f56743834b2533ed3e00263ef5ce0d41277840eb82758a5",
+          "generals/detailed": "b021a40bb7a0e5939db8e763d4abdf13b21d6dea8a1a17b8c815b87b6aad5d55",
+          "generals/binary": "131038e8d7b07e395135c1cb4c65edbd06f240363c5bc903e38bf1f4379c1024",
+          "lostspace/detailed": "c5d2a4374791bcea895032d04c34e784427ee9e2b70ae9ee934b45b76e84f06f",
+          "lostspace/binary": "278c656d6d123c4c4f2c8159566748af760091e45d5a454d9fe55c499b4fffa0",
+          "lota/detailed": "d23562ca9c3cd63d59817b48edc21f5219730f8c8424c1f95f2754621330e346",
+          "lota/binary": "7698ac248073838692e6db0b616a4174b7c9e67f8f3226114ba348204ac9bafd",
+          "miracle/detailed": "95d972b69525f191dbaffb7783be8d458b5d23927a9d3e764b71e1dcdaaaa49b",
+          "miracle/binary": "130824305147e3bc5e005aa5cbb875087997d4712539572afe8c4dd110af4280",
+          "monecraft/detailed": "908f05814280129b30485a3108e03d1640e05d6605f6cca8f7c6fd468470cf46",
+          "monecraft/binary": "58534fda173ec95f55c0a7efa8527e38c1a3551816b21ac79ecef8eeaac33247",
+          "pacman/detailed": "a84aa4e2450598ae0515777405e45298561c9eb015e3974f90d9b9bfef36484b",
+          "pacman/binary": "3ce140e9e88a90325faadc72f59fb04cd034962fc8fe922f6ba354eab7204744",
+          "rollman/detailed": "7a6258bb8d5126677981f2449eb9410326775443fe9ba13679a4318fbd232350",
+          "rollman/binary": "fa54ddb5baef0570f7f0b53aa94971d8c2499eafc0b3cf780eaa2605d400ebb3",
+          "snakego/detailed": "0b9d7c43af5e0d9a699f59d062a99d4b7613a32ef13612fb5f37462339e1dd19",
+          "snakego/binary": "9614f975a7659ec7623e1af4e3383520f08d7238ad7cd10240a6c8866f2b6405"
+        }
+      }
     }
   },
   "release_acceptance": {
