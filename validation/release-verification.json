@@ -518,7 +518,7 @@
     "complete_pool_matrix": "verified"
   },
   "hosted_api": {
-    "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
+    "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
     "https_certificate_verified": true,
     "deployed_file_hashes_verified": 62,
     "full_pool_inventory": 1920,
@@ -528,12 +528,16 @@
     "public_small_matrix_games": 12,
     "client_preflight_compiler": "P5 GCC 11.4 via explicit override; actual evaluations use hosted GCC 14.2.0",
     "glibc": "2.41",
-    "public_small_matrix_status": "passed"
+    "public_small_matrix_status": "pinned-backend regression running",
+    "backend_python": "3.14.6",
+    "backend_numpy": "2.3.5",
+    "backend_matplotlib": "3.11.1",
+    "backend_runtime_files_verified": 9666
   },
   "environment_parity": {
     "status": "in progress",
     "reference": "agentlab research runtime",
-    "blocking_issue": "Trusted backend Python selection and error-reporting fixes require idle-guard deployment, production HTTPS regression, and full-pool audits under the reference backend profile.",
+    "blocking_issue": "Pinned-backend production HTTPS small and full-pool matrices and per-case runtime error diagnosis are required.",
     "reference_profile": {
       "compiler": "Debian GCC/G++ 14.2.0-19",
       "glibc": "2.41",
@@ -570,9 +574,9 @@
       "seed_and_reference_runtime_tests_passed": 6,
       "paired_dorado_rebuild": "all five binaries match across hosts"
     },
-    "production_source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
+    "production_source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
     "public_https_health": "passed",
-    "full_pool_regression": "running",
+    "full_pool_regression": "pinned-backend HTTPS matrix pending small-matrix completion",
     "memory_safety_diagnostics": {
       "host": "reference host",
       "used_for_scoring": false,
@@ -590,7 +594,7 @@
     "https_small_matrix": "12/12 passed",
     "error_reporting_regression": {
       "tests_passed": 18,
-      "production_deployment": "pending idle guard",
+      "production_deployment": "verified",
       "completed_api_games": [
         "pacman",
         "rollman",
@@ -609,7 +613,7 @@
       "api_summary_error_counts_verified": false,
       "original_receipts_preserved": true,
       "strategy_sources_modified": false,
-      "four_player_role_attribution": "unit regression passed; production deployment pending",
+      "four_player_role_attribution": "unit regression passed; deployed; HTTPS regression running",
       "lostspace_transport_error_events": 150,
       "event_count_note": "Transport events and error-bearing matches are different counts."
     },
@@ -641,7 +645,7 @@
       "root_causes": "per-case diagnosis required; these repetitions alone do not establish intrinsic policy defects"
     },
     "backend_python": {
-      "status": "reference bundle verified; production deployment pending",
+      "status": "reference bundle and production deployment verified; HTTPS matrix running",
       "python": "3.14.6",
       "numpy": "2.3.5",
       "matplotlib": "3.11.1",
@@ -652,6 +656,17 @@
       "paired_statuses_match": true,
       "rounds_identical": false,
       "formal_results_from_different_backend_profiles_combined": false
+    },
+    "execution_integrity_audit": {
+      "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
+      "games": 12,
+      "matches": 3776,
+      "opponents": 1920,
+      "request_result_pool_hashes": "verified",
+      "budgets_and_strategy_snapshots": "verified",
+      "artifact_integrity": "verified",
+      "adapter_error_counts": "not authoritative; transport audit records undercounts",
+      "backend_python_scope": "service interpreter, distinct from pinned-backend acceptance"
     }
   }
 }
