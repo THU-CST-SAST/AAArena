@@ -284,6 +284,7 @@ def run_stdio_match(
     listen_targets: tuple[int, ...] = ()
     awaiting_replies: set[int] = set()
     reported_errors: set[int] = set()
+    pending_exits: dict[int, str] = {}
     pending_ai: dict[int, list[tuple[bytes, float]]] = {}
     players_with_input: set[int] = set()
     game_over: GameOver | None = None
@@ -321,6 +322,18 @@ def run_stdio_match(
                     error_log=error_type.label,
                     detail=detail,
                 )
+
+            def report_or_defer_exit(ai_id: int, detail: str) -> None:
+                # A player may exit on a terminal notification before the referee's
+                # GameOver frame reaches this queue. Require a further reply request
+                # before declaring an idle player's closed transport a game error.
+                if ai_id in reported_errors or ai_id in pending_exits:
+                    return
+                if ai_id in awaiting_replies:
+                    report_ai_error(ai_id, AiErrorType.RUN_ERROR, detail)
+                else:
+                    pending_exits[ai_id] = detail
+                    record("ai_exit_deferred", player=ai_id, state=current_state, detail=detail)
 
             def forward_ai_reply(ai_id: int, body: bytes, received_at: float) -> None:
                 nonlocal backend_input_closed
@@ -415,9 +428,8 @@ def run_stdio_match(
                     )
                 if kind == "ai_eof":
                     ai_id = int(event[1])
-                    report_ai_error(
+                    report_or_defer_exit(
                         ai_id,
-                        AiErrorType.RUN_ERROR,
                         f"AI {ai_id} exited with returncode={player_processes[ai_id].poll()}",
                     )
                     continue
@@ -474,11 +486,13 @@ def run_stdio_match(
                 record("logic_frame", target=target, size=len(body))
                 if target != -1:
                     if 0 <= target < len(player_processes):
+                        if target in pending_exits:
+                            continue
                         try:
                             _write(player_processes[target].stdin, body)
                             players_with_input.add(target)
                         except (BrokenPipeError, OSError, ValueError) as exc:
-                            report_ai_error(target, AiErrorType.RUN_ERROR, str(exc))
+                            report_or_defer_exit(target, str(exc))
                     else:
                         record("invalid_logic_target", target=target)
                     continue
@@ -521,17 +535,20 @@ def run_stdio_match(
                     listen=list(message.listen),
                     players=list(message.player),
                 )
+                for ai_id in message.listen:
+                    if ai_id in pending_exits:
+                        report_ai_error(ai_id, AiErrorType.RUN_ERROR, pending_exits.pop(ai_id))
                 for ai_id, content in zip(message.player, message.content, strict=True):
                     if not 0 <= ai_id < len(player_processes):
                         record("invalid_logic_target", target=ai_id)
                         continue
-                    if ai_id in reported_errors:
+                    if ai_id in reported_errors or ai_id in pending_exits:
                         continue
                     try:
                         _write(player_processes[ai_id].stdin, content.encode("utf-8"))
                         players_with_input.add(ai_id)
                     except (BrokenPipeError, OSError, ValueError) as exc:
-                        report_ai_error(ai_id, AiErrorType.RUN_ERROR, str(exc))
+                        report_or_defer_exit(ai_id, str(exc))
                 for ai_id in message.listen:
                     if ai_id in reported_errors:
                         pending_ai.pop(ai_id, None)

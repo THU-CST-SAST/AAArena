@@ -346,7 +346,11 @@ class MatchService:
                     and result.replay_path):
                 from aa_arena.saiblo.player_errors import transport_player_errors
                 failed_roles, detail = transport_player_errors(
-                    Path(result.replay_path).with_name("transport-events.jsonl"), roles=self.roles)
+                    Path(result.replay_path).with_name("transport-events.jsonl"), roles=self.roles,
+                    terminal_failure_states=(
+                        frozenset({"RE", "TLE", "OLE", "IA"})
+                        if self.game == "antwar2" else frozenset()
+                    ))
                 if failed_roles:
                     failed_roles = sorted(set(failed_roles) | set(result.payload.get("failed_roles", ())))
                     result = replace(result, status=EvaluationStatus.GAME_ERROR,

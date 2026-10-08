@@ -1208,8 +1208,7 @@
       "reference_assignments_completed": 16,
       "reference_infrastructure_exceptions": 0,
       "reference_assignments_reported_complete_with_transport_errors": 10,
-      "reference_in_game_transport_events": 14,
-      "hosted_assignments_completed": 14,
+      "hosted_assignments_completed": 16,
       "hosted_assignments_planned": 16,
       "reference_transport_clean_hosted_error_cases_observed": 0,
       "missing_dependency": "tianshou",
@@ -1242,7 +1241,44 @@
         "source_hashes_verified": true,
         "profile": "private candidate environment and bounded numeric thread configuration",
         "production_deployed": false
-      }
+      },
+      "reference_raw_transport_errors_before_game_over": 14,
+      "raw_transport_note": "An event preceding GameOver can follow a terminal player notification; classification requires referee state and lifecycle context."
+    },
+    "numeric_dependency_integrity": {
+      "original_files_preserved_per_host": 38056,
+      "added_identical_payload_files": 669,
+      "additional_differences": "Three empty explicit-install REQUESTED markers and their RECORD entries",
+      "production_profile_deployed": false,
+      "dependency_payloads_match": true
+    },
+    "terminal_exit_regression": {
+      "transport_tests_passed": 24,
+      "attribution_tests_passed": 29,
+      "hosted_original_strategy_cases_planned": 6,
+      "hosted_original_strategy_cases_complete": 6,
+      "idle_exit_deferred_until_reply_required": true,
+      "official_antwar2_forfeits_attributed": true,
+      "historical_receipts_modified": false,
+      "production_deployed": false,
+      "identical_full_replays_to_recorded_baseline": 6,
+      "identical_scores_and_terminal_states": 6,
+      "official_forfeits_preserved": {
+        "illegal_action_cases": 3,
+        "timeout_cases": 2,
+        "normal_cases": 1
+      },
+      "spurious_eof_no_longer_classified_as_player_failure": true
+    },
+    "clean_numeric_package_install": {
+      "source_commit": "a144354d51de5d9edc4a4cd41cf117fa6c9fb9de",
+      "controller_environment": "fresh",
+      "player_environment": "fresh",
+      "dependency_install": "passed",
+      "public_asset_verification": "passed",
+      "public_contract_tests": "passed",
+      "twelve_game_matrix": "in progress",
+      "model_calls": 0
     }
   },
   "release_acceptance": {

@@ -509,8 +509,8 @@
     },
     {
       "path": "src/aa_arena/benchmark/matches.py",
-      "size": 28417,
-      "sha256": "9bef6fd813a233ee66faac0342881bff6516b19b0639bf918ee9789af67ab8b7"
+      "size": 28615,
+      "sha256": "02f41f80d54d8bf308ea496b8b792c4a3e27ac0ab88ae0b801487739052a30e6"
     },
     {
       "path": "src/aa_arena/benchmark/netns_proxy.py",
@@ -734,13 +734,13 @@
     },
     {
       "path": "src/aa_arena/saiblo/judger.py",
-      "size": 23380,
-      "sha256": "df4f997c4e207c18f5f1c2b2f7d86bae133f1837a291dfe1c7cbb92455e1859b"
+      "size": 24355,
+      "sha256": "d33c861acd6ac76c1da4982e26fc6754c4b49bade6f3ec932ac1eb8a22628921"
     },
     {
       "path": "src/aa_arena/saiblo/player_errors.py",
-      "size": 1203,
-      "sha256": "d786e672de64aff5b869d3c7f8925cee80a1392b731d68fc3893c2aafaf43ecf"
+      "size": 2004,
+      "sha256": "11d9dab196653c75bb0335cc79d8e03a7460dc51e39aac8081403683f9a5f970"
     },
     {
       "path": "src/aa_arena/saiblo/protocol.py",
@@ -1208,6 +1208,16 @@
       "sha256": "5f7e44a6ac8df750185a31dd239e7e6bc6790615dd05fe9d72b310230de3ba9a"
     },
     {
+      "path": "tests/test_saiblo_terminal_attribution.py",
+      "size": 1636,
+      "sha256": "27bddb230366fba988b7e759a51ab97331e8203faeddf74657206696977442b1"
+    },
+    {
+      "path": "tests/test_saiblo_terminal_exit.py",
+      "size": 2630,
+      "sha256": "6ea7577e9d3669a24b6a4b82eaef14e93234809a8fab3758fb4c9e9eb8a4823e"
+    },
+    {
       "path": "tests/test_sandbox_error_classification.py",
       "size": 5097,
       "sha256": "99f86ba15e250c3a31dc9295b98f92110634ebbf432942097df49e2e2d3483e0"
@@ -1279,8 +1289,8 @@
     },
     {
       "path": "validation/README.md",
-      "size": 12572,
-      "sha256": "2caa8d9856bb66c98d364aad0d080f0fad0af876769766f057bef5da85fededf"
+      "size": 14098,
+      "sha256": "4601855723d8164bd47efb1596af88dddaebb9c27ce27108f4b1159925757356"
     },
     {
       "path": "validation/asset-audit.json",
@@ -1299,8 +1309,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 42748,
-      "sha256": "8eb59c3e4e50e17f63988b8c1636faddf575289faa87f06d7df6062244254d48"
+      "size": 44349,
+      "sha256": "bb36c809b037083df7561b226cf7aae6f67ed30c6401f539d9f138dce2af878c"
     }
   ]
 }
