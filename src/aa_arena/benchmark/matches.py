@@ -339,16 +339,19 @@ class MatchService:
             attempts += 1
             evaluator = _configured_evaluator(self.game, artifact, self.build_root, self.repository)
             result = evaluator.evaluate(players, list(self.roles), seed)
-            # Some official adapters omit failed_roles from adjudicated
-            # forfeits. Attribute them from transport evidence, never from who won.
-            if (result.status is EvaluationStatus.GAME_ERROR
-                    and not result.payload.get("failed_roles")
+            # A terminal score can include an official player forfeit even when
+            # the adapter labels it COMPLETE. Preserve that score and attribute
+            # in-game errors from transport evidence, never from who won.
+            if (result.status in (EvaluationStatus.COMPLETE, EvaluationStatus.GAME_ERROR)
                     and result.replay_path and set(self.roles) == {"P0", "P1"}):
                 from aa_arena.saiblo.player_errors import transport_player_errors
-                failed_roles, _ = transport_player_errors(
+                failed_roles, detail = transport_player_errors(
                     Path(result.replay_path).with_name("transport-events.jsonl"))
                 if failed_roles:
-                    result = replace(result, payload={**result.payload, "failed_roles": failed_roles})
+                    failed_roles = sorted(set(failed_roles) | set(result.payload.get("failed_roles", ())))
+                    result = replace(result, status=EvaluationStatus.GAME_ERROR,
+                        diagnostic=result.diagnostic or detail,
+                        payload={**result.payload, "failed_roles": failed_roles})
             official_draw = (result.winner is None
                 and result.payload.get('official_draw') is True
                 and all(result.scores.get(role) == 0.5 for role in self.roles))

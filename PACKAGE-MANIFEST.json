@@ -509,8 +509,8 @@
     },
     {
       "path": "src/aa_arena/benchmark/matches.py",
-      "size": 28155,
-      "sha256": "4e5173d0274f99cae4b5e917e115c176f277e3e5bf49e6b34ce9768b8384587e"
+      "size": 28435,
+      "sha256": "36503996d9f5a116fa2d8344c209a4cdf84960c727a0247dfb5dc1c9802b1024"
     },
     {
       "path": "src/aa_arena/benchmark/netns_proxy.py",
@@ -734,8 +734,8 @@
     },
     {
       "path": "src/aa_arena/saiblo/player_errors.py",
-      "size": 992,
-      "sha256": "985cefc801e8c677cf9bd2204a1ee76f9ec2f878fe7649a9547680aadc798a49"
+      "size": 1117,
+      "sha256": "385675dcefd77c553fb4acf418c932f783a101765b946eaf9a0e506b9562acd5"
     },
     {
       "path": "src/aa_arena/saiblo/protocol.py",
@@ -889,8 +889,8 @@
     },
     {
       "path": "tests/test_benchmark_matches.py",
-      "size": 2971,
-      "sha256": "de7fd3e56be4329ec6cefba01be2a034960f9dae83539aefb1d2d2cb4080a80f"
+      "size": 4821,
+      "sha256": "f891d9ce56e50892cd65997a85a0b5444af45237f29076213498e1176d72823a"
     },
     {
       "path": "tests/test_benchmark_recovery.py",
@@ -1259,8 +1259,8 @@
     },
     {
       "path": "validation/README.md",
-      "size": 3624,
-      "sha256": "2564e183288e291e21caa2bdf8dfa89074f46e10f80dcf3c01e3488c1afde0bf"
+      "size": 3970,
+      "sha256": "7c958b0dcf7e88ea7614d65254cd2eed58ba029746c22942eef414721813b02b"
     },
     {
       "path": "validation/asset-audit.json",
@@ -1279,8 +1279,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 16277,
-      "sha256": "5496a382001111bdca7726f052f24a1909beeffa86dda364df52addb3adb2aab"
+      "size": 17471,
+      "sha256": "b2ff6d1931d2b0126bff9325eac14f4c072473d57f8f2cd9972520fac7a49052"
     }
   ]
 }

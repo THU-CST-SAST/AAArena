@@ -409,7 +409,8 @@
       "dorado": "All 25 opponents with errors also have errors in the 17 historical comparison submissions. All 646 replay archives pass integrity checks.",
       "lota": "14 of 15 opponents with errors have errors in the 17 historical comparison submissions; the remaining opponent has a seat/seed-specific segmentation fault also observed in another hosted sweep.",
       "miracle": "67 opponent errors: 59 run errors, four output-limit errors and four timeouts. No missing dependencies in the full-pool sweep."
-    }
+    },
+    "counter_audit_status": "Transport-level error audit required; adapter-reported counts are not authoritative zero-error evidence."
   },
   "ai9_isolation_and_compiler": {
     "compiler": "GCC 14.2.0",
@@ -532,7 +533,7 @@
   "environment_parity": {
     "status": "in progress",
     "reference": "agentlab research runtime",
-    "blocking_issue": "Production HTTPS full-pool matrix and final per-game result audits are required.",
+    "blocking_issue": "Complete-pool transport audit identifies in-game error events absent from API counters. Counter regression tests pass; production deployment, HTTPS regression and remaining full-pool audits are required.",
     "reference_profile": {
       "compiler": "Debian GCC/G++ 14.2.0-19",
       "glibc": "2.41",
@@ -543,7 +544,7 @@
     },
     "targeted_tests_passed": 31,
     "production_deployment": "verified",
-    "cross_host_matrix": "28/28 diagnostic seats completed; Dorado judge rebuild and runtime error attribution pending",
+    "cross_host_matrix": "28/28 diagnostic seats completed; matched system and Python snapshots; policy/SDK error diagnosis remains per case",
     "python_snapshot": {
       "files": 36715,
       "file_manifest_sha256": "b863cced85ff10eb11f196ada16f32015b332753df38c09661c76569c2356be3",
@@ -586,6 +587,38 @@
       ],
       "strategy_sources_modified": false
     },
-    "https_small_matrix": "12/12 passed"
+    "https_small_matrix": "12/12 passed",
+    "error_reporting_regression": {
+      "tests_passed": 14,
+      "production_deployment": "pending idle guard",
+      "completed_api_games": [
+        "pacman",
+        "rollman",
+        "antwar"
+      ],
+      "transport_error_match_counts": {
+        "rollman": 3,
+        "antwar": 14
+      },
+      "api_summary_error_counts_verified": false,
+      "original_receipts_preserved": true,
+      "strategy_sources_modified": false
+    },
+    "normalized_candidate_builds": {
+      "diagnostic_only": true,
+      "production_flags_unchanged": true,
+      "byte_identical_games": [
+        "pacman",
+        "monecraft"
+      ]
+    },
+    "pacman_cross_host_error": {
+      "same_candidate_and_opponent_hashes": true,
+      "seed": 125896296,
+      "round": 567,
+      "error": "SEGFAULT",
+      "both_hosts_reproduce": true,
+      "root_cause": "not established; sanitizer repetition did not reproduce"
+    }
   }
 }

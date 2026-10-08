@@ -12,7 +12,11 @@ def transport_player_errors(events_path: Path | None) -> tuple[list[str], str | 
                     event = json.loads(line)
                 except ValueError:
                     continue
-                if not isinstance(event, dict) or event.get("kind") != "ai_error":
+                if not isinstance(event, dict):
+                    continue
+                if event.get("kind") == "game_over":
+                    break
+                if event.get("kind") != "ai_error":
                     continue
                 player = event.get("player")
                 if type(player) is int and player in (0, 1):
