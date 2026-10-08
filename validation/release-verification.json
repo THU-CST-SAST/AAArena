@@ -1085,13 +1085,51 @@
       "matched_failure_round": 352,
       "matched_failure_state": 1536,
       "failure": "Bundled SDK attempts JSON parsing of a player-notification line.",
-      "scope": "Paired diagnostic with explicit seed handling; does not certify all historical successful executions."
+      "scope": "Paired diagnostic with explicit seed handling; does not certify all historical successful executions.",
+      "sdk_simulation_audit": {
+        "recorded_action_count": 510,
+        "authoritative_simulation_mismatches": 0,
+        "bundled_sdk_mismatches": 260,
+        "first_divergence": {
+          "level": 2,
+          "round": 93
+        },
+        "unrecognized_referee_level_transition": {
+          "level": 2,
+          "round": 352
+        },
+        "source_files_modified": false,
+        "classification": "SDK rule mismatch; acceptance remains pending."
+      }
     },
     "lostspace_completion_reconciliation": {
       "candidate_escaped_round": 39,
       "candidate_shutdown_error_round": 69,
       "error": "Python buffered stdin lock during interpreter shutdown",
       "scope": "Candidate process shutdown after successful escape; raw transport error retained. Original opponents are unaffected by this case."
+    },
+    "historical_native_diagnostic": {
+      "games": [
+        "pacman",
+        "monecraft",
+        "lota",
+        "dorado"
+      ],
+      "original_opponents": 55,
+      "assignments_per_host": 110,
+      "reference_cases_completed": 110,
+      "reference_cases_without_official_engine_errors": 30,
+      "reference_cases_with_official_engine_errors": 80,
+      "reference_infrastructure_errors": 0,
+      "hosted_status": "running",
+      "recorded_seed_not_assumed_effective": true,
+      "pacman_actual_seed_reconstruction": {
+        "verified_by_entire_replay": true,
+        "matched_replay_rounds": 64,
+        "player_source_modified": false,
+        "formal_benchmark_result": false
+      },
+      "scope": "Declared completion and declared seed are not substitutes for raw engine and actual-input evidence."
     }
   },
   "release_acceptance": {
