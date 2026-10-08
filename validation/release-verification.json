@@ -1030,13 +1030,14 @@
           "antwar",
           "aquawar",
           "generals",
-          "lostspace"
+          "lostspace",
+          "snakego"
         ],
-        "matches_verified": 1248,
+        "matches_verified": 1530,
         "request_result_pool_hashes": "verified",
         "budgets_and_candidate_snapshots": "verified",
         "actual_match_artifacts": "verified",
-        "remaining_python_referee_games": 3,
+        "remaining_python_referee_games": 2,
         "scheduling_transition_recorded": true,
         "player_runtime_parity": "pending"
       }
@@ -1306,6 +1307,24 @@
       "remaining_diagnostic": "The other assignment contains a candidate shutdown error; one reference opponent transport closes with exit code zero. These are retained for lifecycle analysis.",
       "production_deployed": false,
       "local_packaged_regression": "passed"
+    },
+    "lostspace_inactive_player_listen": {
+      "backend_source_sha256": "ca9adb3db3697ef6124c819978c298dd39fa66fae8bca263a478c4afd415da38",
+      "reply_required_statuses": [
+        "Alive",
+        "WaitForEsacape"
+      ],
+      "notifications_preserved": true,
+      "original_player_sources_unchanged": true,
+      "reference_assignments_completed": 2,
+      "hosted_assignments_completed": 2,
+      "rounds_per_assignment": 100,
+      "in_game_transport_errors": 0,
+      "focused_tests_passed": 24,
+      "public_local_live_contract": "passed",
+      "post_escape_interpreter_shutdown_diagnostic": "Retained in raw process stderr; the referee does not require further action from an escaped player.",
+      "production_deployed": false,
+      "full_replay_equality_claimed_for_all_cases": false
     }
   },
   "release_acceptance": {

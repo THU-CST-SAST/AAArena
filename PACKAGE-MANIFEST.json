@@ -69,8 +69,8 @@
     },
     {
       "path": "assets/lostspace.tar.gz",
-      "size": 2311222,
-      "sha256": "0c4b4fd9e53dfb688b088a5f89bc0e2a60cab62c492e261e20a959a5e15faf86"
+      "size": 2311404,
+      "sha256": "5f363ed521bd3353333b791d8403376ee7f396ada96929b1ec59ea2ee664b9e7"
     },
     {
       "path": "assets/lota.tar.gz",
@@ -80,7 +80,7 @@
     {
       "path": "assets/manifest.json",
       "size": 3024,
-      "sha256": "efe658e465b3461f5a441c2075f45fa07258590a6cf7ccc5e8ae7da03746f355"
+      "sha256": "c1394d23a7bb8c74f3e025ef8e1454b118728b18634cc148e8b6cda369b59948"
     },
     {
       "path": "assets/miracle.tar.gz",
@@ -1068,6 +1068,11 @@
       "sha256": "880846d74902783cf13664e1fe1d341936490cf5b0f08865bc79292c7876b7c4"
     },
     {
+      "path": "tests/test_lostspace_listen_lifecycle.py",
+      "size": 2159,
+      "sha256": "d4a0a26b54c29206ae6c5e4950fcaa57cf2a07b34b46d591dac9f62ff4fd4eee"
+    },
+    {
       "path": "tests/test_lostspace_sdk.py",
       "size": 5391,
       "sha256": "843b0af88621c54126326ce7fbd431a3dc62456fd714f2cdacc69c6a0de72e07"
@@ -1294,8 +1299,8 @@
     },
     {
       "path": "validation/README.md",
-      "size": 15117,
-      "sha256": "e4e45db23d71fdb65c40badf3e3ea57fc6cbea96c16d8cf78732d0067d56f562"
+      "size": 16014,
+      "sha256": "52eae23224129e183230b1ee1542b4be30bba2b48047e3710a73823a176d4cfc"
     },
     {
       "path": "validation/asset-audit.json",
@@ -1314,8 +1319,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 45542,
-      "sha256": "797900233a23a5657477cfa7eb28074d23d492e12f234df04f351ae39ba17016"
+      "size": 46373,
+      "sha256": "249b87a755e6b8f357dec5acc63ef996249e04ca2246c7e3d58b9bbdfe7fe46b"
     }
   ]
 }
