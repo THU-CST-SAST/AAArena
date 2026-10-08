@@ -1202,6 +1202,36 @@
       "hosted_cases_with_engine_errors": 91,
       "reference_success_hosted_failure_cases": 2,
       "controlled_followups": "Pacman actual-seed reconstruction and LOTA fixed-clock fixture both produce identical successful complete replays across hosts; general historical runtime parity remains pending."
+    },
+    "antwar2_paper_candidate_diagnostic": {
+      "origin_verified": true,
+      "reference_assignments_completed": 16,
+      "reference_infrastructure_exceptions": 0,
+      "reference_assignments_reported_complete_with_transport_errors": 10,
+      "reference_in_game_transport_events": 14,
+      "hosted_assignments_completed": 14,
+      "hosted_assignments_planned": 16,
+      "reference_transport_clean_hosted_error_cases_observed": 0,
+      "missing_dependency": "tianshou",
+      "dependency_import_verified_in_private_environment": true,
+      "sandbox_numeric_library_thread_creation_failure": true,
+      "runtime_parity_passed": false,
+      "production_changed": false,
+      "dependency_and_numeric_thread_reference_regression": {
+        "assignments": 2,
+        "rounds": [
+          210,
+          206
+        ],
+        "transport_errors": 0,
+        "original_sources_verified": true,
+        "model_calls": 0
+      },
+      "numeric_thread_unit_tests": {
+        "passed": 45,
+        "skipped": 1
+      },
+      "hosted_dependency_thread_regression": "in progress"
     }
   },
   "release_acceptance": {

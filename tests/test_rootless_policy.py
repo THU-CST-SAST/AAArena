@@ -131,3 +131,16 @@ def test_real_rootless_scope_blocks_private_files_and_network_then_cleans(tmp_pa
     assert outcome.clean, outcome.detail
     result = subprocess.run(['systemctl','--user','is-active',proc.metadata.unit_name],capture_output=True,text=True)
     assert result.stdout.strip() != 'active'
+
+
+def test_numeric_player_imports_use_bounded_thread_pools(monkeypatch):
+    monkeypatch.setenv("OPENBLAS_NUM_THREADS", "64")
+    monkeypatch.setenv("PRIVATE_API_TOKEN", "not-for-player")
+    launcher = SystemdScopeLauncher(user_mode=False)
+    env = launcher._launch_environment({"OMP_NUM_THREADS": "128"})
+    for key in (
+        "OPENBLAS_NUM_THREADS", "OMP_NUM_THREADS", "MKL_NUM_THREADS",
+        "NUMEXPR_NUM_THREADS", "TF_NUM_INTRAOP_THREADS", "TF_NUM_INTEROP_THREADS",
+    ):
+        assert env[key] == "1"
+    assert "PRIVATE_API_TOKEN" not in env

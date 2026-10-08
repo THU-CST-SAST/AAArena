@@ -169,13 +169,13 @@
     },
     {
       "path": "environment/player-environment.yml",
-      "size": 590,
-      "sha256": "60400b06f15dc46d115d86649c0ad268f21f48ab7379f243a9b50549a8a2ee08"
+      "size": 702,
+      "sha256": "46358a237ac17457581b449b292f30ee24867867aaa64810c6f5243a588ec50f"
     },
     {
       "path": "environment/player-requirements.txt",
-      "size": 356,
-      "sha256": "57bdb059b4f96f00c1989039c1e73087edd243584836abfbe162c32dfb11d49e"
+      "size": 436,
+      "sha256": "ff45e20fa7c9f87c94e4a923b7b86f6a5451fc4ed069b847b453e9d8be88eed1"
     },
     {
       "path": "pyproject.toml",
@@ -774,8 +774,8 @@
     },
     {
       "path": "src/aa_arena/sandbox/systemd.py",
-      "size": 25506,
-      "sha256": "87187981713e620a9a3adc23b6e15354ad6b0b6d977b0f508042cec750949e18"
+      "size": 25892,
+      "sha256": "f53fa3dd651c84b21154321d7adecb1ea5f55aa7dfcf4fa3b7bf85f9263a4094"
     },
     {
       "path": "tests/conftest.py",
@@ -1184,8 +1184,8 @@
     },
     {
       "path": "tests/test_rootless_policy.py",
-      "size": 6101,
-      "sha256": "69e8c9182352e1a272554ed8a9d451b5f025c462b4a902a608012bacfe44e9b6"
+      "size": 6659,
+      "sha256": "784258cb9f4111e2f452606dd86b0a6f0bc7ca0eb4856d8b7ef0d3f4a4d11357"
     },
     {
       "path": "tests/test_rpc_notification_deadlines.py",
@@ -1279,8 +1279,8 @@
     },
     {
       "path": "validation/README.md",
-      "size": 11519,
-      "sha256": "1ff7a9d7eb177062b9d0f58c7870fb111ad45ec663400dd10008595ee51ed0ea"
+      "size": 12332,
+      "sha256": "20bc534e1b25a0e6a46bb892b8bb030f743b33790c66dec433e9f4a4b98922af"
     },
     {
       "path": "validation/asset-audit.json",
@@ -1299,8 +1299,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 41334,
-      "sha256": "d17edf36a988062b82ac24d955f71073326e4fc1da144b0a5dbdc0d94ee632e4"
+      "size": 42425,
+      "sha256": "e484b931848ae8cfb135f332ae4d30744d3e58c38b9368a9c54399bff44f256a"
     }
   ]
 }

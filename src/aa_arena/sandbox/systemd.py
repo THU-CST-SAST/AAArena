@@ -508,6 +508,13 @@ class SystemdScopeLauncher:
 
     def _launch_environment(self, extra: dict[str, str]) -> dict[str, str]:
         environment = safe_environment(extra)
+        # BLAS/ML imports otherwise create a host-sized thread pool in each
+        # player, which can exhaust its sandbox task allowance before gameplay.
+        for name in (
+            "OPENBLAS_NUM_THREADS", "OMP_NUM_THREADS", "MKL_NUM_THREADS",
+            "NUMEXPR_NUM_THREADS", "TF_NUM_INTRAOP_THREADS", "TF_NUM_INTEROP_THREADS",
+        ):
+            environment[name] = "1"
         if self._user_mode:
             for name in ("XDG_RUNTIME_DIR", "DBUS_SESSION_BUS_ADDRESS"):
                 if name in os.environ:
