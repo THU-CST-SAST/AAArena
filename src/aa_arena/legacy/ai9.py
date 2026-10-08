@@ -107,7 +107,7 @@ def _read_compiler_identity(command: str, runtime_fingerprint: str = 'host') -> 
 
 def _compiler_identity() -> bytes:
     from aa_arena.core.reference_runtime import fingerprint
-    return _read_compiler_identity(_compiler_command(), fingerprint())
+    return _read_compiler_identity(_compiler_command(), fingerprint()) + b"\nai9-build: force-make-v1"
 
 
 def _runtime_environment() -> dict[str, str]:
@@ -184,6 +184,10 @@ def _run_player_build(
 
 def _run_build(arguments: list[str], *, cwd: Path) -> None:
     from aa_arena.core.reference_runtime import reference_root
+    # Source packages can contain objects/executables newer than their sources.
+    # Rebuild every Make target, including recursive sub-makes, with this profile.
+    if arguments and Path(arguments[0]).name == 'make':
+        arguments = [arguments[0], '-B', *arguments[1:]]
     if reference_root() is not None:
         _run_player_build(arguments, cwd=cwd, readonly_paths=())
         return

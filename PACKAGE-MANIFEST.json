@@ -659,8 +659,8 @@
     },
     {
       "path": "src/aa_arena/legacy/ai9.py",
-      "size": 22588,
-      "sha256": "5eaca390cf2eedfaee607cef7ba42c863fcd1e7220ad9fa9ade14114ec59bf15"
+      "size": 22896,
+      "sha256": "02a9860115ddef8e27658abf889d58cc7e19b87aeca03ddff77ebac4d9c6bbaf"
     },
     {
       "path": "src/aa_arena/legacy/ai9_isolation.py",
@@ -919,8 +919,8 @@
     },
     {
       "path": "tests/test_candidate_build_isolation.py",
-      "size": 12223,
-      "sha256": "6393f04bc482d4c02d6e0bc8be2b0b42543254a4e4503234a719b26dae7177c1"
+      "size": 12957,
+      "sha256": "c6d02e4313867125d5207a7108983c08e6ccec1dbc85ac49278332a9fc62288a"
     },
     {
       "path": "tests/test_candidate_build_permissions.py",
@@ -1279,8 +1279,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 14680,
-      "sha256": "12bf40f9bb95661bcdac96d4784357297e6db7ed3ca34d83a039f9c87691be6c"
+      "size": 14901,
+      "sha256": "1aaed463e0814d890eed0ddd089466fc53a3aba0889fd5e809183af85bbab2a3"
     }
   ]
 }

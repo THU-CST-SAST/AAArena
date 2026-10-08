@@ -531,7 +531,7 @@
     },
     "targeted_tests_passed": 31,
     "production_deployment": "pending",
-    "cross_host_matrix": "in progress; game outcome differences require diagnosis",
+    "cross_host_matrix": "28/28 diagnostic seats completed; Dorado judge rebuild and runtime error attribution pending",
     "python_snapshot": {
       "files": 36715,
       "file_manifest_sha256": "b863cced85ff10eb11f196ada16f32015b332753df38c09661c76569c2356be3",
@@ -551,6 +551,11 @@
     "cloud_build_isolation_regression": {
       "passed": 23,
       "scope": "SDK parent path aliases, trusted C/C++ compiler selection, build secrecy, and supported game SDK compilation"
+    },
+    "backend_rebuild_regression": {
+      "future_dated_prebuilt_output": "passed",
+      "seed_and_reference_runtime_tests_passed": 6,
+      "paired_dorado_rebuild": "running"
     }
   }
 }

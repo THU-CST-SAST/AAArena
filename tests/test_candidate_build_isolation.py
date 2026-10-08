@@ -57,6 +57,22 @@ def test_declared_sdk_parent_alias_is_visible_without_host_siblings(tmp_path: Pa
     assert (source / 'main').is_file()
 
 
+def test_backend_rebuilds_future_dated_foreign_compiler_output(tmp_path, monkeypatch):
+    import os
+    from aa_arena.legacy.ai9 import _run_build
+    monkeypatch.setenv('AA_ARENA_CXX', 'g++-14')
+    (tmp_path / 'probe.cpp').write_text(
+        '#include <iostream>\nint main(){std::cout << __GNUC__;}\n')
+    (tmp_path / 'Makefile').write_text(
+        'all: probe\nprobe: probe.cpp\n\t$(CXX) probe.cpp -o probe\n')
+    (tmp_path / 'probe').write_bytes(b'foreign prebuilt artifact')
+    os.utime(tmp_path / 'probe', (2147483640, 2147483640))
+    _run_build(['make', 'all'], cwd=tmp_path)
+    result = run_isolated_build(('./probe',), cwd=tmp_path)
+    assert result.returncode == 0, result.stderr
+    assert result.stdout == '14'
+
+
 @pytest.mark.parametrize("recipe", ["make", "cmake"])
 def test_recipe_cannot_access_host_files_network_or_environment(
     tmp_path: Path,
