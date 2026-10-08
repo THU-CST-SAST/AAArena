@@ -72,7 +72,7 @@ python scripts/install_assets.py --verify-only
 
 Keep the editable source directory available: the evaluators resolve bundled assets relative to it. Asset installation is offline and verifies archive and per-file SHA-256 digests. Installing language runtimes and dependencies requires network access. AI9 players execute in separate filesystem and network namespaces, including library initialization. A trusted byte relay connects each isolated loader to the judge.
 
-AI9 policy and backend builds require GCC/G++ 14.2 (`g++-14`); compiler identity is part of the build-cache key. Use the same compiler across compared runs. For Python 3.14 Linux, add `-c environment/controller-constraints-py314-linux.txt` to the controller dependency installation to use the validated versions. A virtualenv-based player setup is also available through `scripts/install_player_env.py --python /path/to/python3.10`.
+Policy and backend builds use GCC/G++ 14.2 (`gcc-14` / `g++-14`); the configured compilers apply to isolated Make/CMake and plain compiler commands. Compiler identity is part of the build-cache key. Use the same compiler across compared runs. For Python 3.14 Linux, add `-c environment/controller-constraints-py314-linux.txt` to the controller dependency installation to use the validated versions. A virtualenv-based player setup is also available through `scripts/install_player_env.py --python /path/to/python3.10`.
 
 Configure the runtime in each shell:
 
@@ -84,6 +84,7 @@ export PYTHONDONTWRITEBYTECODE=1
 export OPENBLAS_NUM_THREADS=1
 export OMP_NUM_THREADS=1
 export AA_ARENA_CPU_POLICY=unlimited
+export AA_ARENA_CC=gcc-14
 export AA_ARENA_CXX=g++-14
 systemctl --user is-system-running
 ```
@@ -293,7 +294,7 @@ The learner receives **128 trajectory views and 16 remote full-pool large evalua
 
 ## Results and validation
 
-**Validation:** all 12 games pass the remote dense/binary small-match matrix and complete-pool large-evaluation acceptance checks. Both official native harnesses pass live automatic compaction, session resume, remote matches and final-snapshot checks. Acceptance covers service behavior; policy forfeits remain part of game results. See [validation scope and results](validation/README.md). The hosted full-pool off-policy replay catalog is not provisioned.
+**Validation:** remote interface and native harness acceptance evidence is available in [validation scope and results](validation/README.md). Environment parity with the research runtime is under validation, including AI9 seed propagation and cross-host game regressions. Full release acceptance is pending. The hosted full-pool off-policy replay catalog is not provisioned.
 
 Formal large evaluations fit the candidate against the complete frozen Elo anchors and report full-pool rank. Local practice uses only published opponents and is a separate result scope. Match randomness, candidate bugs and historical opponent forfeits can affect a score; an infrastructure failure is not a valid model-performance result.
 

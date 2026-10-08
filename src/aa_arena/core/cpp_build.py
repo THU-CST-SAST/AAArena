@@ -366,7 +366,8 @@ def _run_build_command(
 
 
 def _compiler_identity() -> dict[str, str]:
-    return dict(_compiler_identity_items())
+    from aa_arena.core.reference_runtime import fingerprint
+    return {**dict(_compiler_identity_items()), 'reference_runtime': fingerprint()}
 
 
 def _sdk_overlay_metadata(applied: AppliedOverlay) -> dict[str, object]:

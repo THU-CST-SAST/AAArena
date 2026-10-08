@@ -18,6 +18,21 @@ pytestmark = pytest.mark.skipif(
 )
 
 
+@pytest.mark.skipif(shutil.which('g++-14') is None, reason='GCC 14 required')
+def test_make_and_plain_compiler_use_selected_toolchain(tmp_path, monkeypatch):
+    monkeypatch.setenv('AA_ARENA_CXX', 'g++-14')
+    monkeypatch.setenv('AA_ARENA_CC', 'gcc-14')
+    (tmp_path / 'probe.cpp').write_text(
+        '#if __GNUC__ != 14\n#error wrong compiler\n#endif\nint main(){return 0;}\n')
+    (tmp_path / 'Makefile').write_text(
+        'all:\n\tg++ probe.cpp -o plain\n\t$(CXX) probe.cpp -o configured\n'
+        '\t$(CC) -dM -E -x c /dev/null > macros.txt\n')
+    result = run_isolated_build(('make',), cwd=tmp_path, timeout=60)
+    assert result.returncode == 0, result.stderr
+    assert (tmp_path / 'plain').is_file() and (tmp_path / 'configured').is_file()
+    assert '#define __GNUC__ 14' in (tmp_path / 'macros.txt').read_text()
+
+
 @pytest.mark.parametrize("recipe", ["make", "cmake"])
 def test_recipe_cannot_access_host_files_network_or_environment(
     tmp_path: Path,

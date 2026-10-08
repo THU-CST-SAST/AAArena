@@ -89,7 +89,14 @@ def _compiler_command() -> str:
 
 
 @lru_cache(maxsize=16)
-def _read_compiler_identity(command: str) -> bytes:
+def _read_compiler_identity(command: str, runtime_fingerprint: str = 'host') -> bytes:
+    if runtime_fingerprint != 'host':
+        import tempfile
+        with tempfile.TemporaryDirectory(prefix='aa-arena-toolchain-') as directory:
+            result = run_isolated_build((command, '--version'), cwd=Path(directory), timeout=30)
+            if result.returncode:
+                raise Ai9Error('Reference compiler unavailable: ' + result.stderr)
+            return result.stdout.encode() + runtime_fingerprint.encode()
     executable = shutil.which(command, path=os.defpath)
     if executable is None:
         raise Ai9Error(f"required AI9 compiler unavailable: {command}")
@@ -99,7 +106,8 @@ def _read_compiler_identity(command: str) -> bytes:
 
 
 def _compiler_identity() -> bytes:
-    return _read_compiler_identity(_compiler_command())
+    from aa_arena.core.reference_runtime import fingerprint
+    return _read_compiler_identity(_compiler_command(), fingerprint())
 
 
 def _runtime_environment() -> dict[str, str]:
@@ -175,6 +183,10 @@ def _run_player_build(
 
 
 def _run_build(arguments: list[str], *, cwd: Path) -> None:
+    from aa_arena.core.reference_runtime import reference_root
+    if reference_root() is not None:
+        _run_player_build(arguments, cwd=cwd, readonly_paths=())
+        return
     completed = subprocess.run(
         arguments, cwd=cwd, text=True, encoding="utf-8", errors="replace",
         capture_output=True, timeout=600.0, check=False, env=_runtime_environment(),
@@ -289,9 +301,10 @@ def run_ai9_match(
         stdout_path = match_dir / "backend.stdout"
         stderr_path = match_dir / "backend.stderr"
         with stdout_path.open("w+b") as sf, stderr_path.open("w+b") as ef:
+            from aa_arena.core.reference_runtime import backend_command
             proc = subprocess.Popen(
-                argv, cwd=match_dir, stdout=sf, stderr=ef, start_new_session=True,
-                env=_runtime_environment(),
+                backend_command(argv), cwd=match_dir, stdout=sf, stderr=ef, start_new_session=True,
+                env={**_runtime_environment(), "AA_ARENA_GAME_SEED": str(seed)},
             )
             deadline = time.monotonic() + timeout_s
             returncode: int | None = None

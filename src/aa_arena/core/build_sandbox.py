@@ -9,15 +9,17 @@ from __future__ import annotations
 
 import json
 import os
+import shlex
 import shutil
 import stat
 import subprocess
 import tempfile
 from pathlib import Path
 from typing import Sequence
+from .reference_runtime import system_path
 
 
-BUILD_SANDBOX_POLICY_VERSION = 2
+BUILD_SANDBOX_POLICY_VERSION = 3
 _SYSTEM_PATH = "/usr/bin:/bin"
 _ENV = {"PATH": _SYSTEM_PATH, "HOME": "/tmp/home", "TMPDIR": "/tmp", "LANG": "C"}
 
@@ -102,23 +104,26 @@ def run_isolated_build(
     # Deliberately exclude /usr/local (host applications), /etc (credentials),
     # and /usr/share generally. These are packaged system toolchain components.
     for name in ("/usr/bin", "/usr/lib", "/usr/lib64", "/usr/libexec", "/usr/include"):
-        if Path(name).exists():
-            arguments += ["--ro-bind", name, name]
+        source = system_path(name)
+        if source.exists():
+            arguments += ["--ro-bind", str(source), name]
     for pattern in ("cmake*", "gcc*", "pkgconfig", "aclocal*"):
-        for path in sorted(Path("/usr/share").glob(pattern)):
-            arguments += ["--ro-bind", str(path), str(path)]
+        for path in sorted(system_path("/usr/share").glob(pattern)):
+            arguments += ["--ro-bind", str(path), '/usr/share/' + path.name]
     for name in ("bin", "lib", "lib64"):
-        path = Path("/") / name
+        path = system_path('/' + name)
         if path.is_symlink():
-            arguments += ["--symlink", os.readlink(path), str(path)]
+            arguments += ["--symlink", os.readlink(path), '/' + name]
         elif path.exists():
-            arguments += ["--ro-bind", str(path), str(path)]
+            arguments += ["--ro-bind", str(path), '/' + name]
     # Debian compiler and awk aliases go through /etc/alternatives. Expose only
     # links whose final targets are system executables, not the alternatives tree.
     for name in ("cc", "c++", "gcc", "g++", "cpp", "awk", "nawk"):
-        alias = Path("/etc/alternatives") / name
-        if alias.is_symlink() and alias.resolve().is_relative_to("/usr/bin"):
-            arguments += ["--symlink", str(alias.resolve()), str(alias)]
+        alias = system_path('/etc/alternatives/' + name)
+        if alias.is_symlink():
+            target = os.readlink(alias)
+            if target.startswith('/usr/bin/'):
+                arguments += ["--symlink", target, '/etc/alternatives/' + name]
     arguments += ["--proc", "/proc", "--dev", "/dev", "--tmpfs", "/tmp", "--dir", "/tmp/home"]
     sdk_paths: list[Path] = []
     for raw_path in readonly_paths:
@@ -137,6 +142,27 @@ def run_isolated_build(
         # candidate command is run. Non-root callers need no mount mirrors.
         with tempfile.TemporaryDirectory(prefix="ahl-build-mount-", dir="/tmp") as temporary:
             gate = Path(temporary)
+            build_environment = dict(_ENV)
+            toolchain = gate / "toolchain"
+            for variable, aliases, make_variable in (
+                ("AA_ARENA_CC", ("gcc", "cc"), "CC"),
+                ("AA_ARENA_CXX", ("g++", "c++"), "CXX"),
+            ):
+                configured = os.environ.get(variable)
+                if not configured:
+                    continue
+                executable = shutil.which(configured, path=_SYSTEM_PATH)
+                if executable is None or not Path(executable).resolve().is_relative_to('/usr/bin'):
+                    raise BuildSandboxError(f"unavailable system compiler: {variable}")
+                toolchain.mkdir(exist_ok=True)
+                for alias in aliases:
+                    wrapper = toolchain / alias
+                    wrapper.write_text('#!/bin/sh\nexec ' + shlex.quote(executable) + ' "$@"\n')
+                    wrapper.chmod(0o555)
+                build_environment[make_variable] = '/toolchain/bin/' + aliases[0]
+            if toolchain.exists():
+                arguments += ["--ro-bind", str(toolchain), "/toolchain/bin"]
+                build_environment['PATH'] = '/toolchain/bin:' + _SYSTEM_PATH
             plan = []
             for index, (path, flag) in enumerate(
                 [(p, "--ro-bind") for p in sdk_paths] + [(root, "--bind")]
@@ -151,7 +177,7 @@ def run_isolated_build(
                     plan.append({"source": str(path), "target": str(mount_source)})
                 arguments += [flag, str(mount_source), str(path)]
             arguments += ["--chdir", str(work_cwd), "--remount-ro", "/", "--clearenv"]
-            for key, value in _ENV.items():
+            for key, value in build_environment.items():
                 arguments += ["--setenv", key, value]
             arguments += ["--", *command]
             if plan:

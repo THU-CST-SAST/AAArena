@@ -277,8 +277,8 @@
     "passed": 37
   },
   "complete_pool_matrix": {
-    "status": "verified",
-    "release_acceptance_complete": true,
+    "status": "environment_parity_pending",
+    "release_acceptance_complete": false,
     "verified_at": "2026-10-08",
     "games": [
       {
@@ -380,7 +380,7 @@
     ],
     "total_opponents": 1920,
     "total_matches": 3776,
-    "scope": "Service and harness acceptance with SDK test candidates; not paper-model performance. All frozen opponents retained. Policy forfeits are included in results.",
+    "scope": "Interface checks with SDK test candidates. Frozen-runtime cross-host and full-pool acceptance is pending; policy errors are preserved.",
     "transport": "Twelve-game dense/binary small matrix and native harness checks use production HTTPS. Corrected AI9 full-pool sweeps use an authenticated HTTP validation instance on the same host, with the isolated GCC 14.2 runtime; other full-pool sweeps use production HTTPS.",
     "checks": [
       "complete frozen opponent pool",
@@ -516,5 +516,26 @@
     "matplotlib": "3.8.4",
     "public_small_matrix_games": 12,
     "client_preflight_compiler": "P5 GCC 11.4 via explicit override; actual evaluations use hosted GCC 14.2.0"
+  },
+  "environment_parity": {
+    "status": "in progress",
+    "reference": "agentlab research runtime",
+    "blocking_issue": "Frozen system/Python runtime deployment and cross-host game regressions are required.",
+    "reference_profile": {
+      "compiler": "Debian GCC/G++ 14.2.0-19",
+      "glibc": "2.41",
+      "system_files": 28332,
+      "system_manifest_sha256": "7a39dc8235fa09b5f6197948d68bbe08041884bc3a2a1045778335118a5e7ab4",
+      "system_fingerprint": "ccef511da39a5b0d373e2ff93888cd1bb83744fb22250ed44be4983c573be5af",
+      "python": "Conda Python 3.10.14"
+    },
+    "targeted_tests_passed": 31,
+    "production_deployment": "pending",
+    "cross_host_matrix": "pending",
+    "python_snapshot": {
+      "files": 36715,
+      "file_manifest_sha256": "b863cced85ff10eb11f196ada16f32015b332753df38c09661c76569c2356be3",
+      "matched": true
+    }
   }
 }

@@ -12,6 +12,7 @@ import sys
 import tempfile
 import time
 import uuid
+from aa_arena.core.reference_runtime import reference_root, system_path
 from collections.abc import Callable
 from pathlib import Path
 
@@ -258,15 +259,16 @@ class SystemdScopeLauncher:
             str(workspace_source),
             "/workspace",
         ]
-        for source in (Path("/usr"), Path("/etc")):
+        for target in ("/usr", "/etc"):
+            source = system_path(target) if target == '/usr' or reference_root() else Path(target)
             if source.exists():
-                command += ["--ro-bind", str(source), str(source)]
+                command += ["--ro-bind", str(source), target]
         for target, source in (("/bin", "usr/bin"), ("/lib", "usr/lib"), ("/lib64", "usr/lib64")):
-            path = Path(target)
+            path = system_path(target)
             if path.is_symlink() or not path.exists():
                 command += ["--symlink", source, target]
             else:
-                command += ["--ro-bind", target, target]
+                command += ["--ro-bind", str(path), target]
 
         argv = list(spec.argv)
         executable = Path(argv[0])

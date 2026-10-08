@@ -60,9 +60,9 @@
     {
       "game": "dorado",
       "archive": "dorado.tar.gz",
-      "sha256": "314146cfd4b115add18c74a5033e1acdc50da9e743920a2713c30c607fda588f",
-      "compressed_bytes": 714485,
-      "uncompressed_bytes": 3645583,
+      "sha256": "6e8df215b203020cea90dd83451b5cd6c0da73569d8a0d826c57a3808fe7b707",
+      "compressed_bytes": 714333,
+      "uncompressed_bytes": 3645285,
       "files": 853
     },
     {

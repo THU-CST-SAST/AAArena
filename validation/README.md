@@ -8,11 +8,13 @@ Runtime validation uses x86-64 Linux, official native Codex 0.147.0, official Cl
 
 See `release-verification.json` for measured acceptance status. Historical opponent forfeits are distinct from service failures. The tests do not promise identical stochastic Elo values across repetitions or compatibility with every external model provider. The hosted off-policy replay catalog is not provisioned.
 
-## Complete-pool game matrix
+## Complete-pool interface matrix
 
-The acceptance matrix contains 3,776 matches against all 1,920 frozen human opponents. These are SDK candidate checks, not model benchmark scores. Error columns count official game-policy errors; the opponents remain in the evaluation pool.
+Environment parity acceptance is pending. The frozen-runtime cross-host matrix is a separate required release gate.
 
-| Game | Opponents | Matches | Candidate policy errors | Opponent policy errors | Acceptance |
+The interface matrix contains 3,776 matches against all 1,920 frozen human opponents. These are SDK candidate checks, not model benchmark scores. Error columns count official game-policy errors; the opponents remain in the evaluation pool.
+
+| Game | Opponents | Matches | Candidate policy errors | Opponent policy errors | Interface check |
 |---|---:|---:|---:|---:|---|
 | rollman | 64 | 64 | 0 | 0 | Pass |
 | pacman | 44 | 88 | 0 | 4 | Pass |

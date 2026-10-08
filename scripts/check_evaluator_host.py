@@ -7,6 +7,8 @@ from aa_arena.core.build_sandbox import run_isolated_build
 from aa_arena.legacy.ai9 import _compiler_command, _compiler_identity
 from aa_arena.sandbox.model import ProcessSpec
 from aa_arena.sandbox.systemd import SystemdScopeLauncher
+from aa_arena.core.reference_runtime import fingerprint, verify_reference_files
+print('Reference system runtime:', fingerprint(), 'verified files:', verify_reference_files())
 with tempfile.TemporaryDirectory(prefix='arena-host-check-') as directory:
     root=Path(directory); candidate=root/'candidate'; candidate.mkdir()
     private=root/'private'; private.write_text('private sentinel')
@@ -36,6 +38,10 @@ with tempfile.TemporaryDirectory(prefix="arena-compiler-check-") as directory:
     assert b"14.2.0" in identity, "Hosted reference evaluation requires GCC 14.2.0"
     result=run_isolated_build((_compiler_command(),"-std=c++14","probe.cpp","-o","probe"),cwd=root,timeout=30)
     assert result.returncode==0, result.stderr
+    for compiler in ('gcc', 'g++'):
+        checked = run_isolated_build((compiler, '--version'), cwd=root, timeout=30)
+        assert checked.returncode == 0 and '14.2.0' in checked.stdout.splitlines()[0], (
+            f'General player builds must use GCC 14.2.0: {compiler}')
     print("Isolated GCC 14.2.0 compiler verified")
 
 # Dedicated evaluator-user startup only: a terminated controller can leave

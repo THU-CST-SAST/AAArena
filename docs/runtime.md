@@ -32,4 +32,18 @@ The BLAS/OpenMP settings prevent numerical libraries from creating a separate la
 
 The CLI compatibility doctor and Claude acceptance mode are separate, paid model checks. A resource certificate alone does not verify provider streaming, native tool dispatch, session recovery or conversation compaction. Configure your own model profile and credentials outside the package before those checks.
 
-The verified x86-64 Linux toolchain includes glibc 2.35, GCC/G++ 11.4.0, Ruby 3.0.2, Bubblewrap 0.11.0 and systemd 249. Both official CLIs and all player matches run without root privileges on this configured host.
+## Frozen reference system runtime
+
+For cross-host comparisons, operators can mount the same immutable system snapshot in compiler and player sandboxes. The reference profile uses Debian GCC/G++ 14.2.0-19 and glibc 2.41. A compiler version number alone does not identify its headers, standard library or distribution patches.
+
+```sh
+python scripts/export_reference_runtime.py --output /srv/arena/runtime/system-v1
+export AA_ARENA_REFERENCE_RUNTIME=/srv/arena/runtime/system-v1
+export AA_ARENA_CC=gcc-14
+export AA_ARENA_CXX=g++-14
+python scripts/check_evaluator_host.py
+```
+
+Mirror that snapshot to each evaluator host, together with a validated relocatable player-Python environment. `aa-arena-runtime.json` fingerprints the file manifest; startup verifies every file hash and symlink. Host credentials are excluded from the exported `/etc` allowlist. Compilers and players see the snapshot's system libraries, and AI9 judges use its ELF loader and libraries. Build-cache identities include the runtime fingerprint. Without `AA_ARENA_REFERENCE_RUNTIME`, local practice uses the host's toolchain and is not a frozen-runtime parity claim.
+
+AI9 backends receive the registered per-match seed through `AA_ARENA_GAME_SEED`. A policy that uses its own clock, randomness or undefined behavior can still vary; a successful build or a terminal winner alone does not prove absence of a policy error. Cross-host validation must compare actual game artifacts and error records.
