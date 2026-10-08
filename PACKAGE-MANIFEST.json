@@ -1279,8 +1279,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 15891,
-      "sha256": "84cce41c9d4f6448b18a8d7df5634062bb1512cf96d6891a1fdae52811e5bc67"
+      "size": 16277,
+      "sha256": "5496a382001111bdca7726f052f24a1909beeffa86dda364df52addb3adb2aab"
     }
   ]
 }

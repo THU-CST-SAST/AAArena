@@ -29,7 +29,7 @@
         "game": "antwar",
         "passed": true,
         "pool_count": 114,
-        "seconds": 131.81
+        "seconds": 100.04
       },
       {
         "checks": [
@@ -47,7 +47,7 @@
         "game": "antwar2",
         "passed": true,
         "pool_count": 191,
-        "seconds": 255.78
+        "seconds": 169.33
       },
       {
         "checks": [
@@ -65,7 +65,7 @@
         "game": "aquawar",
         "passed": true,
         "pool_count": 170,
-        "seconds": 302.18
+        "seconds": 236.77
       },
       {
         "checks": [
@@ -83,7 +83,7 @@
         "game": "dorado",
         "passed": true,
         "pool_count": 323,
-        "seconds": 336.83
+        "seconds": 371.04
       },
       {
         "checks": [
@@ -101,7 +101,7 @@
         "game": "generals",
         "passed": true,
         "pool_count": 197,
-        "seconds": 95.69
+        "seconds": 109.96
       },
       {
         "checks": [
@@ -119,7 +119,7 @@
         "game": "lostspace",
         "passed": true,
         "pool_count": 111,
-        "seconds": 33.36
+        "seconds": 18.77
       },
       {
         "checks": [
@@ -137,7 +137,7 @@
         "game": "lota",
         "passed": true,
         "pool_count": 200,
-        "seconds": 300.44
+        "seconds": 273.68
       },
       {
         "checks": [
@@ -155,7 +155,7 @@
         "game": "miracle",
         "passed": true,
         "pool_count": 253,
-        "seconds": 57.12
+        "seconds": 29.71
       },
       {
         "checks": [
@@ -173,7 +173,7 @@
         "game": "monecraft",
         "passed": true,
         "pool_count": 112,
-        "seconds": 329.98
+        "seconds": 306.84
       },
       {
         "checks": [
@@ -191,7 +191,7 @@
         "game": "pacman",
         "passed": true,
         "pool_count": 44,
-        "seconds": 111.81
+        "seconds": 78.54
       },
       {
         "checks": [
@@ -209,7 +209,7 @@
         "game": "rollman",
         "passed": true,
         "pool_count": 64,
-        "seconds": 92.39
+        "seconds": 74.17
       },
       {
         "checks": [
@@ -227,12 +227,12 @@
         "game": "snakego",
         "passed": true,
         "pool_count": 141,
-        "seconds": 76.4
+        "seconds": 29.62
       }
     ],
     "model_calls": 0,
     "passed": true,
-    "profile_scope": "Interface evidence; reference-profile HTTPS regression is tracked in hosted_api."
+    "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38"
   },
   "native_harness_acceptance": {
     "codex": {
@@ -524,15 +524,15 @@
     "player_python": "3.10.14",
     "ai9_compiler": "Debian GCC 14.2.0-19",
     "matplotlib": "3.8.4",
-    "public_small_matrix_games": 10,
+    "public_small_matrix_games": 12,
     "client_preflight_compiler": "P5 GCC 11.4 via explicit override; actual evaluations use hosted GCC 14.2.0",
     "glibc": "2.41",
-    "public_small_matrix_status": "running"
+    "public_small_matrix_status": "passed"
   },
   "environment_parity": {
     "status": "in progress",
     "reference": "agentlab research runtime",
-    "blocking_issue": "Production HTTPS small/full-pool matrices and remaining error attribution are required.",
+    "blocking_issue": "Production HTTPS full-pool matrix and final per-game result audits are required.",
     "reference_profile": {
       "compiler": "Debian GCC/G++ 14.2.0-19",
       "glibc": "2.41",
@@ -571,6 +571,21 @@
     },
     "production_source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
     "public_https_health": "passed",
-    "full_pool_regression": "running"
+    "full_pool_regression": "running",
+    "memory_safety_diagnostics": {
+      "host": "reference host",
+      "used_for_scoring": false,
+      "policies_with_independent_ubsan_findings": {
+        "dorado": 2,
+        "lota": 2
+      },
+      "findings": [
+        "null or misaligned object access",
+        "invalid boolean value",
+        "out-of-bounds array access"
+      ],
+      "strategy_sources_modified": false
+    },
+    "https_small_matrix": "12/12 passed"
   }
 }
