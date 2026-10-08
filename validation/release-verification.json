@@ -1325,6 +1325,19 @@
       "post_escape_interpreter_shutdown_diagnostic": "Retained in raw process stderr; the referee does not require further action from an escaped player.",
       "production_deployed": false,
       "full_replay_equality_claimed_for_all_cases": false
+    },
+    "antwar2_optional_weights": {
+      "original_source_sha256": "8f93ba357cc7a0e97f78f48f010a2c1010019a6c0626bd318bb71db14beb64af",
+      "original_behavior": "catch unavailable weights and use the policy-provided heuristic",
+      "hosted_assignments": 6,
+      "transport_errors": 0,
+      "official_player_terminal_states": [
+        "OK",
+        "OK"
+      ],
+      "raw_diagnostics_preserved": true,
+      "original_policy_modified": false,
+      "historical_trained_checkpoint_equivalence": "not established"
     }
   },
   "release_acceptance": {
