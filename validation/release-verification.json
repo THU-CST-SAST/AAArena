@@ -1283,9 +1283,13 @@
     "terminal_local_regression": {
       "source_commit": "1b04e4290708808e8db215e8dedfd0d91a5431ef",
       "packaged_manifest_files_verified": 259,
-      "status": "in progress",
+      "status": "passed",
       "environment": "fresh controller and player installation",
-      "parallel_games": 4
+      "parallel_games": 4,
+      "games_verified": 12,
+      "live_matches": 52,
+      "model_calls": 0,
+      "api_calls": 0
     }
   },
   "release_acceptance": {
