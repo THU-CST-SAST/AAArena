@@ -1277,8 +1277,15 @@
       "dependency_install": "passed",
       "public_asset_verification": "passed",
       "public_contract_tests": "passed",
-      "twelve_game_matrix": "in progress",
+      "twelve_game_matrix": "12/12 passed",
       "model_calls": 0
+    },
+    "terminal_local_regression": {
+      "source_commit": "1b04e4290708808e8db215e8dedfd0d91a5431ef",
+      "packaged_manifest_files_verified": 259,
+      "status": "in progress",
+      "environment": "fresh controller and player installation",
+      "parallel_games": 4
     }
   },
   "release_acceptance": {
