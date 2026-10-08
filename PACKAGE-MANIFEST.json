@@ -144,8 +144,8 @@
     },
     {
       "path": "docs/offline.md",
-      "size": 1550,
-      "sha256": "0f7caf92463156a404d38b05aa2b73b658d65871779c308c570411d04a4c7f25"
+      "size": 1531,
+      "sha256": "c6b73ba160cd0e2209a1fb8d01b69487b6fca69a211ff371d3fddde4d7f25296"
     },
     {
       "path": "docs/remote-evaluation.md",
@@ -154,8 +154,8 @@
     },
     {
       "path": "docs/runtime.md",
-      "size": 4943,
-      "sha256": "779ca15a5585d02120c7f0b46e9f990174e2b168f08cce1d31d71cf1ea251d6e"
+      "size": 5772,
+      "sha256": "ba6043c971390ede819f60cef0758aa6a394837c2502785b0b7ef56a2ce2a626"
     },
     {
       "path": "environment/controller-constraints-py314-linux.txt",
@@ -439,8 +439,8 @@
     },
     {
       "path": "scripts/run_experiments.py",
-      "size": 13448,
-      "sha256": "fb9ab97384167a81ae6f0d1c549b3158bd04dcfce4807e1903be9d706099ef94"
+      "size": 13608,
+      "sha256": "65a3c530bfea213411516e9b0b2035cf3fbff0637eee78773946dca5256723cb"
     },
     {
       "path": "scripts/validate_games.py",
@@ -601,6 +601,11 @@
       "path": "src/aa_arena/core/evaluator.py",
       "size": 1231,
       "sha256": "e813229913d19dd420e6ee36c1abec1b28927777be22e9029ddee9ddda0ccd60"
+    },
+    {
+      "path": "src/aa_arena/core/host_capacity.py",
+      "size": 1180,
+      "sha256": "d3d7200fea1907a57efd80ac603ea73adcdf0f70ec987efe650254be4ed12c9e"
     },
     {
       "path": "src/aa_arena/core/native_sdk.py",
@@ -1043,6 +1048,11 @@
       "sha256": "76956ea9af38161167efcb3b5858751770b73599f84ceb24ba512a863d4ce5b5"
     },
     {
+      "path": "tests/test_host_capacity.py",
+      "size": 1100,
+      "sha256": "0cd082ddf70a4c047a0849643f159d43bee4aa29a8f3bd30ff099ef109e23478"
+    },
+    {
       "path": "tests/test_legacy_ai9_build_isolation.py",
       "size": 6354,
       "sha256": "fa11c9df9209c9b91b961282c399da99aea7263f2475f22d5c3e426d42ca236f"
@@ -1269,8 +1279,8 @@
     },
     {
       "path": "validation/README.md",
-      "size": 5508,
-      "sha256": "335c9198af49ea08d9db450803f2c40658b044c146e139b604faa3857da4d063"
+      "size": 6291,
+      "sha256": "90295946916a602395457a0eeecb4946e06bcb64268eb99f03bed7042707a6f2"
     },
     {
       "path": "validation/asset-audit.json",
@@ -1289,8 +1299,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 32356,
-      "sha256": "cadc5e2ca257ba512b7329f6c6f326f9a50ea27f86a45580bdef1c4e339b0f81"
+      "size": 33423,
+      "sha256": "8f1088f1c907580d648d9f84b1ae24a2b372a5dc1c393947657b1486f786bf84"
     }
   ]
 }

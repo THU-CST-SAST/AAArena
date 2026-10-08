@@ -14,6 +14,7 @@ import sqlite3
 import subprocess
 import sys
 import time
+from aa_arena.core.host_capacity import default_match_capacity
 
 ROOT=Path(__file__).resolve().parents[1]
 PAPER=json.loads((ROOT/'configs/paper.json').read_text())
@@ -148,7 +149,7 @@ def main():
     p=argparse.ArgumentParser(description=__doc__);sub=p.add_subparsers(dest='action',required=True)
     q=sub.add_parser('plan');q.add_argument('--suite',choices=SUITES,required=True);q.add_argument('--profiles',nargs='+',required=True);q.add_argument('--games',nargs='+');q.add_argument('--seeds',nargs='+',type=int,default=[20260922]);q.add_argument('--harness',choices=['codex','claude'],default='codex');q.add_argument('--run-root',type=Path,default=ROOT/'runs');q.add_argument('--output',type=Path,required=True)
     q.add_argument('--reasoning-effort',choices=('max','high'),default='max',help='Reasoning effort requested by this experiment; default max')
-    q=sub.add_parser('run');q.add_argument('--plan',type=Path,required=True);q.add_argument('--jobs',type=int,default=2);q.add_argument('--workers',type=int,default=8);q.add_argument('--seat-capacity',type=int,default=max(1,min(32,os.cpu_count() or 1)));q.add_argument('--admission-root',type=Path,default=ROOT/'runs/admission');q.add_argument('--catalog-root',type=Path);q.add_argument('--max-budget-usd',type=float);q.add_argument('--codex-binary',default='codex');q.add_argument('--claude-binary',default='claude')
+    q=sub.add_parser('run');q.add_argument('--plan',type=Path,required=True);q.add_argument('--jobs',type=int,default=2);q.add_argument('--workers',type=int,default=8);q.add_argument('--seat-capacity',type=int,default=default_match_capacity(),help='Maximum simultaneous matches (each has multiple processes); default reserves physical-core headroom');q.add_argument('--admission-root',type=Path,default=ROOT/'runs/admission');q.add_argument('--catalog-root',type=Path);q.add_argument('--max-budget-usd',type=float);q.add_argument('--codex-binary',default='codex');q.add_argument('--claude-binary',default='claude')
     q=sub.add_parser('continuation-plan');q.add_argument('--run-dir',type=Path,required=True);q.add_argument('--harness',choices=['codex','claude'],default='codex');q.add_argument('--output',type=Path,required=True)
     a=p.parse_args()
     if a.action=='plan':

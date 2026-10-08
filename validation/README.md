@@ -20,7 +20,7 @@ API completion, an Elo value, matching runtime hashes or accurate error counters
 
 ## Complete-pool execution coverage
 
-Release acceptance is pending historical player runtime parity and the final local live-game regression. The HTTPS checks verify all frozen opponents, actual match artifacts, immutable submissions, candidate hashes, receipts and budgets. These are SDK candidate checks, not model benchmark scores. A counted game error requires case-specific diagnosis; it does not certify a player defect.
+Release acceptance is pending historical player runtime parity. A clean installation passes all twelve local live-game checks, and 96 source, script and asset hashes match the tested runtime. The HTTPS checks verify all frozen opponents, actual match artifacts, immutable submissions, candidate hashes, receipts and budgets. These are SDK candidate checks, not model benchmark scores. A counted game error requires case-specific diagnosis; it does not certify a player defect.
 
 The table records the Python-referee execution profile at `13bb7f4`, using the pinned Python 3.14.6 backend and Debian reference runtime. The native-referee profile uses GCC 14.2 and the reference runtime; its full-pool records are identified separately. No Elo scores are combined across profiles. The 12-game detailed/binary small matrix uses the deployed HTTPS service. Error counts below are per-match and may overlap between candidate and opponent.
 
@@ -45,4 +45,8 @@ The hosted full-pool off-policy replay catalog is not provisioned.
 
 ## Saiblo deadline validation
 
-The deployed runtime `35b6529` resolves round deadlines using frame receive timestamps. Twenty-two focused tests cover delayed dispatch, state transitions, genuine late replies and SnakeGo multi-action states. Seventeen matched cases on each reference host verify unchanged source hashes without infrastructure exceptions; historical player runtime parity remains pending. The twelve-game HTTPS small matrix, eight-game Python-referee full-pool matrix and final local game matrix are in progress for this runtime. Seven-game paired diagnostics use frozen paper candidates and their recorded experiment seeds. Round limits and human strategy sources are unchanged.
+The deployed runtime `35b6529` resolves round deadlines using frame receive timestamps. Twenty-two focused tests cover delayed dispatch, state transitions, genuine late replies and SnakeGo multi-action states. Seventeen matched cases on each reference host verify unchanged source hashes without infrastructure exceptions; historical player runtime parity remains pending. The twelve-game HTTPS detailed/binary small matrix and twelve-game local matrix pass for this runtime. The eight-game Python-referee full-pool matrix is in progress. Seven-game paired diagnostics use frozen paper candidates and their recorded experiment seeds. Round limits and human strategy sources are unchanged.
+
+## Concurrency validation
+
+The hosted evaluator has 8 physical cores and 16 logical CPUs. Its shared admission capacity is 6 complete matches, with priority for 2 small matches. Active matches drain before scheduling configuration changes. Two matched AntWar cases complete without transport errors at this capacity; both have timeout evidence under the 16-match configuration. Six focused tests verify physical-core capacity selection and shared admission. Broader historical-policy comparisons remain required. The in-progress complete-pool matrix records a scheduling transition and serves as diagnostic execution evidence, not a uniform-concurrency model benchmark.

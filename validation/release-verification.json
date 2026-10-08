@@ -1002,13 +1002,44 @@
       "round_limits_changed": false,
       "runtime_commit": "35b6529f6433eac36d77cd9a7c8b9118c9818931",
       "authenticated_https_health": "passed",
-      "https_regression": "running",
+      "https_regression": "full_pool_running",
       "historical_champion_diagnostic": {
         "games": 7,
         "target_opponents": 161,
         "status": "running",
-        "player_sources_modified": false
+        "player_sources_modified": false,
+        "reference_cases_completed": 318
+      },
+      "https_small_matrix": {
+        "games": 12,
+        "feedback_modes": [
+          "detailed",
+          "binary"
+        ],
+        "passed": true
+      },
+      "local_game_matrix": {
+        "games": 12,
+        "passed": true
       }
+    },
+    "match_concurrency_validation": {
+      "physical_cores": 8,
+      "logical_cpus": 16,
+      "capacity_unit": "complete_match",
+      "hosted_match_capacity": 6,
+      "small_match_reserve": 2,
+      "active_matches_drained_before_configuration_change": true,
+      "paired_antwar_cases": {
+        "cases": 2,
+        "reference_transport_errors": 0,
+        "hosted_cap16_cases_with_timeouts": 2,
+        "hosted_cap6_cases_with_transport_errors": 0
+      },
+      "time_limits_changed": false,
+      "strategy_sources_modified": false,
+      "broader_discrepancy_regression": "running",
+      "full_pool_matrix_scheduling_transition": "Recorded as diagnostic execution evidence; not a uniform-concurrency model benchmark."
     }
   },
   "release_acceptance": {
@@ -1052,15 +1083,18 @@
         "runtime_profiles_reported_separately": true
       },
       "local_release_package": {
-        "status": "baseline_local_execution_verified_runtime_patch_regression_pending",
+        "status": "verified",
         "requirement": "A clean installation of the released repository runs all twelve games with published opponents locally, supports local agent iteration and calls the hosted evaluator.",
         "retained_evidence": "Twelve-game public-subset live certificates and both official native harness acceptance records.",
-        "remaining": "Verify the deadline patch with real matches and the final source manifest.",
+        "remaining": null,
         "fresh_controller_environment": true,
         "fresh_player_environment": true,
         "assets_verified": true,
         "public_subset_contract_tests_passed": 27,
-        "local_live_games_verified": 12
+        "local_live_games_verified": 12,
+        "source_script_asset_hashes_verified": 96,
+        "runtime_commit": "35b6529f6433eac36d77cd9a7c8b9118c9818931",
+        "scheduler_unit_tests_passed": 6
       }
     },
     "all_criteria_required": true,

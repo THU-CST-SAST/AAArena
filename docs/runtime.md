@@ -14,7 +14,7 @@ unset PYTHONPATH
 systemctl --user is-system-running
 ```
 
-The default CPU policy, `one_cpu`, requires a delegated CPU controller and verifies a one-CPU aggregate quota per player scope. When that controller is unavailable, an explicitly declared `AA_ARENA_CPU_POLICY=unlimited` uses no per-scope CPU quota. Game decision CPU limits remain enforced by the evaluators. These policies are different experimental settings; use one policy consistently across compared models, record it, and do not present an unlimited-policy run as quota-controlled. Shared admission limits bound simultaneous match seats independently of this policy.
+The default CPU policy, `one_cpu`, requires a delegated CPU controller and verifies a one-CPU aggregate quota per player scope. When that controller is unavailable, an explicitly declared `AA_ARENA_CPU_POLICY=unlimited` uses no per-scope CPU quota. Game decision CPU limits remain enforced by the evaluators. These policies are different experimental settings; use one policy consistently across compared models, record it, and do not present an unlimited-policy run as quota-controlled. Shared admission limits bound simultaneous matches independently of this policy. A seat lease represents an entire match, including its players and referee, rather than a single player process.
 
 The rootless validation host uses `AA_ARENA_SYSTEMD_MODE=user` and `AA_ARENA_CPU_POLICY=unlimited`. To validate an equivalent host:
 
@@ -49,3 +49,7 @@ Mirror that snapshot to each evaluator host, together with a validated relocatab
 AI9 backends receive the registered per-match seed through `AA_ARENA_GAME_SEED`. A policy that uses its own clock, randomness or undefined behavior can still vary; a successful build or a terminal winner alone does not prove absence of a policy error. Cross-host validation must compare actual game artifacts and error records.
 
 For a hosted frozen environment, configure `AA_ARENA_BACKEND_PYTHON` to the absolute `bin/python` path of the trusted game-backend Python bundle. This is separate from `AA_ARENA_PLAYER_ENV`: the API service interpreter does not define game logic dependencies. Python Saiblo backends use this interpreter and, when configured, the reference system's ELF loader and libraries. Native judges retain their configured commands. The evaluator startup check verifies the backend bundle's `runtime-files.json` file hashes and imports NumPy, Matplotlib and ANTLR. An invalid configured interpreter fails startup; no interpreter fallback is used. Without this setting, local practice uses the game adapter's Python command.
+
+## Match concurrency
+
+`--seat-capacity` bounds complete matches. The local experiment launcher counts physical cores within the process CPU affinity and reserves at least a quarter for referees, compilation and controller work. For example, 16 logical CPUs on 8 physical cores default to 6 simultaneous matches. `--jobs` and `--workers` may queue more work without raising this shared limit. An explicit capacity override requires representative timeout-sensitive game checks under load; successful HTTP responses alone do not establish safe capacity. Game decision limits remain fixed. Hosted operators use the same meaning for the admission pool capacity and record scheduling configuration with acceptance evidence.
