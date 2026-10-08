@@ -908,5 +908,43 @@
       "passed": true,
       "model_calls": 0
     }
+  },
+  "release_acceptance": {
+    "passed": false,
+    "criteria": {
+      "historical_player_runtime_parity": {
+        "status": "pending",
+        "requirement": "Every unchanged player with demonstrated successful execution in the agentlab historical baseline must also execute successfully on the hosted evaluator.",
+        "evidence_required": [
+          "Historical success tied to player source hash, entrypoint, SDK and runtime configuration",
+          "Hosted execution with the same player source and supported protocol",
+          "Paired candidate, seat and seed diagnostics for discrepant failures"
+        ],
+        "insufficient_evidence": [
+          "API completion or an Elo result alone",
+          "Matching library hashes alone",
+          "Correct failure counters alone",
+          "Failure on both hosts without reconciliation against historical successful execution"
+        ]
+      },
+      "remote_policy_submission": {
+        "status": "partial",
+        "requirement": "A local client submits frozen policy code for real hosted small and full-pool large evaluations; feedback, budgets, hashes and receipts are verified.",
+        "small_games_verified": 12,
+        "pinned_backend_full_pool_audits_verified": [
+          "rollman",
+          "antwar",
+          "generals"
+        ]
+      },
+      "local_release_package": {
+        "status": "pending_final_revision_regression",
+        "requirement": "A clean installation of the released repository runs all twelve games with published opponents locally, supports local agent iteration and calls the hosted evaluator.",
+        "retained_evidence": "Twelve-game public-subset live certificates and both official native harness acceptance records.",
+        "remaining": "Verify the final release revision with the documented installation and local runtime configuration."
+      }
+    },
+    "all_criteria_required": true,
+    "public_visibility_requires_user_decision": true
   }
 }

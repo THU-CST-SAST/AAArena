@@ -8,6 +8,16 @@ Runtime validation uses x86-64 Linux, official native Codex 0.147.0, official Cl
 
 See `release-verification.json` for measured acceptance status. Historical opponent forfeits are distinct from service failures. The tests do not promise identical stochastic Elo values across repetitions or compatibility with every external model provider. The hosted off-policy replay catalog is not provisioned.
 
+## Release acceptance requirements
+
+All three conditions must pass:
+
+1. Every unchanged player with successful execution in the agentlab historical baseline executes successfully on the hosted evaluator. Discrepancies require comparison of original source hashes, entrypoints, SDK protocols, dependencies and resource limits. Paired diagnostics use the same candidate, seat and seed. A failure on both hosts does not supersede a recorded historical success without reconciling the configuration and execution path.
+2. A local client submits policy code for real hosted small and full-pool large evaluations. Feedback, budgets, strategy hashes, receipts and actual match artifacts must agree.
+3. A clean installation of the release runs all twelve games with the published opponent subset locally, supports local agent iteration and invokes hosted evaluations using the documented setup.
+
+API completion, an Elo value, matching runtime hashes or accurate error counters alone do not establish player runtime parity. No opponent may be deleted, replaced or edited to satisfy acceptance. The hosted full-pool off-policy catalog is not provisioned. Repository visibility requires the owner's decision.
+
 ## Complete-pool interface matrix
 
 Release acceptance is pending. The frozen-runtime HTTPS matrix and transport-level error audit are required release gates. Rollman, AntWar and LostSpace raw logs contain in-game error events absent from API counters. Error-reporting regression tests cover two-player and four-player assignments; the pinned-backend runtime passes all 12 detailed/binary small-match checks. Its eight Saiblo complete-pool HTTPS sweeps are in progress. Original results and receipts remain immutable.
