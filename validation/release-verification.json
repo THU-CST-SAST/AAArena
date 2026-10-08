@@ -1139,7 +1139,7 @@
       "reference_cases_without_official_engine_errors": 6,
       "reference_cases_with_official_engine_errors": 78,
       "reference_infrastructure_errors": 0,
-      "hosted_status": "running",
+      "hosted_status": "110 diagnostic assignments completed",
       "recorded_seed_not_assumed_effective": true,
       "pacman_actual_seed_reconstruction": {
         "verified_by_entire_replay": true,
@@ -1195,7 +1195,13 @@
         "main_candidate_identity_verified": true,
         "underlying_player_cause_certified": false,
         "scope": "The recorded origin server is authoritative for historical provenance. Same-path directories on another host and zero-round diagnostics do not establish the paper experiment configuration. Historical error counts and normalized feedback alone do not certify root causes or all successful executions."
-      }
+      },
+      "hosted_cases_completed": 110,
+      "hosted_infrastructure_exceptions": 0,
+      "hosted_cases_without_engine_errors": 19,
+      "hosted_cases_with_engine_errors": 91,
+      "reference_success_hosted_failure_cases": 2,
+      "controlled_followups": "Pacman actual-seed reconstruction and LOTA fixed-clock fixture both produce identical successful complete replays across hosts; general historical runtime parity remains pending."
     }
   },
   "release_acceptance": {
