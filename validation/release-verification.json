@@ -1100,6 +1100,24 @@
         },
         "source_files_modified": false,
         "classification": "SDK rule mismatch; acceptance remains pending."
+      },
+      "reference_success_map_fixture": {
+        "original_policy_hashes_verified": true,
+        "initial_maps_identical_for_all_three_levels": true,
+        "hosted_final_level": 3,
+        "hosted_final_round": 300,
+        "hosted_transport_errors": 0,
+        "reference_final_round": 300,
+        "original_replay_records": 725,
+        "hosted_replay_records": 725,
+        "all_replay_records_identical": false,
+        "first_different_replay_record_index": 147,
+        "player_has_unseeded_random_action_selection": true,
+        "player_sources_modified": false,
+        "decision_limits_modified": false,
+        "scores_overwritten": false,
+        "fixture_scope": "Private referee fixture replaces only randomized initial maps and spawn positions with recorded reference values; full replay equality and universal SDK compatibility are not certified.",
+        "formal_benchmark_result": false
       }
     },
     "lostspace_completion_reconciliation": {
