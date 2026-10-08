@@ -1136,8 +1136,8 @@
       "original_opponents": 55,
       "assignments_per_host": 110,
       "reference_cases_completed": 110,
-      "reference_cases_without_official_engine_errors": 30,
-      "reference_cases_with_official_engine_errors": 80,
+      "reference_cases_without_official_engine_errors": 6,
+      "reference_cases_with_official_engine_errors": 78,
       "reference_infrastructure_errors": 0,
       "hosted_status": "running",
       "recorded_seed_not_assumed_effective": true,
@@ -1147,7 +1147,22 @@
         "player_source_modified": false,
         "formal_benchmark_result": false
       },
-      "scope": "Declared completion and declared seed are not substitutes for raw engine and actual-input evidence."
+      "scope": "Declared completion and declared seed are not substitutes for raw engine and actual-input evidence.",
+      "reference_cases_excluded_for_incompatible_launch_configuration": 26,
+      "reference_configuration_audit": {
+        "game": "lota",
+        "cases": 26,
+        "all_terminal_round_zero": true,
+        "reference_loader_count": 2,
+        "reference_resources": "map.txt 1",
+        "hosted_loader_count": 3,
+        "hosted_resources": "map.txt 0; competitor assignments 0 1",
+        "reference_success_certified": false,
+        "same_runtime_lab_regression": "pending",
+        "matched_source_files": 79,
+        "historical_match_artifacts_available_for_frozen_champion": false,
+        "scope": "The original-runner diagnostic is not equivalent to the hosted official multiplayer configuration. It cannot establish either successful historical player execution or a cloud-only regression."
+      }
     }
   },
   "release_acceptance": {
