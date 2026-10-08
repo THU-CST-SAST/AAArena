@@ -1161,7 +1161,8 @@
         "same_runtime_lab_regression": "26 completed: 5 without game errors, 21 with engine-reported errors; 0 infrastructure exceptions",
         "matched_source_files": 79,
         "historical_match_artifacts_available_for_frozen_champion": false,
-        "scope": "The original-runner diagnostic is not equivalent to the hosted official multiplayer configuration. It cannot establish either successful historical player execution or a cloud-only regression."
+        "scope": "The original-runner diagnostic is not equivalent to the hosted official multiplayer configuration. It cannot establish either successful historical player execution or a cloud-only regression.",
+        "historical_origin_lookup": "Original experiment ledger and four normalized snapshot feedback files verified on the recorded origin server; direct full-pool raw match artifacts remain unavailable."
       },
       "lota_clock_controlled_diagnostic": {
         "paired_original_policy_sources_verified": true,
@@ -1179,6 +1180,21 @@
         "formal_service_clock_override": false,
         "diagnostic_only": true,
         "scope": "A fixed-wall-clock loader fixture produces identical successful execution on both hosts. It does not certify all random trajectories or reconstruct every historical runtime input."
+      },
+      "historical_origin_reconciliation": {
+        "recorded_origin_server_verified": true,
+        "lota_champion_ledger_matches_archived_sha256": true,
+        "lota_champion_games": 400,
+        "lota_champion_reported_opponent_errors": 33,
+        "lota_historical_large_evaluations": 16,
+        "lota_target_policies": 13,
+        "lota_target_policies_with_historical_reported_errors": 12,
+        "clock_dependent_target_historical_evaluations_with_errors": 9,
+        "hash_verified_snapshot_feedback_files_recovered": 4,
+        "snapshot_ancestors_traversed": 29,
+        "main_candidate_identity_verified": true,
+        "underlying_player_cause_certified": false,
+        "scope": "The recorded origin server is authoritative for historical provenance. Same-path directories on another host and zero-round diagnostics do not establish the paper experiment configuration. Historical error counts and normalized feedback alone do not certify root causes or all successful executions."
       }
     }
   },
