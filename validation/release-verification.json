@@ -652,7 +652,7 @@
       "seed_and_reference_runtime_tests_passed": 6,
       "paired_dorado_rebuild": "all five binaries match across hosts"
     },
-    "production_source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
+    "production_source_commit": null,
     "public_https_health": "passed",
     "full_pool_regression": "Eight pinned-Python game full pools verified; four native C++ game full pools verified under separately identified component profile.",
     "memory_safety_diagnostics": {
@@ -1002,7 +1002,7 @@
       "round_limits_changed": false,
       "runtime_commit": "35b6529f6433eac36d77cd9a7c8b9118c9818931",
       "authenticated_https_health": "passed",
-      "https_regression": "full_pool_running",
+      "https_regression": "execution_integrity_verified_player_parity_pending",
       "historical_champion_diagnostic": {
         "games": 7,
         "target_opponents": 161,
@@ -1032,13 +1032,14 @@
           "generals",
           "lostspace",
           "snakego",
-          "miracle"
+          "miracle",
+          "antwar2"
         ],
-        "matches_verified": 2036,
+        "matches_verified": 2418,
         "request_result_pool_hashes": "verified",
         "budgets_and_candidate_snapshots": "verified",
         "actual_match_artifacts": "verified",
-        "remaining_python_referee_games": 1,
+        "remaining_python_referee_games": 0,
         "scheduling_transition_recorded": true,
         "player_runtime_parity": "pending"
       }
@@ -1251,7 +1252,7 @@
       "original_files_preserved_per_host": 38056,
       "added_identical_payload_files": 669,
       "additional_differences": "Three empty explicit-install REQUESTED markers and their RECORD entries",
-      "production_profile_deployed": false,
+      "production_profile_deployed": true,
       "dependency_payloads_match": true
     },
     "terminal_exit_regression": {
@@ -1262,7 +1263,7 @@
       "idle_exit_deferred_until_reply_required": true,
       "official_antwar2_forfeits_attributed": true,
       "historical_receipts_modified": false,
-      "production_deployed": false,
+      "production_deployed": true,
       "identical_full_replays_to_recorded_baseline": 6,
       "identical_scores_and_terminal_states": 6,
       "official_forfeits_preserved": {
@@ -1306,7 +1307,7 @@
       "reference_error_free_assignments": 1,
       "hosted_error_free_assignments": 1,
       "remaining_diagnostic": "The other assignment contains a candidate shutdown error; one reference opponent transport closes with exit code zero. These are retained for lifecycle analysis.",
-      "production_deployed": false,
+      "production_deployed": true,
       "local_packaged_regression": "passed"
     },
     "lostspace_inactive_player_listen": {
@@ -1324,7 +1325,7 @@
       "focused_tests_passed": 24,
       "public_local_live_contract": "passed",
       "post_escape_interpreter_shutdown_diagnostic": "Retained in raw process stderr; the referee does not require further action from an escaped player.",
-      "production_deployed": false,
+      "production_deployed": true,
       "full_replay_equality_claimed_for_all_cases": false
     },
     "antwar2_optional_weights": {
@@ -1363,7 +1364,32 @@
       "hosted_failure_round": 54,
       "same_exception": "PythonBackendState.downgrade_tower_income() takes 2 positional arguments but 3 were given",
       "historical_success_equivalence_established": false,
-      "full_replay_equality_claimed": false
+      "full_replay_equality_claimed": false,
+      "second_assignment": {
+        "experiment_seed": 1498596480,
+        "candidate_seat": 1,
+        "reference_rounds": 263,
+        "hosted_rounds": 266,
+        "reference_transport_errors": 0,
+        "hosted_transport_errors": 0,
+        "source_hashes_verified": true
+      }
+    },
+    "production_runtime_profile": {
+      "name": "terminal-lostspace-v1",
+      "baseline_profile_commit": "35b6529f6433eac36d77cd9a7c8b9118c9818931",
+      "deployment_file_hashes_verified": 16,
+      "authenticated_https_health": "passed",
+      "games_available": 12,
+      "original_player_sources_unchanged": true,
+      "post_deployment_small_matrix": "running",
+      "post_deployment_full_pool_games": [
+        "lostspace",
+        "antwar2"
+      ],
+      "post_deployment_full_pool_status": "pending_small_matrix",
+      "client_runtime_source_commit": "dbab2e298d95899c3236f39f430b25e159e93486",
+      "model_calls": 0
     }
   },
   "release_acceptance": {
