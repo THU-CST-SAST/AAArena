@@ -104,3 +104,10 @@ An unchanged player invokes a two-argument downgrade-refund method through a bun
 ## Hosted deployment acceptance
 
 Profile `terminal-lostspace-v1` has sixteen verified deployed file hashes and an authenticated HTTPS health response listing all twelve games. It includes the bounded numerical-library configuration, required player dependencies, terminal-exit handling, deterministic LostSpace assets and inactive-player reply handling. Original human strategy sources retain their hashes. The twelve-game detailed/binary small-match matrix passes with 24 authenticated submissions and 46 actual matches. An independent audit verifies candidate snapshot hashes, request/result/pool hashes, budgets, receipts, local replay bytes and feedback boundaries. Binary feedback exposes no dense artifacts; these small matches have no in-game transport errors. LostSpace and AntWar2 complete-pool regressions are running under this profile with distinct immutable submission records. Their acceptance is pending. Full-pool off-policy trajectories are unavailable.
+
+
+## Reply ownership and turn initialization
+
+Buffered replies belong to the input that produced them. A new state with input for the same player supersedes its buffered response; listen-only transitions preserve early binary-SDK replies. LostSpace accepts a reply only after the corresponding player's formal round-begin notification, including turns following respawn. Notifications, action deadlines, game rules and original player code retain their contracts.
+
+Eight paired LostSpace matches cover two unchanged original opponents and both seat assignments on each host. Every match reaches 100 rounds with no in-game transport errors. Forty-five focused protocol and SDK tests pass. The clean public environment passes all twelve local game contracts, covering 52 actual matches and 22 runnable starters. Hosted deployment and complete-pool acceptance for this runtime are pending. These bounded checks do not certify universal historical-player parity.

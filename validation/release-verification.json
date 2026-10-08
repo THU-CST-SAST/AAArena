@@ -1491,5 +1491,25 @@
     },
     "all_criteria_required": true,
     "public_visibility_requires_user_decision": true
+  },
+  "lostspace_turn_gate": {
+    "status": "component_validation_passed_hosted_acceptance_pending",
+    "paired_hosts": 2,
+    "original_opponents": 2,
+    "assignments_per_host": 4,
+    "completed_matches": 8,
+    "rounds_per_match": 100,
+    "in_game_transport_errors": 0,
+    "strategy_sources_unchanged": true,
+    "focused_tests_passed": 45,
+    "judger_sha256": "5287419b6598de31e4208aef8dba21280494c410f60ce057c27b0ffe84e04d6f",
+    "backend_sha256": "afc2799eccdc8a93a4900967a0fb3065aacb4d04380c870534159bfe6cd333a3",
+    "production_deployed": false,
+    "local_matrix": {
+      "games": 12,
+      "passed": true,
+      "live_matches": 52,
+      "runnable_starters": 22
+    }
   }
 }

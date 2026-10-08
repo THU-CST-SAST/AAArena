@@ -44,9 +44,9 @@
     {
       "game": "lostspace",
       "archive": "lostspace.tar.gz",
-      "sha256": "5f363ed521bd3353333b791d8403376ee7f396ada96929b1ec59ea2ee664b9e7",
-      "compressed_bytes": 2311404,
-      "uncompressed_bytes": 11994023,
+      "sha256": "52f6466cd411acfcdea58e0e4bf11e69ce90e5f78a4a9d1866fbc289a1d771a3",
+      "compressed_bytes": 2311435,
+      "uncompressed_bytes": 11994178,
       "files": 431
     },
     {

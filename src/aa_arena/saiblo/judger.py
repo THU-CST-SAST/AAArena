@@ -520,6 +520,16 @@ def run_stdio_match(
                 if not isinstance(message, RoundInfo):
                     raise SaibloJudgerError(f"unsupported logic message: {message!r}")
                 if current_state != message.state:
+                    # A new input supersedes a reply buffered for an older turn.
+                    # A listen-only transition does not: binary SDKs (SnakeGo)
+                    # may reply to direct input before the next listen frame.
+                    # Keep those replies until their recipient is listening.
+                    if current_state >= 0:
+                        for ai_id in message.player:
+                            for body, _arrival in pending_ai.pop(ai_id, []):
+                                record("discard_stale_ai_output", player=ai_id,
+                                       size=len(body), state=current_state,
+                                       next_state=message.state)
                     current_state = message.state
                     round_begin = time.monotonic()
                 listen_targets = message.listen

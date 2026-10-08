@@ -69,8 +69,8 @@
     },
     {
       "path": "assets/lostspace.tar.gz",
-      "size": 2311404,
-      "sha256": "5f363ed521bd3353333b791d8403376ee7f396ada96929b1ec59ea2ee664b9e7"
+      "size": 2311435,
+      "sha256": "52f6466cd411acfcdea58e0e4bf11e69ce90e5f78a4a9d1866fbc289a1d771a3"
     },
     {
       "path": "assets/lota.tar.gz",
@@ -80,7 +80,7 @@
     {
       "path": "assets/manifest.json",
       "size": 3019,
-      "sha256": "ae077ae65e163e378fb27a5706cfdf5af4656bbcdf2218fd7cac4ddf3ef15447"
+      "sha256": "cbf582b17620dd4efe8a57bd678d34901d2d69b112697226d30ecab9fbc89936"
     },
     {
       "path": "assets/miracle.tar.gz",
@@ -739,8 +739,8 @@
     },
     {
       "path": "src/aa_arena/saiblo/judger.py",
-      "size": 24355,
-      "sha256": "d33c861acd6ac76c1da4982e26fc6754c4b49bade6f3ec932ac1eb8a22628921"
+      "size": 25064,
+      "sha256": "5287419b6598de31e4208aef8dba21280494c410f60ce057c27b0ffe84e04d6f"
     },
     {
       "path": "src/aa_arena/saiblo/player_errors.py",
@@ -1074,8 +1074,8 @@
     },
     {
       "path": "tests/test_lostspace_listen_lifecycle.py",
-      "size": 2159,
-      "sha256": "d4a0a26b54c29206ae6c5e4950fcaa57cf2a07b34b46d591dac9f62ff4fd4eee"
+      "size": 3113,
+      "sha256": "8bdf14c507bccfc40d38f43bc26eea963e1156687bc13fc336c413dccc456bc2"
     },
     {
       "path": "tests/test_lostspace_sdk.py",
@@ -1218,6 +1218,11 @@
       "sha256": "6c52aa7959d780accaa90daec61b69f4553aba279c993a6af4ec51f7248ff0f8"
     },
     {
+      "path": "tests/test_saiblo_deferred_state.py",
+      "size": 2421,
+      "sha256": "6692f5f8caec044956e55347676d9fabc3e4f9e472ab8d5887ea8284c1968de7"
+    },
+    {
       "path": "tests/test_saiblo_protocol.py",
       "size": 2271,
       "sha256": "5f7e44a6ac8df750185a31dd239e7e6bc6790615dd05fe9d72b310230de3ba9a"
@@ -1304,8 +1309,8 @@
     },
     {
       "path": "validation/README.md",
-      "size": 18996,
-      "sha256": "759f824907d2f83df4e3d5660428857b630ce59293c6b1c01c6fbc6b86e71a64"
+      "size": 19955,
+      "sha256": "2851c58247e1fbcf1caad465b9edab5944da9778a528acc1f31a5b645cef338f"
     },
     {
       "path": "validation/asset-audit.json",
@@ -1324,8 +1329,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 52128,
-      "sha256": "490a05a3959f6f9b3673f0c5d19f028ed0312a51de946342a7e39c8bf8e4b9e4"
+      "size": 52816,
+      "sha256": "520a8cddc6fe7416887e1096b5a03f246ddfa0c392f73b6eb17298c194a0886d"
     }
   ]
 }
