@@ -1158,10 +1158,27 @@
         "hosted_loader_count": 3,
         "hosted_resources": "map.txt 0; competitor assignments 0 1",
         "reference_success_certified": false,
-        "same_runtime_lab_regression": "pending",
+        "same_runtime_lab_regression": "26 completed: 5 without game errors, 21 with engine-reported errors; 0 infrastructure exceptions",
         "matched_source_files": 79,
         "historical_match_artifacts_available_for_frozen_champion": false,
         "scope": "The original-runner diagnostic is not equivalent to the hosted official multiplayer configuration. It cannot establish either successful historical player execution or a cloud-only regression."
+      },
+      "lota_clock_controlled_diagnostic": {
+        "paired_original_policy_sources_verified": true,
+        "actual_seed_and_wall_clock_distinguished": true,
+        "same_original_policy_reseeds_from_time_each_round": true,
+        "complete_replay_equal": true,
+        "round_records": 385,
+        "loader_binary_hashes_equal": true,
+        "fixed_time_symbol_verified_on_both_hosts": true,
+        "maximum_reference_cpu_ms": 11.703849,
+        "maximum_hosted_cpu_ms": 11.891722,
+        "original_cpu_limit_ms": 100,
+        "cpu_and_monotonic_clocks_unchanged": true,
+        "player_sources_modified": false,
+        "formal_service_clock_override": false,
+        "diagnostic_only": true,
+        "scope": "A fixed-wall-clock loader fixture produces identical successful execution on both hosts. It does not certify all random trajectories or reconstruct every historical runtime input."
       }
     }
   },
