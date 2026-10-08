@@ -1231,7 +1231,18 @@
         "passed": 45,
         "skipped": 1
       },
-      "hosted_dependency_thread_regression": "in progress"
+      "hosted_dependency_thread_regression": {
+        "assignments": 2,
+        "rounds": [
+          198,
+          203
+        ],
+        "transport_errors": 0,
+        "infrastructure_exceptions": 0,
+        "source_hashes_verified": true,
+        "profile": "private candidate environment and bounded numeric thread configuration",
+        "production_deployed": false
+      }
     }
   },
   "release_acceptance": {
