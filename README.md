@@ -293,7 +293,7 @@ The learner receives **128 trajectory views and 16 remote full-pool large evalua
 
 ## Results and validation
 
-**Release gate:** the deployed HTTPS service, 12-game remote small-match matrix and both live native-harness acceptance tests pass. The cross-game complete-pool large-evaluation matrix is pending. See [acceptance status](validation/release-verification.json) before publishing full-matrix validation claims.
+**Validation:** all 12 games pass the remote dense/binary small-match matrix and complete-pool large-evaluation acceptance checks. Both official native harnesses pass live automatic compaction, session resume, remote matches and final-snapshot checks. Acceptance covers service behavior; policy forfeits remain part of game results. See [validation scope and results](validation/README.md). The hosted full-pool off-policy replay catalog is not provisioned.
 
 Formal large evaluations fit the candidate against the complete frozen Elo anchors and report full-pool rank. Local practice uses only published opponents and is a separate result scope. Match randomness, candidate bugs and historical opponent forfeits can affect a score; an infrastructure failure is not a valid model-performance result.
 

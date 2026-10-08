@@ -277,9 +277,130 @@
     "passed": 37
   },
   "complete_pool_matrix": {
-    "status": "running",
-    "release_acceptance_complete": false,
-    "note": "Cross-game full-pool sweeps must complete before a full-matrix acceptance claim."
+    "status": "verified",
+    "release_acceptance_complete": true,
+    "verified_at": "2026-10-08",
+    "games": [
+      {
+        "game": "rollman",
+        "opponents": 64,
+        "matches": 64,
+        "candidate_policy_errors": 0,
+        "opponent_policy_errors": 0,
+        "passed": true
+      },
+      {
+        "game": "pacman",
+        "opponents": 44,
+        "matches": 88,
+        "candidate_policy_errors": 0,
+        "opponent_policy_errors": 4,
+        "passed": true
+      },
+      {
+        "game": "antwar",
+        "opponents": 114,
+        "matches": 228,
+        "candidate_policy_errors": 0,
+        "opponent_policy_errors": 0,
+        "passed": true
+      },
+      {
+        "game": "aquawar",
+        "opponents": 170,
+        "matches": 340,
+        "candidate_policy_errors": 0,
+        "opponent_policy_errors": 47,
+        "passed": true
+      },
+      {
+        "game": "generals",
+        "opponents": 197,
+        "matches": 394,
+        "candidate_policy_errors": 0,
+        "opponent_policy_errors": 0,
+        "passed": true
+      },
+      {
+        "game": "lostspace",
+        "opponents": 111,
+        "matches": 222,
+        "candidate_policy_errors": 0,
+        "opponent_policy_errors": 0,
+        "passed": true
+      },
+      {
+        "game": "miracle",
+        "opponents": 253,
+        "matches": 506,
+        "candidate_policy_errors": 0,
+        "opponent_policy_errors": 67,
+        "passed": true
+      },
+      {
+        "game": "dorado",
+        "opponents": 323,
+        "matches": 646,
+        "candidate_policy_errors": 0,
+        "opponent_policy_errors": 48,
+        "passed": true
+      },
+      {
+        "game": "monecraft",
+        "opponents": 112,
+        "matches": 224,
+        "candidate_policy_errors": 0,
+        "opponent_policy_errors": 33,
+        "passed": true
+      },
+      {
+        "game": "lota",
+        "opponents": 200,
+        "matches": 400,
+        "candidate_policy_errors": 0,
+        "opponent_policy_errors": 25,
+        "passed": true
+      },
+      {
+        "game": "snakego",
+        "opponents": 141,
+        "matches": 282,
+        "candidate_policy_errors": 1,
+        "opponent_policy_errors": 17,
+        "passed": true
+      },
+      {
+        "game": "antwar2",
+        "opponents": 191,
+        "matches": 382,
+        "candidate_policy_errors": 0,
+        "opponent_policy_errors": 0,
+        "passed": true
+      }
+    ],
+    "total_opponents": 1920,
+    "total_matches": 3776,
+    "scope": "Service and harness acceptance with SDK test candidates; not paper-model performance. All frozen opponents retained. Policy forfeits are included in results.",
+    "transport": "Twelve-game dense/binary small matrix and native harness checks use production HTTPS. Corrected AI9 full-pool sweeps use an authenticated HTTP validation instance on the same host, with the isolated GCC 14.2 runtime; other full-pool sweeps use production HTTPS.",
+    "checks": [
+      "complete frozen opponent pool",
+      "actual game artifacts",
+      "immutable run/submission identities",
+      "candidate strategy hashes",
+      "receipt integrity",
+      "budget accounting",
+      "policy error attribution"
+    ],
+    "policy_error_notes": {
+      "snakego": "The SDK sample candidate produced one illegal-action exception. This is a policy failure reported by the official game engine, not a service failure.",
+      "dorado": "All 25 opponents with errors also have errors in the 17 historical comparison submissions. All 646 replay archives pass integrity checks.",
+      "lota": "14 of 15 opponents with errors have errors in the 17 historical comparison submissions; the remaining opponent has a seat/seed-specific segmentation fault also observed in another hosted sweep.",
+      "miracle": "67 opponent errors: 59 run errors, four output-limit errors and four timeouts. No missing dependencies in the full-pool sweep."
+    },
+    "limitations": [
+      "Acceptance does not guarantee every generated policy is legal or that all historical policies finish without forfeits.",
+      "Hosted full-pool off-policy replay catalog is not provisioned."
+    ]
   },
   "ai9_isolation_and_compiler": {
     "compiler": "GCC 14.2.0",
@@ -341,7 +462,7 @@
       }
     },
     "hosted_deployment": "verified",
-    "full_pool_matrix": "running",
+    "full_pool_matrix": "verified",
     "result_regression_tests_passed": 39
   },
   "miracle_sdk": {
@@ -361,7 +482,7 @@
       "opponent_errors": 0,
       "game_errors": 0
     },
-    "complete_pool_matrix": "pending",
+    "complete_pool_matrix": "verified",
     "public_service_sdk_deployment": "verified"
   },
   "miracle_dependency": {
@@ -382,7 +503,8 @@
       "opponent_errors": 0,
       "game_errors": 0
     },
-    "hosted_environment_deployment": "verified"
+    "hosted_environment_deployment": "verified",
+    "complete_pool_matrix": "verified"
   },
   "hosted_api": {
     "source_commit": "e3bb77ed7474334564d670b50e2108085d56dd8f",
