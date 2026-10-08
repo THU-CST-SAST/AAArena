@@ -1031,13 +1031,14 @@
           "aquawar",
           "generals",
           "lostspace",
-          "snakego"
+          "snakego",
+          "miracle"
         ],
-        "matches_verified": 1530,
+        "matches_verified": 2036,
         "request_result_pool_hashes": "verified",
         "budgets_and_candidate_snapshots": "verified",
         "actual_match_artifacts": "verified",
-        "remaining_python_referee_games": 2,
+        "remaining_python_referee_games": 1,
         "scheduling_transition_recorded": true,
         "player_runtime_parity": "pending"
       }
