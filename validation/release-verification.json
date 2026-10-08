@@ -1021,6 +1021,19 @@
       "local_game_matrix": {
         "games": 12,
         "passed": true
+      },
+      "full_pool_execution_integrity": {
+        "games_verified": [
+          "rollman",
+          "antwar"
+        ],
+        "matches_verified": 292,
+        "request_result_pool_hashes": "verified",
+        "budgets_and_candidate_snapshots": "verified",
+        "actual_match_artifacts": "verified",
+        "remaining_python_referee_games": 6,
+        "scheduling_transition_recorded": true,
+        "player_runtime_parity": "pending"
       }
     },
     "match_concurrency_validation": {
@@ -1031,9 +1044,9 @@
       "small_match_reserve": 2,
       "active_matches_drained_before_configuration_change": true,
       "paired_antwar_cases": {
-        "cases": 2,
+        "cases": 5,
         "reference_transport_errors": 0,
-        "hosted_cap16_cases_with_timeouts": 2,
+        "hosted_cap16_cases_with_timeouts": 5,
         "hosted_cap6_cases_with_transport_errors": 0
       },
       "time_limits_changed": false,
