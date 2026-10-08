@@ -533,7 +533,7 @@
   "environment_parity": {
     "status": "in progress",
     "reference": "agentlab research runtime",
-    "blocking_issue": "Complete-pool transport audit identifies in-game error events absent from API counters. Counter regression tests pass; production deployment, HTTPS regression and remaining full-pool audits are required.",
+    "blocking_issue": "Trusted backend Python selection and error-reporting fixes require idle-guard deployment, production HTTPS regression, and full-pool audits under the reference backend profile.",
     "reference_profile": {
       "compiler": "Debian GCC/G++ 14.2.0-19",
       "glibc": "2.41",
@@ -589,7 +589,7 @@
     },
     "https_small_matrix": "12/12 passed",
     "error_reporting_regression": {
-      "tests_passed": 15,
+      "tests_passed": 18,
       "production_deployment": "pending idle guard",
       "completed_api_games": [
         "pacman",
@@ -639,6 +639,19 @@
       "reference_error_cases": 9,
       "reference_completed_without_error_cases": 8,
       "root_causes": "per-case diagnosis required; these repetitions alone do not establish intrinsic policy defects"
+    },
+    "backend_python": {
+      "status": "reference bundle verified; production deployment pending",
+      "python": "3.14.6",
+      "numpy": "2.3.5",
+      "matplotlib": "3.11.1",
+      "files": 9666,
+      "manifest_sha256": "f2d510e6f580574dcbdf5977c8c1543ba1d5a36c60fc88e8ea5d9f6bedcc52fb",
+      "real_host_preflight": "passed",
+      "paired_cases": 4,
+      "paired_statuses_match": true,
+      "rounds_identical": false,
+      "formal_results_from_different_backend_profiles_combined": false
     }
   }
 }

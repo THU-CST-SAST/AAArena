@@ -10,12 +10,13 @@ from __future__ import annotations
 import json
 import os
 import queue
+import re
 import struct
 import subprocess
 import threading
 import time
 from collections.abc import Mapping, Sequence
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, replace
 from pathlib import Path
 from typing import Any, BinaryIO
 
@@ -44,6 +45,18 @@ DEFAULT_MATCH_TIMEOUT_S = 1800.0
 TERMINAL_GRACE_S = 5.0
 MAX_FRAME_SIZE = 64 * 1024 * 1024
 UPSTREAM_OUTPUT_LIMIT = 2048
+
+
+def backend_process_spec(spec: ProcessSpec) -> ProcessSpec:
+    """Select the operator's reference Python for trusted Python game logic."""
+    selected = os.environ.get("AA_ARENA_BACKEND_PYTHON")
+    if not selected or not re.fullmatch(r"python(?:\d+(?:\.\d+)*)?", Path(spec.argv[0]).name):
+        return spec
+    python = Path(selected)
+    if not python.is_absolute() or not python.is_file() or not os.access(python, os.X_OK):
+        raise SandboxInfrastructureError("AA_ARENA_BACKEND_PYTHON must be an absolute executable")
+    from aa_arena.core.reference_runtime import backend_command
+    return replace(spec, argv=tuple(backend_command([str(python), *spec.argv[1:]])))
 
 
 class SaibloJudgerError(RuntimeError):
@@ -210,7 +223,7 @@ def run_stdio_match(
     backend_launcher = DirectLauncher()
     try:
         backend_process = backend_launcher.start(
-            backend,
+            backend_process_spec(backend),
             match_id=match_id,
             player_index=-1,
         )

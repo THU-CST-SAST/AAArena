@@ -154,8 +154,8 @@
     },
     {
       "path": "docs/runtime.md",
-      "size": 4228,
-      "sha256": "5d9714dbf62ee39eabc7218ea39f264157cc652a68bee97c81a8c09a95a456ba"
+      "size": 4943,
+      "sha256": "779ca15a5585d02120c7f0b46e9f990174e2b168f08cce1d31d71cf1ea251d6e"
     },
     {
       "path": "environment/controller-constraints-py314-linux.txt",
@@ -384,8 +384,8 @@
     },
     {
       "path": "scripts/check_evaluator_host.py",
-      "size": 4214,
-      "sha256": "d97eea4cf9ac78f3fa5f9f8d6a9457bf394fc35dd8dd34817f411ab4c3ff9ad1"
+      "size": 5283,
+      "sha256": "2e73936a917fc1bbacea94122897152ae1a5cbd54acec5db6a1ead241dae766f"
     },
     {
       "path": "scripts/configure_model.py",
@@ -729,8 +729,8 @@
     },
     {
       "path": "src/aa_arena/saiblo/judger.py",
-      "size": 21926,
-      "sha256": "fea4f181569ee47661e0b662d1bbdaa460f43c2794825b2a0b6ff57ae365013a"
+      "size": 22648,
+      "sha256": "9d11ea94cac91157da01cd0214fdeed291c0c22cda97340a337182d35b56ffd1"
     },
     {
       "path": "src/aa_arena/saiblo/player_errors.py",
@@ -881,6 +881,11 @@
       "path": "tests/test_backend_layout.py",
       "size": 3019,
       "sha256": "f2b5a54d93ad3ea189d959ddc78a54fd1c9943ed6aaafa231bdad1e74bf31dde"
+    },
+    {
+      "path": "tests/test_backend_python.py",
+      "size": 1698,
+      "sha256": "d12c7c53cf69948535fc20d0be9d7b734c7494ab4db1d34f87734cd4b2b55591"
     },
     {
       "path": "tests/test_benchmark_ledger.py",
@@ -1279,8 +1284,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 18207,
-      "sha256": "b9d0fab2dd75c830cf8259cd3bf114a9afd8b84ec627fc81f84c12b6ff907b85"
+      "size": 18686,
+      "sha256": "cf0f5138add0df4789c8e2c44fc37be4545b6e888947af27d6452e1ae0d87cef"
     }
   ]
 }

@@ -1,5 +1,9 @@
 """Refuse evaluator startup when the player runtime or isolation is broken."""
 import json
+import os
+import hashlib
+import subprocess
+import sys
 import tempfile
 from pathlib import Path
 from aa_arena.core.player_environment import player_python
@@ -9,6 +13,19 @@ from aa_arena.sandbox.model import ProcessSpec
 from aa_arena.sandbox.systemd import SystemdScopeLauncher
 from aa_arena.core.reference_runtime import fingerprint, verify_reference_files
 print('Reference system runtime:', fingerprint(), 'verified files:', verify_reference_files())
+if os.environ.get('AA_ARENA_BACKEND_PYTHON'):
+    from aa_arena.saiblo.judger import backend_process_spec
+    from aa_arena.sandbox.model import safe_environment
+    backend_root = Path(os.environ['AA_ARENA_BACKEND_PYTHON']).parent.parent
+    manifest = json.loads((backend_root / 'runtime-files.json').read_text())
+    for relative, digest in manifest['files'].items():
+        with (backend_root / relative).open('rb') as stream:
+            assert hashlib.file_digest(stream, 'sha256').hexdigest() == digest, relative
+    spec = backend_process_spec(ProcessSpec((sys.executable, '-c',
+        'import sys,json,numpy,matplotlib,antlr4;print(json.dumps({"python":sys.version,"numpy":numpy.__version__,"matplotlib":matplotlib.__version__}))'), Path('/tmp')))
+    checked = subprocess.run(spec.argv, cwd=spec.cwd, env=safe_environment(spec.env),
+        check=True, capture_output=True, text=True, timeout=60)
+    print('Reference backend Python:', checked.stdout.strip(), 'verified files:', len(manifest['files']))
 with tempfile.TemporaryDirectory(prefix='arena-host-check-') as directory:
     root=Path(directory); candidate=root/'candidate'; candidate.mkdir()
     private=root/'private'; private.write_text('private sentinel')
