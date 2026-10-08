@@ -29,7 +29,7 @@
         "game": "antwar",
         "passed": true,
         "pool_count": 114,
-        "seconds": 1.38
+        "seconds": 131.81
       },
       {
         "checks": [
@@ -47,7 +47,7 @@
         "game": "antwar2",
         "passed": true,
         "pool_count": 191,
-        "seconds": 6.79
+        "seconds": 255.78
       },
       {
         "checks": [
@@ -65,7 +65,7 @@
         "game": "aquawar",
         "passed": true,
         "pool_count": 170,
-        "seconds": 6.44
+        "seconds": 302.18
       },
       {
         "checks": [
@@ -83,7 +83,7 @@
         "game": "dorado",
         "passed": true,
         "pool_count": 323,
-        "seconds": 6.14
+        "seconds": 336.83
       },
       {
         "checks": [
@@ -101,7 +101,7 @@
         "game": "generals",
         "passed": true,
         "pool_count": 197,
-        "seconds": 2.06
+        "seconds": 95.69
       },
       {
         "checks": [
@@ -119,7 +119,7 @@
         "game": "lostspace",
         "passed": true,
         "pool_count": 111,
-        "seconds": 1.44
+        "seconds": 33.36
       },
       {
         "checks": [
@@ -137,7 +137,7 @@
         "game": "lota",
         "passed": true,
         "pool_count": 200,
-        "seconds": 1.36
+        "seconds": 300.44
       },
       {
         "checks": [
@@ -155,7 +155,7 @@
         "game": "miracle",
         "passed": true,
         "pool_count": 253,
-        "seconds": 108.04
+        "seconds": 57.12
       },
       {
         "checks": [
@@ -173,7 +173,7 @@
         "game": "monecraft",
         "passed": true,
         "pool_count": 112,
-        "seconds": 174.62
+        "seconds": 329.98
       },
       {
         "checks": [
@@ -191,7 +191,7 @@
         "game": "pacman",
         "passed": true,
         "pool_count": 44,
-        "seconds": 198.86
+        "seconds": 111.81
       },
       {
         "checks": [
@@ -209,7 +209,7 @@
         "game": "rollman",
         "passed": true,
         "pool_count": 64,
-        "seconds": 245.31
+        "seconds": 92.39
       },
       {
         "checks": [
@@ -227,7 +227,7 @@
         "game": "snakego",
         "passed": true,
         "pool_count": 141,
-        "seconds": 257.08
+        "seconds": 76.4
       }
     ],
     "model_calls": 0,
@@ -340,8 +340,8 @@
         "passed": true
       }
     },
-    "hosted_deployment": "pending",
-    "full_pool_matrix": "required",
+    "hosted_deployment": "verified",
+    "full_pool_matrix": "running",
     "result_regression_tests_passed": 39
   },
   "miracle_sdk": {
@@ -362,7 +362,7 @@
       "game_errors": 0
     },
     "complete_pool_matrix": "pending",
-    "public_service_sdk_deployment": "pending"
+    "public_service_sdk_deployment": "verified"
   },
   "miracle_dependency": {
     "matplotlib": "3.8.4",
@@ -382,6 +382,17 @@
       "opponent_errors": 0,
       "game_errors": 0
     },
-    "hosted_environment_deployment": "pending"
+    "hosted_environment_deployment": "verified"
+  },
+  "hosted_api": {
+    "source_commit": "e3bb77ed7474334564d670b50e2108085d56dd8f",
+    "https_certificate_verified": true,
+    "deployed_file_hashes_verified": 67,
+    "full_pool_inventory": 1920,
+    "player_python": "3.10.14",
+    "ai9_compiler": "GCC 14.2.0",
+    "matplotlib": "3.8.4",
+    "public_small_matrix_games": 12,
+    "client_preflight_compiler": "P5 GCC 11.4 via explicit override; actual evaluations use hosted GCC 14.2.0"
   }
 }
