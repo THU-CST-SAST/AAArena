@@ -18,27 +18,27 @@ All three conditions must pass:
 
 API completion, an Elo value, matching runtime hashes or accurate error counters alone do not establish player runtime parity. No opponent may be deleted, replaced or edited to satisfy acceptance. The hosted full-pool off-policy catalog is not provisioned. Repository visibility requires the owner's decision.
 
-## Complete-pool interface matrix
+## Complete-pool execution coverage
 
-Release acceptance is pending. The frozen-runtime HTTPS matrix and transport-level error audit are required release gates. Rollman, AntWar and LostSpace raw logs contain in-game error events absent from API counters. Error-reporting regression tests cover two-player and four-player assignments; the pinned-backend runtime passes all 12 detailed/binary small-match checks. Its eight Saiblo complete-pool HTTPS sweeps are in progress. Original results and receipts remain immutable.
+Release acceptance is pending historical player runtime parity and the final local live-game regression. The HTTPS checks verify all frozen opponents, actual match artifacts, immutable submissions, candidate hashes, receipts and budgets. These are SDK candidate checks, not model benchmark scores. A counted game error requires case-specific diagnosis; it does not certify a player defect.
 
-The interface matrix contains 3,776 matches against all 1,920 frozen human opponents. These are SDK candidate checks, not model benchmark scores. Error columns contain adapter-reported counters and require transport-level verification. Zero counters are not evidence of zero in-game errors. Root-cause attribution requires run-specific diagnosis; every opponent remains in the evaluation pool.
+The Python-referee profile uses the pinned Python 3.14.6 backend and Debian reference runtime. The native-referee profile uses GCC 14.2 and the reference runtime; its full-pool records are identified separately. No Elo scores are combined across profiles. The 12-game detailed/binary small matrix uses the deployed HTTPS service. Error counts below are per-match and may overlap between candidate and opponent.
 
-| Game | Opponents | Matches | Candidate reported errors | Opponent reported errors | Interface check |
-|---|---:|---:|---:|---:|---|
-| rollman | 64 | 64 | 0 | 0 | Pass |
-| pacman | 44 | 88 | 0 | 4 | Pass |
-| antwar | 114 | 228 | 0 | 0 | Pass |
-| aquawar | 170 | 340 | 0 | 47 | Pass |
-| generals | 197 | 394 | 0 | 0 | Pass |
-| lostspace | 111 | 222 | 0 | 0 | Pass |
-| miracle | 253 | 506 | 0 | 67 | Pass |
-| dorado | 323 | 646 | 0 | 48 | Pass |
-| monecraft | 112 | 224 | 0 | 33 | Pass |
-| lota | 200 | 400 | 0 | 25 | Pass |
-| snakego | 141 | 282 | 1 | 17 | Pass |
-| antwar2 | 191 | 382 | 0 | 0 | Pass |
+| Game | Referee profile | Opponents | Matches | Candidate errors | Opponent errors | Infrastructure retries |
+|---|---|---:|---:|---:|---:|---:|
+| rollman | Python 3.14.6 | 64 | 64 | 0 | 4 | 0 |
+| pacman | Native C++ | 44 | 88 | 0 | 3 | 0 |
+| antwar | Python 3.14.6 | 114 | 228 | 6 | 12 | 0 |
+| aquawar | Python 3.14.6 | 170 | 340 | 0 | 49 | 0 |
+| generals | Python 3.14.6 | 197 | 394 | 0 | 34 | 0 |
+| lostspace | Python 3.14.6 | 111 | 222 | 8 | 83 | 0 |
+| miracle | Python 3.14.6 | 253 | 506 | 0 | 67 | 0 |
+| dorado | Native C++ | 323 | 646 | 0 | 47 | 0 |
+| monecraft | Native C++ | 112 | 224 | 0 | 31 | 0 |
+| lota | Native C++ | 200 | 400 | 0 | 23 | 0 |
+| snakego | Python 3.14.6 | 141 | 282 | 3 | 18 | 0 |
+| antwar2 | Python 3.14.6 | 191 | 382 | 7 | 11 | 0 |
 
-SnakeGo's sample candidate has one official illegal-action exception. The API reports that policy failure correctly. Opponent errors include illegal actions, segmentation faults, resource-limit violations and timeouts; acceptance does not require every historical policy to avoid forfeits. Miracle's full-pool run contains no missing-dependency errors. Dorado's 646 replay archives pass integrity checks; optional legacy postprocessing commands emit diagnostics, while the Python adapters provide valid normalized results and replay data.
+All eight Python-referee pools pass independent counter attribution checks. AquaWar includes native game-rule errors recorded in replay data as well as transport errors. Four-role attribution is verified for LostSpace. Every original opponent remains in the pool. These checks do not substitute for reconciling hosted failures with agentlab historical successful execution.
 
-The 12-game dense/binary small matrix and both live native harness checks use the production HTTPS endpoint. Pacman, MoneCraft, LOTA and Dorado full-pool checks use an authenticated HTTP validation instance on the same host with isolated GCC 14.2 player execution. Other full-pool checks use production HTTPS. Pool membership, candidate hashes, receipts, budgets and actual match artifacts are verified. The hosted full-pool off-policy replay catalog is outside this acceptance scope and is not provisioned.
+The hosted full-pool off-policy replay catalog is not provisioned.

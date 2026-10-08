@@ -42,6 +42,8 @@ Models, games and experiment suites are independently selectable. Supply your ow
 
 We release code only for human players with even-numbered ranks outside the top eight.
 
+我们只公布未进入决赛圈的偶数人类选手的代码。
+
 Player-code publication follows the experiment's **frozen measured Elo ranking**: only ranks **10, 12, 14, …** are included. Ranks 1–8 and all odd ranks are withheld. The 12 game packs contain **909 published human-player packages**. Full ranking metadata is available in `results/elo`; each game's `players/publication.json` identifies the released players and their original reference ranks.
 
 **Formal small and large evaluations use the authenticated HTTPS service at `https://101.42.12.204`.** The complete frozen opponent pool stays on the evaluation server. Coding-agent inference, policy editing and replay inspection run locally; the controller uploads a frozen candidate policy and receives feedback. Small evaluations return binary outcomes or dense public trajectories according to the experiment arm. Large evaluations return full-pool Elo, rank and aggregate statistics without dense trajectories.

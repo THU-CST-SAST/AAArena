@@ -29,8 +29,8 @@
     },
     {
       "path": "README.md",
-      "size": 20994,
-      "sha256": "93246b5a8a985aa033fab8c71a04edc7eb1960dc977741d057ac820103ecf01b"
+      "size": 21062,
+      "sha256": "49428b73c91d74ffe948af96f9c97cdb8812d4162da9746fb96a638be531815d"
     },
     {
       "path": "assets/antwar.tar.gz",
@@ -1264,8 +1264,8 @@
     },
     {
       "path": "validation/README.md",
-      "size": 5288,
-      "sha256": "5dff44ad0d2a0f4ad0465e552a15780c85d09fd9676cb66f8a686bf442ccbfe6"
+      "size": 4769,
+      "sha256": "66583b64b2637657ab162065e67b79b45cfaeebe041945374c2257339304d30c"
     },
     {
       "path": "validation/asset-audit.json",
@@ -1284,8 +1284,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 27123,
-      "sha256": "0eb0be5143932183b4342ce95e933d9c4c5863c22809ca962c1f09a5fdb04824"
+      "size": 31315,
+      "sha256": "303780d71489e7e7da36d3494d8f65807d830fc1d4faf5f6dbefc019baf9c884"
     }
   ]
 }

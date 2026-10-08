@@ -278,111 +278,171 @@
     "passed": 37
   },
   "complete_pool_matrix": {
-    "status": "reference_profile_regression_running",
+    "status": "component_execution_and_integrity_verified_player_parity_pending",
     "release_acceptance_complete": false,
     "verified_at": "2026-10-08",
     "games": [
       {
         "game": "rollman",
+        "runtime_profile": "pinned-python-backend",
+        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
         "opponents": 64,
         "matches": 64,
-        "candidate_error_events": 0,
-        "opponent_error_events": 0,
-        "interface_checks_passed": true
+        "execution_integrity_passed": true,
+        "candidate_errors": 0,
+        "opponent_errors": 4,
+        "game_errors": 4,
+        "infrastructure_retries": 0,
+        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
       },
       {
         "game": "pacman",
+        "runtime_profile": "reference-native-cpp",
+        "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
         "opponents": 44,
         "matches": 88,
-        "candidate_error_events": 0,
-        "opponent_error_events": 4,
-        "interface_checks_passed": true
+        "execution_integrity_passed": true,
+        "candidate_errors": 0,
+        "opponent_errors": 3,
+        "game_errors": 3,
+        "infrastructure_retries": 0,
+        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
       },
       {
         "game": "antwar",
+        "runtime_profile": "pinned-python-backend",
+        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
         "opponents": 114,
         "matches": 228,
-        "candidate_error_events": 0,
-        "opponent_error_events": 0,
-        "interface_checks_passed": true
+        "execution_integrity_passed": true,
+        "candidate_errors": 6,
+        "opponent_errors": 12,
+        "game_errors": 13,
+        "infrastructure_retries": 0,
+        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
       },
       {
         "game": "aquawar",
+        "runtime_profile": "pinned-python-backend",
+        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
         "opponents": 170,
         "matches": 340,
-        "candidate_error_events": 0,
-        "opponent_error_events": 47,
-        "interface_checks_passed": true
+        "execution_integrity_passed": true,
+        "candidate_errors": 0,
+        "opponent_errors": 49,
+        "game_errors": 49,
+        "infrastructure_retries": 0,
+        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
       },
       {
         "game": "generals",
+        "runtime_profile": "pinned-python-backend",
+        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
         "opponents": 197,
         "matches": 394,
-        "candidate_error_events": 0,
-        "opponent_error_events": 0,
-        "interface_checks_passed": true
+        "execution_integrity_passed": true,
+        "candidate_errors": 0,
+        "opponent_errors": 34,
+        "game_errors": 34,
+        "infrastructure_retries": 0,
+        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
       },
       {
         "game": "lostspace",
+        "runtime_profile": "pinned-python-backend",
+        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
         "opponents": 111,
         "matches": 222,
-        "candidate_error_events": 0,
-        "opponent_error_events": 0,
-        "interface_checks_passed": true
+        "execution_integrity_passed": true,
+        "candidate_errors": 8,
+        "opponent_errors": 83,
+        "game_errors": 83,
+        "infrastructure_retries": 0,
+        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
       },
       {
         "game": "miracle",
+        "runtime_profile": "pinned-python-backend",
+        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
         "opponents": 253,
         "matches": 506,
-        "candidate_error_events": 0,
-        "opponent_error_events": 67,
-        "interface_checks_passed": true
+        "execution_integrity_passed": true,
+        "candidate_errors": 0,
+        "opponent_errors": 67,
+        "game_errors": 67,
+        "infrastructure_retries": 0,
+        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
       },
       {
         "game": "dorado",
+        "runtime_profile": "reference-native-cpp",
+        "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
         "opponents": 323,
         "matches": 646,
-        "candidate_error_events": 0,
-        "opponent_error_events": 48,
-        "interface_checks_passed": true
+        "execution_integrity_passed": true,
+        "candidate_errors": 0,
+        "opponent_errors": 47,
+        "game_errors": 47,
+        "infrastructure_retries": 0,
+        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
       },
       {
         "game": "monecraft",
+        "runtime_profile": "reference-native-cpp",
+        "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
         "opponents": 112,
         "matches": 224,
-        "candidate_error_events": 0,
-        "opponent_error_events": 33,
-        "interface_checks_passed": true
+        "execution_integrity_passed": true,
+        "candidate_errors": 0,
+        "opponent_errors": 31,
+        "game_errors": 31,
+        "infrastructure_retries": 0,
+        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
       },
       {
         "game": "lota",
+        "runtime_profile": "reference-native-cpp",
+        "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
         "opponents": 200,
         "matches": 400,
-        "candidate_error_events": 0,
-        "opponent_error_events": 25,
-        "interface_checks_passed": true
+        "execution_integrity_passed": true,
+        "candidate_errors": 0,
+        "opponent_errors": 23,
+        "game_errors": 23,
+        "infrastructure_retries": 0,
+        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
       },
       {
         "game": "snakego",
+        "runtime_profile": "pinned-python-backend",
+        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
         "opponents": 141,
         "matches": 282,
-        "candidate_error_events": 1,
-        "opponent_error_events": 17,
-        "interface_checks_passed": true
+        "execution_integrity_passed": true,
+        "candidate_errors": 3,
+        "opponent_errors": 18,
+        "game_errors": 21,
+        "infrastructure_retries": 0,
+        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
       },
       {
         "game": "antwar2",
+        "runtime_profile": "pinned-python-backend",
+        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
         "opponents": 191,
         "matches": 382,
-        "candidate_error_events": 0,
-        "opponent_error_events": 0,
-        "interface_checks_passed": true
+        "execution_integrity_passed": true,
+        "candidate_errors": 7,
+        "opponent_errors": 11,
+        "game_errors": 13,
+        "infrastructure_retries": 0,
+        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
       }
     ],
     "total_opponents": 1920,
     "total_matches": 3776,
-    "scope": "Interface evidence against the complete frozen pool. Reference-profile production HTTPS acceptance requires a dedicated full-pool matrix and run-specific error diagnosis.",
-    "transport": "Twelve-game dense/binary small matrix and native harness checks use production HTTPS. Corrected AI9 full-pool sweeps use an authenticated HTTP validation instance on the same host, with the isolated GCC 14.2 runtime; other full-pool sweeps use production HTTPS.",
+    "scope": "Component execution evidence, not model benchmark scores or player runtime-parity certification. Native and Python referee profiles are identified per row.",
+    "transport": "authenticated public HTTPS for every row",
     "checks": [
       "complete frozen opponent pool",
       "actual game artifacts",
@@ -411,10 +471,10 @@
       "lota": "14 of 15 opponents with errors have errors in the 17 historical comparison submissions; the remaining opponent has a seat/seed-specific segmentation fault also observed in another hosted sweep.",
       "miracle": "67 opponent errors: 59 run errors, four output-limit errors and four timeouts. No missing dependencies in the full-pool sweep."
     },
-    "counter_audit_status": "Transport-level error audit required; adapter-reported counts are not authoritative zero-error evidence.",
+    "counter_audit_status": "Pinned-backend transport counters verified for all eight games; AquaWar native replay rule errors also verified.",
     "pinned_backend_regression": {
       "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
-      "status": "running",
+      "status": "execution_integrity_and_counter_audits_verified",
       "games": [
         "rollman",
         "antwar",
@@ -425,7 +485,9 @@
         "snakego",
         "antwar2"
       ],
-      "transport": "authenticated public HTTPS"
+      "transport": "authenticated public HTTPS",
+      "matches": 2418,
+      "opponents": 1241
     }
   },
   "ai9_isolation_and_compiler": {
@@ -553,7 +615,7 @@
   "environment_parity": {
     "status": "in progress",
     "reference": "agentlab research runtime",
-    "blocking_issue": "Pinned-backend full-pool HTTPS matrix and per-case runtime error diagnosis are required.",
+    "blocking_issue": "Historical player successful-execution parity and final local package live regression are required.",
     "reference_profile": {
       "compiler": "Debian GCC/G++ 14.2.0-19",
       "glibc": "2.41",
@@ -592,7 +654,7 @@
     },
     "production_source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
     "public_https_health": "passed",
-    "full_pool_regression": "Eight Saiblo full pools running under pinned backend; four AI9 full pools have unchanged compiled runtime.",
+    "full_pool_regression": "Eight pinned-Python game full pools verified; four native C++ game full pools verified under separately identified component profile.",
     "memory_safety_diagnostics": {
       "host": "reference host",
       "used_for_scoring": false,
@@ -612,26 +674,32 @@
       "tests_passed": 18,
       "production_deployment": "verified",
       "completed_api_games": [
-        "pacman",
         "rollman",
         "antwar",
-        "aquawar",
         "generals",
-        "lostspace",
         "miracle",
-        "monecraft",
-        "snakego"
+        "aquawar",
+        "lostspace",
+        "snakego",
+        "antwar2"
       ],
       "transport_error_match_counts": {
         "rollman": 3,
         "antwar": 14
       },
-      "api_summary_error_counts_verified": false,
+      "api_summary_error_counts_verified": true,
       "original_receipts_preserved": true,
       "strategy_sources_modified": false,
-      "four_player_role_attribution": "unit regression passed; deployed; HTTPS regression running",
+      "four_player_role_attribution": "unit and complete-pool raw transport audit passed",
       "lostspace_transport_error_events": 150,
-      "event_count_note": "Transport events and error-bearing matches are different counts."
+      "event_count_note": "Transport events and error-bearing matches are different counts.",
+      "native_aquawar_replay_audit": {
+        "matches": 340,
+        "candidate_errors": 0,
+        "opponent_errors": 49,
+        "game_errors": 49,
+        "verified": true
+      }
     },
     "normalized_candidate_builds": {
       "diagnostic_only": true,
@@ -661,7 +729,7 @@
       "root_causes": "per-case diagnosis required; these repetitions alone do not establish intrinsic policy defects"
     },
     "backend_python": {
-      "status": "reference bundle and production deployment verified; HTTPS matrix running",
+      "status": "Reference bundle, production deployment, HTTPS small and full-pool execution verified; player runtime parity pending.",
       "python": "3.14.6",
       "numpy": "2.3.5",
       "matplotlib": "3.11.1",
@@ -907,6 +975,16 @@
       ],
       "passed": true,
       "model_calls": 0
+    },
+    "pinned_full_pool_audit": {
+      "games": 8,
+      "matches": 2418,
+      "opponents": 1241,
+      "request_result_pool_hashes": "verified",
+      "budgets_and_candidate_snapshots": "verified",
+      "actual_match_artifacts": "verified",
+      "counter_ownership": "verified",
+      "player_runtime_parity": "pending"
     }
   },
   "release_acceptance": {
@@ -928,20 +1006,36 @@
         ]
       },
       "remote_policy_submission": {
-        "status": "partial",
+        "status": "execution_and_accounting_verified",
         "requirement": "A local client submits frozen policy code for real hosted small and full-pool large evaluations; feedback, budgets, hashes and receipts are verified.",
         "small_games_verified": 12,
         "pinned_backend_full_pool_audits_verified": [
           "rollman",
           "antwar",
-          "generals"
-        ]
+          "generals",
+          "miracle",
+          "aquawar",
+          "lostspace",
+          "snakego",
+          "antwar2"
+        ],
+        "native_full_pool_games_verified": [
+          "pacman",
+          "monecraft",
+          "lota",
+          "dorado"
+        ],
+        "runtime_profiles_reported_separately": true
       },
       "local_release_package": {
-        "status": "pending_final_revision_regression",
+        "status": "final_local_live_regression_running",
         "requirement": "A clean installation of the released repository runs all twelve games with published opponents locally, supports local agent iteration and calls the hosted evaluator.",
         "retained_evidence": "Twelve-game public-subset live certificates and both official native harness acceptance records.",
-        "remaining": "Verify the final release revision with the documented installation and local runtime configuration."
+        "remaining": "Complete public-subset contract tests and all twelve live game certificates for the release runtime.",
+        "fresh_controller_environment": true,
+        "fresh_player_environment": true,
+        "assets_verified": true,
+        "public_subset_contract_tests_passed": 27
       }
     },
     "all_criteria_required": true,
