@@ -90,3 +90,7 @@ LostSpace requests replies only from players whose status permits an action (`Al
 ## Optional player weights
 
 One unchanged AntWar2 policy catches unavailable neural-network weights and selects its own bundled heuristic. Six hosted assignments across three recorded runtime profiles finish with official `OK` states for both players and no transport errors. The weight-file message is an explicit fallback diagnostic, not an unhandled exception. Original stderr and event hashes are retained. This evidence establishes successful execution of the policy’s built-in fallback; it does not establish availability or equivalence of a historical trained checkpoint.
+
+## Public AntWar2 SDK refund contract
+
+The public Python SDK forwards an optional tower state when calculating downgrade refunds. The interface supports both the full-health refund and the health-scaled refund defined by its engine. Thirteen SDK and backend concurrency tests pass, including eight refund cases across two tower levels and four health values. The local AntWar2 live-game contract passes with the public package. Original player packages and their bundled SDK files retain their bytes; this public SDK contract does not certify those packages against all historical inputs.

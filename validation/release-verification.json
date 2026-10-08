@@ -1338,6 +1338,17 @@
       "raw_diagnostics_preserved": true,
       "original_policy_modified": false,
       "historical_trained_checkpoint_equivalence": "not established"
+    },
+    "antwar2_public_sdk_refund": {
+      "changed_asset": "games/antwar2/public_sdk/SDK/backend/state.py",
+      "original_sha256": "93114a0ff0d29673efd7f6e692103159ede717e46bcb9712b9044c00de2d71d7",
+      "fixed_sha256": "5fc54d9d137700334ad7cc625d3ba68ad5b7df21510893b9dab3887fbfda58e9",
+      "all_player_package_bytes_unchanged": true,
+      "scope": "public SDK adapter only; original player-bundled SDKs unchanged",
+      "unit_tests_passed": 13,
+      "refund_cases": 8,
+      "local_live_game": "passed",
+      "original_player_sdk_failure_classification": "requires original historical inputs; no player-source modifications"
     }
   },
   "release_acceptance": {

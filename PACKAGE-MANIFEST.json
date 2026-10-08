@@ -39,8 +39,8 @@
     },
     {
       "path": "assets/antwar2.tar.gz",
-      "size": 7838476,
-      "sha256": "53c60836f51d921855d94bd8d57615957d0b0020f1c963cc5adbd4c8a27d098b"
+      "size": 7685088,
+      "sha256": "334b50f94d3f6bf463bb1019176da84974707850a254bded524e881c07894874"
     },
     {
       "path": "assets/aquawar.tar.gz",
@@ -79,8 +79,8 @@
     },
     {
       "path": "assets/manifest.json",
-      "size": 3024,
-      "sha256": "c1394d23a7bb8c74f3e025ef8e1454b118728b18634cc148e8b6cda369b59948"
+      "size": 3019,
+      "sha256": "ae077ae65e163e378fb27a5706cfdf5af4656bbcdf2218fd7cac4ddf3ef15447"
     },
     {
       "path": "assets/miracle.tar.gz",
@@ -868,6 +868,11 @@
       "sha256": "5aa6fd17f7b8ed0e1105c715e973122d23a507ae24fdca393a6ef7a4a1f77ee1"
     },
     {
+      "path": "tests/test_antwar2_sdk_refund.py",
+      "size": 1516,
+      "sha256": "2fc5a2db97f5a08351f7df100ea78083e484e8dd169f7c8b4dbb7e5c22abdbe2"
+    },
+    {
       "path": "tests/test_aquawar_narration.py",
       "size": 1429,
       "sha256": "f12c4afa8a9e9095df4d4a4e3766ba1cacf581d93269fe7ff9a28ed2367c2a5c"
@@ -1299,8 +1304,8 @@
     },
     {
       "path": "validation/README.md",
-      "size": 16628,
-      "sha256": "1c222d362526ace138939157b3b41e905b2ff8ba360d9131f970f353f91ff698"
+      "size": 17218,
+      "sha256": "f67720ba2878672e0ca5fe1efd11473fe68803b62cc35ba689a15409c5f1056e"
     },
     {
       "path": "validation/asset-audit.json",
@@ -1319,8 +1324,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 46898,
-      "sha256": "d55ef3dc1eb150f9861561a7e4eb6a08d00a657dc04d4073cdb31bcb3413c3a0"
+      "size": 47540,
+      "sha256": "4b4d2cf7a43c394b84bab47f3e334e2a864d81e549b7e9a1c66c41868030421d"
     }
   ]
 }

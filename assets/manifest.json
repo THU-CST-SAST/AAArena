@@ -7,7 +7,7 @@
       "sha256": "3fb68c012edb3d088a49e69aafffd8e97b22dc91e894e9ec561fc41b03042791",
       "compressed_bytes": 491520,
       "uncompressed_bytes": 2176425,
-      "files": 4162
+      "files": 492
     },
     {
       "game": "pacman",
@@ -15,7 +15,7 @@
       "sha256": "970f371c47341a0ed59791b0e695d206bc3e01ea310b300284fa112e94774086",
       "compressed_bytes": 143402,
       "uncompressed_bytes": 573475,
-      "files": 238
+      "files": 176
     },
     {
       "game": "antwar",
@@ -23,7 +23,7 @@
       "sha256": "aadd3e37a52f1a71c185a1d11985e3d06adb36d53c582c40d7f8d44666ff2659",
       "compressed_bytes": 1309014,
       "uncompressed_bytes": 6579677,
-      "files": 6061
+      "files": 766
     },
     {
       "game": "aquawar",
@@ -31,7 +31,7 @@
       "sha256": "77b38c39feac77ec6dadfd2fbd0b8a8915d385161e9f6996c63bbf964e1e362a",
       "compressed_bytes": 5558301,
       "uncompressed_bytes": 29005535,
-      "files": 3682
+      "files": 853
     },
     {
       "game": "generals",
@@ -39,7 +39,7 @@
       "sha256": "11d4bde9745975f533b65ac669880daefd8271015d51a39493b033bd110d7e6b",
       "compressed_bytes": 9116850,
       "uncompressed_bytes": 63983277,
-      "files": 8952
+      "files": 2080
     },
     {
       "game": "lostspace",
@@ -63,7 +63,7 @@
       "sha256": "6e8df215b203020cea90dd83451b5cd6c0da73569d8a0d826c57a3808fe7b707",
       "compressed_bytes": 714333,
       "uncompressed_bytes": 3645285,
-      "files": 853
+      "files": 507
     },
     {
       "game": "monecraft",
@@ -71,7 +71,7 @@
       "sha256": "69fffd4d77f7da743e22a4251ef9920cd0f082ef110647a0db815a44657a287a",
       "compressed_bytes": 168480,
       "uncompressed_bytes": 732803,
-      "files": 358
+      "files": 228
     },
     {
       "game": "lota",
@@ -79,7 +79,7 @@
       "sha256": "caedc485e709f8645508280244bd3461067aa855f0508e06bb4cbd17c1c576ab",
       "compressed_bytes": 951991,
       "uncompressed_bytes": 12774624,
-      "files": 608
+      "files": 380
     },
     {
       "game": "snakego",
@@ -87,15 +87,15 @@
       "sha256": "6327ac7a25c9460e0191e155b3f3c440e80b7727363ad883e957efb74ca2664f",
       "compressed_bytes": 841409,
       "uncompressed_bytes": 4377468,
-      "files": 2426
+      "files": 420
     },
     {
       "game": "antwar2",
       "archive": "antwar2.tar.gz",
-      "sha256": "53c60836f51d921855d94bd8d57615957d0b0020f1c963cc5adbd4c8a27d098b",
-      "compressed_bytes": 7838476,
-      "uncompressed_bytes": 48109652,
-      "files": 16518
+      "sha256": "334b50f94d3f6bf463bb1019176da84974707850a254bded524e881c07894874",
+      "compressed_bytes": 7685088,
+      "uncompressed_bytes": 48109715,
+      "files": 3694
     }
   ]
 }
