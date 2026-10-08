@@ -231,7 +231,8 @@
       }
     ],
     "model_calls": 0,
-    "passed": true
+    "passed": true,
+    "profile_scope": "Interface evidence; reference-profile HTTPS regression is tracked in hosted_api."
   },
   "native_harness_acceptance": {
     "codex": {
@@ -277,7 +278,7 @@
     "passed": 37
   },
   "complete_pool_matrix": {
-    "status": "environment_parity_pending",
+    "status": "reference_profile_regression_running",
     "release_acceptance_complete": false,
     "verified_at": "2026-10-08",
     "games": [
@@ -285,102 +286,102 @@
         "game": "rollman",
         "opponents": 64,
         "matches": 64,
-        "candidate_policy_errors": 0,
-        "opponent_policy_errors": 0,
-        "passed": true
+        "candidate_error_events": 0,
+        "opponent_error_events": 0,
+        "interface_checks_passed": true
       },
       {
         "game": "pacman",
         "opponents": 44,
         "matches": 88,
-        "candidate_policy_errors": 0,
-        "opponent_policy_errors": 4,
-        "passed": true
+        "candidate_error_events": 0,
+        "opponent_error_events": 4,
+        "interface_checks_passed": true
       },
       {
         "game": "antwar",
         "opponents": 114,
         "matches": 228,
-        "candidate_policy_errors": 0,
-        "opponent_policy_errors": 0,
-        "passed": true
+        "candidate_error_events": 0,
+        "opponent_error_events": 0,
+        "interface_checks_passed": true
       },
       {
         "game": "aquawar",
         "opponents": 170,
         "matches": 340,
-        "candidate_policy_errors": 0,
-        "opponent_policy_errors": 47,
-        "passed": true
+        "candidate_error_events": 0,
+        "opponent_error_events": 47,
+        "interface_checks_passed": true
       },
       {
         "game": "generals",
         "opponents": 197,
         "matches": 394,
-        "candidate_policy_errors": 0,
-        "opponent_policy_errors": 0,
-        "passed": true
+        "candidate_error_events": 0,
+        "opponent_error_events": 0,
+        "interface_checks_passed": true
       },
       {
         "game": "lostspace",
         "opponents": 111,
         "matches": 222,
-        "candidate_policy_errors": 0,
-        "opponent_policy_errors": 0,
-        "passed": true
+        "candidate_error_events": 0,
+        "opponent_error_events": 0,
+        "interface_checks_passed": true
       },
       {
         "game": "miracle",
         "opponents": 253,
         "matches": 506,
-        "candidate_policy_errors": 0,
-        "opponent_policy_errors": 67,
-        "passed": true
+        "candidate_error_events": 0,
+        "opponent_error_events": 67,
+        "interface_checks_passed": true
       },
       {
         "game": "dorado",
         "opponents": 323,
         "matches": 646,
-        "candidate_policy_errors": 0,
-        "opponent_policy_errors": 48,
-        "passed": true
+        "candidate_error_events": 0,
+        "opponent_error_events": 48,
+        "interface_checks_passed": true
       },
       {
         "game": "monecraft",
         "opponents": 112,
         "matches": 224,
-        "candidate_policy_errors": 0,
-        "opponent_policy_errors": 33,
-        "passed": true
+        "candidate_error_events": 0,
+        "opponent_error_events": 33,
+        "interface_checks_passed": true
       },
       {
         "game": "lota",
         "opponents": 200,
         "matches": 400,
-        "candidate_policy_errors": 0,
-        "opponent_policy_errors": 25,
-        "passed": true
+        "candidate_error_events": 0,
+        "opponent_error_events": 25,
+        "interface_checks_passed": true
       },
       {
         "game": "snakego",
         "opponents": 141,
         "matches": 282,
-        "candidate_policy_errors": 1,
-        "opponent_policy_errors": 17,
-        "passed": true
+        "candidate_error_events": 1,
+        "opponent_error_events": 17,
+        "interface_checks_passed": true
       },
       {
         "game": "antwar2",
         "opponents": 191,
         "matches": 382,
-        "candidate_policy_errors": 0,
-        "opponent_policy_errors": 0,
-        "passed": true
+        "candidate_error_events": 0,
+        "opponent_error_events": 0,
+        "interface_checks_passed": true
       }
     ],
     "total_opponents": 1920,
     "total_matches": 3776,
-    "scope": "Interface checks with SDK test candidates. Frozen-runtime cross-host and full-pool acceptance is pending; policy errors are preserved.",
+    "scope": "Interface evidence against the complete frozen pool. Reference-profile production HTTPS acceptance requires a dedicated full-pool matrix and run-specific error diagnosis.",
     "transport": "Twelve-game dense/binary small matrix and native harness checks use production HTTPS. Corrected AI9 full-pool sweeps use an authenticated HTTP validation instance on the same host, with the isolated GCC 14.2 runtime; other full-pool sweeps use production HTTPS.",
     "checks": [
       "complete frozen opponent pool",
@@ -389,18 +390,26 @@
       "candidate strategy hashes",
       "receipt integrity",
       "budget accounting",
-      "policy error attribution"
+      "error ownership and raw game diagnostics"
     ],
-    "policy_error_notes": {
+    "limitations": [
+      "Acceptance does not guarantee every generated policy is legal or that all historical policies finish without forfeits.",
+      "Hosted full-pool off-policy replay catalog is not provisioned."
+    ],
+    "reference_profile_regression": {
+      "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
+      "transport": "authenticated public HTTPS",
+      "status": "running",
+      "games": 12,
+      "complete_pool_opponents": 1920,
+      "expected_matches": 3776
+    },
+    "error_observations": {
       "snakego": "The SDK sample candidate produced one illegal-action exception. This is a policy failure reported by the official game engine, not a service failure.",
       "dorado": "All 25 opponents with errors also have errors in the 17 historical comparison submissions. All 646 replay archives pass integrity checks.",
       "lota": "14 of 15 opponents with errors have errors in the 17 historical comparison submissions; the remaining opponent has a seat/seed-specific segmentation fault also observed in another hosted sweep.",
       "miracle": "67 opponent errors: 59 run errors, four output-limit errors and four timeouts. No missing dependencies in the full-pool sweep."
-    },
-    "limitations": [
-      "Acceptance does not guarantee every generated policy is legal or that all historical policies finish without forfeits.",
-      "Hosted full-pool off-policy replay catalog is not provisioned."
-    ]
+    }
   },
   "ai9_isolation_and_compiler": {
     "compiler": "GCC 14.2.0",
@@ -462,8 +471,9 @@
       }
     },
     "hosted_deployment": "verified",
-    "full_pool_matrix": "verified",
-    "result_regression_tests_passed": 39
+    "full_pool_matrix": "reference profile regression running",
+    "result_regression_tests_passed": 39,
+    "small_match_matrix_profile": "e3bb77ed7474334564d670b50e2108085d56dd8f"
   },
   "miracle_sdk": {
     "supported_units": 7,
@@ -507,20 +517,22 @@
     "complete_pool_matrix": "verified"
   },
   "hosted_api": {
-    "source_commit": "e3bb77ed7474334564d670b50e2108085d56dd8f",
+    "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
     "https_certificate_verified": true,
-    "deployed_file_hashes_verified": 67,
+    "deployed_file_hashes_verified": 62,
     "full_pool_inventory": 1920,
     "player_python": "3.10.14",
-    "ai9_compiler": "GCC 14.2.0",
+    "ai9_compiler": "Debian GCC 14.2.0-19",
     "matplotlib": "3.8.4",
-    "public_small_matrix_games": 12,
-    "client_preflight_compiler": "P5 GCC 11.4 via explicit override; actual evaluations use hosted GCC 14.2.0"
+    "public_small_matrix_games": 10,
+    "client_preflight_compiler": "P5 GCC 11.4 via explicit override; actual evaluations use hosted GCC 14.2.0",
+    "glibc": "2.41",
+    "public_small_matrix_status": "running"
   },
   "environment_parity": {
     "status": "in progress",
     "reference": "agentlab research runtime",
-    "blocking_issue": "Frozen system/Python runtime deployment and cross-host game regressions are required.",
+    "blocking_issue": "Production HTTPS small/full-pool matrices and remaining error attribution are required.",
     "reference_profile": {
       "compiler": "Debian GCC/G++ 14.2.0-19",
       "glibc": "2.41",
@@ -530,7 +542,7 @@
       "python": "Conda Python 3.10.14"
     },
     "targeted_tests_passed": 31,
-    "production_deployment": "pending",
+    "production_deployment": "verified",
     "cross_host_matrix": "28/28 diagnostic seats completed; Dorado judge rebuild and runtime error attribution pending",
     "python_snapshot": {
       "files": 36715,
@@ -555,7 +567,10 @@
     "backend_rebuild_regression": {
       "future_dated_prebuilt_output": "passed",
       "seed_and_reference_runtime_tests_passed": 6,
-      "paired_dorado_rebuild": "running"
-    }
+      "paired_dorado_rebuild": "all five binaries match across hosts"
+    },
+    "production_source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
+    "public_https_health": "passed",
+    "full_pool_regression": "running"
   }
 }

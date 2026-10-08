@@ -12,7 +12,7 @@ See `release-verification.json` for measured acceptance status. Historical oppon
 
 Environment parity acceptance is pending. The frozen-runtime cross-host matrix is a separate required release gate.
 
-The interface matrix contains 3,776 matches against all 1,920 frozen human opponents. These are SDK candidate checks, not model benchmark scores. Error columns count official game-policy errors; the opponents remain in the evaluation pool.
+The interface matrix contains 3,776 matches against all 1,920 frozen human opponents. These are SDK candidate checks, not model benchmark scores. Error columns count official engine error events. Root-cause attribution requires run-specific diagnosis; every opponent remains in the evaluation pool.
 
 | Game | Opponents | Matches | Candidate policy errors | Opponent policy errors | Interface check |
 |---|---:|---:|---:|---:|---|

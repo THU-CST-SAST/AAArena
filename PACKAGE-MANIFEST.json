@@ -1259,8 +1259,8 @@
     },
     {
       "path": "validation/README.md",
-      "size": 3565,
-      "sha256": "5a8a65562dc5fa4d3b1300c42f5776e2510dbd143a0359a9b3c5b2b8f8112e82"
+      "size": 3624,
+      "sha256": "2564e183288e291e21caa2bdf8dfa89074f46e10f80dcf3c01e3488c1afde0bf"
     },
     {
       "path": "validation/asset-audit.json",
@@ -1279,8 +1279,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 14901,
-      "sha256": "1aaed463e0814d890eed0ddd089466fc53a3aba0889fd5e809183af85bbab2a3"
+      "size": 15891,
+      "sha256": "84cce41c9d4f6448b18a8d7df5634062bb1512cf96d6891a1fdae52811e5bc67"
     }
   ]
 }
