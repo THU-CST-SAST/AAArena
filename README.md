@@ -1,8 +1,6 @@
 <div align="center">
 
-# AAArena
-
-### Can AI Agents Learn Their Way to the Top? Evaluating Heuristic Learning in a Long-Running Game Agent Competition
+# Can AI Agents Learn Their Way to the Top? Evaluating Heuristic Learning in a Long-Running Game Agent Competition
 
 <a href="https://yks23.github.io"><ins>Kaisen Yang</ins></a><sup>1,\*,†</sup>,
 <a href="https://aoraku.github.io">Qingle Liu</a><sup>1,\*,†</sup>,
