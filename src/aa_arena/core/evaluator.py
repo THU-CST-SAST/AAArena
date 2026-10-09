@@ -6,9 +6,11 @@
 
 from __future__ import annotations
 
+from dataclasses import replace
 from pathlib import Path
 
-from aa_arena.core.contract import EvaluateResult, PlayerRef
+from aa_arena.core.contract import EvaluateResult, EvaluationStatus, PlayerRef
+from aa_arena.saiblo.player_errors import transport_player_errors
 from aa_arena.core.registry import get_plugin
 
 
@@ -31,4 +33,24 @@ def evaluate(
     plugin = get_plugin(game, games_root)
     game_dir = (games_root or Path(__file__).resolve().parents[3] / "games") / game
     evaluator = plugin.evaluator_factory(game_dir)
-    return evaluator.evaluate(players, roles, seed)
+    result = evaluator.evaluate(players, roles, seed)
+    if result.status in (EvaluationStatus.COMPLETE, EvaluationStatus.GAME_ERROR) and result.replay_path:
+        failed_roles, detail = transport_player_errors(
+            Path(result.replay_path).with_name("transport-events.jsonl"),
+            roles=tuple(roles),
+            terminal_failure_states=(
+                frozenset({"RE", "TLE", "OLE", "IA"})
+                if game == "antwar2" else frozenset()
+            ),
+        )
+        if failed_roles:
+            result = replace(
+                result,
+                status=EvaluationStatus.GAME_ERROR,
+                diagnostic=result.diagnostic or detail,
+                payload={
+                    **result.payload,
+                    "failed_roles": sorted(set(failed_roles) | set(result.payload.get("failed_roles", ()))),
+                },
+            )
+    return result

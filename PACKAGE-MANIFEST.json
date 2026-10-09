@@ -604,8 +604,8 @@
     },
     {
       "path": "src/aa_arena/core/evaluator.py",
-      "size": 1231,
-      "sha256": "e813229913d19dd420e6ee36c1abec1b28927777be22e9029ddee9ddda0ccd60"
+      "size": 2198,
+      "sha256": "4bdf4ab1bdb65c1bb58b4185693f34fbdfaf31fbbcbaa41b9a21e714cc578f4e"
     },
     {
       "path": "src/aa_arena/core/host_capacity.py",
@@ -1068,6 +1068,11 @@
       "sha256": "fa11c9df9209c9b91b961282c399da99aea7263f2475f22d5c3e426d42ca236f"
     },
     {
+      "path": "tests/test_local_evaluator_player_errors.py",
+      "size": 2747,
+      "sha256": "23dd66f903e89d3022513853ce3cb9941c641a7d456c291dab0d25a5561e4bc2"
+    },
+    {
       "path": "tests/test_local_subset.py",
       "size": 2308,
       "sha256": "880846d74902783cf13664e1fe1d341936490cf5b0f08865bc79292c7876b7c4"
@@ -1309,8 +1314,8 @@
     },
     {
       "path": "validation/README.md",
-      "size": 21019,
-      "sha256": "dda3d3adc984fbab0a2b4e67dcd794d1dac9ef0a32c331ced9fca7122d19bcee"
+      "size": 21483,
+      "sha256": "c523e5fe6d768bc5a1d4bd5c572d6fbaf341836d2adf857702516393891d8ad3"
     },
     {
       "path": "validation/asset-audit.json",
@@ -1329,8 +1334,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 53790,
-      "sha256": "bb3bde8d170e178796cb7ffaf65cf905719dc31ea0f3bf22b2d1766243dffdcc"
+      "size": 54148,
+      "sha256": "fd94c66de82956b5fea20670816773e37053bec1552c7f7d83a47da33d039e54"
     }
   ]
 }

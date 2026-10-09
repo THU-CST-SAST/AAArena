@@ -118,3 +118,7 @@ Eight paired LostSpace matches cover two unchanged original opponents and both s
 Four original player variants share a byte-identical deterministic map generator. Their packages require five generated NumPy tables each. The public measured-Elo ranks 96 and 98 include these tables and their build provenance; the other variants remain server-only. Original strategy files retain their hashes. Three variant packages have twelve paired matches across the two hosts, all reaching 100 rounds without in-game transport errors. The public LostSpace local contract passes. Hosted deployment acceptance is pending.
 
 A broader reference-host diagnostic covers 39 additional unchanged opponents and 78 assignments under the turn-gate runtime. Fifteen assignments complete without game errors; 63 have errors requiring individual reconciliation. None contains the SDK message-format exception targeted by the transport regression. Missing generated tables, source-level attribute exceptions, timeouts and native crashes remain distinct findings; this diagnostic does not certify universal historical-player parity.
+
+### Local evaluator error attribution
+
+The public local evaluation entry point reports player crashes, timeouts and official forfeits as `game_error`, preserving the official winner, scores, rounds and replay. Errors after the terminal game result do not count as player failures. Validation comprises 16 focused tests, one live four-player failure case and five normal LostSpace contract matches. These checks do not certify full-pool historical runtime parity.

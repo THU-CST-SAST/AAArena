@@ -1537,5 +1537,14 @@
     "historical_success_reconciliation": "pending",
     "source": "reference host using turn-gate runtime and original packages before variant build outputs",
     "interpretation": "Execution diagnostics; failures require source, input and historical provenance checks."
+  },
+  "local_evaluator_player_errors": {
+    "status": "verified",
+    "focused_tests_passed": 16,
+    "live_all_player_failure_correctly_attributed": true,
+    "normal_lostspace_contract_matches_passed": 5,
+    "official_winner_scores_and_replay_preserved": true,
+    "post_terminal_cleanup_errors_excluded": true,
+    "complete_release_acceptance": false
   }
 }
