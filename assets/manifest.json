@@ -44,10 +44,10 @@
     {
       "game": "lostspace",
       "archive": "lostspace.tar.gz",
-      "sha256": "52f6466cd411acfcdea58e0e4bf11e69ce90e5f78a4a9d1866fbc289a1d771a3",
-      "compressed_bytes": 2311435,
-      "uncompressed_bytes": 11994178,
-      "files": 431
+      "sha256": "d1f56c588e102fe64981b8d497099905039814b5fe5d7d4904b77f676b6972ee",
+      "compressed_bytes": 2312963,
+      "uncompressed_bytes": 12004885,
+      "files": 436
     },
     {
       "game": "miracle",

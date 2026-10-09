@@ -1511,5 +1511,31 @@
       "live_matches": 52,
       "runnable_starters": 22
     }
+  },
+  "lostspace_variant_build_assets": {
+    "source_generator_sha256": "4ca8c312d43fae77f4fb584080d3e7c9e1ea80bcea193fef8dea553c00c7f107",
+    "original_opponents": 3,
+    "generated_files_per_opponent": 5,
+    "paired_matches_passed": 12,
+    "rounds_per_match": 100,
+    "in_game_transport_errors": 0,
+    "original_strategy_files_unchanged": true,
+    "public_measured_elo_ranks": [
+      96,
+      98
+    ],
+    "public_local_contract_passed": true,
+    "hosted_deployment_pending": true
+  },
+  "lostspace_expanded_diagnostic": {
+    "additional_opponents": 39,
+    "matches": 78,
+    "complete": 15,
+    "game_errors": 63,
+    "infrastructure_exceptions": 0,
+    "sdk_message_format_errors": 0,
+    "historical_success_reconciliation": "pending",
+    "source": "reference host using turn-gate runtime and original packages before variant build outputs",
+    "interpretation": "Execution diagnostics; failures require source, input and historical provenance checks."
   }
 }

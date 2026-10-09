@@ -111,3 +111,10 @@ Profile `terminal-lostspace-v1` has sixteen verified deployed file hashes and an
 Buffered replies belong to the input that produced them. A new state with input for the same player supersedes its buffered response; listen-only transitions preserve early binary-SDK replies. LostSpace accepts a reply only after the corresponding player's formal round-begin notification, including turns following respawn. Notifications, action deadlines, game rules and original player code retain their contracts.
 
 Eight paired LostSpace matches cover two unchanged original opponents and both seat assignments on each host. Every match reaches 100 rounds with no in-game transport errors. Forty-five focused protocol and SDK tests pass. The clean public environment passes all twelve local game contracts, covering 52 actual matches and 22 runnable starters. Hosted deployment and complete-pool acceptance for this runtime are pending. These bounded checks do not certify universal historical-player parity.
+
+
+## LostSpace variant build resources
+
+Four original player variants share a byte-identical deterministic map generator. Their packages require five generated NumPy tables each. The public measured-Elo ranks 96 and 98 include these tables and their build provenance; the other variants remain server-only. Original strategy files retain their hashes. Three variant packages have twelve paired matches across the two hosts, all reaching 100 rounds without in-game transport errors. The public LostSpace local contract passes. Hosted deployment acceptance is pending.
+
+A broader reference-host diagnostic covers 39 additional unchanged opponents and 78 assignments under the turn-gate runtime. Fifteen assignments complete without game errors; 63 have errors requiring individual reconciliation. None contains the SDK message-format exception targeted by the transport regression. Missing generated tables, source-level attribute exceptions, timeouts and native crashes remain distinct findings; this diagnostic does not certify universal historical-player parity.
