@@ -1,8 +1,9 @@
 {
-  "non_game_archive_files_scanned": 223,
+  "non_game_archive_files_scanned": 261,
   "nested_zip_members_scanned": 1,
-  "archive_members_scanned": 11427,
+  "archive_members_scanned": 11437,
   "credential_candidates": [],
   "git_directory_present": false,
-  "game_archives": 12
+  "game_archives": 12,
+  "published_players": 909
 }

@@ -4,5 +4,11 @@
     "input_sha256": "489858a9bcb646466eeb0f4d981ee79f1aa5661f9726768f04b1df5f9cda7b59",
     "sha256": "2bd8045ec927c80894ff0012218e2f92ae27a34b754a18308abdd642f9219d49",
     "purpose": "Python alternative emits required ImitateFish target when selecting fish 12, matching the C++ starter encoding"
+  },
+  {
+    "file": "games/antwar2/public_sdk/protocol.py",
+    "input_sha256": "323c899e05d88b417c99b5e70c6e7dfb8fd3ad74e0a5edfac06b8b6a73878d98",
+    "sha256": "ab113d63f1006bfcb2d4c4a70202902c17261fbddbbfa3c4e89fc1ccda863af4",
+    "purpose": "Encode operation arguments as decimal integers on all supported Python versions, including IntEnum tower types on Python 3.10."
   }
 ]

@@ -308,7 +308,7 @@ The learner receives **128 trajectory views and 16 remote full-pool large evalua
 
 ## Results and validation
 
-**Validation:** remote interface and native harness acceptance evidence is available in [validation scope and results](validation/README.md). Environment parity with the research runtime is under validation, including AI9 seed propagation and cross-host game regressions. Full release acceptance is pending. The hosted full-pool off-policy replay catalog is not provisioned.
+**Validation:** all three release criteria pass on the documented x86-64 Linux configuration: reference/hosted behavioral parity, authenticated small/full-pool evaluation, and clean local installation across all 12 games. Both official native harnesses pass real automatic-compaction and session-resume checks. Original player failures and timing limits are preserved. See [validation scope and results](validation/README.md) for evidence and limits. The hosted full-pool off-policy replay catalogue is not provisioned.
 
 Formal large evaluations fit the candidate against the complete frozen Elo anchors and report full-pool rank. Local practice uses only published opponents and is a separate result scope. Match randomness, candidate bugs and historical opponent forfeits can affect a score; an infrastructure failure is not a valid model-performance result.
 

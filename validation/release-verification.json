@@ -1,238 +1,331 @@
 {
   "version": "0.4.0",
-  "evaluation_scope": "full-pool via authenticated HTTPS",
+  "verified_at_utc": "2026-10-09T08:22:57.924611+00:00",
+  "evaluation_scope": "Full-pool authenticated HTTPS evaluation; public-subset local execution",
   "published_players": 909,
-  "component_suite": {
-    "passed": 737,
-    "skipped": 1,
-    "deselected": 32
+  "full_pool_players": 1920,
+  "release_acceptance": {
+    "passed": true,
+    "all_criteria_required": true,
+    "criteria": {
+      "historical_player_runtime_parity": {
+        "status": "passed",
+        "criterion": "Preserve original strategy files and decision limits; accept evidenced, cross-host-consistent original-policy failures with faithful reporting.",
+        "scope": "Recorded historical-success and failure cases, paired execution matrices, effective-input diagnostics and fixed hosted runtime. This is not a guarantee for every possible stochastic trajectory.",
+        "historical_candidate_hashes_verified": true,
+        "original_policy_archives_preserved": true,
+        "original_limits_preserved": true,
+        "error_classification": "Infrastructure and public SDK contracts verified by regressions; retained policy and bundled-SDK failure paths have paired evidence.",
+        "timing_boundary": "Original wall-time limits include initialization. Near-limit cold imports and wall-clock-seeded policies may vary across runs; these are retained, not relabelled as successful."
+      },
+      "remote_policy_submission": {
+        "status": "passed",
+        "small_games": 12,
+        "full_pool_games": 12,
+        "actual_complete_pool_matches": 3776,
+        "frozen_policy_hashes_verified": true,
+        "request_result_pool_hashes_verified": true,
+        "budgets_and_receipts_verified": true,
+        "dense_binary_boundary_verified": true,
+        "runtime_profiles_reported_separately": true
+      },
+      "local_release_package": {
+        "status": "passed",
+        "fresh_controller_environment": true,
+        "fresh_player_environment": true,
+        "independent_asset_extraction": true,
+        "local_games": 12,
+        "actual_matches": 52,
+        "runnable_starters": 22,
+        "local_agent_iteration": "Both native harnesses verified with real providers, workspace I/O, automatic compaction and session resume.",
+        "protocol_asset_regression": {
+          "fresh_asset_install_files": 3693,
+          "python_versions": [
+            "3.10.14",
+            "3.14.6"
+          ],
+          "focused_tests_passed": 20,
+          "additional_live_matches": 5,
+          "runnable_starters": 2
+        }
+      }
+    },
+    "public_visibility_requires_user_decision": true
   },
-  "targeted_suite": {
-    "passed": 70,
-    "skipped": 12
+  "supported_platform": {
+    "os": "Debian 13 / x86-64 Linux with systemd isolation",
+    "controller_python": "3.14.6",
+    "player_python": "3.10.14",
+    "compiler": "Debian GCC/G++ 14.2.0-19",
+    "glibc": "2.41",
+    "other_platforms": "Use a compatible x86-64 Linux machine or virtual machine; native macOS, Windows and ARM execution is not certified."
+  },
+  "reference_environment": {
+    "system_snapshot": {
+      "files": 28332,
+      "matched": true,
+      "fingerprint": "ccef511da39a5b0d373e2ff93888cd1bb83744fb22250ed44be4983c573be5af",
+      "cloud_integrity_check": "passed"
+    },
+    "player_snapshot": {
+      "files": 36715,
+      "file_manifest_sha256": "b863cced85ff10eb11f196ada16f32015b332753df38c09661c76569c2356be3",
+      "matched": true
+    },
+    "backend_python": {
+      "status": "Verified reference bundle, production deployment, hosted execution and paired behavior evidence",
+      "python": "3.14.6",
+      "numpy": "2.3.5",
+      "matplotlib": "3.11.1",
+      "files": 9666,
+      "manifest_sha256": "f2d510e6f580574dcbdf5977c8c1543ba1d5a36c60fc88e8ea5d9f6bedcc52fb",
+      "real_host_preflight": "passed",
+      "paired_cases": 4,
+      "paired_statuses_match": true,
+      "rounds_identical": false,
+      "formal_results_from_different_backend_profiles_combined": false
+    },
+    "dependency_payload_integrity": {
+      "original_files_preserved_per_host": 38056,
+      "added_identical_payload_files": 669,
+      "additional_differences": "Three empty explicit-install REQUESTED markers and their RECORD entries",
+      "production_profile_deployed": true,
+      "dependency_payloads_match": true
+    },
+    "admission": {
+      "physical_cores": 8,
+      "logical_cpus": 16,
+      "concurrent_complete_matches": 3,
+      "small_reserved_slots": 1,
+      "decision_limits_unchanged": true
+    }
+  },
+  "hosted_api": {
+    "https_certificate_verified": true,
+    "health_games": 12,
+    "evaluation_profile": "turn-gate-material-sdk-v5",
+    "runtime_base_commit": "571ab30be43000f9fb81d32c31df7321e53b9ac4",
+    "leaf_file_hashes": {
+      "src/aa_arena/core/evaluator.py": "3c6edc6618d22ccf4d58a91058f653c4865192e447f2092b052267dde18a14df",
+      "games/antwar2/public_sdk/protocol.py": "ab113d63f1006bfcb2d4c4a70202902c17261fbddbbfa3c4e89fc1ccda863af4"
+    },
+    "policy_files_changed": false,
+    "independent_import_entrypoints_passed": 4
   },
   "remote_small": {
-    "games": [
+    "passed": true,
+    "games": 12,
+    "submissions": 24,
+    "actual_matches": 46,
+    "feedback": [
+      "detailed",
+      "binary"
+    ],
+    "immutable_receipts_verified": true,
+    "model_calls": 0
+  },
+  "protocol_https_regression": {
+    "passed": true,
+    "submissions": 2,
+    "actual_matches": 4,
+    "game": "antwar2",
+    "receipts": [
       {
-        "checks": [
-          {
-            "feedback": "detailed",
-            "kind": "small",
-            "passed": true
-          },
-          {
-            "feedback": "binary",
-            "kind": "small",
-            "passed": true
-          }
-        ],
-        "game": "antwar",
-        "passed": true,
-        "pool_count": 114,
-        "seconds": 100.04
+        "run_id": "1d9d3025660d4a9386580aa50ff89f40",
+        "submission_id": "a2288c80b6f042b3a7d3d6da07de8f98",
+        "pool_sha256": "73c46e52789dccb099225860558c328819673665d8f099e1372b0b648a403fd8",
+        "request_sha256": "52e000f1267cb294a850b220afee1bc403e7c0967705e3e6d4f0161a8b9fb5c2",
+        "result_sha256": "3109b254798d30f1cc3777aa16c82fe0ed761550215edc012572389649479b36",
+        "small_used": 1,
+        "large_used": 0,
+        "completed_at": 1791533757.968516
       },
       {
-        "checks": [
-          {
-            "feedback": "detailed",
-            "kind": "small",
-            "passed": true
-          },
-          {
-            "feedback": "binary",
-            "kind": "small",
-            "passed": true
-          }
-        ],
-        "game": "antwar2",
-        "passed": true,
-        "pool_count": 191,
-        "seconds": 169.33
-      },
-      {
-        "checks": [
-          {
-            "feedback": "detailed",
-            "kind": "small",
-            "passed": true
-          },
-          {
-            "feedback": "binary",
-            "kind": "small",
-            "passed": true
-          }
-        ],
-        "game": "aquawar",
-        "passed": true,
-        "pool_count": 170,
-        "seconds": 236.77
-      },
-      {
-        "checks": [
-          {
-            "feedback": "detailed",
-            "kind": "small",
-            "passed": true
-          },
-          {
-            "feedback": "binary",
-            "kind": "small",
-            "passed": true
-          }
-        ],
-        "game": "dorado",
-        "passed": true,
-        "pool_count": 323,
-        "seconds": 371.04
-      },
-      {
-        "checks": [
-          {
-            "feedback": "detailed",
-            "kind": "small",
-            "passed": true
-          },
-          {
-            "feedback": "binary",
-            "kind": "small",
-            "passed": true
-          }
-        ],
-        "game": "generals",
-        "passed": true,
-        "pool_count": 197,
-        "seconds": 109.96
-      },
-      {
-        "checks": [
-          {
-            "feedback": "detailed",
-            "kind": "small",
-            "passed": true
-          },
-          {
-            "feedback": "binary",
-            "kind": "small",
-            "passed": true
-          }
-        ],
-        "game": "lostspace",
-        "passed": true,
-        "pool_count": 111,
-        "seconds": 18.77
-      },
-      {
-        "checks": [
-          {
-            "feedback": "detailed",
-            "kind": "small",
-            "passed": true
-          },
-          {
-            "feedback": "binary",
-            "kind": "small",
-            "passed": true
-          }
-        ],
-        "game": "lota",
-        "passed": true,
-        "pool_count": 200,
-        "seconds": 273.68
-      },
-      {
-        "checks": [
-          {
-            "feedback": "detailed",
-            "kind": "small",
-            "passed": true
-          },
-          {
-            "feedback": "binary",
-            "kind": "small",
-            "passed": true
-          }
-        ],
-        "game": "miracle",
-        "passed": true,
-        "pool_count": 253,
-        "seconds": 29.71
-      },
-      {
-        "checks": [
-          {
-            "feedback": "detailed",
-            "kind": "small",
-            "passed": true
-          },
-          {
-            "feedback": "binary",
-            "kind": "small",
-            "passed": true
-          }
-        ],
-        "game": "monecraft",
-        "passed": true,
-        "pool_count": 112,
-        "seconds": 306.84
-      },
-      {
-        "checks": [
-          {
-            "feedback": "detailed",
-            "kind": "small",
-            "passed": true
-          },
-          {
-            "feedback": "binary",
-            "kind": "small",
-            "passed": true
-          }
-        ],
-        "game": "pacman",
-        "passed": true,
-        "pool_count": 44,
-        "seconds": 78.54
-      },
-      {
-        "checks": [
-          {
-            "feedback": "detailed",
-            "kind": "small",
-            "passed": true
-          },
-          {
-            "feedback": "binary",
-            "kind": "small",
-            "passed": true
-          }
-        ],
-        "game": "rollman",
-        "passed": true,
-        "pool_count": 64,
-        "seconds": 74.17
-      },
-      {
-        "checks": [
-          {
-            "feedback": "detailed",
-            "kind": "small",
-            "passed": true
-          },
-          {
-            "feedback": "binary",
-            "kind": "small",
-            "passed": true
-          }
-        ],
-        "game": "snakego",
-        "passed": true,
-        "pool_count": 141,
-        "seconds": 29.62
+        "run_id": "b5f8967710ff4a2bac31e134a4d4a6f0",
+        "submission_id": "18109d0ca95c44d68e727c00e91a6938",
+        "pool_sha256": "73c46e52789dccb099225860558c328819673665d8f099e1372b0b648a403fd8",
+        "request_sha256": "530c7bc92fe12322e5c837d5980d51323357062c540fad3ff00c292fe8661c6a",
+        "result_sha256": "d7064d221c12b17cf664a1a2288d5aa559fd5a89a28a9b93af3b482d2055742b",
+        "small_used": 1,
+        "large_used": 0,
+        "completed_at": 1791533817.7904425
       }
     ],
-    "model_calls": 0,
-    "passed": true,
-    "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38"
+    "strategy_budget_and_artifact_audit_passed": true,
+    "model_calls": 0
+  },
+  "complete_pool_matrix": {
+    "status": "execution_integrity_verified",
+    "release_acceptance_complete": true,
+    "opponents": 1920,
+    "matches": 3776,
+    "games": [
+      {
+        "game": "rollman",
+        "runtime_profile": "pinned-python-backend",
+        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
+        "opponents": 64,
+        "matches": 64,
+        "execution_integrity_passed": true,
+        "candidate_errors": 0,
+        "opponent_errors": 4,
+        "game_errors": 4,
+        "infrastructure_retries": 0
+      },
+      {
+        "game": "pacman",
+        "runtime_profile": "reference-native-cpp",
+        "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
+        "opponents": 44,
+        "matches": 88,
+        "execution_integrity_passed": true,
+        "candidate_errors": 0,
+        "opponent_errors": 3,
+        "game_errors": 3,
+        "infrastructure_retries": 0
+      },
+      {
+        "game": "antwar",
+        "runtime_profile": "pinned-python-backend",
+        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
+        "opponents": 114,
+        "matches": 228,
+        "execution_integrity_passed": true,
+        "candidate_errors": 6,
+        "opponent_errors": 12,
+        "game_errors": 13,
+        "infrastructure_retries": 0
+      },
+      {
+        "game": "aquawar",
+        "runtime_profile": "pinned-python-backend",
+        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
+        "opponents": 170,
+        "matches": 340,
+        "execution_integrity_passed": true,
+        "candidate_errors": 0,
+        "opponent_errors": 49,
+        "game_errors": 49,
+        "infrastructure_retries": 0
+      },
+      {
+        "game": "generals",
+        "runtime_profile": "pinned-python-backend",
+        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
+        "opponents": 197,
+        "matches": 394,
+        "execution_integrity_passed": true,
+        "candidate_errors": 0,
+        "opponent_errors": 34,
+        "game_errors": 34,
+        "infrastructure_retries": 0
+      },
+      {
+        "game": "lostspace",
+        "runtime_profile": "turn-gate-material-sdk-v5",
+        "source_commit": "571ab30be43000f9fb81d32c31df7321e53b9ac4",
+        "opponents": 111,
+        "matches": 222,
+        "execution_integrity_passed": true,
+        "candidate_errors": 0,
+        "opponent_errors": 55,
+        "game_errors": 55,
+        "infrastructure_retries": 0,
+        "receipt": {
+          "run_id": "c7ba961d75424db8862a4b4b391cda71",
+          "submission_id": "4628777cbf62406a8d9831b457a1e3c8",
+          "pool_sha256": "18fc8afd72b2e0cb7ea81247dc8713641d2e01d7c51c1bf18030ce2c5c309945",
+          "request_sha256": "679049bc10e1b91a3d3cbd9f682df529e279e95f84aaa80225850a07cfaedd02",
+          "result_sha256": "449d584b635a9a00e1aa36346c5ee2b3c9d57dd6b39bd3781f5ee911921e9abe",
+          "small_used": 1,
+          "large_used": 1,
+          "completed_at": 1791523688.154119
+        }
+      },
+      {
+        "game": "miracle",
+        "runtime_profile": "pinned-python-backend",
+        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
+        "opponents": 253,
+        "matches": 506,
+        "execution_integrity_passed": true,
+        "candidate_errors": 0,
+        "opponent_errors": 67,
+        "game_errors": 67,
+        "infrastructure_retries": 0
+      },
+      {
+        "game": "dorado",
+        "runtime_profile": "reference-native-cpp",
+        "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
+        "opponents": 323,
+        "matches": 646,
+        "execution_integrity_passed": true,
+        "candidate_errors": 0,
+        "opponent_errors": 47,
+        "game_errors": 47,
+        "infrastructure_retries": 0
+      },
+      {
+        "game": "monecraft",
+        "runtime_profile": "reference-native-cpp",
+        "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
+        "opponents": 112,
+        "matches": 224,
+        "execution_integrity_passed": true,
+        "candidate_errors": 0,
+        "opponent_errors": 31,
+        "game_errors": 31,
+        "infrastructure_retries": 0
+      },
+      {
+        "game": "lota",
+        "runtime_profile": "reference-native-cpp",
+        "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
+        "opponents": 200,
+        "matches": 400,
+        "execution_integrity_passed": true,
+        "candidate_errors": 0,
+        "opponent_errors": 23,
+        "game_errors": 23,
+        "infrastructure_retries": 0
+      },
+      {
+        "game": "snakego",
+        "runtime_profile": "pinned-python-backend",
+        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
+        "opponents": 141,
+        "matches": 282,
+        "execution_integrity_passed": true,
+        "candidate_errors": 3,
+        "opponent_errors": 18,
+        "game_errors": 21,
+        "infrastructure_retries": 0
+      },
+      {
+        "game": "antwar2",
+        "runtime_profile": "turn-gate-material-sdk-v5",
+        "source_commit": "571ab30be43000f9fb81d32c31df7321e53b9ac4",
+        "opponents": 191,
+        "matches": 382,
+        "execution_integrity_passed": true,
+        "candidate_errors": 0,
+        "opponent_errors": 9,
+        "game_errors": 9,
+        "infrastructure_retries": 0,
+        "receipt": {
+          "run_id": "03d0caa20a4c4b8a9fc01a3e05097c5f",
+          "submission_id": "f54b643b504047aba3700b2269b57abf",
+          "pool_sha256": "73c46e52789dccb099225860558c328819673665d8f099e1372b0b648a403fd8",
+          "request_sha256": "c657e790eba74c6ad5f09a1a82d9ef147746275354c7c63dcf5d2ce4ea577cb4",
+          "result_sha256": "ecc90dab2a45118306876883a4ea2bae8be9384465c4eba22e50d3160290e252",
+          "small_used": 1,
+          "large_used": 1,
+          "completed_at": 1791529294.5143378
+        }
+      }
+    ],
+    "interpretation": "SDK candidates, not model leaderboard scores. Recorded errors remain in the results. Profiles and immutable receipts identify each execution; Elo values are not pooled across profiles."
   },
   "native_harness_acceptance": {
     "codex": {
@@ -273,1443 +366,6 @@
       ]
     }
   },
-  "offpolicy_hosted_catalog": "not provisioned",
-  "api_suite": {
-    "passed": 37
-  },
-  "complete_pool_matrix": {
-    "status": "component_execution_and_integrity_verified_player_parity_pending",
-    "release_acceptance_complete": false,
-    "verified_at": "2026-10-08",
-    "games": [
-      {
-        "game": "rollman",
-        "runtime_profile": "pinned-python-backend",
-        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
-        "opponents": 64,
-        "matches": 64,
-        "execution_integrity_passed": true,
-        "candidate_errors": 0,
-        "opponent_errors": 4,
-        "game_errors": 4,
-        "infrastructure_retries": 0,
-        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
-      },
-      {
-        "game": "pacman",
-        "runtime_profile": "reference-native-cpp",
-        "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
-        "opponents": 44,
-        "matches": 88,
-        "execution_integrity_passed": true,
-        "candidate_errors": 0,
-        "opponent_errors": 3,
-        "game_errors": 3,
-        "infrastructure_retries": 0,
-        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
-      },
-      {
-        "game": "antwar",
-        "runtime_profile": "pinned-python-backend",
-        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
-        "opponents": 114,
-        "matches": 228,
-        "execution_integrity_passed": true,
-        "candidate_errors": 6,
-        "opponent_errors": 12,
-        "game_errors": 13,
-        "infrastructure_retries": 0,
-        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
-      },
-      {
-        "game": "aquawar",
-        "runtime_profile": "pinned-python-backend",
-        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
-        "opponents": 170,
-        "matches": 340,
-        "execution_integrity_passed": true,
-        "candidate_errors": 0,
-        "opponent_errors": 49,
-        "game_errors": 49,
-        "infrastructure_retries": 0,
-        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
-      },
-      {
-        "game": "generals",
-        "runtime_profile": "pinned-python-backend",
-        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
-        "opponents": 197,
-        "matches": 394,
-        "execution_integrity_passed": true,
-        "candidate_errors": 0,
-        "opponent_errors": 34,
-        "game_errors": 34,
-        "infrastructure_retries": 0,
-        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
-      },
-      {
-        "game": "lostspace",
-        "runtime_profile": "pinned-python-backend",
-        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
-        "opponents": 111,
-        "matches": 222,
-        "execution_integrity_passed": true,
-        "candidate_errors": 8,
-        "opponent_errors": 83,
-        "game_errors": 83,
-        "infrastructure_retries": 0,
-        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
-      },
-      {
-        "game": "miracle",
-        "runtime_profile": "pinned-python-backend",
-        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
-        "opponents": 253,
-        "matches": 506,
-        "execution_integrity_passed": true,
-        "candidate_errors": 0,
-        "opponent_errors": 67,
-        "game_errors": 67,
-        "infrastructure_retries": 0,
-        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
-      },
-      {
-        "game": "dorado",
-        "runtime_profile": "reference-native-cpp",
-        "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
-        "opponents": 323,
-        "matches": 646,
-        "execution_integrity_passed": true,
-        "candidate_errors": 0,
-        "opponent_errors": 47,
-        "game_errors": 47,
-        "infrastructure_retries": 0,
-        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
-      },
-      {
-        "game": "monecraft",
-        "runtime_profile": "reference-native-cpp",
-        "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
-        "opponents": 112,
-        "matches": 224,
-        "execution_integrity_passed": true,
-        "candidate_errors": 0,
-        "opponent_errors": 31,
-        "game_errors": 31,
-        "infrastructure_retries": 0,
-        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
-      },
-      {
-        "game": "lota",
-        "runtime_profile": "reference-native-cpp",
-        "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
-        "opponents": 200,
-        "matches": 400,
-        "execution_integrity_passed": true,
-        "candidate_errors": 0,
-        "opponent_errors": 23,
-        "game_errors": 23,
-        "infrastructure_retries": 0,
-        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
-      },
-      {
-        "game": "snakego",
-        "runtime_profile": "pinned-python-backend",
-        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
-        "opponents": 141,
-        "matches": 282,
-        "execution_integrity_passed": true,
-        "candidate_errors": 3,
-        "opponent_errors": 18,
-        "game_errors": 21,
-        "infrastructure_retries": 0,
-        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
-      },
-      {
-        "game": "antwar2",
-        "runtime_profile": "pinned-python-backend",
-        "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
-        "opponents": 191,
-        "matches": 382,
-        "execution_integrity_passed": true,
-        "candidate_errors": 7,
-        "opponent_errors": 11,
-        "game_errors": 13,
-        "infrastructure_retries": 0,
-        "error_root_cause_acceptance": "pending per-case historical baseline reconciliation"
-      }
-    ],
-    "total_opponents": 1920,
-    "total_matches": 3776,
-    "scope": "Component execution evidence, not model benchmark scores or player runtime-parity certification. Native and Python referee profiles are identified per row.",
-    "transport": "authenticated public HTTPS for every row",
-    "checks": [
-      "complete frozen opponent pool",
-      "actual game artifacts",
-      "immutable run/submission identities",
-      "candidate strategy hashes",
-      "receipt integrity",
-      "budget accounting",
-      "error ownership and raw game diagnostics"
-    ],
-    "limitations": [
-      "Acceptance does not guarantee every generated policy is legal or that all historical policies finish without forfeits.",
-      "Hosted full-pool off-policy replay catalog is not provisioned."
-    ],
-    "reference_profile_regression": {
-      "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
-      "transport": "authenticated public HTTPS",
-      "status": "execution integrity verified; adapter error counters require transport audit",
-      "games": 12,
-      "complete_pool_opponents": 1920,
-      "expected_matches": 3776,
-      "backend_scope": "service interpreter; distinct from pinned-backend matrix"
-    },
-    "error_observations": {
-      "snakego": "The SDK sample candidate produced one illegal-action exception. This is a policy failure reported by the official game engine, not a service failure.",
-      "dorado": "All 25 opponents with errors also have errors in the 17 historical comparison submissions. All 646 replay archives pass integrity checks.",
-      "lota": "14 of 15 opponents with errors have errors in the 17 historical comparison submissions; the remaining opponent has a seat/seed-specific segmentation fault also observed in another hosted sweep.",
-      "miracle": "67 opponent errors: 59 run errors, four output-limit errors and four timeouts. No missing dependencies in the full-pool sweep."
-    },
-    "counter_audit_status": "Pinned-backend transport counters verified for all eight games; AquaWar native replay rule errors also verified.",
-    "pinned_backend_regression": {
-      "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
-      "status": "execution_integrity_and_counter_audits_verified",
-      "games": [
-        "rollman",
-        "antwar",
-        "aquawar",
-        "generals",
-        "lostspace",
-        "miracle",
-        "snakego",
-        "antwar2"
-      ],
-      "transport": "authenticated public HTTPS",
-      "matches": 2418,
-      "opponents": 1241
-    }
-  },
-  "ai9_isolation_and_compiler": {
-    "compiler": "GCC 14.2.0",
-    "isolated_player_transport": true,
-    "elf_constructor_isolation_passed": true,
-    "targeted_tests_passed": 5,
-    "reference_player_regression": {
-      "game": "pacman",
-      "rank": 12,
-      "source_sha256": "dd035a26f307a94ca5e08d76a6d6856045d3bd3007eae9be40777c8a596f2a1b",
-      "rounds": [
-        601,
-        601
-      ],
-      "candidate_errors": 0,
-      "opponent_errors": 0,
-      "game_errors": 0
-    },
-    "small_match_matrix": {
-      "pacman": {
-        "candidate_errors": 0,
-        "opponent_errors": 0,
-        "game_errors": 0,
-        "rounds": [
-          553,
-          601
-        ],
-        "passed": true
-      },
-      "lota": {
-        "candidate_errors": 0,
-        "opponent_errors": 0,
-        "game_errors": 0,
-        "rounds": [
-          472,
-          481
-        ],
-        "passed": true
-      },
-      "dorado": {
-        "candidate_errors": 0,
-        "opponent_errors": 0,
-        "game_errors": 0,
-        "rounds": [
-          793,
-          490
-        ],
-        "passed": true
-      },
-      "monecraft": {
-        "candidate_errors": 0,
-        "opponent_errors": 0,
-        "game_errors": 0,
-        "rounds": [
-          999,
-          999
-        ],
-        "passed": true
-      }
-    },
-    "hosted_deployment": "verified",
-    "full_pool_matrix": "reference profile regression running",
-    "result_regression_tests_passed": 39,
-    "small_match_matrix_profile": "e3bb77ed7474334564d670b50e2108085d56dd8f"
-  },
-  "miracle_sdk": {
-    "supported_units": 7,
-    "supported_artifacts": 4,
-    "official_enum_parser_tests_passed": 6,
-    "real_match_regression": {
-      "seeds": [
-        231034738,
-        1536596557
-      ],
-      "rounds": [
-        29,
-        30
-      ],
-      "candidate_errors": 0,
-      "opponent_errors": 0,
-      "game_errors": 0
-    },
-    "complete_pool_matrix": "verified",
-    "public_service_sdk_deployment": "verified"
-  },
-  "miracle_dependency": {
-    "matplotlib": "3.8.4",
-    "isolated_runtime_import_passed": true,
-    "existing_dependency_versions_changed": false,
-    "pip_check_passed": true,
-    "real_match_regression": {
-      "seeds": [
-        862625304,
-        2001838920
-      ],
-      "rounds": [
-        20,
-        21
-      ],
-      "candidate_errors": 0,
-      "opponent_errors": 0,
-      "game_errors": 0
-    },
-    "hosted_environment_deployment": "verified",
-    "complete_pool_matrix": "verified"
-  },
-  "hosted_api": {
-    "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
-    "https_certificate_verified": true,
-    "deployed_file_hashes_verified": 62,
-    "full_pool_inventory": 1920,
-    "player_python": "3.10.14",
-    "ai9_compiler": "Debian GCC 14.2.0-19",
-    "matplotlib": "3.8.4",
-    "public_small_matrix_games": 12,
-    "client_preflight_compiler": "P5 GCC 11.4 via explicit override; actual evaluations use hosted GCC 14.2.0",
-    "glibc": "2.41",
-    "public_small_matrix_status": "12/12 passed under pinned backend",
-    "backend_python": "3.14.6",
-    "backend_numpy": "2.3.5",
-    "backend_matplotlib": "3.11.1",
-    "backend_runtime_files_verified": 9666
-  },
-  "environment_parity": {
-    "status": "in progress",
-    "reference": "agentlab research runtime",
-    "blocking_issue": "Complete-pool final-profile regression and cross-host behavioral reconciliation.",
-    "reference_profile": {
-      "compiler": "Debian GCC/G++ 14.2.0-19",
-      "glibc": "2.41",
-      "system_files": 28332,
-      "system_manifest_sha256": "7a39dc8235fa09b5f6197948d68bbe08041884bc3a2a1045778335118a5e7ab4",
-      "system_fingerprint": "ccef511da39a5b0d373e2ff93888cd1bb83744fb22250ed44be4983c573be5af",
-      "python": "Conda Python 3.10.14"
-    },
-    "targeted_tests_passed": 31,
-    "production_deployment": "verified",
-    "cross_host_matrix": "28/28 diagnostic seats completed; matched system and Python snapshots; policy/SDK error diagnosis remains per case",
-    "python_snapshot": {
-      "files": 36715,
-      "file_manifest_sha256": "b863cced85ff10eb11f196ada16f32015b332753df38c09661c76569c2356be3",
-      "matched": true
-    },
-    "system_snapshot": {
-      "files": 28332,
-      "matched": true,
-      "fingerprint": "ccef511da39a5b0d373e2ff93888cd1bb83744fb22250ed44be4983c573be5af",
-      "cloud_integrity_check": "passed"
-    },
-    "cloud_reference_preflight": {
-      "python_and_matplotlib": "passed",
-      "private_files_and_network_isolation": "passed",
-      "isolated_gcc_and_gxx_14_2": "passed"
-    },
-    "cloud_build_isolation_regression": {
-      "passed": 23,
-      "scope": "SDK parent path aliases, trusted C/C++ compiler selection, build secrecy, and supported game SDK compilation"
-    },
-    "backend_rebuild_regression": {
-      "future_dated_prebuilt_output": "passed",
-      "seed_and_reference_runtime_tests_passed": 6,
-      "paired_dorado_rebuild": "all five binaries match across hosts"
-    },
-    "production_source_commit": null,
-    "public_https_health": "passed",
-    "full_pool_regression": "Eight pinned-Python game full pools verified; four native C++ game full pools verified under separately identified component profile.",
-    "memory_safety_diagnostics": {
-      "host": "reference host",
-      "used_for_scoring": false,
-      "policies_with_independent_ubsan_findings": {
-        "dorado": 2,
-        "lota": 2
-      },
-      "findings": [
-        "null or misaligned object access",
-        "invalid boolean value",
-        "out-of-bounds array access"
-      ],
-      "strategy_sources_modified": false
-    },
-    "https_small_matrix": "12/12 passed under pinned backend",
-    "error_reporting_regression": {
-      "tests_passed": 18,
-      "production_deployment": "verified",
-      "completed_api_games": [
-        "rollman",
-        "antwar",
-        "generals",
-        "miracle",
-        "aquawar",
-        "lostspace",
-        "snakego",
-        "antwar2"
-      ],
-      "transport_error_match_counts": {
-        "rollman": 3,
-        "antwar": 14
-      },
-      "api_summary_error_counts_verified": true,
-      "original_receipts_preserved": true,
-      "strategy_sources_modified": false,
-      "four_player_role_attribution": "unit and complete-pool raw transport audit passed",
-      "lostspace_transport_error_events": 150,
-      "event_count_note": "Transport events and error-bearing matches are different counts.",
-      "native_aquawar_replay_audit": {
-        "matches": 340,
-        "candidate_errors": 0,
-        "opponent_errors": 49,
-        "game_errors": 49,
-        "verified": true
-      }
-    },
-    "normalized_candidate_builds": {
-      "diagnostic_only": true,
-      "production_flags_unchanged": true,
-      "byte_identical_games": [
-        "pacman",
-        "monecraft"
-      ]
-    },
-    "pacman_cross_host_error": {
-      "same_candidate_and_opponent_hashes": true,
-      "seed": 125896296,
-      "round": 567,
-      "error": "SEGFAULT",
-      "both_hosts_reproduce": true,
-      "root_cause": "not established; sanitizer repetition did not reproduce"
-    },
-    "same_policy_seed_diagnostics": {
-      "cases": 17,
-      "game_resource_file_hashes_verified": 10223,
-      "games": [
-        "rollman",
-        "antwar"
-      ],
-      "reference_error_cases": 9,
-      "reference_completed_without_error_cases": 8,
-      "root_causes": "per-case diagnosis required; these repetitions alone do not establish intrinsic policy defects"
-    },
-    "backend_python": {
-      "status": "Reference bundle, production deployment, HTTPS small and full-pool execution verified; player runtime parity pending.",
-      "python": "3.14.6",
-      "numpy": "2.3.5",
-      "matplotlib": "3.11.1",
-      "files": 9666,
-      "manifest_sha256": "f2d510e6f580574dcbdf5977c8c1543ba1d5a36c60fc88e8ea5d9f6bedcc52fb",
-      "real_host_preflight": "passed",
-      "paired_cases": 4,
-      "paired_statuses_match": true,
-      "rounds_identical": false,
-      "formal_results_from_different_backend_profiles_combined": false
-    },
-    "execution_integrity_audit": {
-      "source_commit": "1e2627d30cc4be1e64c127888f60ee27400cfb38",
-      "games": 12,
-      "matches": 3776,
-      "opponents": 1920,
-      "request_result_pool_hashes": "verified",
-      "budgets_and_strategy_snapshots": "verified",
-      "artifact_integrity": "verified",
-      "adapter_error_counts": "not authoritative; transport audit records undercounts",
-      "backend_python_scope": "service interpreter, distinct from pinned-backend acceptance"
-    },
-    "pinned_backend_small_matrix": {
-      "source_commit": "13bb7f462a6e451b622cbc80db7db56e369ae348",
-      "transport": "authenticated public HTTPS",
-      "games": [
-        {
-          "checks": [
-            {
-              "feedback": "detailed",
-              "kind": "small",
-              "passed": true
-            },
-            {
-              "feedback": "binary",
-              "kind": "small",
-              "passed": true
-            }
-          ],
-          "game": "antwar",
-          "passed": true,
-          "pool_count": 114,
-          "seconds": 97.87
-        },
-        {
-          "checks": [
-            {
-              "feedback": "detailed",
-              "kind": "small",
-              "passed": true
-            },
-            {
-              "feedback": "binary",
-              "kind": "small",
-              "passed": true
-            }
-          ],
-          "game": "antwar2",
-          "passed": true,
-          "pool_count": 191,
-          "seconds": 164.1
-        },
-        {
-          "checks": [
-            {
-              "feedback": "detailed",
-              "kind": "small",
-              "passed": true
-            },
-            {
-              "feedback": "binary",
-              "kind": "small",
-              "passed": true
-            }
-          ],
-          "game": "aquawar",
-          "passed": true,
-          "pool_count": 170,
-          "seconds": 214.96
-        },
-        {
-          "checks": [
-            {
-              "feedback": "detailed",
-              "kind": "small",
-              "passed": true
-            },
-            {
-              "feedback": "binary",
-              "kind": "small",
-              "passed": true
-            }
-          ],
-          "game": "dorado",
-          "passed": true,
-          "pool_count": 323,
-          "seconds": 306.59
-        },
-        {
-          "checks": [
-            {
-              "feedback": "detailed",
-              "kind": "small",
-              "passed": true
-            },
-            {
-              "feedback": "binary",
-              "kind": "small",
-              "passed": true
-            }
-          ],
-          "game": "generals",
-          "passed": true,
-          "pool_count": 197,
-          "seconds": 113.69
-        },
-        {
-          "checks": [
-            {
-              "feedback": "detailed",
-              "kind": "small",
-              "passed": true
-            },
-            {
-              "feedback": "binary",
-              "kind": "small",
-              "passed": true
-            }
-          ],
-          "game": "lostspace",
-          "passed": true,
-          "pool_count": 111,
-          "seconds": 17.0
-        },
-        {
-          "checks": [
-            {
-              "feedback": "detailed",
-              "kind": "small",
-              "passed": true
-            },
-            {
-              "feedback": "binary",
-              "kind": "small",
-              "passed": true
-            }
-          ],
-          "game": "lota",
-          "passed": true,
-          "pool_count": 200,
-          "seconds": 249.49
-        },
-        {
-          "checks": [
-            {
-              "feedback": "detailed",
-              "kind": "small",
-              "passed": true
-            },
-            {
-              "feedback": "binary",
-              "kind": "small",
-              "passed": true
-            }
-          ],
-          "game": "miracle",
-          "passed": true,
-          "pool_count": 253,
-          "seconds": 26.43
-        },
-        {
-          "checks": [
-            {
-              "feedback": "detailed",
-              "kind": "small",
-              "passed": true
-            },
-            {
-              "feedback": "binary",
-              "kind": "small",
-              "passed": true
-            }
-          ],
-          "game": "monecraft",
-          "passed": true,
-          "pool_count": 112,
-          "seconds": 291.95
-        },
-        {
-          "checks": [
-            {
-              "feedback": "detailed",
-              "kind": "small",
-              "passed": true
-            },
-            {
-              "feedback": "binary",
-              "kind": "small",
-              "passed": true
-            }
-          ],
-          "game": "pacman",
-          "passed": true,
-          "pool_count": 44,
-          "seconds": 83.64
-        },
-        {
-          "checks": [
-            {
-              "feedback": "detailed",
-              "kind": "small",
-              "passed": true
-            },
-            {
-              "feedback": "binary",
-              "kind": "small",
-              "passed": true
-            }
-          ],
-          "game": "rollman",
-          "passed": true,
-          "pool_count": 64,
-          "seconds": 71.42
-        },
-        {
-          "checks": [
-            {
-              "feedback": "detailed",
-              "kind": "small",
-              "passed": true
-            },
-            {
-              "feedback": "binary",
-              "kind": "small",
-              "passed": true
-            }
-          ],
-          "game": "snakego",
-          "passed": true,
-          "pool_count": 141,
-          "seconds": 19.69
-        }
-      ],
-      "passed": true,
-      "model_calls": 0
-    },
-    "pinned_full_pool_audit": {
-      "games": 8,
-      "matches": 2418,
-      "opponents": 1241,
-      "request_result_pool_hashes": "verified",
-      "budgets_and_candidate_snapshots": "verified",
-      "actual_match_artifacts": "verified",
-      "counter_ownership": "verified",
-      "player_runtime_parity": "pending"
-    },
-    "queue_deadline_regression": {
-      "confirmed_defect": "An already-received referee state transition can be preempted by a timeout when controller dispatch is delayed.",
-      "fix": "Timestamp queued frames and resolve deadlines using receive order; genuinely late replies remain timeouts.",
-      "tests_passed": 22,
-      "production_deployment": "verified",
-      "paired_real_match_regression": {
-        "cases_per_host": 17,
-        "hosts": 2,
-        "source_hashes": "verified",
-        "infrastructure_exceptions": 0,
-        "player_runtime_parity": "pending"
-      },
-      "player_sources_modified": false,
-      "round_limits_changed": false,
-      "runtime_commit": "35b6529f6433eac36d77cd9a7c8b9118c9818931",
-      "authenticated_https_health": "passed",
-      "https_regression": "execution_integrity_verified_player_parity_pending",
-      "historical_champion_diagnostic": {
-        "games": 7,
-        "target_opponents": 161,
-        "status": "comparison_pending",
-        "player_sources_modified": false,
-        "reference_cases_completed": 318,
-        "hosted_cases_completed": 318,
-        "infrastructure_exceptions": 0
-      },
-      "https_small_matrix": {
-        "games": 12,
-        "feedback_modes": [
-          "detailed",
-          "binary"
-        ],
-        "passed": true
-      },
-      "local_game_matrix": {
-        "games": 12,
-        "passed": true
-      },
-      "full_pool_execution_integrity": {
-        "games_verified": [
-          "rollman",
-          "antwar",
-          "aquawar",
-          "generals",
-          "lostspace",
-          "snakego",
-          "miracle",
-          "antwar2"
-        ],
-        "matches_verified": 2418,
-        "request_result_pool_hashes": "verified",
-        "budgets_and_candidate_snapshots": "verified",
-        "actual_match_artifacts": "verified",
-        "remaining_python_referee_games": 0,
-        "scheduling_transition_recorded": true,
-        "player_runtime_parity": "pending"
-      }
-    },
-    "match_concurrency_validation": {
-      "physical_cores": 8,
-      "logical_cpus": 16,
-      "capacity_unit": "complete_match",
-      "hosted_match_capacity": 3,
-      "small_match_reserve": 1,
-      "active_matches_drained_before_configuration_change": true,
-      "paired_antwar_cases": {
-        "cases": 5,
-        "reference_transport_errors": 0,
-        "hosted_cap16_cases_with_timeouts": 5,
-        "hosted_cap6_cases_with_transport_errors": 0
-      },
-      "time_limits_changed": false,
-      "strategy_sources_modified": false,
-      "broader_discrepancy_regression": "pending",
-      "full_pool_matrix_scheduling_transition": "Recorded as diagnostic execution evidence; not a uniform-concurrency model benchmark.",
-      "scheduler_tests_passed": 7,
-      "generals_controlled_regression": {
-        "same_original_sources_and_seed": true,
-        "round_limit_ms": 1000,
-        "identical_input_prefix_rounds": 31,
-        "isolated_runs": 3,
-        "isolated_successful_rounds_per_run": 501,
-        "isolated_transport_errors": 0,
-        "isolated_state61_ms": [
-          953,
-          962,
-          950
-        ],
-        "capacity3_runs": 3,
-        "capacity3_successful_rounds_per_run": 501,
-        "capacity3_transport_errors": 0,
-        "scope": "Single timeout-sensitive original policy; broader full-pool runtime parity remains pending."
-      }
-    },
-    "rollman_seed_reconciliation": {
-      "original_backend_honors_requested_seed": false,
-      "diagnostic_reference_backend_honors_requested_seed": true,
-      "same_initial_map_sha256": "959036abb228b3e5a6c648cba16d50942b16e84138211646f24bdf674893af87",
-      "same_original_policy_hashes": true,
-      "matched_failure_round": 352,
-      "matched_failure_state": 1536,
-      "failure": "Bundled SDK attempts JSON parsing of a player-notification line.",
-      "scope": "Paired diagnostic with explicit seed handling; does not certify all historical successful executions.",
-      "sdk_simulation_audit": {
-        "recorded_action_count": 510,
-        "authoritative_simulation_mismatches": 0,
-        "bundled_sdk_mismatches": 260,
-        "first_divergence": {
-          "level": 2,
-          "round": 93
-        },
-        "unrecognized_referee_level_transition": {
-          "level": 2,
-          "round": 352
-        },
-        "source_files_modified": false,
-        "classification": "SDK rule mismatch; acceptance remains pending."
-      },
-      "reference_success_map_fixture": {
-        "original_policy_hashes_verified": true,
-        "initial_maps_identical_for_all_three_levels": true,
-        "hosted_final_level": 3,
-        "hosted_final_round": 300,
-        "hosted_transport_errors": 0,
-        "reference_final_round": 300,
-        "original_replay_records": 725,
-        "hosted_replay_records": 725,
-        "all_replay_records_identical": false,
-        "first_different_replay_record_index": 147,
-        "player_has_unseeded_random_action_selection": true,
-        "player_sources_modified": false,
-        "decision_limits_modified": false,
-        "scores_overwritten": false,
-        "fixture_scope": "Private referee fixture replaces only randomized initial maps and spawn positions with recorded reference values; full replay equality and universal SDK compatibility are not certified.",
-        "formal_benchmark_result": false
-      }
-    },
-    "lostspace_completion_reconciliation": {
-      "candidate_escaped_round": 39,
-      "candidate_shutdown_error_round": 69,
-      "error": "Python buffered stdin lock during interpreter shutdown",
-      "scope": "Candidate process shutdown after successful escape; raw transport error retained. Original opponents are unaffected by this case."
-    },
-    "historical_native_diagnostic": {
-      "games": [
-        "pacman",
-        "monecraft",
-        "lota",
-        "dorado"
-      ],
-      "original_opponents": 55,
-      "assignments_per_host": 110,
-      "reference_cases_completed": 110,
-      "reference_cases_without_official_engine_errors": 6,
-      "reference_cases_with_official_engine_errors": 78,
-      "reference_infrastructure_errors": 0,
-      "hosted_status": "110 diagnostic assignments completed",
-      "recorded_seed_not_assumed_effective": true,
-      "pacman_actual_seed_reconstruction": {
-        "verified_by_entire_replay": true,
-        "matched_replay_rounds": 64,
-        "player_source_modified": false,
-        "formal_benchmark_result": false
-      },
-      "scope": "Declared completion and declared seed are not substitutes for raw engine and actual-input evidence.",
-      "reference_cases_excluded_for_incompatible_launch_configuration": 26,
-      "reference_configuration_audit": {
-        "game": "lota",
-        "cases": 26,
-        "all_terminal_round_zero": true,
-        "reference_loader_count": 2,
-        "reference_resources": "map.txt 1",
-        "hosted_loader_count": 3,
-        "hosted_resources": "map.txt 0; competitor assignments 0 1",
-        "reference_success_certified": false,
-        "same_runtime_lab_regression": "26 completed: 5 without game errors, 21 with engine-reported errors; 0 infrastructure exceptions",
-        "matched_source_files": 79,
-        "historical_match_artifacts_available_for_frozen_champion": false,
-        "scope": "The original-runner diagnostic is not equivalent to the hosted official multiplayer configuration. It cannot establish either successful historical player execution or a cloud-only regression.",
-        "historical_origin_lookup": "Original experiment ledger and four normalized snapshot feedback files verified on the recorded origin server; direct full-pool raw match artifacts remain unavailable."
-      },
-      "lota_clock_controlled_diagnostic": {
-        "paired_original_policy_sources_verified": true,
-        "actual_seed_and_wall_clock_distinguished": true,
-        "same_original_policy_reseeds_from_time_each_round": true,
-        "complete_replay_equal": true,
-        "round_records": 385,
-        "loader_binary_hashes_equal": true,
-        "fixed_time_symbol_verified_on_both_hosts": true,
-        "maximum_reference_cpu_ms": 11.703849,
-        "maximum_hosted_cpu_ms": 11.891722,
-        "original_cpu_limit_ms": 100,
-        "cpu_and_monotonic_clocks_unchanged": true,
-        "player_sources_modified": false,
-        "formal_service_clock_override": false,
-        "diagnostic_only": true,
-        "scope": "A fixed-wall-clock loader fixture produces identical successful execution on both hosts. It does not certify all random trajectories or reconstruct every historical runtime input."
-      },
-      "historical_origin_reconciliation": {
-        "recorded_origin_server_verified": true,
-        "lota_champion_ledger_matches_archived_sha256": true,
-        "lota_champion_games": 400,
-        "lota_champion_reported_opponent_errors": 33,
-        "lota_historical_large_evaluations": 16,
-        "lota_target_policies": 13,
-        "lota_target_policies_with_historical_reported_errors": 12,
-        "clock_dependent_target_historical_evaluations_with_errors": 9,
-        "hash_verified_snapshot_feedback_files_recovered": 4,
-        "snapshot_ancestors_traversed": 29,
-        "main_candidate_identity_verified": true,
-        "underlying_player_cause_certified": false,
-        "scope": "The recorded origin server is authoritative for historical provenance. Same-path directories on another host and zero-round diagnostics do not establish the paper experiment configuration. Historical error counts and normalized feedback alone do not certify root causes or all successful executions."
-      },
-      "hosted_cases_completed": 110,
-      "hosted_infrastructure_exceptions": 0,
-      "hosted_cases_without_engine_errors": 19,
-      "hosted_cases_with_engine_errors": 91,
-      "reference_success_hosted_failure_cases": 2,
-      "controlled_followups": "Pacman actual-seed reconstruction and LOTA fixed-clock fixture both produce identical successful complete replays across hosts; general historical runtime parity remains pending."
-    },
-    "antwar2_paper_candidate_diagnostic": {
-      "origin_verified": true,
-      "reference_assignments_completed": 16,
-      "reference_infrastructure_exceptions": 0,
-      "reference_assignments_reported_complete_with_transport_errors": 10,
-      "hosted_assignments_completed": 16,
-      "hosted_assignments_planned": 16,
-      "reference_transport_clean_hosted_error_cases_observed": 0,
-      "missing_dependency": "tianshou",
-      "dependency_import_verified_in_private_environment": true,
-      "sandbox_numeric_library_thread_creation_failure": true,
-      "runtime_parity_passed": false,
-      "production_changed": false,
-      "dependency_and_numeric_thread_reference_regression": {
-        "assignments": 2,
-        "rounds": [
-          210,
-          206
-        ],
-        "transport_errors": 0,
-        "original_sources_verified": true,
-        "model_calls": 0
-      },
-      "numeric_thread_unit_tests": {
-        "passed": 45,
-        "skipped": 1
-      },
-      "hosted_dependency_thread_regression": {
-        "assignments": 2,
-        "rounds": [
-          198,
-          203
-        ],
-        "transport_errors": 0,
-        "infrastructure_exceptions": 0,
-        "source_hashes_verified": true,
-        "profile": "private candidate environment and bounded numeric thread configuration",
-        "production_deployed": false
-      },
-      "reference_raw_transport_errors_before_game_over": 14,
-      "raw_transport_note": "An event preceding GameOver can follow a terminal player notification; classification requires referee state and lifecycle context."
-    },
-    "numeric_dependency_integrity": {
-      "original_files_preserved_per_host": 38056,
-      "added_identical_payload_files": 669,
-      "additional_differences": "Three empty explicit-install REQUESTED markers and their RECORD entries",
-      "production_profile_deployed": true,
-      "dependency_payloads_match": true
-    },
-    "terminal_exit_regression": {
-      "transport_tests_passed": 24,
-      "attribution_tests_passed": 29,
-      "hosted_original_strategy_cases_planned": 6,
-      "hosted_original_strategy_cases_complete": 6,
-      "idle_exit_deferred_until_reply_required": true,
-      "official_antwar2_forfeits_attributed": true,
-      "historical_receipts_modified": false,
-      "production_deployed": true,
-      "identical_full_replays_to_recorded_baseline": 6,
-      "identical_scores_and_terminal_states": 6,
-      "official_forfeits_preserved": {
-        "illegal_action_cases": 3,
-        "timeout_cases": 2,
-        "normal_cases": 1
-      },
-      "spurious_eof_no_longer_classified_as_player_failure": true
-    },
-    "clean_numeric_package_install": {
-      "source_commit": "a144354d51de5d9edc4a4cd41cf117fa6c9fb9de",
-      "controller_environment": "fresh",
-      "player_environment": "fresh",
-      "dependency_install": "passed",
-      "public_asset_verification": "passed",
-      "public_contract_tests": "passed",
-      "twelve_game_matrix": "12/12 passed",
-      "model_calls": 0
-    },
-    "terminal_local_regression": {
-      "source_commit": "1b04e4290708808e8db215e8dedfd0d91a5431ef",
-      "packaged_manifest_files_verified": 259,
-      "status": "passed",
-      "environment": "fresh controller and player installation",
-      "parallel_games": 4,
-      "games_verified": 12,
-      "live_matches": 52,
-      "model_calls": 0,
-      "api_calls": 0
-    },
-    "lostspace_player_build_resources": {
-      "original_player_source_unchanged": true,
-      "generator_sha256": "4ca8c312d43fae77f4fb584080d3e7c9e1ea80bcea193fef8dea553c00c7f107",
-      "generated_asset_files": 5,
-      "generated_bytes": 9604,
-      "paired_asset_hashes_identical": true,
-      "reference_assignments_completed": 2,
-      "hosted_assignments_completed": 2,
-      "rounds_per_assignment": 100,
-      "missing_asset_failures": 0,
-      "reference_error_free_assignments": 1,
-      "hosted_error_free_assignments": 1,
-      "remaining_diagnostic": "The other assignment contains a candidate shutdown error; one reference opponent transport closes with exit code zero. These are retained for lifecycle analysis.",
-      "production_deployed": true,
-      "local_packaged_regression": "passed"
-    },
-    "lostspace_inactive_player_listen": {
-      "backend_source_sha256": "ca9adb3db3697ef6124c819978c298dd39fa66fae8bca263a478c4afd415da38",
-      "reply_required_statuses": [
-        "Alive",
-        "WaitForEsacape"
-      ],
-      "notifications_preserved": true,
-      "original_player_sources_unchanged": true,
-      "reference_assignments_completed": 2,
-      "hosted_assignments_completed": 2,
-      "rounds_per_assignment": 100,
-      "in_game_transport_errors": 0,
-      "focused_tests_passed": 24,
-      "public_local_live_contract": "passed",
-      "post_escape_interpreter_shutdown_diagnostic": "Retained in raw process stderr; the referee does not require further action from an escaped player.",
-      "production_deployed": true,
-      "full_replay_equality_claimed_for_all_cases": false
-    },
-    "antwar2_optional_weights": {
-      "original_source_sha256": "8f93ba357cc7a0e97f78f48f010a2c1010019a6c0626bd318bb71db14beb64af",
-      "original_behavior": "catch unavailable weights and use the policy-provided heuristic",
-      "hosted_assignments": 6,
-      "transport_errors": 0,
-      "official_player_terminal_states": [
-        "OK",
-        "OK"
-      ],
-      "raw_diagnostics_preserved": true,
-      "original_policy_modified": false,
-      "historical_trained_checkpoint_equivalence": "not established"
-    },
-    "antwar2_public_sdk_refund": {
-      "changed_asset": "games/antwar2/public_sdk/SDK/backend/state.py",
-      "original_sha256": "93114a0ff0d29673efd7f6e692103159ede717e46bcb9712b9044c00de2d71d7",
-      "fixed_sha256": "5fc54d9d137700334ad7cc625d3ba68ad5b7df21510893b9dab3887fbfda58e9",
-      "all_player_package_bytes_unchanged": true,
-      "scope": "public SDK adapter only; original player-bundled SDKs unchanged",
-      "unit_tests_passed": 13,
-      "refund_cases": 8,
-      "local_live_game": "passed",
-      "original_player_sdk_failure_classification": "SDK adapter argument mismatch reproduced on both aligned runtimes; historical-success parity remains unverified; original player packages retain their hashes"
-    },
-    "antwar2_sdk_aligned_diagnostic": {
-      "original_player_packages_modified": false,
-      "runtime_source_commit": "dbab2e298d95899c3236f39f430b25e159e93486",
-      "cpu_policy": "unlimited",
-      "paired_candidate_source_hashes_verified": true,
-      "paired_player_source_hashes_verified": true,
-      "experiment_seed": 1567098032,
-      "candidate_seat": 0,
-      "reference_failure_round": 60,
-      "hosted_failure_round": 54,
-      "same_exception": "PythonBackendState.downgrade_tower_income() takes 2 positional arguments but 3 were given",
-      "historical_success_equivalence_established": false,
-      "full_replay_equality_claimed": false,
-      "second_assignment": {
-        "experiment_seed": 1498596480,
-        "candidate_seat": 1,
-        "reference_rounds": 263,
-        "hosted_rounds": 266,
-        "reference_transport_errors": 0,
-        "hosted_transport_errors": 0,
-        "source_hashes_verified": true
-      }
-    },
-    "production_runtime_profile": {
-      "name": "terminal-lostspace-v1",
-      "baseline_profile_commit": "35b6529f6433eac36d77cd9a7c8b9118c9818931",
-      "deployment_file_hashes_verified": 16,
-      "authenticated_https_health": "passed",
-      "games_available": 12,
-      "original_player_sources_unchanged": true,
-      "post_deployment_small_matrix": "passed",
-      "post_deployment_full_pool_games": [
-        "lostspace",
-        "antwar2"
-      ],
-      "post_deployment_full_pool_status": "lostspace_execution_integrity_verified_antwar2_running",
-      "client_runtime_source_commit": "dbab2e298d95899c3236f39f430b25e159e93486",
-      "model_calls": 0,
-      "small_execution_integrity": {
-        "games": 12,
-        "submissions": 24,
-        "actual_matches": 46,
-        "feedback_modes": [
-          "detailed",
-          "binary"
-        ],
-        "strategy_snapshot_hashes_verified": true,
-        "request_result_pool_hashes_verified": true,
-        "budgets_verified": true,
-        "local_replay_hashes_match_hosted_artifacts": true,
-        "binary_dense_artifacts_exposed": false,
-        "in_game_transport_errors": 0,
-        "model_calls": 0,
-        "receipt_result_sha256": {
-          "antwar/detailed": "c2192c0ec39c40ee291ad723caeb189a35ae009db02a636f5cf37188779f31f9",
-          "antwar/binary": "9d8f4e8bebaf824c588498edb0fce0d26847157d51183cc5d3edacee42735e07",
-          "antwar2/detailed": "3fc1e49a5f455a677e671445a4f1f2eb2c4e6b9b62e703f797ad07b7a69087be",
-          "antwar2/binary": "d7064d221c12b17cf664a1a2288d5aa559fd5a89a28a9b93af3b482d2055742b",
-          "aquawar/detailed": "5d1a08afd4f0ee1e46f755105916a4ae9539e78efd6ff42348ee8ff32291425b",
-          "aquawar/binary": "1b613e2a05d176acdf2b62ad2183683c865e858ca91c7cce91b2f64bbc9f42c7",
-          "dorado/detailed": "84a9655240137a403f7ff6e57e285de902cf4f56b54fd65d4aab333ad2e98afb",
-          "dorado/binary": "2c595c719e9c055f9f56743834b2533ed3e00263ef5ce0d41277840eb82758a5",
-          "generals/detailed": "b021a40bb7a0e5939db8e763d4abdf13b21d6dea8a1a17b8c815b87b6aad5d55",
-          "generals/binary": "131038e8d7b07e395135c1cb4c65edbd06f240363c5bc903e38bf1f4379c1024",
-          "lostspace/detailed": "c5d2a4374791bcea895032d04c34e784427ee9e2b70ae9ee934b45b76e84f06f",
-          "lostspace/binary": "278c656d6d123c4c4f2c8159566748af760091e45d5a454d9fe55c499b4fffa0",
-          "lota/detailed": "d23562ca9c3cd63d59817b48edc21f5219730f8c8424c1f95f2754621330e346",
-          "lota/binary": "7698ac248073838692e6db0b616a4174b7c9e67f8f3226114ba348204ac9bafd",
-          "miracle/detailed": "95d972b69525f191dbaffb7783be8d458b5d23927a9d3e764b71e1dcdaaaa49b",
-          "miracle/binary": "130824305147e3bc5e005aa5cbb875087997d4712539572afe8c4dd110af4280",
-          "monecraft/detailed": "908f05814280129b30485a3108e03d1640e05d6605f6cca8f7c6fd468470cf46",
-          "monecraft/binary": "58534fda173ec95f55c0a7efa8527e38c1a3551816b21ac79ecef8eeaac33247",
-          "pacman/detailed": "a84aa4e2450598ae0515777405e45298561c9eb015e3974f90d9b9bfef36484b",
-          "pacman/binary": "3ce140e9e88a90325faadc72f59fb04cd034962fc8fe922f6ba354eab7204744",
-          "rollman/detailed": "7a6258bb8d5126677981f2449eb9410326775443fe9ba13679a4318fbd232350",
-          "rollman/binary": "fa54ddb5baef0570f7f0b53aa94971d8c2499eafc0b3cf780eaa2605d400ebb3",
-          "snakego/detailed": "0b9d7c43af5e0d9a699f59d062a99d4b7613a32ef13612fb5f37462339e1dd19",
-          "snakego/binary": "9614f975a7659ec7623e1af4e3383520f08d7238ad7cd10240a6c8866f2b6405"
-        }
-      },
-      "full_execution_integrity": {
-        "lostspace": {
-          "submission": "41f69966c17c429ba0b7c0349b7e2f68",
-          "run": "ce50d5c7449049ec857e73cf8496d0f7",
-          "execution_integrity_passed": true,
-          "pool_count": 111,
-          "matches": 222,
-          "request_result_pool_hashes_verified": true,
-          "candidate_snapshot_verified": true,
-          "snapshot_id": "26bba65ca006de704e88f8739e93c67033a27e693e1447c798fb65ba526b460d",
-          "receipt": {
-            "run_id": "ce50d5c7449049ec857e73cf8496d0f7",
-            "submission_id": "41f69966c17c429ba0b7c0349b7e2f68",
-            "pool_sha256": "18fc8afd72b2e0cb7ea81247dc8713641d2e01d7c51c1bf18030ce2c5c309945",
-            "request_sha256": "a157830e6697d504ffc0b65452d7f891f41d4c2bc62f5d0b499d0a9996799f93",
-            "result_sha256": "86c6edd13e817ee14e2e05868ef986183c1737841a7fb90e0f56b7c3befe06e3",
-            "small_used": 1,
-            "large_used": 1,
-            "completed_at": 1791509232.693715
-          },
-          "budget": {
-            "small_used": 1,
-            "large_used": 1,
-            "small_total": 1,
-            "large_total": 1
-          },
-          "transport_count": 222,
-          "api_counts": {
-            "candidate_errors": 0,
-            "opponent_errors": 85,
-            "game_errors": 85,
-            "infrastructure_retries": 0
-          },
-          "error_attribution": "Unclassified engine/transport events; separate diagnostics required",
-          "all_raw_artifact_hashes_verified": true
-        }
-      },
-      "antwar2_checkpoint": {
-        "as_of_utc": "2026-10-09T01:35:11.765002+00:00",
-        "terminal_matches": 230,
-        "expected_matches": 382,
-        "cases_with_transport_error": 3,
-        "status": "running"
-      }
-    }
-  },
-  "release_acceptance": {
-    "passed": false,
-    "criteria": {
-      "historical_player_runtime_parity": {
-        "status": "pending",
-        "requirement": "Original strategies and decision limits are preserved. Paired reference and hosted execution must have consistent behavior; confirmed original-policy failures are reported faithfully and may satisfy parity.",
-        "evidence_required": [
-          "Original strategy hashes, entrypoints, SDK contracts, dependencies and resource limits",
-          "Same candidate, seat and seed; effective input or clock-controlled diagnostics where randomness requires them",
-          "Recorded successful executions and error paths considered with original logs",
-          "Infrastructure and SDK discrepancies repaired and tested; confirmed policy failures retained"
-        ],
-        "insufficient_evidence": [
-          "API completion or an Elo result alone",
-          "Matching library hashes alone",
-          "Correct failure counters alone",
-          "Failure on both hosts without checking configuration, inputs and failure behavior"
-        ]
-      },
-      "remote_policy_submission": {
-        "status": "execution_and_accounting_verified",
-        "requirement": "A local client submits frozen policy code for real hosted small and full-pool large evaluations; feedback, budgets, hashes and receipts are verified.",
-        "small_games_verified": 12,
-        "pinned_backend_full_pool_audits_verified": [
-          "rollman",
-          "antwar",
-          "generals",
-          "miracle",
-          "aquawar",
-          "lostspace",
-          "snakego",
-          "antwar2"
-        ],
-        "native_full_pool_games_verified": [
-          "pacman",
-          "monecraft",
-          "lota",
-          "dorado"
-        ],
-        "runtime_profiles_reported_separately": true
-      },
-      "local_release_package": {
-        "status": "verified",
-        "requirement": "A clean installation of the released repository runs all twelve games with published opponents locally, supports local agent iteration and calls the hosted evaluator.",
-        "retained_evidence": "Twelve-game public-subset live certificates and both official native harness acceptance records.",
-        "remaining": null,
-        "fresh_controller_environment": true,
-        "fresh_player_environment": true,
-        "assets_verified": true,
-        "public_subset_contract_tests_passed": 27,
-        "local_live_games_verified": 12,
-        "source_script_asset_hashes_verified": 96,
-        "runtime_commit": "8549840231bae1112071cd3a50ea7acd90a683cc",
-        "scheduler_unit_tests_passed": 7,
-        "manifest_files_verified": 271,
-        "actual_matches": 52,
-        "runnable_starters": 22
-      }
-    },
-    "all_criteria_required": true,
-    "public_visibility_requires_user_decision": true
-  },
-  "lostspace_turn_gate": {
-    "status": "component_validation_passed_hosted_acceptance_pending",
-    "paired_hosts": 2,
-    "original_opponents": 2,
-    "assignments_per_host": 4,
-    "completed_matches": 8,
-    "rounds_per_match": 100,
-    "in_game_transport_errors": 0,
-    "strategy_sources_unchanged": true,
-    "focused_tests_passed": 45,
-    "judger_sha256": "5287419b6598de31e4208aef8dba21280494c410f60ce057c27b0ffe84e04d6f",
-    "backend_sha256": "afc2799eccdc8a93a4900967a0fb3065aacb4d04380c870534159bfe6cd333a3",
-    "production_deployed": false,
-    "local_matrix": {
-      "games": 12,
-      "passed": true,
-      "live_matches": 52,
-      "runnable_starters": 22
-    }
-  },
-  "lostspace_variant_build_assets": {
-    "source_generator_sha256": "4ca8c312d43fae77f4fb584080d3e7c9e1ea80bcea193fef8dea553c00c7f107",
-    "original_opponents": 3,
-    "generated_files_per_opponent": 5,
-    "paired_matches_passed": 12,
-    "rounds_per_match": 100,
-    "in_game_transport_errors": 0,
-    "original_strategy_files_unchanged": true,
-    "public_measured_elo_ranks": [
-      96,
-      98
-    ],
-    "public_local_contract_passed": true,
-    "hosted_deployment_pending": true
-  },
-  "lostspace_expanded_diagnostic": {
-    "additional_opponents": 39,
-    "matches": 78,
-    "complete": 15,
-    "game_errors": 63,
-    "infrastructure_exceptions": 0,
-    "sdk_message_format_errors": 0,
-    "historical_success_reconciliation": "pending",
-    "source": "reference host using turn-gate runtime and original packages before variant build outputs",
-    "interpretation": "Execution diagnostics; failures require source, input and historical provenance checks."
-  },
-  "local_evaluator_player_errors": {
-    "status": "verified",
-    "focused_tests_passed": 16,
-    "live_all_player_failure_correctly_attributed": true,
-    "normal_lostspace_contract_matches_passed": 5,
-    "official_winner_scores_and_replay_preserved": true,
-    "post_terminal_cleanup_errors_excluded": true,
-    "complete_release_acceptance": false
-  },
-  "paired_native_crash_diagnostics": {
-    "game": "lostspace",
-    "original_opponents": 2,
-    "matched_seeds": true,
-    "candidate_and_opponent_sources_unchanged": true,
-    "binaries_identical_across_hosts": true,
-    "captured_input_streams_identical_across_hosts": true,
-    "sandboxed_original_binary_replay": "SIGILL at compiler-generated ud2 after non-void functions reach their end without a return value",
-    "original_function_sources_match_historical_revision": true,
-    "historical_trace_reconstruction": false,
-    "historical_runtime_parity": "pending"
-  },
-  "antwar2_timeout_diagnostic": {
-    "original_sources_preserved": true,
-    "paired_seed": 878615825,
-    "reference_rounds": 16,
-    "hosted_rounds": 9,
-    "failure": "10-second decision timeout",
-    "native_backend_explicitly_disabled_in_original_protocol": true,
-    "reference_observed_wall_seconds": 8.004934310913086,
-    "reference_observed_cpu_seconds": 8.003734,
-    "reference_cgroup_throttled_usec": 0,
-    "hosted_in_turn_cpu_sampling_available": false,
-    "identical_trajectories_claimed": false,
-    "historical_screening_rounds": 289,
-    "historical_success_reconciliation": "pending",
-    "intrusive_instrumented_probes_excluded": true
-  },
-  "antwar2_sdk_runtime_compatibility": {
-    "adapter": "antwar2-refund-forwarding-v1",
-    "scope": "optional tower argument forwarding for the verified bundled SDK state/engine hash pair",
-    "original_policy_and_pool_files_preserved": true,
-    "unknown_sdk_versions_unchanged": true,
-    "audited_runtime_copy": true,
-    "unit_tests_passed": 13,
-    "paired_original_opponent_matches": {
-      "agentlab": 2,
-      "hosted": 2,
-      "all_passed": true
-    },
-    "automatic_evaluator_integration_matches": {
-      "agentlab": 2,
-      "passed": true
-    },
-    "local_public_contract": {
-      "matches": 5,
-      "runnable_starters": [
-        "python",
-        "cpp"
-      ],
-      "passed": true
-    },
-    "production_deployed": false
-  },
-  "lostspace_material_and_waiting_sdk": {
-    "material_response": "successful material collection returns the acting player inventory; unsuccessful actions omit inventory",
-    "inventory_serialization": "named tool counts",
-    "sdk_adapter": "lostspace-escape-waiting-dispatch-v1",
-    "sdk_scope": "exact verified source hash; only the SDK __start_turn function differs in the audited runtime copy",
-    "original_pool_files_preserved": true,
-    "policy_logic_ast_preserved": true,
-    "unknown_sources_unchanged": true,
-    "paired_original_opponent_matches": {
-      "agentlab": 2,
-      "hosted": 2,
-      "rounds_each": 100,
-      "passed": true
-    },
-    "automatic_evaluator_integration_matches": {
-      "agentlab": 2,
-      "passed": true
-    },
-    "focused_tests_passed": 9,
-    "public_local_contract": {
-      "matches": 5,
-      "passed": true
-    },
-    "production_deployed": false
-  },
-  "hosted_material_sdk_profile": {
-    "profile": "turn-gate-material-sdk-v5",
-    "runtime_source_commit": "571ab30be43000f9fb81d32c31df7321e53b9ac4",
-    "deployed_files_verified": 30,
-    "remote_small": {
-      "passed": true,
-      "games": 12,
-      "submissions": 24,
-      "actual_matches": 46,
-      "independent_receipt_artifact_audit": true
-    },
-    "complete_pool_regression": "running",
-    "historical_player_runtime_parity": "pending",
-    "complete_release_acceptance": false,
-    "full_pool_lostspace": {
-      "execution_integrity_passed": true,
-      "pool_count": 111,
-      "matches": 222,
-      "api_counts": {
-        "candidate_errors": 0,
-        "opponent_errors": 55,
-        "game_errors": 55,
-        "infrastructure_retries": 0
-      },
-      "receipt": {
-        "run_id": "c7ba961d75424db8862a4b4b391cda71",
-        "submission_id": "4628777cbf62406a8d9831b457a1e3c8",
-        "pool_sha256": "18fc8afd72b2e0cb7ea81247dc8713641d2e01d7c51c1bf18030ce2c5c309945",
-        "request_sha256": "679049bc10e1b91a3d3cbd9f682df529e279e95f84aaa80225850a07cfaedd02",
-        "result_sha256": "449d584b635a9a00e1aa36346c5ee2b3c9d57dd6b39bd3781f5ee911921e9abe",
-        "small_used": 1,
-        "large_used": 1,
-        "completed_at": 1791523688.154119
-      }
-    }
-  },
   "local_setup": {
     "passed": true,
     "games": 12,
@@ -1729,85 +385,201 @@
     "download_index": "https://mirrors.ustc.edu.cn/pypi/simple",
     "source_commit": "8549840231bae1112071cd3a50ea7acd90a683cc"
   },
-  "independent_import_entrypoints": {
-    "passed": true,
-    "fresh_interpreter_entrypoints": 4,
-    "regression_tests_passed": 11,
-    "evaluation_result_semantics_covered": true,
-    "hosted_runtime_deployment": "pending; active matches use their pinned profile"
+  "component_suite": {
+    "passed": 737,
+    "skipped": 1,
+    "deselected": 32
   },
-  "antwar2_frozen_input_parity": {
-    "passed": true,
-    "input_sha256": "d41610155f59b8eb868ef7bc0e4facd1bcfabea13b06a7e75fdc2b985f48d5fa",
-    "stdout_sha256": "583522c5642760a2e24f58a68428808f848aaf08b82c89cee88c95876eec4de9",
-    "reference_wall_seconds": 11.5836027386,
-    "hosted_wall_seconds": 10.975835416,
-    "formal_limit_seconds": 10,
-    "original_policy_preserved": true,
-    "formal_limit_preserved": true,
-    "diagnostic_output_not_a_formal_success": true,
-    "classification": "Original policy computation exceeds its decision limit on both hosts."
+  "targeted_suite": {
+    "passed": 70,
+    "skipped": 12
   },
-  "lostspace_v5_behavioral_parity": {
-    "passed": true,
-    "scope": "Player execution and failure-path consistency, not byte-identical stochastic trajectories or Elo.",
-    "paired_matches": 222,
-    "opponents": 111,
-    "same_candidate_opponent_hashes": true,
-    "same_seeds": true,
-    "reference_infrastructure_exceptions": 0,
-    "hosted_infrastructure_retries": 0,
-    "identical_complete_replays": 196,
-    "same_player_error_labels": 205,
-    "same_failure_path_with_timeout_vs_stack_failure": 17,
-    "failure_path_matching_binaries": true,
-    "reference_error_matches": 55,
-    "hosted_error_matches": 55,
-    "policy_code_and_limits_preserved": true,
-    "official_error_labels_preserved": true
+  "api_suite": {
+    "passed": 37
   },
-  "supplemental_frozen_behavioral_parity": {
-    "passed": true,
-    "scope": "Three conditional opponent failures; complete release acceptance remains pending other error-path classification and AntWar2 final-profile full-pool completion.",
-    "original_policy_and_limits_preserved": true,
-    "api_submissions": 0,
-    "model_calls": 0,
-    "aquawar": {
-      "same_binary": true,
-      "same_input": true,
-      "same_native_trace": true,
-      "binary_sha256": "a63bbd84464e18e880fd16679febaac1712bdfa384ff8b8e012c4b172da004bc",
-      "input_sha256": "11f3de658a8c7c1b8ea064ced0a6ae4acd83d708dadcae5746a0ac069e507d60",
-      "classification": "original policy missing return triggers GCC ud2",
-      "policy_or_limits_changed": false
+  "paired_behavior_evidence": {
+    "lostspace": {
+      "passed": true,
+      "scope": "Player execution and failure-path consistency, not byte-identical stochastic trajectories or Elo.",
+      "paired_matches": 222,
+      "opponents": 111,
+      "same_candidate_opponent_hashes": true,
+      "same_seeds": true,
+      "reference_infrastructure_exceptions": 0,
+      "hosted_infrastructure_retries": 0,
+      "identical_complete_replays": 196,
+      "same_player_error_labels": 205,
+      "same_failure_path_with_timeout_vs_stack_failure": 17,
+      "failure_path_matching_binaries": true,
+      "reference_error_matches": 55,
+      "hosted_error_matches": 55,
+      "policy_code_and_limits_preserved": true,
+      "official_error_labels_preserved": true
     },
-    "snakego": {
-      "same_binary": true,
-      "same_input": true,
-      "same_native_trace": true,
-      "binary_sha256": "bfc3692ee68cadb183ed0c515ec2303bba144adc22e3cf5fc37b7399221e9eef",
-      "input_sha256": "ea5cd1d818872a6042e5bf485cc9a572058cbf46513e57d6efcc5140641819eb",
-      "classification": "original player-bundled SDK operation-history vector out of bounds; public SDK does not contain this insertion",
-      "policy_or_limits_changed": false
+    "antwar2_timeout": {
+      "passed": true,
+      "input_sha256": "d41610155f59b8eb868ef7bc0e4facd1bcfabea13b06a7e75fdc2b985f48d5fa",
+      "stdout_sha256": "583522c5642760a2e24f58a68428808f848aaf08b82c89cee88c95876eec4de9",
+      "reference_wall_seconds": 11.5836027386,
+      "hosted_wall_seconds": 10.975835416,
+      "formal_limit_seconds": 10,
+      "original_policy_preserved": true,
+      "formal_limit_preserved": true,
+      "diagnostic_output_not_a_formal_success": true,
+      "classification": "Original policy computation exceeds its decision limit on both hosts."
     },
-    "miracle": {
-      "same_sources": true,
-      "same_input": true,
-      "same_output": true,
-      "input_sha256": "0792ee3d12110aac3ab31cdb9dce8cf45ec95f9f25d7520b63f55de15316da5d",
-      "policy_main_sha256": "ffe67294b20725d8b2cecde0f1821416b6810abf70ba24796523acc9cb57ac05",
-      "diagnostic_random_seed": 2,
-      "branch": "Original play() samples randint(0,9); values below 2 enter an infinite loop. Both hosts exceed the unchanged three-second deadline on this branch.",
-      "formal_rng_not_overridden": true
+    "antwar2_rules": {
+      "paired_matches": 8,
+      "same_sources_seeds": true,
+      "undefined_operation_errors_reproduced_both_hosts": 6,
+      "bundled_protocol_failure": "Python 3.10 IntEnum argument formatted as TowerType.PRODUCER; native referee requires decimal integers.",
+      "public_protocol": "Explicit integer serialization verified on Python 3.10 and 3.14.",
+      "frozen_state_refund": {
+        "coins": 47,
+        "owned_basic_towers": 3,
+        "original_bundled_sdk_refund": 54,
+        "official_refund": 40,
+        "storm_cost": 90,
+        "original_sdk_accepts_on_both_hosts": true,
+        "official_balance_insufficient": true
+      },
+      "original_player_packages_preserved": true
     },
-    "diagnostic_evidence_sha256": {
-      "aquawar-frozen-crash-lab.json": "b91abf09a0df19fa5169410337e5ad885ed98308245426301beb2d379e63086e",
-      "aquawar-frozen-crash-cloud.json": "6bc14c7ea44f73a47b034803ad3509fd2b7c754c3495fe7fc3e814d82fac4028",
-      "snakego-frozen-crash-lab.json": "4fedd179993fd549d71bad67539f4110e707c18965cc0be8221540008c0ddd8c",
-      "snakego-frozen-crash-cloud.json": "852e6fc8b108b27f7c1138edc3a7fc8fab9ee338a0b57d85cfc86829f300226f",
-      "miracle-random-loop-lab.json": "a9d0499a02c92d88d5ba6529ad5f5789755101fa1c4d7cad36ebbfdb8fd1393d",
-      "miracle-random-loop-cloud.json": "e2e4afb20fdeb1450889385ec467890522854ed436a01bdaab9fcf6e1dd0f158"
+    "snakego_duplex": [
+      {
+        "opponent_id": "anon__710a5f8e1d0c626b__20dccb0241af6e0b__v18",
+        "duplex_sha256": "234827bade1f490be636cd84dd09d8d35b6b0cc17a0c5d0b21b304184c359d11",
+        "matched_output_chunks": 36,
+        "paired_terminal": "exit 255",
+        "both_hosts_verified": true
+      },
+      {
+        "opponent_id": "anon__f754c5dc2661133a__fd086098d133b165__v1",
+        "duplex_sha256": "36e619168004f4ba13f9d05143ba79e043266d42a949831e51858251897e1675",
+        "matched_output_chunks": 30,
+        "paired_terminal": "blocked waiting for input beyond unchanged three-second limit",
+        "both_hosts_verified": true
+      },
+      {
+        "opponent_id": "ouuan__ent_40b8b2ed1bae321b__v2",
+        "duplex_sha256": "c7d19fb41987853471674ec579d64aa76ad577717e183eaee41b762050be7427",
+        "matched_output_chunks": 70,
+        "paired_terminal": "blocked waiting for input beyond unchanged three-second limit",
+        "both_hosts_verified": true
+      },
+      {
+        "opponent_id": "wenjie2002__ent_3413fb5172a742b8__v1",
+        "duplex_sha256": "94d5520b09d55c8988022be4306654849abbc5d44e6a399fa2c834fe4f97f425",
+        "matched_output_chunks": 34,
+        "paired_terminal": "blocked waiting for input beyond unchanged three-second limit",
+        "both_hosts_verified": true
+      },
+      {
+        "opponent_id": "wenjie2002__ent_57c673c467cd282b__v1",
+        "duplex_sha256": "fe58f40e2898a20f2f9cc520641c20eaeb3164ad4d608014dbf90329a810f27d",
+        "matched_output_chunks": 48,
+        "paired_terminal": "exit 255",
+        "both_hosts_verified": true
+      }
+    ],
+    "aquawar_action": {
+      "same_source_binary_and_input": true,
+      "paired_output": {
+        "round": 2,
+        "action_fish": 0,
+        "action_type": -1
+      },
+      "classification": "Original action policy lacks a fish-2 branch and returns an invalid action type for the recorded round-2 state.",
+      "frozen_input_sha256": "9330667ddacdeac68313faad6b632ede420c1a7738b0ae86becec907db40aa8f"
     },
-    "provenance_scope": "Frozen original source files match reference and hosted pool manifests. Source files are untracked in the historical Git checkout; no Git revision provenance is asserted."
-  }
+    "generals_private_extension": {
+      "same_input_output_and_exception": true,
+      "exception": "IndexError in original bundled generals_impact_game/initiator.py",
+      "public_sdk_contains_extension": false
+    },
+    "generals_startup": {
+      "same_source_input_legal_output": true,
+      "reference_first_read_s": 0.959,
+      "hosted_first_read_s": 0.818,
+      "formal_limit_s": 1,
+      "cold_import_observation": "Original top-level torch import consumes most of the first-turn allowance; cold timing can cross the limit. No limit is relaxed."
+    },
+    "clock_and_map_controls": {
+      "lota_fixed_clock_complete_replay_equal": true,
+      "lota_rounds": 385,
+      "rollman_recorded_success_map_completed_both_hosts": true,
+      "rollman_unseeded_actions_retained": true,
+      "pacman_effective_seed_success_trace_reconstructed": true,
+      "formal_rng_overridden": false
+    },
+    "supplemental": {
+      "passed": true,
+      "original_policy_and_limits_preserved": true,
+      "api_submissions": 0,
+      "model_calls": 0,
+      "aquawar": {
+        "same_binary": true,
+        "same_input": true,
+        "same_native_trace": true,
+        "binary_sha256": "a63bbd84464e18e880fd16679febaac1712bdfa384ff8b8e012c4b172da004bc",
+        "input_sha256": "11f3de658a8c7c1b8ea064ced0a6ae4acd83d708dadcae5746a0ac069e507d60",
+        "classification": "original policy missing return triggers GCC ud2",
+        "policy_or_limits_changed": false
+      },
+      "snakego": {
+        "same_binary": true,
+        "same_input": true,
+        "same_native_trace": true,
+        "binary_sha256": "bfc3692ee68cadb183ed0c515ec2303bba144adc22e3cf5fc37b7399221e9eef",
+        "input_sha256": "ea5cd1d818872a6042e5bf485cc9a572058cbf46513e57d6efcc5140641819eb",
+        "classification": "original player-bundled SDK operation-history vector out of bounds; public SDK does not contain this insertion",
+        "policy_or_limits_changed": false
+      },
+      "miracle": {
+        "same_sources": true,
+        "same_input": true,
+        "same_output": true,
+        "input_sha256": "0792ee3d12110aac3ab31cdb9dce8cf45ec95f9f25d7520b63f55de15316da5d",
+        "policy_main_sha256": "ffe67294b20725d8b2cecde0f1821416b6810abf70ba24796523acc9cb57ac05",
+        "diagnostic_random_seed": 2,
+        "branch": "Original play() samples randint(0,9); values below 2 enter an infinite loop. Both hosts exceed the unchanged three-second deadline on this branch.",
+        "formal_rng_not_overridden": true
+      },
+      "provenance_scope": "Frozen original source files match reference and hosted pool manifests. Source files are untracked in the historical Git checkout; no Git revision provenance is asserted."
+    },
+    "failure_interpretation": "Official crashes, illegal actions and timeouts remain failures. Native memory-safety signals establish the observed process behavior; diagnostics do not assert an exact source statement when a sanitizer cannot reproduce it."
+  },
+  "evidence_sha256": {
+    "v5-small-audit.json": "6d1f25e02d57e2bd94067012588b4c61446c18a95a02833c305d26daeec8c7d9",
+    "v5-full-audit.json": "88b0492d5184bcdebf01f060dc2f4bb33585e9e8abc08685fd44dd50b97479da",
+    "final-protocol-small-audit.json": "26a62e48fbeaf11c785158d6eeef9b6cce36c8fa4fec1a55c216ebf320fa3670",
+    "final-protocol-deployed.json": "f8f093f958f07a552902e84c0b22ce5c767650ee653705e14da98916c507fe6f",
+    "clean-reader-full-install-result.json": "c0e294ffd0ac27683e58a8831fa49de2c6ae80971370bdea0f5067d882f4a314",
+    "final-protocol-local-checks.json": "d5005369a33f72094155ccdb8b52e96c79bb6a087646a06808e9d6c5ae434c39",
+    "lostspace-v5-parity-acceptance.json": "acd21927416ad9498d35f4a3366e2fd3676d12750b1941be484562b6b8199957",
+    "antwar2-frozen-input-comparison.json": "bd367feee0e21e8662a865733c032db0d5cf069871136c805bae6c96633d17d1",
+    "antwar2-v5-rule-parity.json": "e9c9da24e07fb9adf5d9e949683001d044aa7b13f80d79769eb981a4bead8ae0",
+    "antwar2-rule-proof-agentlab.json": "b1ed08d2c6062c004402b385c0147708e33bd62928b1f2f9cc5115269dccfd44",
+    "antwar2-rule-proof-aa-arena-cloud.json": "b1ed08d2c6062c004402b385c0147708e33bd62928b1f2f9cc5115269dccfd44",
+    "yswinner-action-lab.json": "01ad9ec112a3bb88628ead33a26e3554cae93efa76ba3c91cd9614a456cf10fc",
+    "yswinner-action-cloud.json": "2cf12e31d83aa2714b41049d906ef310d0c396806f48ada6e8d235bc2552ea71",
+    "crossgame-duplex-terminal-lab.json": "d6a921f9226fa1418621d0b10e15e06d2240f926c6fe6a31324d5967442b7043",
+    "crossgame-duplex-terminal-cloud.json": "d894c5a35fe486375f6d762369a1e998e7f8d9d933875316ee117afcb7f05af7",
+    "duplex-symbol-stacks-lab.json": "93af231cc60b643d8db326a92f38e6b059f29b9fa3a1e3c1ac2de4b96b2585e9",
+    "duplex-sdk-provenance.json": "1055b1bebbde0bce8cd206eddf81393662e41fe39e0fe5ab30f8fcae8cc4f7c8",
+    "generals-initiator-sdk-provenance.json": "e41cf992e84cb0cf3b9a7b43c6014c083e31e32c63b6db674d114acf7f429ee9",
+    "generals-frozen-startup-comparison.json": "08d350ba5f88b4813efdf16aefc1dfb522b0c2325c141a673efe1d9af4248579",
+    "supplemental-frozen-parity-classification.json": "dece887a1ba7f38378a105a67296029ed1bd24a396250124fd132883e8282bf9",
+    "rollman-recorded-map-comparison.json": "af1de7ebc85a82e5c0df85a57b1e938297bf453182886ec4e7ef39e4a0df32b0",
+    "lota-fixed-clock-comparison.json": "d4326b33ce61adf75fcbd7f438671664dc90777f77a7f058e9d2f4a12469a285",
+    "native-final-comparison.json": "9ec54318b5beb4a1fcf9a58fce281c67a7c4e46e7904cbb6ef58c7c0970d0b55",
+    "generals-cap3-repetitions.json": "280308f78d12160d291b730f06f50464c4fed12a3bd8cd07dba8d1d78eb9c50d",
+    "champion-cloud-cap6-probe-progress.json": "0185ff828d6d4be1f70293618512db4fe2aaca370f43e48490ddc964ba66d5f9"
+  },
+  "offpolicy_hosted_catalog": "not provisioned",
+  "limitations": [
+    "Full-pool off-policy replay catalogue is unavailable; public-subset local catalogue generation is supported.",
+    "Original strategies may crash, time out, issue illegal actions or depend on wall-clock randomness. No strategy or decision limit is changed to manufacture a pass.",
+    "A passing smoke test does not guarantee identical stochastic Elo scores, identical hardware wall time or compatibility with every external model provider."
+  ]
 }

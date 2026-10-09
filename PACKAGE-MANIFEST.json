@@ -29,8 +29,8 @@
     },
     {
       "path": "README.md",
-      "size": 22146,
-      "sha256": "45f5eb67cf49624207d97cdf1f39e4c2b56e327eb6ab7c10812f3b91bf35fb62"
+      "size": 22291,
+      "sha256": "80dc1acdc2baa6b7d04963569d52b96bb6bfb60686fc42f43cc3978ab4ca5586"
     },
     {
       "path": "assets/antwar.tar.gz",
@@ -39,8 +39,8 @@
     },
     {
       "path": "assets/antwar2.tar.gz",
-      "size": 7685160,
-      "sha256": "af16e972203e889c211e76c595ba715d799abcf651d86e29715583bfd662e429"
+      "size": 7685192,
+      "sha256": "889fe0958761b8ebc77033ca5d58f044b8b20da648b0dc06dca0ae203f0d9d2f"
     },
     {
       "path": "assets/aquawar.tar.gz",
@@ -80,7 +80,7 @@
     {
       "path": "assets/manifest.json",
       "size": 3019,
-      "sha256": "22afb3eb274808266e3a726129cbe5181de252b7467d8885a70dbe1e51f71f5d"
+      "sha256": "8af1a05346b1da1dae1cc80b96fad6d4c7c4838d59595d4dae5affe09c07536f"
     },
     {
       "path": "assets/miracle.tar.gz",
@@ -119,8 +119,8 @@
     },
     {
       "path": "assets/starter-fixes.json",
-      "size": 365,
-      "sha256": "0c384cf28ed4fc4a1af4c8f8f8d69d33abae719a2bfce75730c96a47b0a97883"
+      "size": 740,
+      "sha256": "9997f825f6ecde59f942a1b994ce282295821cdace80cd673e5fc382eb389eaf"
     },
     {
       "path": "configs/distribution.json",
@@ -883,6 +883,11 @@
       "sha256": "5aa6fd17f7b8ed0e1105c715e973122d23a507ae24fdca393a6ef7a4a1f77ee1"
     },
     {
+      "path": "tests/test_antwar2_protocol_tokens.py",
+      "size": 1342,
+      "sha256": "2f95f9f7d3d56bf7cea09299000e4f305d23a3023dbc8edf86e96fe984ce7bee"
+    },
+    {
       "path": "tests/test_antwar2_sdk_refund.py",
       "size": 1516,
       "sha256": "2fc5a2db97f5a08351f7df100ea78083e484e8dd169f7c8b4dbb7e5c22abdbe2"
@@ -1349,18 +1354,18 @@
     },
     {
       "path": "validation/README.md",
-      "size": 29708,
-      "sha256": "5730f3e6f6e4870066c996489f8e013c952a38782df26d575e3eba3dd7da3462"
+      "size": 8582,
+      "sha256": "e38707b00a4bf73e4146a1c7fef54ff240ff23ba31d7c7c32a93492cbf4d1aa5"
     },
     {
       "path": "validation/asset-audit.json",
-      "size": 1518,
-      "sha256": "5f7c983173dcfeca7c051dd550739c5af4199338a779ba195751bfa8eba0a435"
+      "size": 1970,
+      "sha256": "667b2105761051e4f5d9bf64b59b732123614700d1959db07f3ff49c927d472e"
     },
     {
       "path": "validation/package-privacy.json",
-      "size": 203,
-      "sha256": "cae714ca4dad845f6ed5052701027cc91b7c8e5e79598201421f6afd12fb13bd"
+      "size": 231,
+      "sha256": "655a41caab8714db06d62d3f2984dbd29545bf10736382fb010d1253399667be"
     },
     {
       "path": "validation/player-publication.json",
@@ -1369,8 +1374,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 65427,
-      "sha256": "911385f3698fe8762bc9e10c58f2b7fbd6d276c5d178335edab26a891dc08480"
+      "size": 24919,
+      "sha256": "6479e1f4212b159ace1a6348d5a905eb0d378fe1a361887b957942122c5b391c"
     }
   ]
 }
