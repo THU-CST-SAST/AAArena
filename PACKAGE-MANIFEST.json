@@ -609,8 +609,8 @@
     },
     {
       "path": "src/aa_arena/core/evaluator.py",
-      "size": 2198,
-      "sha256": "4bdf4ab1bdb65c1bb58b4185693f34fbdfaf31fbbcbaa41b9a21e714cc578f4e"
+      "size": 2373,
+      "sha256": "3c6edc6618d22ccf4d58a91058f653c4865192e447f2092b052267dde18a14df"
     },
     {
       "path": "src/aa_arena/core/host_capacity.py",
@@ -1078,6 +1078,11 @@
       "sha256": "5b6293246bdda7edb6c452d4aab5007a1b0625e4cae2f21747f17e36a38922a8"
     },
     {
+      "path": "tests/test_import_entrypoints.py",
+      "size": 748,
+      "sha256": "d72f9131e7bde923b42dce789ca27c94d01ac9d9456694d913ca18144898e21b"
+    },
+    {
       "path": "tests/test_legacy_ai9_build_isolation.py",
       "size": 6354,
       "sha256": "fa11c9df9209c9b91b961282c399da99aea7263f2475f22d5c3e426d42ca236f"
@@ -1344,8 +1349,8 @@
     },
     {
       "path": "validation/README.md",
-      "size": 26695,
-      "sha256": "78ae69eae821f53dad3dccfe6c5937978d3aaf112505aa9c002c30933101602c"
+      "size": 27037,
+      "sha256": "801f8812b9ce8e9e2bbebb366f7fc57390f603dcb043c77c16b99e2a80d72e65"
     },
     {
       "path": "validation/asset-audit.json",
@@ -1364,8 +1369,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 59831,
-      "sha256": "c376b80024e527cb8f5e07cb93b123fb704e5198f9f88ed1bca392a28839a1c0"
+      "size": 60102,
+      "sha256": "1855e7cc1aa28b1b2ed66ec01224141e2f13d117bee063c1133043067573fbea"
     }
   ]
 }

@@ -1698,5 +1698,12 @@
     "controller_python": "Python 3.14.6",
     "focused_tests_passed": 15,
     "command": "python3 scripts/setup_local.py"
+  },
+  "independent_import_entrypoints": {
+    "passed": true,
+    "fresh_interpreter_entrypoints": 4,
+    "regression_tests_passed": 11,
+    "evaluation_result_semantics_covered": true,
+    "hosted_runtime_deployment": "pending; active matches use their pinned profile"
   }
 }

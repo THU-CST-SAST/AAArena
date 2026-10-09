@@ -155,3 +155,7 @@ Profile `turn-gate-material-sdk-v5` has 30 verified deployed file hashes and aut
 `scripts/setup_local.py` checks the Linux architecture, cgroup v2, user scopes, namespaces and exact compiler version before installing the controller and player dependencies. It verifies direct player-package pins, dependency consistency and isolated execution, then runs every public game contract. An activation file is available only after successful validation. The asset verifier rejects hard-linked files that cannot satisfy the build-isolation contract.
 
 The setup validation uses an independently extracted release, a fresh Python 3.14 controller environment and a reused Python 3.10.14 player environment with all direct requirement pins and dependency consistency checked. All twelve local games pass, covering 52 actual matches and 22 runnable starters. Fifteen focused installer, platform-rejection, activation-failure and public-asset tests pass. This local evidence does not certify complete-pool historical player parity.
+
+## Python entry points
+
+The sandbox, systemd launcher, reference-runtime and Saiblo player-error modules each import successfully in a fresh interpreter. Eleven regression checks cover these entry points and evaluation status, player-error attribution and preservation of official game results. Hosted jobs use their pinned runtime profile.

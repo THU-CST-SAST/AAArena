@@ -10,7 +10,6 @@ from dataclasses import replace
 from pathlib import Path
 
 from aa_arena.core.contract import EvaluateResult, EvaluationStatus, PlayerRef
-from aa_arena.saiblo.player_errors import transport_player_errors
 from aa_arena.core.registry import get_plugin
 
 
@@ -35,6 +34,10 @@ def evaluate(
     evaluator = plugin.evaluator_factory(game_dir)
     result = evaluator.evaluate(players, roles, seed)
     if result.status in (EvaluationStatus.COMPLETE, EvaluationStatus.GAME_ERROR) and result.replay_path:
+        # Loading saiblo also loads the sandbox, whose launcher imports core.
+        # Defer the transport parser until evaluation to keep both entry points usable.
+        from aa_arena.saiblo.player_errors import transport_player_errors
+
         failed_roles, detail = transport_player_errors(
             Path(result.replay_path).with_name("transport-events.jsonl"),
             roles=tuple(roles),
