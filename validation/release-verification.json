@@ -1765,5 +1765,49 @@
     "hosted_error_matches": 55,
     "policy_code_and_limits_preserved": true,
     "official_error_labels_preserved": true
+  },
+  "supplemental_frozen_behavioral_parity": {
+    "passed": true,
+    "scope": "Three conditional opponent failures; complete release acceptance remains pending other error-path classification and AntWar2 final-profile full-pool completion.",
+    "original_policy_and_limits_preserved": true,
+    "api_submissions": 0,
+    "model_calls": 0,
+    "aquawar": {
+      "same_binary": true,
+      "same_input": true,
+      "same_native_trace": true,
+      "binary_sha256": "a63bbd84464e18e880fd16679febaac1712bdfa384ff8b8e012c4b172da004bc",
+      "input_sha256": "11f3de658a8c7c1b8ea064ced0a6ae4acd83d708dadcae5746a0ac069e507d60",
+      "classification": "original policy missing return triggers GCC ud2",
+      "policy_or_limits_changed": false
+    },
+    "snakego": {
+      "same_binary": true,
+      "same_input": true,
+      "same_native_trace": true,
+      "binary_sha256": "bfc3692ee68cadb183ed0c515ec2303bba144adc22e3cf5fc37b7399221e9eef",
+      "input_sha256": "ea5cd1d818872a6042e5bf485cc9a572058cbf46513e57d6efcc5140641819eb",
+      "classification": "original player-bundled SDK operation-history vector out of bounds; public SDK does not contain this insertion",
+      "policy_or_limits_changed": false
+    },
+    "miracle": {
+      "same_sources": true,
+      "same_input": true,
+      "same_output": true,
+      "input_sha256": "0792ee3d12110aac3ab31cdb9dce8cf45ec95f9f25d7520b63f55de15316da5d",
+      "policy_main_sha256": "ffe67294b20725d8b2cecde0f1821416b6810abf70ba24796523acc9cb57ac05",
+      "diagnostic_random_seed": 2,
+      "branch": "Original play() samples randint(0,9); values below 2 enter an infinite loop. Both hosts exceed the unchanged three-second deadline on this branch.",
+      "formal_rng_not_overridden": true
+    },
+    "diagnostic_evidence_sha256": {
+      "aquawar-frozen-crash-lab.json": "b91abf09a0df19fa5169410337e5ad885ed98308245426301beb2d379e63086e",
+      "aquawar-frozen-crash-cloud.json": "6bc14c7ea44f73a47b034803ad3509fd2b7c754c3495fe7fc3e814d82fac4028",
+      "snakego-frozen-crash-lab.json": "4fedd179993fd549d71bad67539f4110e707c18965cc0be8221540008c0ddd8c",
+      "snakego-frozen-crash-cloud.json": "852e6fc8b108b27f7c1138edc3a7fc8fab9ee338a0b57d85cfc86829f300226f",
+      "miracle-random-loop-lab.json": "a9d0499a02c92d88d5ba6529ad5f5789755101fa1c4d7cad36ebbfdb8fd1393d",
+      "miracle-random-loop-cloud.json": "e2e4afb20fdeb1450889385ec467890522854ed436a01bdaab9fcf6e1dd0f158"
+    },
+    "provenance_scope": "Frozen original source files match reference and hosted pool manifests. Source files are untracked in the historical Git checkout; no Git revision provenance is asserted."
   }
 }
