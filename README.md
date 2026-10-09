@@ -51,7 +51,20 @@ Player-code publication follows the experiment's **frozen measured Elo ranking**
 
 ## Installation
 
-The validated evaluation platform is **x86-64 Linux** with cgroup v2, a working systemd user manager, unprivileged user namespaces, Bubblewrap, GCC/G++ 14.2, Make, CMake and Ruby. Python 3.11 or newer runs the controller; a separate Python 3.10.14 environment runs game participants. Conda is used below to create that environment. Experiments run without root on a configured host. See [`docs/runtime.md`](docs/runtime.md) for sandbox requirements.
+The reference host runs **Debian 13 (x86-64 Linux)** with cgroup v2, a working systemd user manager, unprivileged user namespaces, Bubblewrap, GCC/G++ 14.2, Make, CMake and Ruby. Python 3.11 or newer runs the controller; a separate Python 3.10.14 environment runs game participants. Conda is used below to create that environment. Experiments run without root on a configured host. See [`docs/runtime.md`](docs/runtime.md) for sandbox requirements.
+
+With the OS prerequisites and Conda installed, the setup command installs the controller and player dependencies, verifies their identities and asset hashes, checks the actual sandbox and compiler, and runs all 12 local game contracts. It makes no model calls and needs no evaluation API token.
+
+```bash
+git clone https://github.com/THU-CST-SAST/AAArena.git
+cd AAArena
+python3 scripts/setup_local.py
+source validation/local-setup/activate.sh
+```
+
+Run `python3 scripts/setup_local.py --verify-only` to verify existing environments without installing packages. The activation file is produced only after all checks pass. Extract or clone into an independent directory; hard-linked research copies are not supported by the build sandbox. Native macOS, Windows and ARM execution is not supported; use an x86-64 Linux host or VM for local matches.
+
+For manual installation:
 
 ```bash
 git clone https://github.com/THU-CST-SAST/AAArena.git

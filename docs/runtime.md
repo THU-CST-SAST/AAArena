@@ -2,7 +2,16 @@
 
 The controller runs as a normal user. Game participants run in isolated filesystem and network namespaces, with process groups tracked by cgroup v2 and systemd scopes. The host must provide a working user manager and allow unprivileged namespaces. Installing OS packages is separate from running experiments.
 
-A rootless launch uses:
+The tested reference distribution is Debian 13 on x86-64. OS prerequisites are Bubblewrap, systemd with a working user manager, cgroup v2, GCC/G++ 14.2.0, Make, CMake, Ruby, Python 3.11 or newer, and Conda (or a separately installed Python 3.10.14). The setup command verifies namespace and scope creation before installing Python dependencies:
+
+```sh
+python3 scripts/setup_local.py
+source validation/local-setup/activate.sh
+```
+
+The command performs real local matches for every game without model or evaluation-service calls. It preserves host proxy/package-index settings; those settings must point to reachable services. `--verify-only` uses the installed environments and runs the same runtime, asset and game checks. A failed check returns a nonzero exit status and does not leave an acceptance activation file. Local asset trees must contain independent regular files, without hard links to research or diagnostic copies.
+
+A manual rootless launch uses:
 
 ```sh
 export AA_ARENA_SYSTEMD_MODE=user

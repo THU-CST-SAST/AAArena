@@ -1669,5 +1669,34 @@
       "passed": true
     },
     "production_deployed": false
+  },
+  "hosted_material_sdk_profile": {
+    "profile": "turn-gate-material-sdk-v5",
+    "runtime_source_commit": "571ab30be43000f9fb81d32c31df7321e53b9ac4",
+    "deployed_files_verified": 30,
+    "remote_small": {
+      "passed": true,
+      "games": 12,
+      "submissions": 24,
+      "actual_matches": 46,
+      "independent_receipt_artifact_audit": true
+    },
+    "complete_pool_regression": "running",
+    "historical_player_runtime_parity": "pending",
+    "complete_release_acceptance": false
+  },
+  "local_setup": {
+    "passed": true,
+    "games": 12,
+    "actual_matches": 52,
+    "runnable_starters": 22,
+    "model_calls": 0,
+    "fresh_controller": true,
+    "independent_asset_extraction": true,
+    "player_environment": "reused; direct requirement pins and pip check verified",
+    "activation_created": true,
+    "controller_python": "Python 3.14.6",
+    "focused_tests_passed": 15,
+    "command": "python3 scripts/setup_local.py"
   }
 }

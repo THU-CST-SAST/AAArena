@@ -29,6 +29,8 @@ def verify_game(root, manifest):
         relative=safe_name(entry['path']);p=root/relative
         if not p.resolve().is_relative_to(root.resolve()) or p.is_symlink() or not p.is_file():
             raise ValueError(f'Missing or unsafe asset: {relative}')
+        if p.stat().st_nlink != 1:
+            raise ValueError(f'Hard-linked asset is incompatible with isolated builds: {relative}; extract the release into a fresh directory without hard-link copying')
         if p.stat().st_size!=entry['size'] or digest(p)!=entry['sha256']:
             raise ValueError(f'Asset hash mismatch: {relative}')
     for entry in manifest['files']:

@@ -143,3 +143,15 @@ The evaluator supports the optional tower argument in a version-pinned Python SD
 Successful material collection returns the acting player's inventory through the material-response interface. Failed actions omit inventory. The inventory serializer returns named counts for traps and tools. A version-pinned SDK adapter dispatches turns in both the alive and escape-waiting states, as required by the referee. The adapter preserves the original files and all strategy logic; its runtime manifest identifies the sole modified SDK function. Unknown sources retain their own dispatch implementation.
 
 Nine focused tests cover response content, state-dependent dispatch, source preservation, concurrent preparation and cache tampering. Four paired original-opponent matches complete 100 rounds each without player errors. Two additional matches pass through the automatic evaluator integration. The public local contract passes five actual matches. Production deployment, authenticated full-pool regression and complete historical runtime parity remain pending.
+
+
+## Hosted material and SDK profile
+
+Profile `turn-gate-material-sdk-v5` has 30 verified deployed file hashes and authenticated HTTPS health coverage for all twelve games. The detailed/binary small matrix passes 24 submissions and 46 actual matches. An independent audit verifies immutable candidate manifests, request/result/pool hashes, budget receipts, feedback boundaries and local replay bytes. No preterminal transport errors occur in these small matches. The LostSpace and AntWar2 complete-pool regressions retain distinct immutable submission IDs and require completion and historical-player reconciliation. Complete release acceptance remains pending; the hosted full-pool off-policy catalogue is unavailable.
+
+
+## Reproducible local setup
+
+`scripts/setup_local.py` checks the Linux architecture, cgroup v2, user scopes, namespaces and exact compiler version before installing the controller and player dependencies. It verifies direct player-package pins, dependency consistency and isolated execution, then runs every public game contract. An activation file is available only after successful validation. The asset verifier rejects hard-linked files that cannot satisfy the build-isolation contract.
+
+The setup validation uses an independently extracted release, a fresh Python 3.14 controller environment and a reused Python 3.10.14 player environment with all direct requirement pins and dependency consistency checked. All twelve local games pass, covering 52 actual matches and 22 runnable starters. Fifteen focused installer, platform-rejection, activation-failure and public-asset tests pass. This local evidence does not certify complete-pool historical player parity.

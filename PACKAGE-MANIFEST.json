@@ -29,8 +29,8 @@
     },
     {
       "path": "README.md",
-      "size": 21277,
-      "sha256": "a9d407ce5c7302c513e1c5deed11c405a427385d1f7292afa830752005ba93a6"
+      "size": 22146,
+      "sha256": "45f5eb67cf49624207d97cdf1f39e4c2b56e327eb6ab7c10812f3b91bf35fb62"
     },
     {
       "path": "assets/antwar.tar.gz",
@@ -159,8 +159,8 @@
     },
     {
       "path": "docs/runtime.md",
-      "size": 5861,
-      "sha256": "1ad187102a328819e71a71ec7342e1f60c883072e3260fcbc07a951fab026f41"
+      "size": 6798,
+      "sha256": "eaef96bfa59a36e4cea766971484ee16b2d44202a2ff57b62b2ee1868ed52e59"
     },
     {
       "path": "environment/controller-constraints-py314-linux.txt",
@@ -409,8 +409,8 @@
     },
     {
       "path": "scripts/install_assets.py",
-      "size": 4432,
-      "sha256": "e3d703e051330b8e4628aefacad5aea976786102ffce9c86a64f681284614da7"
+      "size": 4637,
+      "sha256": "6225e211af92ea72ce8f5728ef28b8f291424c56ad99362a74bbcbd9ed06cede"
     },
     {
       "path": "scripts/install_claude_cli.py",
@@ -446,6 +446,11 @@
       "path": "scripts/run_experiments.py",
       "size": 13608,
       "sha256": "65a3c530bfea213411516e9b0b2035cf3fbff0637eee78773946dca5256723cb"
+    },
+    {
+      "path": "scripts/setup_local.py",
+      "size": 7402,
+      "sha256": "dbc5b0418bf6af9c710e357d946b28127bdce4e7b6051fc52261b4339b28d72a"
     },
     {
       "path": "scripts/validate_games.py",
@@ -1083,6 +1088,11 @@
       "sha256": "23dd66f903e89d3022513853ce3cb9941c641a7d456c291dab0d25a5561e4bc2"
     },
     {
+      "path": "tests/test_local_setup.py",
+      "size": 3420,
+      "sha256": "0d8c78586ccf771a098b6cac1ce2b4eb363afa2106f11ef82461072040935c6a"
+    },
+    {
       "path": "tests/test_local_subset.py",
       "size": 2308,
       "sha256": "880846d74902783cf13664e1fe1d341936490cf5b0f08865bc79292c7876b7c4"
@@ -1334,8 +1344,8 @@
     },
     {
       "path": "validation/README.md",
-      "size": 25006,
-      "sha256": "bb56dcea36cdbca0aa4c91c7be5f12c9ce11d7b15cf56e34fa7839cd203b8b56"
+      "size": 26695,
+      "sha256": "78ae69eae821f53dad3dccfe6c5937978d3aaf112505aa9c002c30933101602c"
     },
     {
       "path": "validation/asset-audit.json",
@@ -1354,8 +1364,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 58884,
-      "sha256": "e45e2eaa9f946a35c1d237d3ba3c360abb3c5893d7b81ccd767bd78ac26b8529"
+      "size": 59831,
+      "sha256": "c376b80024e527cb8f5e07cb93b123fb704e5198f9f88ed1bca392a28839a1c0"
     }
   ]
 }
