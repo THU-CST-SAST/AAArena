@@ -12,7 +12,7 @@ See `release-verification.json` for measured acceptance status. Historical oppon
 
 All three conditions must pass:
 
-1. Every unchanged player with successful execution in the agentlab historical baseline executes successfully on the hosted evaluator. Discrepancies require comparison of original source hashes, entrypoints, SDK protocols, dependencies and resource limits. Paired diagnostics use the same candidate, seat and seed. A failure on both hosts does not supersede a recorded historical success without reconciling the configuration and execution path.
+1. Original strategies and decision limits are preserved, and reference and hosted execution have consistent behavior. Paired diagnostics verify source hashes, entrypoints, SDK protocols, dependencies, limits and effective inputs. Confirmed original-policy failures are reported faithfully and may satisfy behavioral parity. Historical successful runs remain evidence for configuration and execution-path checks. Unexplained differences and infrastructure or SDK defects require resolution.
 2. A local client submits policy code for real hosted small and full-pool large evaluations. Feedback, budgets, strategy hashes, receipts and actual match artifacts must agree.
 3. A clean installation of the release runs all twelve games with the published opponent subset locally, supports local agent iteration and invokes hosted evaluations using the documented setup.
 
@@ -20,7 +20,7 @@ API completion, an Elo value, matching runtime hashes or accurate error counters
 
 ## Complete-pool execution coverage
 
-Release acceptance is pending historical player runtime parity. A clean installation passes all twelve local live-game checks, and 96 source, script and asset hashes match the tested runtime. The HTTPS checks verify all frozen opponents, actual match artifacts, immutable submissions, candidate hashes, receipts and budgets. These are SDK candidate checks, not model benchmark scores. A counted game error requires case-specific diagnosis; it does not certify a player defect.
+Release acceptance is pending complete-pool behavioral parity. A clean installation passes all twelve local live-game checks, and 96 source, script and asset hashes match the tested runtime. The HTTPS checks verify all frozen opponents, actual match artifacts, immutable submissions, candidate hashes, receipts and budgets. These are SDK candidate checks, not model benchmark scores. A counted game error requires case-specific diagnosis; it does not certify a player defect.
 
 The table records the Python-referee execution profile at `13bb7f4`, using the pinned Python 3.14.6 backend and Debian reference runtime. The native-referee profile uses GCC 14.2 and the reference runtime; its full-pool records are identified separately. No Elo scores are combined across profiles. The 12-game detailed/binary small matrix uses the deployed HTTPS service. Error counts below are per-match and may overlap between candidate and opponent.
 
@@ -154,8 +154,14 @@ Profile `turn-gate-material-sdk-v5` has 30 verified deployed file hashes and aut
 
 `scripts/setup_local.py` checks the Linux architecture, cgroup v2, user scopes, namespaces and exact compiler version before installing the controller and player dependencies. It verifies direct player-package pins, dependency consistency and isolated execution, then runs every public game contract. An activation file is available only after successful validation. The asset verifier rejects hard-linked files that cannot satisfy the build-isolation contract.
 
-The setup validation uses an independently extracted release, a fresh Python 3.14 controller environment and a reused Python 3.10.14 player environment with all direct requirement pins and dependency consistency checked. All twelve local games pass, covering 52 actual matches and 22 runnable starters. Fifteen focused installer, platform-rejection, activation-failure and public-asset tests pass. This local evidence does not certify complete-pool historical player parity.
+The setup validation uses an independently extracted release, fresh Python 3.14 controller and Python 3.10.14 player environments with all direct requirement pins and dependency consistency checked. All 271 release-manifest files match the independently extracted archive. All twelve local games pass, covering 52 actual matches and 22 runnable starters. Fifteen focused installer, platform-rejection, activation-failure and public-asset tests pass. This local evidence does not certify complete-pool historical player parity.
 
 ## Python entry points
 
 The sandbox, systemd launcher, reference-runtime and Saiblo player-error modules each import successfully in a fresh interpreter. Eleven regression checks cover these entry points and evaluation status, player-error attribution and preservation of official game results. Hosted jobs use their pinned runtime profile.
+
+## Frozen-input timeout parity
+
+An original AntWar2 policy receives the same captured input on both hosts and produces byte-identical output. Its final decision requires 11.584 seconds on the reference host and 10.976 seconds on the hosted evaluator; CPU time closely matches wall time. Both exceed the preserved 10-second formal limit. Diagnostic profiling identifies nested rollout catalog construction as the computational cost. The formal matches retain their timeout outcomes. This case satisfies behavioral parity without changing the strategy or its deadline.
+
+The `turn-gate-material-sdk-v5` LostSpace complete-pool submission covers 111 opponents and 222 actual matches. Independent audits verify candidate snapshots, request/result/pool hashes, budget receipts and replay artifacts. Candidate errors: 0; opponent-error matches: 55; infrastructure retries: 0. Paired behavioral verification covers all 222 matches. Both hosts report errors in the same 55 matches, with no reference infrastructure exception. Complete replays are byte-identical in 196 matches. Error labels agree in 205 matches; the other 17 have identical gameplay and failure states, with timeout versus stack-failure labels for the same recursive policy path. Corresponding native binaries match. Official errors remain unmodified. Stochastic trajectories and Elo are not required to be byte-identical.

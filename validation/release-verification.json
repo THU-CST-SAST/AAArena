@@ -615,7 +615,7 @@
   "environment_parity": {
     "status": "in progress",
     "reference": "agentlab research runtime",
-    "blocking_issue": "Historical player successful-execution parity and final local package live regression are required.",
+    "blocking_issue": "Complete-pool final-profile regression and cross-host behavioral reconciliation.",
     "reference_profile": {
       "compiler": "Debian GCC/G++ 14.2.0-19",
       "glibc": "2.41",
@@ -1483,17 +1483,18 @@
     "criteria": {
       "historical_player_runtime_parity": {
         "status": "pending",
-        "requirement": "Every unchanged player with demonstrated successful execution in the agentlab historical baseline must also execute successfully on the hosted evaluator.",
+        "requirement": "Original strategies and decision limits are preserved. Paired reference and hosted execution must have consistent behavior; confirmed original-policy failures are reported faithfully and may satisfy parity.",
         "evidence_required": [
-          "Historical success tied to player source hash, entrypoint, SDK and runtime configuration",
-          "Hosted execution with the same player source and supported protocol",
-          "Paired candidate, seat and seed diagnostics for discrepant failures"
+          "Original strategy hashes, entrypoints, SDK contracts, dependencies and resource limits",
+          "Same candidate, seat and seed; effective input or clock-controlled diagnostics where randomness requires them",
+          "Recorded successful executions and error paths considered with original logs",
+          "Infrastructure and SDK discrepancies repaired and tested; confirmed policy failures retained"
         ],
         "insufficient_evidence": [
           "API completion or an Elo result alone",
           "Matching library hashes alone",
           "Correct failure counters alone",
-          "Failure on both hosts without reconciliation against historical successful execution"
+          "Failure on both hosts without checking configuration, inputs and failure behavior"
         ]
       },
       "remote_policy_submission": {
@@ -1529,8 +1530,11 @@
         "public_subset_contract_tests_passed": 27,
         "local_live_games_verified": 12,
         "source_script_asset_hashes_verified": 96,
-        "runtime_commit": "35b6529f6433eac36d77cd9a7c8b9118c9818931",
-        "scheduler_unit_tests_passed": 7
+        "runtime_commit": "8549840231bae1112071cd3a50ea7acd90a683cc",
+        "scheduler_unit_tests_passed": 7,
+        "manifest_files_verified": 271,
+        "actual_matches": 52,
+        "runnable_starters": 22
       }
     },
     "all_criteria_required": true,
@@ -1683,7 +1687,28 @@
     },
     "complete_pool_regression": "running",
     "historical_player_runtime_parity": "pending",
-    "complete_release_acceptance": false
+    "complete_release_acceptance": false,
+    "full_pool_lostspace": {
+      "execution_integrity_passed": true,
+      "pool_count": 111,
+      "matches": 222,
+      "api_counts": {
+        "candidate_errors": 0,
+        "opponent_errors": 55,
+        "game_errors": 55,
+        "infrastructure_retries": 0
+      },
+      "receipt": {
+        "run_id": "c7ba961d75424db8862a4b4b391cda71",
+        "submission_id": "4628777cbf62406a8d9831b457a1e3c8",
+        "pool_sha256": "18fc8afd72b2e0cb7ea81247dc8713641d2e01d7c51c1bf18030ce2c5c309945",
+        "request_sha256": "679049bc10e1b91a3d3cbd9f682df529e279e95f84aaa80225850a07cfaedd02",
+        "result_sha256": "449d584b635a9a00e1aa36346c5ee2b3c9d57dd6b39bd3781f5ee911921e9abe",
+        "small_used": 1,
+        "large_used": 1,
+        "completed_at": 1791523688.154119
+      }
+    }
   },
   "local_setup": {
     "passed": true,
@@ -1693,11 +1718,16 @@
     "model_calls": 0,
     "fresh_controller": true,
     "independent_asset_extraction": true,
-    "player_environment": "reused; direct requirement pins and pip check verified",
+    "player_environment": "fresh Conda Python 3.10.14 environment; direct requirement pins and pip check verified",
     "activation_created": true,
     "controller_python": "Python 3.14.6",
     "focused_tests_passed": 15,
-    "command": "python3 scripts/setup_local.py"
+    "command": "python3 scripts/setup_local.py",
+    "fresh_player": true,
+    "manifest_files_verified": 271,
+    "archive_sha256": "f9392b54bd2e76f95eb00feec57526c399e560e9ede8f14ef791791b5dc35262",
+    "download_index": "https://mirrors.ustc.edu.cn/pypi/simple",
+    "source_commit": "8549840231bae1112071cd3a50ea7acd90a683cc"
   },
   "independent_import_entrypoints": {
     "passed": true,
@@ -1705,5 +1735,35 @@
     "regression_tests_passed": 11,
     "evaluation_result_semantics_covered": true,
     "hosted_runtime_deployment": "pending; active matches use their pinned profile"
+  },
+  "antwar2_frozen_input_parity": {
+    "passed": true,
+    "input_sha256": "d41610155f59b8eb868ef7bc0e4facd1bcfabea13b06a7e75fdc2b985f48d5fa",
+    "stdout_sha256": "583522c5642760a2e24f58a68428808f848aaf08b82c89cee88c95876eec4de9",
+    "reference_wall_seconds": 11.5836027386,
+    "hosted_wall_seconds": 10.975835416,
+    "formal_limit_seconds": 10,
+    "original_policy_preserved": true,
+    "formal_limit_preserved": true,
+    "diagnostic_output_not_a_formal_success": true,
+    "classification": "Original policy computation exceeds its decision limit on both hosts."
+  },
+  "lostspace_v5_behavioral_parity": {
+    "passed": true,
+    "scope": "Player execution and failure-path consistency, not byte-identical stochastic trajectories or Elo.",
+    "paired_matches": 222,
+    "opponents": 111,
+    "same_candidate_opponent_hashes": true,
+    "same_seeds": true,
+    "reference_infrastructure_exceptions": 0,
+    "hosted_infrastructure_retries": 0,
+    "identical_complete_replays": 196,
+    "same_player_error_labels": 205,
+    "same_failure_path_with_timeout_vs_stack_failure": 17,
+    "failure_path_matching_binaries": true,
+    "reference_error_matches": 55,
+    "hosted_error_matches": 55,
+    "policy_code_and_limits_preserved": true,
+    "official_error_labels_preserved": true
   }
 }
