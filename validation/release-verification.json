@@ -1387,7 +1387,7 @@
         "lostspace",
         "antwar2"
       ],
-      "post_deployment_full_pool_status": "running",
+      "post_deployment_full_pool_status": "lostspace_execution_integrity_verified_antwar2_running",
       "client_runtime_source_commit": "dbab2e298d95899c3236f39f430b25e159e93486",
       "model_calls": 0,
       "small_execution_integrity": {
@@ -1431,6 +1431,50 @@
           "snakego/detailed": "0b9d7c43af5e0d9a699f59d062a99d4b7613a32ef13612fb5f37462339e1dd19",
           "snakego/binary": "9614f975a7659ec7623e1af4e3383520f08d7238ad7cd10240a6c8866f2b6405"
         }
+      },
+      "full_execution_integrity": {
+        "lostspace": {
+          "submission": "41f69966c17c429ba0b7c0349b7e2f68",
+          "run": "ce50d5c7449049ec857e73cf8496d0f7",
+          "execution_integrity_passed": true,
+          "pool_count": 111,
+          "matches": 222,
+          "request_result_pool_hashes_verified": true,
+          "candidate_snapshot_verified": true,
+          "snapshot_id": "26bba65ca006de704e88f8739e93c67033a27e693e1447c798fb65ba526b460d",
+          "receipt": {
+            "run_id": "ce50d5c7449049ec857e73cf8496d0f7",
+            "submission_id": "41f69966c17c429ba0b7c0349b7e2f68",
+            "pool_sha256": "18fc8afd72b2e0cb7ea81247dc8713641d2e01d7c51c1bf18030ce2c5c309945",
+            "request_sha256": "a157830e6697d504ffc0b65452d7f891f41d4c2bc62f5d0b499d0a9996799f93",
+            "result_sha256": "86c6edd13e817ee14e2e05868ef986183c1737841a7fb90e0f56b7c3befe06e3",
+            "small_used": 1,
+            "large_used": 1,
+            "completed_at": 1791509232.693715
+          },
+          "budget": {
+            "small_used": 1,
+            "large_used": 1,
+            "small_total": 1,
+            "large_total": 1
+          },
+          "transport_count": 222,
+          "api_counts": {
+            "candidate_errors": 0,
+            "opponent_errors": 85,
+            "game_errors": 85,
+            "infrastructure_retries": 0
+          },
+          "error_attribution": "Unclassified engine/transport events; separate diagnostics required",
+          "all_raw_artifact_hashes_verified": true
+        }
+      },
+      "antwar2_checkpoint": {
+        "as_of_utc": "2026-10-09T01:35:11.765002+00:00",
+        "terminal_matches": 230,
+        "expected_matches": 382,
+        "cases_with_transport_error": 3,
+        "status": "running"
       }
     }
   },
@@ -1546,5 +1590,33 @@
     "official_winner_scores_and_replay_preserved": true,
     "post_terminal_cleanup_errors_excluded": true,
     "complete_release_acceptance": false
+  },
+  "paired_native_crash_diagnostics": {
+    "game": "lostspace",
+    "original_opponents": 2,
+    "matched_seeds": true,
+    "candidate_and_opponent_sources_unchanged": true,
+    "binaries_identical_across_hosts": true,
+    "captured_input_streams_identical_across_hosts": true,
+    "sandboxed_original_binary_replay": "SIGILL at compiler-generated ud2 after non-void functions reach their end without a return value",
+    "original_function_sources_match_historical_revision": true,
+    "historical_trace_reconstruction": false,
+    "historical_runtime_parity": "pending"
+  },
+  "antwar2_timeout_diagnostic": {
+    "original_sources_preserved": true,
+    "paired_seed": 878615825,
+    "reference_rounds": 16,
+    "hosted_rounds": 9,
+    "failure": "10-second decision timeout",
+    "native_backend_explicitly_disabled_in_original_protocol": true,
+    "reference_observed_wall_seconds": 8.004934310913086,
+    "reference_observed_cpu_seconds": 8.003734,
+    "reference_cgroup_throttled_usec": 0,
+    "hosted_in_turn_cpu_sampling_available": false,
+    "identical_trajectories_claimed": false,
+    "historical_screening_rounds": 289,
+    "historical_success_reconciliation": "pending",
+    "intrusive_instrumented_probes_excluded": true
   }
 }

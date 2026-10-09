@@ -122,3 +122,12 @@ A broader reference-host diagnostic covers 39 additional unchanged opponents and
 ### Local evaluator error attribution
 
 The public local evaluation entry point reports player crashes, timeouts and official forfeits as `game_error`, preserving the official winner, scores, rounds and replay. Errors after the terminal game result do not count as player failures. Validation comprises 16 focused tests, one live four-player failure case and five normal LostSpace contract matches. These checks do not certify full-pool historical runtime parity.
+
+
+## Hosted terminal-profile verification
+
+Profile `terminal-lostspace-v1` has a verified 12-game detailed/binary small matrix with 24 submissions and 46 actual matches. Its LostSpace full-pool submission covers all 111 opponents in 222 actual matches. Immutable snapshots, request and result hashes, complete-pool metadata, raw match artifacts and budget receipts agree. The experiment receipt records one small and one large evaluation used. The SDK candidate has no counted errors; 85 matches contain opponent errors requiring individual reconciliation. AntWar2 is running. Execution-integrity verification does not establish error-free player execution or release acceptance.
+
+Two LostSpace native-crash diagnostics preserve original sources and match both the binary and the entire captured input stream across hosts. Sandboxed replay of each original binary stops at a compiler-generated illegal instruction where a non-void source function reaches its end without returning a value. The relevant sources match the historical revision; historical process traces remain necessary for full provenance reconciliation.
+
+An AntWar2 original policy uses the Python backend explicitly. Uninstrumented paired matches with the same seed time out after 16 reference rounds and 9 hosted rounds; identical trajectories are not claimed for its wall-clock-budgeted search. An external reference-host sample records 8.004934 wall seconds and 8.003734 CPU seconds with no cgroup throttling. Hosted in-turn CPU samples are unavailable. The recorded 289-round historical screening result remains part of the unresolved comparison. Intrusively instrumented probes are excluded from acceptance conclusions.
