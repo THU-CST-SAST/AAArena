@@ -92,9 +92,9 @@
     {
       "game": "antwar2",
       "archive": "antwar2.tar.gz",
-      "sha256": "334b50f94d3f6bf463bb1019176da84974707850a254bded524e881c07894874",
-      "compressed_bytes": 7685088,
-      "uncompressed_bytes": 48109715,
+      "sha256": "af16e972203e889c211e76c595ba715d799abcf651d86e29715583bfd662e429",
+      "compressed_bytes": 7685160,
+      "uncompressed_bytes": 48109830,
       "files": 3694
     }
   ]

@@ -1618,5 +1618,31 @@
     "historical_screening_rounds": 289,
     "historical_success_reconciliation": "pending",
     "intrusive_instrumented_probes_excluded": true
+  },
+  "antwar2_sdk_runtime_compatibility": {
+    "adapter": "antwar2-refund-forwarding-v1",
+    "scope": "optional tower argument forwarding for the verified bundled SDK state/engine hash pair",
+    "original_policy_and_pool_files_preserved": true,
+    "unknown_sdk_versions_unchanged": true,
+    "audited_runtime_copy": true,
+    "unit_tests_passed": 13,
+    "paired_original_opponent_matches": {
+      "agentlab": 2,
+      "hosted": 2,
+      "all_passed": true
+    },
+    "automatic_evaluator_integration_matches": {
+      "agentlab": 2,
+      "passed": true
+    },
+    "local_public_contract": {
+      "matches": 5,
+      "runnable_starters": [
+        "python",
+        "cpp"
+      ],
+      "passed": true
+    },
+    "production_deployed": false
   }
 }
