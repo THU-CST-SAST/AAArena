@@ -1644,5 +1644,30 @@
       "passed": true
     },
     "production_deployed": false
+  },
+  "lostspace_material_and_waiting_sdk": {
+    "material_response": "successful material collection returns the acting player inventory; unsuccessful actions omit inventory",
+    "inventory_serialization": "named tool counts",
+    "sdk_adapter": "lostspace-escape-waiting-dispatch-v1",
+    "sdk_scope": "exact verified source hash; only the SDK __start_turn function differs in the audited runtime copy",
+    "original_pool_files_preserved": true,
+    "policy_logic_ast_preserved": true,
+    "unknown_sources_unchanged": true,
+    "paired_original_opponent_matches": {
+      "agentlab": 2,
+      "hosted": 2,
+      "rounds_each": 100,
+      "passed": true
+    },
+    "automatic_evaluator_integration_matches": {
+      "agentlab": 2,
+      "passed": true
+    },
+    "focused_tests_passed": 9,
+    "public_local_contract": {
+      "matches": 5,
+      "passed": true
+    },
+    "production_deployed": false
   }
 }

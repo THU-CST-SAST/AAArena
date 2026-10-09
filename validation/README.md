@@ -136,3 +136,10 @@ An AntWar2 original policy uses the Python backend explicitly. Uninstrumented pa
 ## AntWar2 SDK compatibility
 
 The evaluator supports the optional tower argument in a version-pinned Python SDK adapter. The adapter and engine must both match the verified source hashes. Runtime copies preserve all policy bytes and carry a manifest of the sole SDK change; unknown SDK versions retain their own implementation. Thirteen focused tests cover argument forwarding, immutable sources, concurrent publication, cache integrity and custom SDK preservation. Four original-opponent matches across the reference and hosted machines pass, and two matches pass through the automatic evaluator integration. The public Python and C++ starter contract passes five actual local matches. Hosted production deployment and authenticated full-pool regression for this compatibility profile remain pending.
+
+
+## LostSpace material feedback and SDK dispatch
+
+Successful material collection returns the acting player's inventory through the material-response interface. Failed actions omit inventory. The inventory serializer returns named counts for traps and tools. A version-pinned SDK adapter dispatches turns in both the alive and escape-waiting states, as required by the referee. The adapter preserves the original files and all strategy logic; its runtime manifest identifies the sole modified SDK function. Unknown sources retain their own dispatch implementation.
+
+Nine focused tests cover response content, state-dependent dispatch, source preservation, concurrent preparation and cache tampering. Four paired original-opponent matches complete 100 rounds each without player errors. Two additional matches pass through the automatic evaluator integration. The public local contract passes five actual matches. Production deployment, authenticated full-pool regression and complete historical runtime parity remain pending.

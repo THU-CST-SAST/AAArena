@@ -69,8 +69,8 @@
     },
     {
       "path": "assets/lostspace.tar.gz",
-      "size": 2312963,
-      "sha256": "d1f56c588e102fe64981b8d497099905039814b5fe5d7d4904b77f676b6972ee"
+      "size": 2288228,
+      "sha256": "d5fa1e3282ea395286b96ab6c30f10c3c2b6c162e7f88f8edcd18f541ddaf6e1"
     },
     {
       "path": "assets/lota.tar.gz",
@@ -80,7 +80,7 @@
     {
       "path": "assets/manifest.json",
       "size": 3019,
-      "sha256": "707b60f8e68b3297b76dc88a8c848b96ae1f7636c66b086d5950ad416a4c6ada"
+      "sha256": "22afb3eb274808266e3a726129cbe5181de252b7467d8885a70dbe1e51f71f5d"
     },
     {
       "path": "assets/miracle.tar.gz",
@@ -613,6 +613,11 @@
       "sha256": "0a468290f7483588eefd7fc4fef7438b83fc7efc23492ab66d661f46ff909976"
     },
     {
+      "path": "src/aa_arena/core/lostspace_sdk.py",
+      "size": 3933,
+      "sha256": "a51576895f3026c878e972774c65a0f66b359a010a688e548672dac6217a7d8a"
+    },
+    {
       "path": "src/aa_arena/core/native_sdk.py",
       "size": 14982,
       "sha256": "424d16c1fa4e6c29df8dda959de0308c1808c33b5c49d721a8ffbe3381106f9c"
@@ -1093,6 +1098,11 @@
       "sha256": "843b0af88621c54126326ce7fbd431a3dc62456fd714f2cdacc69c6a0de72e07"
     },
     {
+      "path": "tests/test_lostspace_sdk_compat.py",
+      "size": 4463,
+      "sha256": "544356a2b646a91e2b7c59a5de5b8a2cc5cce6f6850145ec2ead558f2e235988"
+    },
+    {
       "path": "tests/test_miracle_backend_geometry.py",
       "size": 743,
       "sha256": "541380c97badcae0d00279c815bff808b113b87991f89a5c4231fc02cbede9d0"
@@ -1324,8 +1334,8 @@
     },
     {
       "path": "validation/README.md",
-      "size": 23980,
-      "sha256": "854383dfded30f329c616983efc1d7981d643f5b235609565803c61b397b8a64"
+      "size": 25006,
+      "sha256": "bb56dcea36cdbca0aa4c91c7be5f12c9ce11d7b15cf56e34fa7839cd203b8b56"
     },
     {
       "path": "validation/asset-audit.json",
@@ -1344,8 +1354,8 @@
     },
     {
       "path": "validation/release-verification.json",
-      "size": 57976,
-      "sha256": "d54cd694c61f3afb02acb88a4a541c029986f816d39f03403c2fe1958017edcf"
+      "size": 58884,
+      "sha256": "e45e2eaa9f946a35c1d237d3ba3c360abb3c5893d7b81ccd767bd78ac26b8529"
     }
   ]
 }
