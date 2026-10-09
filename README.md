@@ -2,7 +2,7 @@
 
 # AAArena
 
-### Can AI Agents Build Game Agents for Real-World Adversarial Games?
+### Can AI Agents Learn Their Way to the Top? Evaluating Heuristic Learning in a Long-Running Game Agent Competition
 
 <a href="https://yks23.github.io"><ins>Kaisen Yang</ins></a><sup>1,\*,†</sup>,
 <a href="https://aoraku.github.io">Qingle Liu</a><sup>1,\*,†</sup>,
@@ -20,8 +20,9 @@ Xiaohui Xie<sup>1</sup>, Wentao Han<sup>1</sup>, Hongning Wang<sup>1,‡</sup>
 
 </div>
 
-**Paper (arXiv):**  
-**Project homepage:**
+**Paper (arXiv):** [arXiv:2610.12341](https://arxiv.org/abs/2610.12341)
+
+**Project homepage:** [aaarena.net](https://aaarena.net)
 
 ## Overview
 
@@ -41,8 +42,6 @@ This repository contains the paper's **12 games**, public SDKs, selected human-p
 Models, games and experiment suites are independently selectable. Supply your own model identifier, compatible API endpoint and credential. The Codex harness requires a compatible Responses endpoint; the Claude Code harness requires a compatible Messages endpoint. The endpoint must support the requested reasoning effort, context length, streaming and tool interfaces. There is no built-in model allowlist. Additional games require an evaluator/resource adapter and a verified opponent pool.
 
 We release code only for human players with even-numbered ranks outside the top eight.
-
-我们只公布未进入决赛圈的偶数人类选手的代码。
 
 Player-code publication follows the experiment's **frozen measured Elo ranking**: only ranks **10, 12, 14, …** are included. Ranks 1–8 and all odd ranks are withheld. The 12 game packs contain **909 published human-player packages**. Full ranking metadata is available in `results/elo`; each game's `players/publication.json` identifies the released players and their original reference ranks.
 
@@ -337,10 +336,14 @@ validation/      Verification summaries
 
 ```bibtex
 @misc{yang2026aaarena,
-  title  = {AAArena: Can AI Agents Build Game Agents for Real-World Adversarial Games?},
+  title  = {Can AI Agents Learn Their Way to the Top? Evaluating Heuristic Learning in a Long-Running Game Agent Competition},
   author = {Kaisen Yang and Qingle Liu and Kejin Wang and Yicheng Zhao and Jieming Li and Shenghan Zheng and Ruize Yang and Bojun Yang and Heng Gong and Xiang Gao and Lanyue Zhang and Kaiyu Zhong and Zhuo Liu and Shaoxuan Li and Chengxi Li and Yong Yan and Weixuan Zhang and Tianwei Luo and Situ Wang and Youjie Zheng and Sihan Zhao and Shengyuan Wang and Huan-ang Gao and Jiazheng Xu and Xiaohui Xie and Wentao Han and Hongning Wang},
   year   = {2026},
-  url    = {https://github.com/THU-CST-SAST/AAArena}
+  eprint = {2610.12341},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.AI},
+  doi    = {10.48550/arXiv.2610.12341},
+  url    = {https://arxiv.org/abs/2610.12341}
 }
 ```
 
